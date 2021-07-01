@@ -8,6 +8,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Changes are sorted into the following categories:
 Added, Changed, Deprecated, Removed, Fixed, Security.
 
+---
+
+## [Unreleased] - 2021-11-XX
+
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+---
+
 ## [9.0.0] - 2021-07-01
 
 The user interface for making the cover and title pages has been revamped.
@@ -30,8 +48,6 @@ See `thesis_skel/thesis_skel.tex` in order to implement the change in existing t
 - Move bibliography after appendix.
 - Tweak handling of `astrobib` bibliographies so they work better.
 
-### Deprecated
-
 ### Removed
 
 - Remove `cover_test` directory.
@@ -41,7 +57,7 @@ See `thesis_skel/thesis_skel.tex` in order to implement the change in existing t
 - `titlelowerback` for declaration and "Gutachter" works in `twoside=false` mode.
 - Fix bold math font for Palatino.
 
-### Security
+---
 
 ## [8.0.0] - 2021-06-23
 
@@ -86,6 +102,8 @@ See `thesis_skel/thesis_skel.tex` in order to implement the change in existing t
 - Remove `thesis-2009-skel.tex` file, as support has been dropped for such old versions.
 - Remove old `biblatex` directory and the style files in there, as they are superseded by `ubonn-biblatex.sty`.
 
+---
+
 ## [7.0.0] - 2020-06-19
 
 ### Added
@@ -106,6 +124,8 @@ See `thesis_skel/thesis_skel.tex` in order to implement the change in existing t
 ### Removed
 
 - Remove support and documentation for TeX Live versions older than 2011.
+
+---
 
 ## [6.0] - 2018-12-05
 
@@ -130,7 +150,9 @@ See `thesis_skel/thesis_skel.tex` in order to implement the change in existing t
 ### Deprecated
 
 - The thesis guide no longer compiles using TeX Live versions earlier than 2011, as it uses some packages that were not available then.
-  
+
+---
+
 ## [5.1] - 2016-06-30
 
 ### Added
@@ -143,6 +165,8 @@ See `thesis_skel/thesis_skel.tex` in order to implement the change in existing t
 
 - Month and address/location are not included in references by default.
 
+---
+
 ## [5.0] - 2016-03-15
 
 ### Added
@@ -153,6 +177,8 @@ See `thesis_skel/thesis_skel.tex` in order to implement the change in existing t
 
 - Move from SVN to Git repository. Update documentation accordingly.
 - Small fix so comma is not part of link from journal entry to DOI.
+
+---
 
 ## [4.0] - 2015-08-27
 
@@ -174,7 +200,9 @@ See `thesis_skel/thesis_skel.tex` in order to implement the change in existing t
 ### Removed
 
 - Remove most advice and switches to use `bibtex8`.
-  
+
+---
+
 ## [3.0] - 2015-02-02
 
 ### Added
@@ -198,6 +226,8 @@ See `thesis_skel/thesis_skel.tex` in order to implement the change in existing t
 
 - Remove inclusion of `feynmf/feynmp` by default.
 
+---
+
 ## [2.1] - 2013-07-10
 
 ### Added
@@ -215,7 +245,9 @@ See `thesis_skel/thesis_skel.tex` in order to implement the change in existing t
 - Use the `standalone` package in the TikZ figures.
 - Move the guide main file to the `guide` subdirectory so that this works properly.
 - Switch to using `feynmp` rather than `feynmf` by default (as of TeX Live 2011).
-  
+
+---
+
 ## [2.0] - 2013-04-23
 
 ### Changed
@@ -224,6 +256,8 @@ See `thesis_skel/thesis_skel.tex` in order to implement the change in existing t
 - Make thesis submission a separate chapter (so that PhD submission can also be a separate document).
 - Make TeX Live 2011 the default.
 - Make Inspire rather than Spires default.
+
+---
 
 ## [1.0] - [1.0]
 
