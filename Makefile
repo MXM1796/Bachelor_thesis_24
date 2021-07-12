@@ -3,7 +3,7 @@
 #
 # Note that "make update" can overwrite this file
 
-THESIS  = mythesis
+THESIS = mythesis
 TEXLIVE = 2017
 # TEXOLD = 2009
 # EXTRACMD = --shell-escape
@@ -55,12 +55,14 @@ LATEXMK = latexmk -pdf
 new: skelcopy
 	#cp thesis_skel/thesis_skel.tex        $(THESIS)/$(THESIS).tex
 	sed 's/texlive=2017/texlive=$(TEXLIVE)/' thesis_skel/thesis_skel.tex > $(THESIS)/$(THESIS).tex
+	sed 's/^THESIS =.*/THESIS = ${THESIS}/'  thesis_skel/Makefile > $(THESIS)/Makefile
 
 # New thesis with astrophysics style of references
 astro: skelcopy
 	sed 's/texlive=2017/texlive=$(TEXLIVE)/' thesis_skel/thesis_astro_skel.tex > $(THESIS)/$(THESIS).tex
 	cp thesis_skel/thesis_astro_intro.tex  $(THESIS)/thesis_intro.tex
 	cp thesis_skel/thesis_astro_appendix.tex  $(THESIS)/thesis_appendix.tex
+	sed 's/^THESIS =.*/THESIS = ${THESIS}/'  thesis_skel/Makefile > $(THESIS)/Makefile
 
 # New thesis
 skelcopy:
@@ -75,7 +77,7 @@ skelcopy:
 	cp thesis_skel/cover_only.tex         $(THESIS)/
 	cp ubonn-thesis.sty                   $(THESIS)/
 	cp ubonn-biblatex.sty                 $(THESIS)/
-	cp thesis_skel/Makefile               $(THESIS)/
+	# cp thesis_skel/Makefile               $(THESIS)/
 	cp thesis_skel/thesis_refs.bib        $(THESIS)/bib/
 	cp refs/standard_refs-biber.bib       $(THESIS)/bib/
 	cp -R cover                           $(THESIS)/
@@ -84,10 +86,11 @@ skelcopy:
 update:
 	-cp -i ubonn-thesis.sty                $(THESIS)/
 	-cp -i ubonn-biblatex.sty              $(THESIS)/
-	-cp -i thesis_skel/Makefile            $(THESIS)/
 	-cp -i refs/standard_refs-biber.bib    $(THESIS)/bib/
 	-cp -i -R cover                        $(THESIS)/
 	-cp -i -R figs/cover                   $(THESIS)/
+	# -cp -i thesis_skel/Makefile            $(THESIS)/
+	# sed 's/^THESIS =.*/THESIS = ${THESIS}/'  thesis_skel/Makefile > $(THESIS)/Makefile
 
 feynmf: $(FEYNFILES)
 	@echo "Feymf Feynman graph files: $^"
