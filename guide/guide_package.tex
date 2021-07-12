@@ -231,6 +231,7 @@ Some other useful packages, some of which are included in
     \Package{dcolumn} & Very helpful for lining up columns on character strings such as a decimal point.
       \Package{siunitx} offers similar and better functionality.\\
     \Package{refcheck} & Check whether labels are used, i.e.\ if figures and tables are actually referenced.\\
+    \Package{snapshot} & Enables you to get a list of external dependencies (and the versions being used).\\
     \Package{tcolorbox} & Fancy coloured boxes. Also works very well for code listings.\\
     \Package{pgfplotstable} & Read in tables from CSV files and format them (even as graphs).\\
     \Package{titlesec} & Change the appearance of chapter and section headings. 
@@ -276,6 +277,19 @@ on the file it also automatically crops the resulting picture. This is
 one of those packages where you think \enquote{Why didn't someone
   create this years ago?}. The \Package{tikz} figures included in this
 guide make use of it.
+
+If you want to know which \LaTeX\ packages are being used when you compile your thesis,
+you can use the \Package{snapshot} package.
+Just add the line
+\begin{tcblisting}{listing only}
+\RequirePackage{snapshot}
+\end{tcblisting}
+\noindent before \Macro{documentclass}.
+The dependencies can be found after running pdf\LaTeX{} (or whichever engine you run)
+in the file \File{mythesis.dep} (or whatever your main filename is).
+A file \File{mythesis.dep} can be found in the main directory of \File{ubonn-thesis}.
+This contains the list of dependencies (and their version numbers) from the version of \TeXLive
+I used when last updating the package.
 
 If you want to include code listings,
 you can use the packages \Package{tcolorbox} or \Package{listings}.
