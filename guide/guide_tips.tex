@@ -1071,8 +1071,7 @@ The ATLAS \Package{atlasdoc} class contains a patch that gets round this problem
 %------------------------------------------------------------------------------
 
 When you make a new thesis skeleton (as of version 2.1) the files
-\texttt{thesis\_skel/Makefile} and \texttt{ubonn-thesis.sty}
-(and \texttt{ubonn-biblatex.sty}) are copied
+\File{ubonn-thesis.sty} and \File{ubonn-biblatex.sty}) are copied
 to your \texttt{mythesis} directory.
 As of version 6.0, your \File{mythesis} directory should be completely standalone
 and does not rely on any files in the parent directory.
@@ -1092,10 +1091,14 @@ If you use a tar file, then you should unpack it and copy over your
 \texttt{mythesis} directory tree to the new \File{ubonn-thesis} tree.
 As of version 6.0, you can then use a command like
 \Command{make update THESIS=mythesis} to copy the style files,
-the \File{Makefile}, the bib file with the standard references and the covers to your
+the bib file with the standard references and the covers to your
 \File{mythesis} directory.
 You will be asked before existing files are overwritten.
-If you overwrite the \File{Makefile} make sure you update the value of \Command{THESIS} afterwards.
+% If you overwrite the \File{Makefile} make sure you update the value of \Command{THESIS} afterwards.
+The \File{Makefile} is not updated in this process (as of version 9.1),
+as changes to it are only rarely made,
+and you may have adapted it to your use.
+Have a look at \File{thesis\_skel/Makefile} to see if there are any updates to the \File{Makefile} that you should also include.
 
 If you are using Overleaf\index{Overleaf}, you can try to download the project as a zip file,
 unpack it into a subdirectory of \File{ubonn-thesis},
