@@ -10,11 +10,15 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
-## [Unreleased] - 2021-11-XX
+## [Unreleased] - 2021-07-XX
 
 ### Added
 
+- Added a bit of explanation about the `snapshot` package.
+
 ### Changed
+
+- `make new` now sets correct thesis main filename in `Makefile`.
 
 ### Deprecated
 
