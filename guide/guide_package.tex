@@ -213,8 +213,7 @@ Some other useful packages, some of which are included in
     \Package{todonotes} & Nice package to add notes to your text.
       You can also use it to indicate missing figures.\\
     \Package{background} & Allows you to add things like DRAFT across the whole document page.\\
-    \Package{subfiles} & Provides a nice alternative to
-    \Macro{include}.\\
+    \Package{subfiles} & Provides a nice alternative to \Macro{include} and \Macro{includeonly}.\\
     \Package{tabularx} & Allows fixed table width with flexible column widths.\\
     \Package{floatrow} & Add ability to define own floats.\\
     \Package{diffcoeff} & A lot of useful commands for derivatives.\\
@@ -311,12 +310,17 @@ This could be a really nice way of formatting data
 and avoids the need to write out such tables including \enquote{\&} and \enquote{\textbackslash\textbackslash}.
 Various sorting options are also possible.
 
-I do not recommend the \Package{subfiles} package by default as it is not
-included in \TeXLive by default. Have a look at
-\url{http://en.wikibooks.org/wiki/LaTeX/General_Guidelines} for
-example for more information. If you want to use the package you have
-to download it and install for yourself. You can do much the same
-thing using AUCTeX inside \texttt{emacs}.
+The \Package{subfiles} package has been included at some point
+in the \Package{texlive-latex-extra} collection.
+It is a convenient way to be able to compile single files in a document.
+This can also be done with \Macro{includeonly}, but this requires changes to the document each time.
+With \Package{subfiles} you can just run pdf\LaTeX (or whatever engine you are using)
+on a single file in your document).
+Have a look at \url{http://en.wikibooks.org/wiki/LaTeX/General_Guidelines} for
+example for more information.
+% If you want to use the package you have
+% to download it and install for yourself. You can do much the same
+% thing using AUCTeX inside \texttt{emacs}.
 
 \begin{sloppypar}
 Note that there is a conflict if you use \Package{refcheck}, \Package{subcaption} and \Package{hyperref} together.
@@ -332,8 +336,7 @@ included in the list above, because they are either not really needed
 or have been superseded by other packages.
 
 \begin{table}[htbp]
-  \caption{Other packages that are often used, but I have already
-    given alternatives.}%
+  \caption{Other packages that are often used, but I have already given alternatives.}%
   \label{tab:package:other2}
   \centering
   \begin{tabular}{lp{0.8\textwidth}}
