@@ -15,6 +15,8 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 ### Added
 
 - Added a bit of explanation about the `snapshot` package.
+- Add a mention of the `acronym` package.
+- Update information on the `subfiles` package.
 
 ### Changed
 
