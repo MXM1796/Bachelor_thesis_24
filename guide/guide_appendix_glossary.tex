@@ -20,16 +20,23 @@ helpful as well.
 
 Several packages are available to help in the creation of a glossary:
 \begin{description}
-\item[\Package{glossaries}] A new glossary package that can do
-  everything! This is what I use here.
+\item[\Package{glossaries}] A new glossary package that can do everything!
+  This is what I use here.
 \item[\Package{nomencl}] Another glossary package that I used in the book
   \enquote{Physics at the Terascale}.
 \item[\Package{glosstex}] Rather an old package that looks to be quite
   simple to use.
+\item[\Package{acronym}] A fairly extensive package for acronyms.
 \end{description}
 
-A short introduction to these packages can be found in the \TeX nische
+A short introduction to the first three packages can be found in the \TeX nische
 Komödie 4/2012.
+\Package{acronym} is a further package that provides quite a few commands
+associated with acronyms.
+It is probably sufficient if you only want to define acronyms and provide a list of them.
+I have not actually tried out the package,
+but as far as I can tell you should provide a definition of all acronyms
+at the place you want to output the list within an \Env{acronym} environment.
 
 The \Package{nomencl} package is maybe the easiest to use for creating
 a simple list of acronyms. If you want to change the formatting or do
