@@ -450,9 +450,12 @@ too many settings that depend on having a new version of
 If you include \Package{ubonn-thesis} with the option \Option{astrobib},
 the references will be formatted in the style usually used in astrophysics publications.\index{astronomy}\index{astrophysics}
 Version 3.0 contains a first version of this option.
-A few more tweaks may still be needed. You can use the command
-\verb|make astro| instead of \verb|make new| to make a thesis skeleton with the appropriate
-options set and the template introduction uses typical citation commands.
+You can use the command \verb|make astro| instead of \verb|make new|
+to make a thesis skeleton with the appropriate options set
+and the template introduction uses typical citation commands.
+By default things are set up to have the reference at the end of each chapter.
+If you do not want this pass the option \Option{refsection=false}
+to \Package{ubonn-thesis}.
 
 If it is available, \Option{biber} is the preferred backend over
 \Option{bibtex} or \Option{bibtex8}.
