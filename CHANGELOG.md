@@ -10,21 +10,25 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
-## [Unreleased] - 2021-07-XX
+## [Unreleased] - 2021-09-XX
 
 ### Added
 
-- Added a bit of explanation about the `snapshot` package.
+- Add option `refsection` (default true) so `astrobib` style can be used with references at the end of the thesis.
+- Add a bit of explanation about the `snapshot` package.
 - Add a mention of the `acronym` package.
 - Update information on the `subfiles` package.
 
 ### Changed
 
 - `make new` now sets correct thesis main filename in `Makefile`.
+- Bibliography is after the appendices in skeletons.
 
 ### Deprecated
 
 ### Removed
+
+- `block` option removed from `ubonn-thesis.sty`. It should be passed to `ubonn-biblatex.sty`.
 
 ### Fixed
 

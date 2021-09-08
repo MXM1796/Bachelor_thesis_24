@@ -61,6 +61,8 @@
 \DeclareBoolOption[true]{siunitx}
 \DeclareBoolOption[false]{eVkern}
 \DeclareBoolOption[false]{dcolumn}
+\DeclareBoolOption[true]{cleveref}
+\DeclareBoolOption[true]{clevercaps}
 \DeclareBoolOption[false]{diffcoeff}
 \DeclareBoolOption[false]{derivative}
 \DeclareBoolOption[false]{physics}
@@ -72,17 +74,17 @@
 \DeclareBoolOption[false]{feynmp}
 \DeclareBoolOption[false]{titlesec}
 \DeclareBoolOption[false]{astrobib}
+\DeclareBoolOption[false]{firstinits}
+\DeclareBoolOption[true]{refsection}
 \DeclareBoolOption[true]{floatopt}
 \DeclareBoolOption[false]{todonotes}
 \DeclareBoolOption[false]{shownotes}
-\DeclareBoolOption[true]{cleveref}
-\DeclareBoolOption[true]{clevercaps}
-\DeclareBoolOption[false]{firstinits}
 \DeclareBoolOption[false]{showframe}
 \DeclareStringOption[1cm]{coveroffset}
 \DeclareStringOption{texlive}
 \DeclareStringOption[biber]{backend}
 \DeclareStringOption{bibencoding}
+% \DeclareStringOption[ragged]{block}
 \DeclareStringOption[numeric-comp]{bibstyle}
 \ProcessKeyvalOptions*
 
@@ -656,22 +658,28 @@
 % Older versions of TeX Live use the option firstinits instead.
 % Some more tweaks should be made to the appearance,
 % see/include ubonn-biblatex.sty.
-\ifUBN@biblatex
-  \ifx\UBN@bibencoding\@empty
+\ifthenelse{\boolean{UBN@biblatex}}{%
+  \ifthenelse{\boolean{UBN@astrobib} \AND \boolean{UBN@refsection}}{
+    \newcommand*{\UBN@biblatexrefsection}{refsection=chapter,}
+  }{%
+    \newcommand*{\UBN@biblatexrefsection}{}
+  }
+  \typeout{UBN@biblatexrefsection is \UBN@biblatexrefsection}
+  \ifthenelse{\equal{\UBN@bibencoding}{}}{%
     \newcommand*{\UBN@biblatexencoding}{}
-  \else
+  }{%
     \newcommand*{\UBN@biblatexencoding}{bibencoding=\UBN@bibencoding,}
-  \fi
-  \ifUBN@astrobib
+  }
+  \ifthenelse{\boolean{UBN@astrobib}}{%
     \RequirePackage[backend=\UBN@backend, \UBN@biblatexencoding
-      style=authoryear, natbib=true, refsection=chapter,
-      block=none, \UBN@initials]{biblatex}
-  \else
+      style=authoryear, natbib=true, \UBN@biblatexrefsection
+      \UBN@initials, uniquename=init]{biblatex}
+  }{%
     \RequirePackage[backend=\UBN@backend, \UBN@biblatexencoding
       style=\UBN@bibstyle, sorting=none,
       \UBN@initials]{biblatex}
-  \fi
-\fi
+  }
+}{}
 
 %-------------------------------------------------------------------------------
 % Add ability to click on links and references.
