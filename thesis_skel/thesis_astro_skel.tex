@@ -21,7 +21,7 @@
 % Adjustments to standard biblatex style.
 % Change option to backref=false when your thesis is ready to turn off back-referencing.
 % Pass the option showurl=false to shorten your bibliography by not including url fields.
-% Astronomy theses usually set block=none.
+% Astronomy theses usually set block=none. block=ragged is the default.
 \usepackage[backref=true, block=none]{ubonn-biblatex}
 
 %------------------------------------------------------------------------------
@@ -164,18 +164,18 @@
 \printbibliography[heading=subbibliography]
 
 %------------------------------------------------------------------------------
-% Use biblatex for the bibliography.
-% Add bibliography to Table of Contents.
-% Use this command  (and remove refsection environments)
-% to print all references at the end of the thesis.
-% \printbibliography[heading=bibintoc]
-
-%------------------------------------------------------------------------------
 \appendix
 % \part*{Appendix}
 % Add your appendices here - don't forget to also add them to \includeonly above
 \include{thesis_appendix}
 \printbibliography[heading=subbibliography]
+
+%------------------------------------------------------------------------------
+% Use biblatex for the bibliography.
+% Add bibliography to Table of Contents.
+% Use this command  (and remove refsection environments)
+% to print all references at the end of the thesis.
+% \printbibliography[heading=bibintoc]
 
 %------------------------------------------------------------------------------
 % Include the following lines and comment out \printbibliography if
