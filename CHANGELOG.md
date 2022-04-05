@@ -10,17 +10,20 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
-## [Unreleased] - 2021-09-XX
+## [Unreleased] - 2022-03-XX
 
 ### Added
 
-- Add option `refsection` (default true) so `astrobib` style can be used with references at the end of the thesis.
+- Add option `refsection` (default chapter) so `astrobib` style can be used with references at the end of the thesis.
+    Pass option `refsection=none` to get the references at the end of the thesis.
 - Add a bit of explanation about the `snapshot` package.
 - Add a mention of the `acronym` package.
+- Add a mention of the `tabularray` package.
 - Update information on the `subfiles` package.
 
 ### Changed
 
+- TeX Live 2020 is now the default.
 - `make new` now sets correct thesis main filename in `Makefile`.
 - Bibliography is after the appendices in skeletons.
 
