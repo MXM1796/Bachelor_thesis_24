@@ -92,7 +92,7 @@ My original idea was that the style file should work for all recent
 \TeX\ installations.  However, some of the packages I recommend have
 been changing quite a lot over the past few years.
 You should therefore set the \TeXLive version you are using appropriately.
-The default setting is 2017.\footnote{%
+The default setting is 2020.\footnote{%
 Setting the \TeXLive version to one that is lower than your installation should not cause any problems.}
 For an an up-to-date version of MikTeX (2.9) you should probably use the current year.
 Things should compile without any changes if you use \TeXLive 2016 or later.
@@ -206,8 +206,8 @@ The following options exist:\\
   PILibrary & false & Final version including an extra cover page for the PI library.\\
   thesistype & Unknown & Specify the thesis type.\\
   thesisversion & Draft & Specify the stage of the thesis.\\
-  texlive & 2017 & Specify the \TeXLive version.
-    You can also use the older command \verb|\newcommand*{\texlive}{2017}|.\\
+  texlive & 2020 & Specify the \TeXLive version.
+    You can also use the older command \verb|\newcommand*{\texlive}{2020}|.\\
   twoside & true & Margins set for two-sided printing.\\
   newtx & true & Use the \Package{newtx} font packages (newer version of \Package{txfonts}).\\
   txfonts & false & Use a Times-Roman-like font.\\
@@ -499,24 +499,28 @@ in \cref{sec:app:tex}.
 \begin{itemize}
 \item Don't write symbols differently in math mode and in text. One of
   my pet hates is:
-  \enquote{The most famous equation in the world is:
+  \begin{displayquote}
+  The most famous equation in the world is:
   \begin{equation}
     \label{eq:emc1}
     E = m c^{2}
   \end{equation}
-  where E is the energy of the particle and m is its mass}, i.e.\ \(E\)
-  and \(m\) are in math mode in the equation, but in text mode in the
-  text where they are explained.
+  where E is the energy of the particle and m is its mass,    
+  \end{displayquote}
+  i.e.\ \(E\) and \(m\) are in math mode in the equation,
+  but in text mode in the text where they are explained.
 
 \item Do not start a new paragraph when describing the elements in an equation.
   The equation above is described correctly. Wrong would be:
-  The most famous equation in the world is:
+  \begin{displayquote}
+    The most famous equation in the world is:
   \begin{equation}
     \label{eq:emc2}
     E = m c^{2}
   \end{equation}
 
   \hspace*{1em}where \(E\) is the energy of the particle and \(m\) is its mass.
+  \end{displayquote}
   Using the paragraph options of this guide, you add extra vertical space.
   If your paragraphs are indented, \enquote{where} would also be indented.
 
@@ -918,7 +922,7 @@ For math mode the official \LaTeX\ macro is \verb|\(...\)|.
 It is therefore recommended to use \verb|\(...\)| for inline equations etc.,
 although it must be said that probably well over \SI{90}{\%} of people still use \verb|$...$|.
 There still seem to be a few cases when \verb|\(...\)| leads to errors.
-This sometimes happened for \TeXLive version from 2013 or earlier
+This sometimes happened for \TeXLive versions from 2013 or earlier
 when used in figure or table captions.
 
 

@@ -49,7 +49,7 @@ TeX installations.  However, some of the packages I recommend have
 been changing quite a lot over the past years, particularly
 `biblatex` and `siunitx`.  It may therefore be necessary to make a few
 changes in order to get the thesis to compile on your machine.
-The default version assumes that you have TeX Live 2017 or later.
+The default version assumes that you have TeX Live 2020 or later.
 If you have an older version pass the option `texlive=YYYY` to the document class
 or ubonn-thesis package in `mythesis.tex`.
 If you make a new document, you can do this by passing the argument 
