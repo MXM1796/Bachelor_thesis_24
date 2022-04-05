@@ -12,7 +12,7 @@
 \NeedsTeXFormat{LaTeX2e}[2011/01/01]
 
 % Set TeX Live version
-\providecommand*{\texlive}{2017}
+\providecommand*{\texlive}{2020}
 
 % Set institute information
 \providecommand*{\InstituteName}{\PI}
@@ -75,17 +75,17 @@
 \DeclareBoolOption[false]{titlesec}
 \DeclareBoolOption[false]{astrobib}
 \DeclareBoolOption[false]{firstinits}
-\DeclareBoolOption[true]{refsection}
 \DeclareBoolOption[true]{floatopt}
 \DeclareBoolOption[false]{todonotes}
 \DeclareBoolOption[false]{shownotes}
 \DeclareBoolOption[false]{showframe}
 \DeclareStringOption[1cm]{coveroffset}
 \DeclareStringOption{texlive}
+\DeclareStringOption[numeric-comp]{bibstyle}
 \DeclareStringOption[biber]{backend}
+\DeclareStringOption[chapter]{refsection}
 \DeclareStringOption{bibencoding}
 % \DeclareStringOption[ragged]{block}
-\DeclareStringOption[numeric-comp]{bibstyle}
 \ProcessKeyvalOptions*
 
 %-------------------------------------------------------------------------------
@@ -369,6 +369,7 @@
 
   % New version of the txfonts times-roman font
   \ifthenelse{\boolean{UBN@newtx}}{%
+    \RequirePackage[T1]{fontenc}
     \RequirePackage{newtxtext}
     \RequirePackage{newtxmath}
   }{}
@@ -447,7 +448,9 @@
   \sisetup{detect-all}
   \ifthenelse{\boolean{UBN@eVkern}}{%
     \typeout{ubonn-thesis: Applying kern to eV.}
-    \DeclareSIUnit\electronvolt{\text{e\kern-.1em V}}
+    \protected\def\electronvoltsymbol{e\kern-0.1em\relax V}
+    \DeclareSIUnit\electronvolt{\text{\electronvoltsymbol}}
+    % \DeclareSIUnit\electronvolt{\text{e\kern-.1em V}}
   }{}
   % Barn needed in some versions of siunitx.
   \DeclareSIUnit\barn{b}
@@ -659,25 +662,25 @@
 % Some more tweaks should be made to the appearance,
 % see/include ubonn-biblatex.sty.
 \ifthenelse{\boolean{UBN@biblatex}}{%
-  \ifthenelse{\boolean{UBN@astrobib} \AND \boolean{UBN@refsection}}{
-    \newcommand*{\UBN@biblatexrefsection}{refsection=chapter,}
-  }{%
-    \newcommand*{\UBN@biblatexrefsection}{}
-  }
-  \typeout{UBN@biblatexrefsection is \UBN@biblatexrefsection}
   \ifthenelse{\equal{\UBN@bibencoding}{}}{%
     \newcommand*{\UBN@biblatexencoding}{}
   }{%
     \newcommand*{\UBN@biblatexencoding}{bibencoding=\UBN@bibencoding,}
   }
+  % \typeout{UBN@backend: <\UBN@backend>}
+  % \typeout{UBN@biblatexencoding: <\UBN@biblatexencoding>}
+  % \typeout{UBN@refsection: <\UBN@refsection>}
+  % \typeout{UBN@initials: <\UBN@initials>}
   \ifthenelse{\boolean{UBN@astrobib}}{%
-    \RequirePackage[backend=\UBN@backend, \UBN@biblatexencoding
-      style=authoryear, natbib=true, \UBN@biblatexrefsection
-      \UBN@initials, uniquename=init]{biblatex}
+    \RequirePackage[backend=\UBN@backend,
+      style=authoryear, natbib=true, refsection=\UBN@refsection,
+      \UBN@initials, uniquename=init,
+      \UBN@biblatexencoding]{biblatex}
   }{%
-    \RequirePackage[backend=\UBN@backend, \UBN@biblatexencoding
+    \RequirePackage[backend=\UBN@backend,
       style=\UBN@bibstyle, sorting=none,
-      \UBN@initials]{biblatex}
+      \UBN@initials,
+      \UBN@biblatexencoding]{biblatex}
   }
 }{}
 
