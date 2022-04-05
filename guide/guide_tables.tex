@@ -36,9 +36,17 @@ If you want columns of expandable width you can use the
 \Package{tabularx} package. The environment \Env{tabular*} has instead
 expandable intercolumn spacing.
 
-Tables usually go inside the \Env{table} environment so their position
-can \enquote{float}. In this chapter I use some tables inside \Env{table}
-and some inline.
+It looks as if the package \Package{tabularray} can be used for all tweaking of tables.
+It includes options related to \Package{amsmath}, \Package{booktabs}, \Package{longtable},
+\Package{siunitx} and more.
+There are improved ways of spanning columns and rows,
+removing the need for \Macro{multicolumn} and the \Package{multirow} package.
+There are many options for also making colourful tables, adjusting spacing etc.,
+while the defautl row spacing looks to be better than the standard one in the \Env{tabular} and \Env{array} environments.
+The package was only released in 2021, so you need a recent version of \TeXLive to be able to use it.
+
+Tables usually go inside the \Env{table} environment so their position can \enquote{float}.
+In this chapter I use some tables inside \Env{table} and some inline.
 
 Don't forget to use the package \Package{cleveref} and macros such as \Macro{cref}
 to reference the tables --- see \cref{sec:package:appearance} for a few more details.
@@ -99,6 +107,7 @@ The first two columns are centred, the last two are right justified.
 This is clearly a bit clumsy, but it does work!
 
 
+
 %------------------------------------------------------------------------------
 \section{Using \Package{siunitx} and the \Option{S} column option}%
 \label{sec:table:siunitx}
@@ -107,7 +116,86 @@ This is clearly a bit clumsy, but it does work!
 The \Package{siunitx} package contains some nice tools that make the
 correct alignment of numbers simpler. 
 
-A first simple example is shown in \cref{tab:viscosity}.
+Here are very similar tables to those in the previous section
+typeset using the \Package{tabularray} package
+and the \Env{tblr} and \Env{booktabs} environments, respectively.
+The column widths are fixed to show the effect of the \Option{table-number-alignment} option.
+The \Option{vlines} option is used to show the effect of the alignment.
+Note that triple pairs of braces have to be used in these environments
+to guard non-numeric cells, such as column headings,
+if one is using the \Option{S} column descriptor or 
+the \Option{Q} column descriptor with the \Option{si} key.
+In the latter case, the \Option{c} option applies
+to the alignment of the non-numeric cell content.
+\begin{tcblisting}{stextable, listing only}
+\begin{center}
+  \begin{tblr}{
+    vlines, columns={4em},
+    colspec={
+      Q[si={table-format=2.2, table-number-alignment=center},c]
+      Q[si={table-format=2.2, table-number-alignment=right},c]
+    }
+  }
+    \hline
+    \SetCell[c=2]{c}{{{\Env{tblr}}}} & \\
+    \hline
+    {{{Centre}}} & {{{Right}}} \\
+    \hline
+    0.76 & 0.76 \\
+    83.1 & 83.1 \\
+    \hline
+  \end{tblr}
+  \quad
+  \begin{booktabs}{
+    columns={4em},
+    colspec={*{2}{S[table-format=2.2]}}
+  }
+    \toprule
+    \SetCell[c=2]{c}{{{\Env{booktabs}}}} & \\
+    \midrule
+    0.76 & 0.76 \\
+    83.1 & 83.1 \\
+    \bottomrule
+  \end{booktabs}
+\end{center}
+\end{tcblisting}
+
+\ifthenelse{\texlive > 2020}{%
+\begin{center}
+  \begin{tblr}{
+    vlines, columns={4em},
+    colspec={
+      Q[si={table-format=2.2, table-number-alignment=center},c]
+      Q[si={table-format=2.2, table-number-alignment=right},c]
+    }
+  }
+    \hline
+    \SetCell[c=2]{c}{{{\Env{tblr}}}} & \\
+    \hline
+    {{{Centre}}} & {{{Right}}} \\
+    \hline
+    0.76 & 0.76 \\
+    83.1 & 83.1 \\
+    \hline
+  \end{tblr}
+  \quad
+  \begin{booktabs}{
+    columns={4em},
+    colspec={*{2}{S[table-format=2.2]}}
+  }
+    \toprule
+    \SetCell[c=2]{c}{{{\Env{booktabs}}}} & \\
+    \midrule
+    0.76 & 0.76 \\
+    83.1 & 83.1 \\
+    \bottomrule
+  \end{booktabs}
+\end{center}
+}{%
+  \missingfigure{TeX Live version does not include \Package{tabularray}}
+}
+
+A further simple example is shown in \cref{tab:viscosity}.
 In fact I show the table twice, once
 with the language set to default and once with it set to German. The
 \Env{tabular} contents are identical, the second tabular is inside a

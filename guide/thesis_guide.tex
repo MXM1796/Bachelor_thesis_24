@@ -17,8 +17,8 @@
 %-------------------------------------------------------------------------------
 
 % Main thesis style file
-\newcommand*{\guideversion}{9.0}
-\newcommand*{\texlive}{2020}
+\newcommand*{\guideversion}{9.1}
+\newcommand*{\texlive}{2021}
 
 \usepackage{ifthen}
 
@@ -44,6 +44,12 @@
 }{}
 \usepackage{import}
 \usepackage{standalone}
+% tabularray only as of TeX Live 2021.
+\ifthenelse{\texlive > 2020}{%
+  \usepackage{tabularray}
+  \UseTblrLibrary{booktabs}
+  \UseTblrLibrary{siunitx}
+}{}
 % TikZ-FeynHand only as of TeX Live 2017.
 \ifthenelse{\texlive > 2016}{%
   \usepackage{tikz-feynhand}
