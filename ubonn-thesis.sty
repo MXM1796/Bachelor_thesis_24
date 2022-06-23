@@ -369,9 +369,9 @@
 
   % New version of the txfonts times-roman font
   \ifthenelse{\boolean{UBN@newtx}}{%
-    \RequirePackage[T1]{fontenc}
     \RequirePackage{newtxtext}
     \RequirePackage{newtxmath}
+    \RequirePackage[T1]{fontenc}
   }{}
   % Times-roman font
   \ifthenelse{\boolean{UBN@txfonts}}{%

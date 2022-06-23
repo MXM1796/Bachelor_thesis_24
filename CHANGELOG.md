@@ -10,7 +10,7 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
-## [Unreleased] - 2022-03-XX
+## [Unreleased] - 2022-06-XX
 
 ### Added
 
@@ -20,6 +20,7 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 - Add a mention of the `acronym` package.
 - Add a mention of the `tabularray` package.
 - Update information on the `subfiles` package.
+- Add (back) `fontenc` package when using `newtx` (default) fonts.
 
 ### Changed
 
