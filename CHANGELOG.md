@@ -10,7 +10,7 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
-## [Unreleased] - 2022-06-XX
+## [9.1.0] - 2022-07-11
 
 ### Added
 
@@ -25,18 +25,13 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 ### Changed
 
 - TeX Live 2020 is now the default.
+- Redo chapter number formnatting to work with June 2022 LaTeX update.
 - `make new` now sets correct thesis main filename in `Makefile`.
 - Bibliography is after the appendices in skeletons.
-
-### Deprecated
 
 ### Removed
 
 - `block` option removed from `ubonn-thesis.sty`. It should be passed to `ubonn-biblatex.sty`.
-
-### Fixed
-
-### Security
 
 ---
 
