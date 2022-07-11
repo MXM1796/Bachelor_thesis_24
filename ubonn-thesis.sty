@@ -767,7 +767,7 @@
       \ifXeTeX
         \@hangfrom{\MakeUppercase{\tmp@chaphead}}{#3}%
       \else
-        \@hangfrom{\textls{\MakeUppercase{\tmp@chaphead}}}{#3}}%
+        \@hangfrom{\textls{\MakeUppercase{\tmp@chaphead}}}{#3}%
       \fi
       \Ifstr{#1}{chapter}{%
         \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
@@ -784,7 +784,7 @@
         \fi
         \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
         \raggedchapter
-        #3%
+        {#3}%
         \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
       }{#2#3}%
     }
