@@ -9,7 +9,7 @@
 \ProvidesPackage{ubonn-thesis}[2021/07/01 Version 9.1.0-alpha University of Bonn thesis package]
 \NeedsTeXFormat{LaTeX2e}
 % Needs 2013 TeX Live or later - this contains 2011/06/27 version of LaTeX.
-\NeedsTeXFormat{LaTeX2e}[2011/01/01]
+\NeedsTeXFormat{LaTeX2e}[2013/01/01]
 
 % Set TeX Live version
 \providecommand*{\texlive}{2020}
@@ -730,7 +730,9 @@
 
 % Do not put a dot after Section/Chapter, nor in the figure caption.
 \KOMAoptions{numbers=noendperiod}
-% Write Chapter 1 at beginning of each chapter, if this is not an article
+% Write Chapter 1 at beginning of each chapter, if this is not an article.
+% Comment out this line and the \renewcommand*{\chapterformat} below
+% if you do not want "Chapter".
 \@ifclassloaded{scrartcl}{}{\KOMAoptions{chapterprefix=true,appendixprefix=true}}
 
 %-------------------------------------------------------------------------------
@@ -751,23 +753,51 @@
       \titlerule]
   }{%
     % Code from http://www.komascript.de/chapterwithlines
-    %\renewcommand*{\thechapter}{\Roman{chapter}}
-    \newcommand*{\chapternumbersize}{\Huge}
+    % and from https://sourceforge.net/p/koma-script/wiki-de/HowTo_ChapterWithLines/
+    % with fix for TeX Live 2022.
+    % Different font size for "Chapter" and chapter number.
     \renewcommand*{\chapterformat}{%
-      \raggedleft
-      \ifXeTeX
-        \MakeUppercase{\Large\chapapp}\enskip\chapternumbersize\thechapter\\
-      \else
-        \textls{\MakeUppercase{\Large\chapapp}}\enskip\chapternumbersize\thechapter\\
-      \fi
-      %\MakeUppercase{\Large\chapapp}\enskip\chapternumbersize\thechapter\\
-      \hrulefill\\[-.25ex]
+      \MakeUppercase{\Large\chapapp}\enskip\Huge\thechapter\autodot
     }
-    \renewcommand*{\chapterheadstartvskip}{\vskip 4\baselineskip}
-    \renewcommand*{\chapterheadendvskip}{%
-      \vspace{-\baselineskip}\noindent{\setlength{\parskip}{0pt}\Huge\hrulefill\par}
-      \vspace{\baselineskip}
+    \renewcommand*{\chapterlinesformat}[3]{%
+      \protected@edef\tmp@chaphead{#2}%
+      \Ifstr{#1}{chapter}{%
+        \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
+      }{}%
+      \@hangfrom{\textls{\MakeUppercase{\tmp@chaphead}}}{\textls{#3}}%
+      \Ifstr{#1}{chapter}{%
+        \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
+      }{}%
     }
+    \renewcommand*{\chapterlineswithprefixformat}[3]{%
+      \protected@edef\tmp@chaphead{#2}%
+      \Ifstr{#1}{chapter}{%
+        \raggedleft
+        \textls{\MakeUppercase{\tmp@chaphead}}%
+        \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
+        \raggedchapter
+        \textls{#3}%
+        \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
+      }{#2#3}%
+    }
+
+    %\renewcommand*{\thechapter}{\Roman{chapter}}
+      % \newcommand*{\chapternumbersize}{\Huge}
+      % \renewcommand*{\chapterformat}{%
+      %   \raggedleft
+      %   \ifXeTeX
+      %     \Large\chapapp\enskip\chapternumbersize\thechapter\\
+      %   \else
+      %     \textls{\Large\chapapp}\enskip\chapternumbersize\thechapter\\
+      %   \fi
+      %   %\MakeUppercase{\Large\chapapp}\enskip\chapternumbersize\thechapter\\
+      %   \hrulefill\\[-.25ex]
+      % }
+      % \renewcommand*{\chapterheadstartvskip}{\vskip 4\baselineskip}
+      % \renewcommand*{\chapterheadendvskip}{%
+      %   \vspace{-\baselineskip}\noindent{\setlength{\parskip}{0pt}\Huge\hrulefill\par}
+      %   \vspace{\baselineskip}
+      % }
   }
 }
 
