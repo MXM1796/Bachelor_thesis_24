@@ -764,7 +764,11 @@
       \Ifstr{#1}{chapter}{%
         \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
       }{}%
-      \@hangfrom{\textls{\MakeUppercase{\tmp@chaphead}}}{\textls{#3}}%
+      \ifXeTeX
+        \@hangfrom{\MakeUppercase{\tmp@chaphead}}{\textls{#3}}%
+      \else
+        \@hangfrom{\textls{\MakeUppercase{\tmp@chaphead}}}{\textls{#3}}%
+      \fi
       \Ifstr{#1}{chapter}{%
         \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
       }{}%
@@ -773,10 +777,18 @@
       \protected@edef\tmp@chaphead{#2}%
       \Ifstr{#1}{chapter}{%
         \raggedleft
-        \textls{\MakeUppercase{\tmp@chaphead}}%
+        \ifXeTeX
+          \MakeUppercase{\tmp@chaphead}%
+        \else
+          \textls{\MakeUppercase{\tmp@chaphead}}%
+        \fi
         \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
         \raggedchapter
-        \textls{#3}%
+        \ifXeTeX
+          #3%
+        \else
+          \textls{#3}%
+        \fi
         \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
       }{#2#3}%
     }
