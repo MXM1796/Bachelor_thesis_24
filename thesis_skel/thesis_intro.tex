@@ -51,3 +51,31 @@ The line at the beginning of this file is used by TeXstudio etc.\ to
 specify which is the master \LaTeX\ file, so that you can compile your thesis
 directly from this file.
 If your thesis is called something other than \texttt{mythesis}, adjust it as appropriate.
+
+For demonstration purposes,
+we include a figure and a table that a referenced using the \texttt{cleveref} package.
+\Cref{fig:nothing} does not show much,
+while \cref{tab:little} is not much better.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\textcolor{red}{This is not really a figure!}}
+  \caption{A caption for a figure that is not really there.
+    Just for fun we can refer to the contents of \cref{tab:little}.}
+  \label{fig:nothing}
+\end{figure}
+
+\begin{table}[htbp]
+  \caption{A table with not much in it.
+    Just for fun we can refer to the contents of \cref{fig:nothing}.}
+  \label{tab:little}
+  \centering
+  \begin{tabular}{ll}
+    \toprule
+    Number & Letter \\
+    \midrule
+    1 & A \\
+    2 & B \\
+    \bottomrule  
+  \end{tabular}
+\end{table}
