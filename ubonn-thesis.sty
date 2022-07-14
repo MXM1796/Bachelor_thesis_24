@@ -710,8 +710,11 @@
 \ifthenelse{\boolean{UBN@cleveref}}{%
   \typeout{ubonn-thesis: using cleveref.}
   \ifthenelse{\boolean{UBN@clevercaps}}{%
-    \RequirePackage[capitalise, \UBN@language]{cleveref}
+    \typeout{ubonn-thesis: capitalise Fig. etc.}
+    \RequirePackage[capitalise]{cleveref}
+    % \RequirePackage[capitalise, \UBN@language]{cleveref}
   }{%
+    \typeout{ubonn-thesis: do not capitalise fig. etc.}
     \RequirePackage[\UBN@language]{cleveref}
   }
 }{%
