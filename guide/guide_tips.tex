@@ -543,6 +543,7 @@ in \cref{sec:app:tex}.
 
 \item Do not use the old font commands \Macro{rm}, \Macro{tt}, \Macro{sc} etc.
   If you are running a recent version of \TeXLive, you may have seen warnings of the form:
+  {\small
   \begin{verbatim}
   Class scrartcl Warning: Usage of deprecated font command `\sc'!
   (scrartcl)              You should note, that in 1994 font command `\sc' has
@@ -557,6 +558,7 @@ in \cref{sec:app:tex}.
   (scrartcl)              But for now, KOMA-Script will replace deprecated `\sc'
   (scrartcl)              by `\normalfont \scshape ' on input line 94.
   \end{verbatim}
+  }
   If you have \TeXLive 2016 or later, you will find that KOMA-Script has gone ahead with its threat
   and \Macro{sc} etc.\ now give errors and compilation stops!
   Instead you should use \Macro{textsc} etc.
