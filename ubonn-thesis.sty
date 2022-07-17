@@ -711,11 +711,18 @@
   \typeout{ubonn-thesis: using cleveref.}
   \ifthenelse{\boolean{UBN@clevercaps}}{%
     \typeout{ubonn-thesis: capitalise Fig. etc.}
-    \RequirePackage[capitalise]{cleveref}
-    % \RequirePackage[capitalise, \UBN@language]{cleveref}
+    % \ifthenelse{\texlive < 2022}{%
+      \RequirePackage[capitalise, \UBN@language]{cleveref}
+    % }{%
+      % \RequirePackage[capitalise]{cleveref}
+    % }
   }{%
     \typeout{ubonn-thesis: do not capitalise fig. etc.}
-    \RequirePackage[\UBN@language]{cleveref}
+    % \ifthenelse{\texlive < 2022}{%
+      \RequirePackage[\UBN@language]{cleveref}
+    % }{%
+      % \RequirePackage{cleveref}
+    % }
   }
 }{%
   \typeout{ubonn-thesis: not using cleveref.}
