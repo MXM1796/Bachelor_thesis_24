@@ -31,6 +31,7 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ### Removed
 
+- Remove support for TeX Live versions older than 2015.
 - `block` option removed from `ubonn-thesis.sty`. It should be passed to `ubonn-biblatex.sty`.
 
 ---

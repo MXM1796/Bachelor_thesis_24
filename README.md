@@ -80,7 +80,7 @@ If you do not have the `newtx` fonts, either install them
 or do not pass an option such as `txfonts` to ubonn-thesis.
 If you want to include a glossary and use `latexmk`, you should copy the `latexmk`
 directory to your `~/.config/` directory.
-Support for TeX Live versions older than 2013 has been removed in version 8.0.
+Support for TeX Live versions older than 2015 has been removed in version 9.1.
 
 As of version 7.0 I have started testing the thesis skeleton and the guide using
 LuaLaTeX and XeLaTeX, as well as the usual pdfLaTeX.
