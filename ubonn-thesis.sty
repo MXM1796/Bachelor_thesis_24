@@ -758,13 +758,15 @@
     % Code from http://www.komascript.de/chapterwithlines
     % and from https://sourceforge.net/p/koma-script/wiki-de/HowTo_ChapterWithLines/
     % with fix for TeX Live 2022.
+    % Use \ifthenelse instead of \Ifstr as this is only availble as of TeX Live 2019.
     % Different font size for "Chapter" and chapter number.
     \renewcommand*{\chapterformat}{%
       \MakeUppercase{\Large\chapapp}\enskip\Huge\thechapter\autodot
     }
     \renewcommand*{\chapterlinesformat}[3]{%
       \protected@edef\tmp@chaphead{#2}%
-      \Ifstr{#1}{chapter}{%
+      % \Ifstr{#1}{chapter}{%
+      \ifthenelse{\equal{#1}{chapter}}{%
         \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
       }{}%
       \ifXeTeX
@@ -772,13 +774,15 @@
       \else
         \@hangfrom{\textls{\MakeUppercase{\tmp@chaphead}}}{#3}%
       \fi
-      \Ifstr{#1}{chapter}{%
+      % \Ifstr{#1}{chapter}{%
+      \ifthenelse{\equal{#1}{chapter}}{%
         \rule[.3\baselineskip]{\linewidth}{1pt}\par\nobreak
       }{}%
     }
     \renewcommand*{\chapterlineswithprefixformat}[3]{%
       \protected@edef\tmp@chaphead{#2}%
-      \Ifstr{#1}{chapter}{%
+      % \Ifstr{#1}{chapter}{%
+      \ifthenelse{\equal{#1}{chapter}}{%
         \raggedleft
         \ifXeTeX
           \MakeUppercase{\tmp@chaphead}%
