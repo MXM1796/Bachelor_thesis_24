@@ -10,7 +10,7 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
-## [9.1.0] - 2022-07-11
+## [9.1.0] - 2022-07-19
 
 ### Added
 
