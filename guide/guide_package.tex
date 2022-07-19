@@ -168,6 +168,14 @@ Note that you should include \Package{cleveref} by passing \Option{cleveref}
 as an option to \Package{ubonn-thesis}.
 If you just try the usual \Macro{usepackage\{cleveref\}} you may get things in the wrong language.
 This guide has been converted to use the \Package{cleveref} package everywhere.
+Note that if you use \Option{UKenglish} or \Option{USenglish} and the \Package{cleveref} package,
+and use \Macro{cref} or \Macro{Cref} in a figure caption to refer to another figure or table,
+the cross-reference will be in German in the list of tables/figures.
+The only way I have found to get round this problem is to remove any use of \Option{ngerman}
+as a language in your thesis or to edit the \File{.lof} and \File{.lot} files by adding a line:
+`\babel@toc {english}{}\relax` after other such lines.
+This is not a nice option, as you have to do this every time the \File{.lof} or \File{.lot} files change,
+or remember to do it just before you submit your thesis.
 
 As alternatives to \Package{longtable}, one can also use
 \Package{supertabular} or \Package{xtab}. 
