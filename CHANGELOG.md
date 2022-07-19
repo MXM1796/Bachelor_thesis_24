@@ -14,10 +14,15 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 Note that if you use `UKenglish` or `USenglish` and the `cleveref` package,
 and use `\cref` or `\Cref` in a figure caption to refer to another figure or table,
-the cross-reference will be in German in the list of tables/figures.
+the cross-reference will be in German in the list of figures/tables.
 The only way I have found to get round this problem is to remove any use of `ngerman`
-as a language in your thesis or to edit the `.lof` and `.lot` files by adding a line:
-`\babel@toc {english}{}\relax` after other such lines.
+as a language in your thesis or to add `english` as a language to the document class
+and edit the `.lof` and `.lot` files by adding a line:
+`\babel@toc {english}{}\relax` after other such lines
+and recompiling once using `pdflatex`  etc. and not `latexmk`.
+The second is not a nice option, as you have to do this every time the `.lof` or `.lot` files change,
+or remember to do it just before you submit your thesis.
+If you want to have a list of figures/tables, the other alternative is not to use the `cleveref` macros in captions.
 
 ### Added
 

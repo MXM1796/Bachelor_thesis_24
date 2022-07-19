@@ -29,9 +29,9 @@ theses I think it is best to use \Package{scrbook}, as this class also
 includes the commands \Macro{frontmatter}, \Macro{mainmatter} and
 \Macro{backmatter} that set up page numbering etc.\ appropriately.
 
-Please try to use \KOMAScript\ version 3.0 or higher. The
-\Macro{KOMAoptions} command is not available in earlier versions, so
-you would have to modify the style file.
+You should use \KOMAScript\ version 3.19 or higher. The
+\Macro{KOMAoptions} command as well as some other macros are not available in earlier versions,
+so you would have to modify the style file.
 
 
 %------------------------------------------------------------------------------
@@ -172,10 +172,14 @@ Note that if you use \Option{UKenglish} or \Option{USenglish} and the \Package{c
 and use \Macro{cref} or \Macro{Cref} in a figure caption to refer to another figure or table,
 the cross-reference will be in German in the list of tables/figures.
 The only way I have found to get round this problem is to remove any use of \Option{ngerman}
-as a language in your thesis or to edit the \File{.lof} and \File{.lot} files by adding a line:
-`\babel@toc {english}{}\relax` after other such lines.
-This is not a nice option, as you have to do this every time the \File{.lof} or \File{.lot} files change,
+as a language in your thesis or to add \Option{english} as a language to the document class
+and to edit the \File{.lof} and \File{.lot} files by adding a line:
+\Macro{babel@toc \{english\}\{\}\textbackslash relax} after other such lines
+and recompiling once using \Command{pdflatex}  etc.\ and not \Command{latexmk}.
+The second is not a nice option, as you have to do this every time the \File{.lof} or \File{.lot} files change,
 or remember to do it just before you submit your thesis.
+If you want to have a list of figures/tables,
+the other alternative is not to use the \Package{cleveref} macros in captions.
 
 As alternatives to \Package{longtable}, one can also use
 \Package{supertabular} or \Package{xtab}. 
@@ -192,7 +196,7 @@ See the \Package{xtab} documentation for more details.
 It is probably best to only use one of these three packages to avoid conflicts.
 
 The package \Package{tabularray} was released in 2021.
-It looks like it can do everything that the other packages and more with a uniform syntax.
+It looks like it can do everything that the other packages can and more with a uniform syntax.
 I do not have experience with it so far (apart from skimming the documentation),
 but it looks to be very promising.
 
