@@ -12,6 +12,13 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ## [9.1.0] - 2022-07-19
 
+Note that if you use `UKenglish` or `USenglish` and the `cleveref` package,
+and use `\cref` or `\Cref` in a figure caption to refer to another figure or table,
+the cross-reference will be in German in the list of tables/figures.
+The only way I have found to get round this problem is to remove any use of `ngerman`
+as a language in your thesis or to edit the `.lof` and `.lot` files by adding a line:
+`\babel@toc {english}{}\relax` after other such lines.
+
 ### Added
 
 - Add option `refsection` (default chapter) so `astrobib` style can be used with references at the end of the thesis.
