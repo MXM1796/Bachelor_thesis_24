@@ -10,6 +10,22 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
+## [Unreleased] - 2022-08-XX
+
+### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+---
+
 ## [9.1.0] - 2022-07-19
 
 Note that if you use `UKenglish` or `USenglish` and the `cleveref` package,
@@ -327,7 +343,7 @@ The following changes are ordered by date and do not have a version number assoc
     Also switched from `\usepackage` to `\RequirePackage` in `ubonn-thesis.sty.
 - 23 May 2011: Changed default font to `txfonts`. Added more font options and explanation.
 
-## [Unreleased] - 2021-11-XX
+## [Unreleased] - 2022-12-XX
 
 ### Added
 
