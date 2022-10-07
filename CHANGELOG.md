@@ -10,11 +10,16 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
-## [Unreleased] - 2022-08-XX
+## [Unreleased] - 2022-10-XX
 
 ### Added
 
+- Add `siunitx` version 3 macro names (`\qty, \unit` etc.) if `siunitx` version 2 is used.
+
 ### Changed
+
+- Moved from `siunitx` version 2 to version 3 macros, i.e. `\SI` to `\qty` and `\si` to `\unit`.
+- Adjusted names of macros `\SIerr` and `\SIpmerr` to `qtyerr` and `qtypmerr`.
 
 ### Deprecated
 

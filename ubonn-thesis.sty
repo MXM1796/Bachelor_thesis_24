@@ -452,6 +452,20 @@
     \DeclareSIUnit\electronvolt{\text{\electronvoltsymbol}}
     % \DeclareSIUnit\electronvolt{\text{e\kern-.1em V}}
   }{}
+  % Version 3 of siunitx changes.
+  \@ifpackagelater{siunitx}{2021/04/09}{%
+    \typeout{ubonn-thesis: using siunitx version 3}
+    \DeclareSIUnit\clight{\ensuremath{\mathit{c}}}
+  }{
+    \typeout{ubonn-thesis: defining siunitx version 3 macros}
+    \let\qty\SI
+    \let\unit\si
+    \let\complexnum\num
+    \let\numproduct\num
+    \let\qtyproduct\SI
+    \let\qtyrange\SIrange
+    \DeclareSIUnit\clight{\text{\ensuremath{c}}}
+  }
   % Barn needed in some versions of siunitx.
   \DeclareSIUnit\barn{b}
   % Units - for German thesis \num{4.3} will be printed as 4,3

@@ -222,7 +222,7 @@ The following options exist:\\
   xtab & false & A package for tables that are longer than one page.\\
   biblatex & true & Include \Package{biblatex}.\\
   siunitx & true & Use the \Package{siunitx} package for typesetting units.\\
-  eVkern & false & Apply a kern of -0.1em to \si{\eV} in order to move \enquote{e} and \enquote{V} closer together.
+  eVkern & false & Apply a kern of -0.1em to \unit{\eV} in order to move \enquote{e} and \enquote{V} closer together.
   This is not necessary if you use the \Package{newtx} font package.\\
   dcolumn & false & A package for helping to align things in tables.\\
   cleveref & true & Turn on use of the \Package{cleveref} package.\\
@@ -269,7 +269,7 @@ Fonts are by default selected using the filename.
 If for some reason this does not work you can try the \Option{fontname=true} option,
 which uses the font name instead.
 
-Depending on the font you use, you may find that the \enquote{e} and \enquote{V} in \si{\eV}, \si{\MeV} etc.\
+Depending on the font you use, you may find that the \enquote{e} and \enquote{V} in \unit{\eV}, \unit{\MeV} etc.\
 are too far apart.
 You can pass the option \Option{eVkern} to \Package{ubonn-thesis} in order to move them 0.1em closer together.\footnote{%
 It is not needed if you use the \Package{newtx} font package.}
@@ -308,7 +308,7 @@ It is not needed if you use the \Package{newtx} font package.}
   is a superior replacement of \Package{SIunits}. I used to
   use \Package{SIunits}, or rather \Package{hepunits} which is
   built on top of \Package{SIunits}, and defines common particle
-  physics units such as \si{\GeV}. Use of these packages is
+  physics units such as \unit{\GeV}. Use of these packages is
   discussed in \cref{sec:tips:units}.
   An alternative is the \Package{units} package.
 
@@ -331,10 +331,10 @@ It is not needed if you use the \Package{newtx} font package.}
   continue to be in a
   serif font.\\
   {\sffamily Compare: A common jet energy cut at the LHC is now
-    \(p_{T}^{\text{jet}} > \SI{20}{\GeV}\), while at HERA we typically
-    used \(p_{T}^{\mathrm{jet}} > \SI[detect-family=false]{6}{\GeV}\).
+    \(p_{T}^{\text{jet}} > \qty{20}{\GeV}\), while at HERA we typically
+    used \(p_{T}^{\mathrm{jet}} > \qty[detect-family=false]{6}{\GeV}\).
   }
-  The \si{\GeV} in the first expression is in sans-serif. This is
+  The \unit{\GeV} in the first expression is in sans-serif. This is
   because the
   \Macro{sisetup}\texttt{\{detect-family=true\}}
   option is set in \texttt{ubonn-thesis.sty}
@@ -617,8 +617,8 @@ such as \verb+1.4E4+ automatically:
 \begin{tcblisting}{}
 \num{1.4E4}\\
 \num[exponent-product=\cdot]{-3.4E-6}\\
-\SI{2.99467E8}{\metre\per\second}\\
-\SI[round-mode=places,round-precision=1]{2.99467E8}{\m.\s^{-1}}
+\qty{2.99467E8}{\metre\per\second}\\
+\qty[round-mode=places,round-precision=1]{2.99467E8}{\m.\s^{-1}}
 \end{tcblisting}
 \noindent
 Depending on the language or using the option \Option{exponent-product}
@@ -660,10 +660,10 @@ e.g.\ per second. This can be changed for a single command.
 
 Some examples are given below:
 \begin{tcblisting}{}
-\(c\) is \SI{3E8}{\metre\per\second}\\
-\(c\) is \SI[per-mode=fraction, fraction-function=\sfrac]{3E8}{\metre\per\second}\\
-\(c = \SI[per-mode=symbol]{2.99E8}{\metre\per\second}\)\\
-\(\hbar\) is \SI{1.054E-34}{\joule.\second}
+\(c\) is \qty{3E8}{\metre\per\second}\\
+\(c\) is \qty[per-mode=fraction, fraction-function=\sfrac]{3E8}{\metre\per\second}\\
+\(c = \qty[per-mode=symbol]{2.99E8}{\metre\per\second}\)\\
+\(\hbar\) is \qty{1.054E-34}{\joule.\second}
 \end{tcblisting}
 \noindent
 The 1st example uses the default \Macro{per},
@@ -679,11 +679,11 @@ Angles are also very straightforward:
 \ang{90}
 \end{tcblisting}
 
-If you want to write something like \SI[parse-numbers=false]{90(99)}{\%},
+If you want to write something like \qty[parse-numbers=false]{90(99)}{\%},
 include the option \Option{parse-numbers=false} with the \Macro{SI} command,
 so that it does not try to interpret \num[parse-numbers=false]{90(99)}:
 \begin{tcblisting}{listing side text}
-\SI[parse-numbers=false]{90(99)}{\%}
+\qty[parse-numbers=false]{90(99)}{\%}
 \end{tcblisting}
 
 If you also want to use \Package{siunitx} in slides, where one usually
@@ -700,11 +700,12 @@ for typesetting tables and as mentioned above can be used to round
 numbers. These aspects are discussed in \cref{sec:table}.
 
 Note that the \Macro{clight} symbol that is used in the macro
-\Macro{MeVovercsq} to produce \si{\MeVovercsq} is defined as \(c_{0}\) in
+\Macro{MeVovercsq} to produce \unit{\MeVovercsq} is defined as \(c_{0}\) in
 \Package{siunitx} version 2. As this is not the way it is usually
-written in particle physics I redefined it using:
+written in particle physics I redefined it using one of the following:
 \begin{tcblisting}{listing only, hbox}
-\DeclareSIUnit\clight{\text{\ensuremath{c}}}
+\DeclareSIUnit\clight{\text{\ensuremath{c}}}   % siunitx version 2
+\DeclareSIUnit\clight{\ensuremath{\mathit{c}}} % siunitx verson 3 (after 2021/04/09)
 \end{tcblisting}
 
 Two things that are currently not built in are separate statistical and
@@ -716,24 +717,24 @@ Several new macros have been defined there:
 \Macro{numerrt}, \Macro{numpmerr} and \Macro{numpmerrt} to write
 errors with a description, which are asymmetric and both, respectively.
 The corresponding macros for values and errors are
-\Macro{SIerrt}, \Macro{SIpmerr} and \Macro{SIpmerrt}. For the macros
+\Macro{qtyerrt}, \Macro{qtypmerr} and \Macro{qtypmerrt}. For the macros
 whose names end with \enquote{\texttt{t}}, you also have to provide
 the descriptive text.
-If you have two errors then use \Macro{SIerrtt}
-or \Macro{SIpmerrtt}, which have two or three more arguments, respectively.
+If you have two errors then use \Macro{qtyerrtt}
+or \Macro{qtypmerrtt}, which have two or three more arguments, respectively.
 For the standard case of statistical and systematic
-errors, you can use the macros \Macro{SIerrs} and
-\Macro{SIpmerrs}. Examples of their use are:
+errors, you can use the macros \Macro{qtyerrs} and
+\Macro{qtypmerrs}. Examples of their use are:
 \begin{tcblisting}{}
 \begin{align*}
-  \sigma & = \SIerrs{3.42}{0.46}{0.32}{\pico\barn}\\
-  \sigma & = \SIpmerr{3.42}{+0.46}{-0.32}{\pico\barn}\\
-  \sigma & = \SIpmerrt{3.42}{+0.46}{-0.32}{\stat}{\pico\barn}\\
-  \sigma & = \SIpmerrs{3.42}{+0.46}{-0.32}{+0.06}{-0.04}{\pico\barn}\\
-  \sigma & = \SIpmerrtt{3.42}{+0.46}{-0.32}{\stat}{+0.06}{-0.04}{\sys}{\pico\barn}
+  \sigma & = \qtyerrs{3.42}{0.46}{0.32}{\pico\barn}\\
+  \sigma & = \qtypmerr{3.42}{+0.46}{-0.32}{\pico\barn}\\
+  \sigma & = \qtypmerrt{3.42}{+0.46}{-0.32}{\stat}{\pico\barn}\\
+  \sigma & = \qtypmerrs{3.42}{+0.46}{-0.32}{+0.06}{-0.04}{\pico\barn}\\
+  \sigma & = \qtypmerrtt{3.42}{+0.46}{-0.32}{\stat}{+0.06}{-0.04}{\sys}{\pico\barn}
 \end{align*}
 \end{tcblisting}
-The last two examples use \Macro{SIpmerrs} and \Macro{SIpmerrtt} just
+The last two examples use \Macro{qtypmerrs} and \Macro{qtypmerrtt} just
 to show that they can both give the same output. If you need even more
 complicated combinations of errors, or more errors, have a look at the
 definitions, e.g.
@@ -743,7 +744,7 @@ definitions, e.g.
   \valuesep\numerrt{8.7}{\stat}%
   \valuesep\numpmerrt{+6.4}{-5.3}{\sys}%
   \valuesep\numerrt{8.2}{lumi.})%
-  \valuesep\si{\pico\barn}
+  \valuesep\unit{\pico\barn}
 \end{equation*}    
 \end{tcblisting}
 
@@ -822,7 +823,7 @@ easier: \(\overline{\text{B}}^{\pm}_{\text{c}}\) and
 \Package{hepparticles} tries to tweak the size of the bar to make it look good.
 
 Another problem is that, depending on the font you use, the spacing between \enquote{e} and \enquote{V}
-on \si{\eV} and its derivatives, e.g.\ \si{\GeV}, can be larger than you would like.
+on \unit{\eV} and its derivatives, e.g.\ \unit{\GeV}, can be larger than you would like.
 As this is font dependent the \Package{siunitx} package does not try to fix this.\footnote{%
 A discussion of this can be found in
 \url{http://tex.stackexchange.com/questions/219854/can-i-declare-a-new-automatic-kern-for-ev-without-modifying-font-metrics}.}
@@ -855,9 +856,9 @@ You simply write
 \end{tcblisting}
 You can steer how often the units are written out:
 \begin{tcblisting}{}
-\SIrange[range-units=repeat, range-phrase=--]{5}{7}{\GeV}\\
-\SIrange[range-units=single, range-phrase=--]{5}{7}{\GeV}\\
-\SIrange[range-units=brackets, range-phrase=--]{5}{7}{\GeV}
+\qtyrange[range-units=repeat, range-phrase=--]{5}{7}{\GeV}\\
+\qtyrange[range-units=single, range-phrase=--]{5}{7}{\GeV}\\
+\qtyrange[range-units=brackets, range-phrase=--]{5}{7}{\GeV}
 \end{tcblisting}
 In a single range, such settings are rather long-winded!
 However, they can be applied to the whole
@@ -870,7 +871,7 @@ file \texttt{thesis\_defs.sty} two macros \Macro{mysim} and
 can simply put everything in math mode: \(\mysim 10\%\) or \(\mysimeq 0.2\).
 An alternative is to use \Macro{SI} or \Macro{unit}, as there
 should actually be some space between the number and the \% sign,
-e.g.\ \verb+\(\sim\)\SI{10}{\%}+, which produces \(\sim\)\SI{10}{\%}, is
+e.g.\ \verb+\(\sim\)\qty{10}{\%}+, which produces \(\sim\)\qty{10}{\%}, is
 completely correct and does not need the use of \Macro{mysim}.
 
 What is the difference between \Macro{textrm} and
@@ -922,7 +923,7 @@ Note that this fix does not work for \LuaLaTeX and \XeLaTeX and so is not applie
 For math mode the official \LaTeX\ macro is \verb|\(...\)|.
 \verb|$...$| is the \TeX\ primitive.
 It is therefore recommended to use \verb|\(...\)| for inline equations etc.,
-although it must be said that probably well over \SI{90}{\%} of people still use \verb|$...$|.
+although it must be said that probably well over \qty{90}{\%} of people still use \verb|$...$|.
 There still seem to be a few cases when \verb|\(...\)| leads to errors.
 This sometimes happened for \TeXLive versions from 2013 or earlier
 when used in figure or table captions.
@@ -968,8 +969,8 @@ These are the ones I remember coming across so far:
   Correct: \enquote{\emph{We are not sensitive to this effect.}}
 \item \enquote{We have to choose between Xenon (Xe)  and Argon (Ar).}
   Correct: \enquote{\emph{We have to choose between xenon (Xe) and argon (Ar).}}
-\item \enquote{We loose \SI{50}{\%} of the signal due to this cut.}
-  Correct: \enquote{\emph{We lose \SI{50}{\%} of the signal due to this cut.}}
+\item \enquote{We loose \qty{50}{\%} of the signal due to this cut.}
+  Correct: \enquote{\emph{We lose \qty{50}{\%} of the signal due to this cut.}}
 \end{itemize}
 
 A general comment (which also applies to theses in other languages) is that you should avoid \enquote{fluff}.

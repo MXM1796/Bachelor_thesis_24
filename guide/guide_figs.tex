@@ -88,7 +88,7 @@ corner of the file that you have included (assuming that the
 \Macro{put} command comes just after the \Macro{includegraphics}).
 The units for the \Macro{put} command are set with the
 \Macro{setlength}\texttt{\{\textbackslash unitlength\}} command, which
-is by default set to \SI{1}{\mm} in \texttt{ubonn-thesis.sty}.
+is by default set to \qty{1}{\mm} in \texttt{ubonn-thesis.sty}.
 The same units are also used for Feynman graphs made with the
 \Package{feynmf} and/or \Package{feynmp} package --- see
 \cref{sec:fig:feynman:feynmp}.
@@ -388,7 +388,7 @@ of boson and gluon oscillations explicitly.
 This has to be done using the \Macro*{setlength\{\textbackslash feynhandlinesize\{1.0pt\}\}} command.
 This also, as the name suggest, changes the line thickness.
 After a bit of playing around \num{1.0}{pt} seems to work well,
-with a Feynman graph size of about \SI[parse-numbers=false]{2 \times 2}{\cm^{2}}.
+with a Feynman graph size of about \qty[parse-numbers=false]{2 \times 2}{\cm^{2}}.
 
 I like using a scripting language, e.g.\ Python, to draw my graphs.
 I have therefore written a Python wrapper for \Package{TikZ-FeynHand}.

@@ -9,7 +9,13 @@
 % \newcommand{\dif}{\text{d}}
 
 % HEP units - assuming you are using siunitx
-\DeclareSIUnit\clight{\text{\ensuremath{c}}}
+\@ifpackagelater{siunitx}{2021/04/09}{%
+  \typeout{ubonn-thesis: using siunitx version 3}
+  \DeclareSIUnit\clight{\ensuremath{\mathit{c}}}
+}{
+  \typeout{ubonn-thesis: using siunitx version 2}
+  \DeclareSIUnit\clight{\text{\ensuremath{c}}}
+}
 \DeclareSIUnit[per-mode=symbol]\MeVovercsq{\MeV\per\clight\squared}
 \DeclareSIUnit[per-mode=symbol]\GeVovercsq{\GeV\per\clight\squared}
 \DeclareSIUnit\pb{\pico\barn}
@@ -21,8 +27,8 @@
 % Kinematics
 \newcommand*{\pTmiss}{\ensuremath{p_{\text{T}}^{\text{miss}}}\xspace}
 
-% If you use the siunitx package include any decimal number in \SI or \num
-% e.g. \num{2.3} \SI{2.3E4}{\GeV}. The decimal point will be replaced
+% If you use the siunitx package include any decimal number in \qty or \num
+% e.g. \num{2.3} \qty{2.3E4}{\GeV}. The decimal point will be replaced
 % by a comma if you switch your document language to German!
 % You do this by specifying the locale in siunitx.
 %
