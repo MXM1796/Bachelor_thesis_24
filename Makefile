@@ -4,7 +4,7 @@
 # Note that "make update" can overwrite this file
 
 THESIS = mythesis
-TEXLIVE = 2020
+# TEXLIVE = 2020
 # TEXOLD = 2009
 # EXTRACMD = --shell-escape
 ifndef FEYNDIR
@@ -53,13 +53,14 @@ LATEXMK = latexmk -pdf
 
 # New thesis
 new: skelcopy
-	#cp thesis_skel/thesis_skel.tex        $(THESIS)/$(THESIS).tex
-	sed 's/texlive=2020/texlive=$(TEXLIVE)/' thesis_skel/thesis_skel.tex > $(THESIS)/$(THESIS).tex
+	cp thesis_skel/thesis_skel.tex $(THESIS)/$(THESIS).tex
+	# sed 's/texlive=2020/texlive=$(TEXLIVE)/' thesis_skel/thesis_skel.tex > $(THESIS)/$(THESIS).tex
 	sed 's/^THESIS =.*/THESIS = ${THESIS}/'  thesis_skel/Makefile > $(THESIS)/Makefile
 
 # New thesis with astrophysics style of references
 astro: skelcopy
-	sed 's/texlive=2020/texlive=$(TEXLIVE)/' thesis_skel/thesis_astro_skel.tex > $(THESIS)/$(THESIS).tex
+	cp thesis_skel/thesis_astro_skel.tex $(THESIS)/$(THESIS).tex
+	# sed 's/texlive=2020/texlive=$(TEXLIVE)/' thesis_skel/thesis_astro_skel.tex > $(THESIS)/$(THESIS).tex
 	cp thesis_skel/thesis_astro_intro.tex  $(THESIS)/thesis_intro.tex
 	cp thesis_skel/thesis_astro_appendix.tex  $(THESIS)/thesis_appendix.tex
 	sed 's/^THESIS =.*/THESIS = ${THESIS}/'  thesis_skel/Makefile > $(THESIS)/Makefile
@@ -151,11 +152,9 @@ cleanpictpdf:
 
 help:
 	@echo "Possible commands:"
-	@echo "new   [THESIS=dirname] [TEXLIVE=YYYY]: create a new thesis skeleton"
-	@echo "astro [THESIS=dirname] [TEXLIVE=YYYY]: create a new astrophysics thesis skeleton"
+	@echo "new   [THESIS=dirname]: create a new thesis skeleton"
+	@echo "astro [THESIS=dirname]: create a new astrophysics thesis skeleton"
 	@echo "  Default TeX Live version is 2020"
-	# @echo "new09 [THESIS=dirname] [TEXOLD=YYYY]: create a new thesis skeleton"
-	# @echo "  Default old TeX Live version is 2009"
 	@echo "update [THESIS=dirname]: update to a newer version of ubonn-thesis"
 	@echo "feynmf: run feynmf for all .tex files in $(FEYNDIR)"
 	@echo "feynmp: run feynmp for all .tex files in $(FEYNDIR)"

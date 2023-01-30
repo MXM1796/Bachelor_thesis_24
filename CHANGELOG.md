@@ -1,5 +1,9 @@
 # Changelog
 
+*Responsible:* Ian Brock (i.brock@uni-bonn.de)
+
+Copyright (C) 2011-2023 Ian Brock.
+
 All notable changes to the University of Bonn thesis style are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -15,17 +19,24 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 ### Added
 
 - Add `siunitx` version 3 macro names (`\qty, \unit` etc.) if `siunitx` version 2 is used.
+- `firstinits` option is added back as `texlive` has been removed.
+- Add macros to cope with different width subscripts and superscripts in asymmetric errors.
 
 ### Changed
 
-- Moved from `siunitx` version 2 to version 3 macros, i.e. `\SI` to `\qty` and `\si` to `\unit`.
-- Adjusted names of macros `\SIerr` and `\SIpmerr` to `qtyerr` and `qtypmerr`.
+- The webpage with the thesis guide has a new location.
+- Move from `siunitx` version 2 to version 3 macros, i.e. `\SI` to `\qty` and `\si` to `\unit`.
+- Adjust names of macros `\SIerr*` and `\SIpmerr*` to `\qtyerr*` and `\qtypmerr*`.
 
 ### Deprecated
 
+- `firstinits` option should not be necessary for TeX Live 2015 and later.
+- `texlive` option is no longer needed or used.
+  Replaced with `\@ifpackagelater` and `\@ifclasslater`.
+
 ### Removed
 
-### Fixed
+- `TEXLIVE` removed as variable in `Makefiles`. Replaced with `TWEAKYEAR` in guide where it is needed.
 
 ### Security
 

@@ -112,10 +112,10 @@ and gives a lot of information on the quality of your \LaTeX.
 
 If you want to write your thesis using Overleaf,
 you first have to upload it as a project there.
-The best way to do this is to create a new thesis skeleton as usual,
-specifying the version of \TeXLive being run by Overleaf, e.g.:
+The best way to do this is to create a new thesis skeleton as usual, e.g.:
+% specifying the version of \TeXLive being run by Overleaf, e.g.:
 \begin{bashlisting}
-make new TEXLIVE=2020 [THESIS=projectname]
+make new [THESIS=projectname]
 \end{bashlisting}
 \noindent Compress the directory into a zip file:
 \begin{bashlisting}
@@ -527,7 +527,7 @@ cd guide
 make guide|guidelua|guidexe
 \end{bashlisting}
 \noindent so all packages are there as well as at least the default font which I selected.
-If your version of \TeXLive is older than 2020, you should set \Macro{texlive} accordingly.
+% If your version of \TeXLive is older than 2020, you should set \Macro{texlive} accordingly.
 % If your version is older than 2013 you should not pass the option \texttt{newtx} to \Package{ubonn-thesis}.
 Some figures or tables may not appear with versions of \TeXLive earlier than 2017,
 as, for example, the \Package{TikZ-FeynHand} package was only introduced then.

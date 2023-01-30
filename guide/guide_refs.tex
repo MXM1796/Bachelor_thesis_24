@@ -130,9 +130,8 @@ If you use \Package{biblatex} you need something like:
 \end{tcblisting}
 \noindent in the document preamble and \Macro{printbibliography} where they
 should be printed.\footnote{%
-If you use an older version of \TeXLive you may have to replace
-\texttt{giveninits} by \texttt{firstinits},
-although this should be done for you automatically if you set \Option{texlive} correctly.}
+If you use a version of \TeXLive older than 2015, you have to pass the option
+\Option{firstinits} to \Package{ubonn-thesis}.}
 Note that as of version 3.0 of the thesis package,
 the \Package{biblatex} command is included in \Package{ubonn-thesis} directly.
 To turn it off add the option \Option{biblatex=false}.
@@ -219,7 +218,7 @@ Access to these pages is restricted to members of the ATLAS collaboration.
 ATLAS \LaTeX\ has also been released as open source.
 Hence, a copy of the package can be obtained from the same place as
 the University of Bonn thesis package:
-\url{https://www.pi.uni-bonn.de/lehre/uni-bonn-thesis},
+\url{https://www.pi.uni-bonn.de/brock/en/thesis-guide},
 although this version may not be completely up to date.
 
 %------------------------------------------------------------------------------
@@ -405,8 +404,6 @@ The following options exist:
   \toprule
   Option & Default & Description \\
   \midrule
-  texlive & 2020 & Specify the \TeXLive version.
-  You can also use the older command \verb|\newcommand*{\texlive}{2020}|.\\
   block & ragged & Specify the justification of each reference;\\
   backref & true & The bibliography lists where the reference is cited.
   This option is very useful when writing your thesis,

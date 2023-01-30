@@ -52,12 +52,12 @@ the guide as a PDF file: \File{thesis\_guide.pdf}.  It can be
 obtained from:\\
 \url{http://www.pi.uni-bonn.de/teaching/uni-bonn-thesis}
 and\\
-\url{http://www.pi.uni-bonn.de/lehre/uni-bonn-thesis}.
+\url{https://www.pi.uni-bonn.de/brock/en/thesis-guide}.
 
 \par\noindent
 Once you have the files, you can then give the command:
 \begin{bashlisting}
-make new [THESIS=dirname] [TEXLIVE=YYYY]
+make new [THESIS=dirname]
 \end{bashlisting}
 \noindent to create a new directory with several files to help you get
 started. By default the directory name will be \texttt{mythesis}.
@@ -88,18 +88,18 @@ Can be downloaded from \url{https://github.com/stefanhepp/pplatex}.
 }
 is supposed to provide a nicely formatted version of the \LaTeX\ output on the command line.
 
-My original idea was that the style file should work for all recent
-\TeX\ installations.  However, some of the packages I recommend have
-been changing quite a lot over the past few years.
-You should therefore set the \TeXLive version you are using appropriately.
-The default setting is 2020.\footnote{%
-Setting the \TeXLive version to one that is lower than your installation should not cause any problems.}
-For an an up-to-date version of MikTeX (2.9) you should probably use the current year.
-Things should compile without any changes if you use \TeXLive 2016 or later.
-Look in the style file to see what changes are made depending on the year you use.
-You can change the \TeXLive version when you make a new thesis
-by giving a command like \enquote{\texttt{make new TEXLIVE=2021}}. %\footnote{%
-If you switch \TeXLive versions do a
+The style file should work for all recent \TeX\ installations.
+% However, some of the packages I recommend have
+% been changing quite a lot over the past few years.
+% You should therefore set the \TeXLive version you are using appropriately.
+% The default setting is 2020.\footnote{%
+% Setting the \TeXLive version to one that is lower than your installation should not cause any problems.}
+% For an an up-to-date version of MikTeX (2.9) you should probably use the current year.
+% Things should compile without any changes if you use \TeXLive 2016 or later.
+% Look in the style file to see what changes are made depending on the year you use.
+% You can change the \TeXLive version when you make a new thesis
+% by giving a command like \enquote{\texttt{make new TEXLIVE=2021}}. %\footnote{%
+If you switch to a newer \TeX\ versions do a
 \enquote{\texttt{make clean cleanbbl cleanblx}} in between.
 
 Note that as of version 2.1, the main file for the thesis
@@ -160,9 +160,9 @@ it includes the \LaTeX\ files in the directory \texttt{./guide} and
 some of the Feynman graphs in the directories 
 \texttt{./feynmf}, \texttt{pyfeyn}, \texttt{pyfeynhand} and \texttt{./tikz}.
 This guide should compile without changes for \TeXLive 2017 or later.
-However, you can get rid of some \Package{diffcoeff} warnings
-by setting the year to 2018 or later.
-For earlier versions set \Macro{texlive} in \texttt{thesis\_guide.tex} to the appropriate value.
+% However, you can get rid of some \Package{diffcoeff} warnings
+% by setting the year to 2018 or later.
+For earlier versions set \Macro{TweakYear} in \texttt{thesis\_guide.tex} to the appropriate value.
 
 
 %------------------------------------------------------------------------------
@@ -206,8 +206,9 @@ The following options exist:\\
   PILibrary & false & Final version including an extra cover page for the PI library.\\
   thesistype & Unknown & Specify the thesis type.\\
   thesisversion & Draft & Specify the stage of the thesis.\\
-  texlive & 2020 & Specify the \TeXLive version.
-    You can also use the older command \verb|\newcommand*{\texlive}{2020}|.\\
+  texlive & 0 & Specify the \TeXLive version.
+    \emph{This option is deprecated and will be ignored.}\\
+    % You can also use the older command \verb|\newcommand*{\texlive}{2020}|.\\
   twoside & true & Margins set for two-sided printing.\\
   newtx & true & Use the \Package{newtx} font packages (newer version of \Package{txfonts}).\\
   txfonts & false & Use a Times-Roman-like font.\\
@@ -239,7 +240,7 @@ The following options exist:\\
   feynmp & false & Include the \Package{feynmp} package for Feynman graphs.\\
   titlesec & false & Use the \Package{titlesec} package for formatting chapter titles.\\
   astrobib & false & Adjust \Package{biblatex} options to conform to the usual astronomy style.\\
-  % firstinits & false & Use \Option{firstinits} instead of \Option{giveninits} for \Package{biblatex}.\\
+  firstinits & false & Use \Option{firstinits} instead of \Option{giveninits} for \Package{biblatex}.\\
   refsection & true & Set things up for references to be at the end of each chapter.\\
   floatopt & true & Adjust settings that control the number and placement of floats.\\
   todonotes & false & Turn on use of the \Package{todonotes} package and define \Macro{mynote}.\\

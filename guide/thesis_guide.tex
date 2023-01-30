@@ -18,12 +18,12 @@
 
 % Main thesis style file
 \newcommand*{\guideversion}{9.1}
-\newcommand*{\texlive}{2020}
+\newcommand*{\TweakYear}{2020}
 
 \usepackage{ifthen}
 
 % diffcoeff package released in 2016 - define a simple form of \diff for earlier.
-\ifthenelse{\texlive < 2016}{%
+\ifthenelse{\TweakYear < 2016}{%
   \newcommand*{\diffcoeff}{diffcoeff=false}
   \newcommand*{\diff}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
 }{%
@@ -45,13 +45,13 @@
 \usepackage{import}
 \usepackage{standalone}
 % tabularray only as of TeX Live 2021.
-\ifthenelse{\texlive > 2020}{%
+\ifthenelse{\TweakYear > 2020}{%
   \usepackage{tabularray}
   \UseTblrLibrary{booktabs}
   \UseTblrLibrary{siunitx}
 }{}
 % TikZ-FeynHand only as of TeX Live 2017.
-\ifthenelse{\texlive > 2016}{%
+\ifthenelse{\TweakYear > 2016}{%
   \usepackage{tikz-feynhand}
 }{}
 \usepackage{tikz-feynman}

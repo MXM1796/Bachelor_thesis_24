@@ -6,13 +6,13 @@
 % See CHANGELOG.md or Git log for history of changes.
 % Responsible: Ian Brock (brock@physik.uni-bonn.de).
 %------------------------------------------------------------------------------
-\ProvidesPackage{ubonn-thesis}[2022/07/31 Version 9.2.0-alpha University of Bonn thesis package]
+\ProvidesPackage{ubonn-thesis}[2023/02/31 Version 10.0.0-alpha University of Bonn thesis package]
 \NeedsTeXFormat{LaTeX2e}
 % Needs 2015 TeX Live or later - this contains version 3.19 of KOMA-Script.
 \NeedsTeXFormat{LaTeX2e}[2015/01/01]
 
 % Set TeX Live version
-\providecommand*{\texlive}{2020}
+% \providecommand*{\texlive}{0}
 
 % Set institute information
 \providecommand*{\InstituteName}{\PI}
@@ -64,6 +64,7 @@
 \DeclareBoolOption[true]{cleveref}
 \DeclareBoolOption[true]{clevercaps}
 \DeclareBoolOption[false]{diffcoeff}
+\DeclareBoolOption[true]{diffcoeffISO}
 \DeclareBoolOption[false]{derivative}
 \DeclareBoolOption[false]{physics}
 \DeclareBoolOption[true]{hepparticles}
@@ -80,7 +81,7 @@
 \DeclareBoolOption[false]{shownotes}
 \DeclareBoolOption[false]{showframe}
 \DeclareStringOption[1cm]{coveroffset}
-\DeclareStringOption{texlive}
+\DeclareStringOption[0]{texlive}
 \DeclareStringOption[numeric-comp]{bibstyle}
 \DeclareStringOption[biber]{backend}
 \DeclareStringOption[chapter]{refsection}
@@ -90,10 +91,18 @@
 
 %-------------------------------------------------------------------------------
 % TeX Live version specified as an option
-\ifthenelse{\equal{\UBN@texlive}{}}{}{%
-  \renewcommand*{\texlive}{\UBN@texlive}
+% \ifthenelse{\equal{\UBN@texlive}{}}{}{%
+%   \renewcommand*{\texlive}{\UBN@texlive}
+% }
+% \typeout{ubonn-thesis: texlive is [\texlive].}
+\ifthenelse{\equal{\UBN@texlive}{0}}{%
+  \PackageInfo{ubonn-thesis}{No texlive option given - good!}
+}{
+  \PackageWarningNoLine{ubonn-thesis}{%
+    You have passed the option texlive to ubonn-thesis\MessageBreak
+    This option is no longer used and will be ignored%
+  }%
 }
-\typeout{ubonn-thesis: texlive is [\texlive].}
 
 % Thesis type specified as an option
 \ifthenelse{\boolean{UBN@PhD}}{%
@@ -234,8 +243,8 @@
   }
 }
 
-% Use firstinits or giveninits
-\ifthenelse{\texlive < 2016}{%
+% Use firstinits or giveninits for biblatex
+\ifthenelse{\boolean{UBN@firstinits}}{%
   \newcommand*{\UBN@initials}{firstinits=true}
 }{%
   \newcommand*{\UBN@initials}{giveninits=true}
@@ -523,18 +532,37 @@
 \ifthenelse{\boolean{UBN@tableheading}}{\KOMAoption{captions}{tableheading}}{}
 
 % diffcoeff and derivative are packages for derivatives.
+% Use version 4 of diffcoeff by default.
+% Pass ISO option to diffcoeff, if option is set (default).
 \ifthenelse{\boolean{UBN@diffcoeff}}{%
-  \ifthenelse{\texlive < 2018}{%
-    \RequirePackage{diffcoeff}
-    \diffset[roman = true]
+  \IfFileExists{diffcoeff.sty}{%
+    \ifthenelse{\boolean{UBN@diffcoeffISO}}{%
+      \PackageInfoNoLine{ubonn-thesis}{diffcoeff package included with ISO option.}
+      \RequirePackage[ISO]{diffcoeff}[=v4]
+    }{%
+      \PackageInfoNoLine{atlaspackage}{diffcoeff package included without ISO option.}
+      \RequirePackage{diffcoeff}[=v4]
+    }
   }{%
-    \RequirePackage[ISO]{diffcoeff}
+    \PackageInfoNoLine{atlaspackage}{diffcoeff not included, as package not available.}
   }
 }{%
   \ifthenelse{\boolean{UBN@derivative}}{%
     \RequirePackage{derivative}
   }{}
 }
+% \ifthenelse{\boolean{UBN@diffcoeff}}{%
+%   \ifthenelse{\texlive < 2018}{%
+%     \RequirePackage{diffcoeff}
+%     \diffset[roman = true]
+%   }{%
+%     \RequirePackage[ISO]{diffcoeff}
+%   }
+% }{%
+%   \ifthenelse{\boolean{UBN@derivative}}{%
+%     \RequirePackage{derivative}
+%   }{}
+% }
 
 % physics is a (deprecated) package for mathematical constructions that are useful in physics.
 \ifthenelse{\boolean{UBN@physics}}{\RequirePackage{physics}}{}
@@ -725,18 +753,10 @@
   \typeout{ubonn-thesis: using cleveref.}
   \ifthenelse{\boolean{UBN@clevercaps}}{%
     \typeout{ubonn-thesis: capitalise Fig. etc.}
-    % \ifthenelse{\texlive < 2022}{%
-      \RequirePackage[capitalise, \UBN@language]{cleveref}
-    % }{%
-      % \RequirePackage[capitalise]{cleveref}
-    % }
+    \RequirePackage[capitalise, \UBN@language]{cleveref}
   }{%
     \typeout{ubonn-thesis: do not capitalise fig. etc.}
-    % \ifthenelse{\texlive < 2022}{%
       \RequirePackage[\UBN@language]{cleveref}
-    % }{%
-      % \RequirePackage{cleveref}
-    % }
   }
 }{%
   \typeout{ubonn-thesis: not using cleveref.}
