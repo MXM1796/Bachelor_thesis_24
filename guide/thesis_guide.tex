@@ -17,7 +17,7 @@
 %-------------------------------------------------------------------------------
 
 % Main thesis style file
-\newcommand*{\guideversion}{9.1}
+\newcommand*{\guideversion}{10.0}
 \newcommand*{\TweakYear}{2020}
 
 \usepackage{ifthen}
@@ -27,7 +27,11 @@
   \newcommand*{\diffcoeff}{diffcoeff=false}
   \newcommand*{\diff}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
 }{%
-  \newcommand*{\diffcoeff}{diffcoeff=true}
+  \ifthenelse{\TweakYear < 2018}{%
+    \newcommand*{\diffcoeff}{diffcoeff=true, diffcoeffISO=false}
+  }{%
+    \newcommand*{\diffcoeff}{diffcoeff=true}
+  }
 }
 
 % Thesis style file.
