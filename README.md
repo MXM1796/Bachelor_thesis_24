@@ -10,7 +10,7 @@ Copyright (C) 2011-2023 Ian Brock
 
 ------
 
-## Version 10.0 31/02/2023
+## Version 10.0 01/03/2023
 
 The original idea with this package was that you also look at the LaTeX that
 is used to create it, in order to find out how things are done.
