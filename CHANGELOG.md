@@ -14,13 +14,15 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
-## [10.0.0] - 2023-03-31
+## [10.0.0] - 2023-03-03
 
 ### Added
 
+- Use the `numerr` option to add a series of macros for numbers and quantities
+  that should be rounded and/or have asymmetric errors.
+- Add macros to cope with different width subscripts and superscripts in asymmetric errors.
 - Add `siunitx` version 3 macro names (`\qty, \unit` etc.) if `siunitx` version 2 is used.
 - `firstinits` option is added back as `texlive` has been removed.
-- Add macros to cope with different width subscripts and superscripts in asymmetric errors.
 
 ### Changed
 
@@ -36,9 +38,7 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ### Removed
 
-- `TEXLIVE` removed as variable in `Makefiles`. Replaced with `TWEAKYEAR` in guide where it is needed.
-
-### Security
+- `TEXLIVE` removed as variable in `Makefile`s. Replaced with `TWEAKYEAR` in guide where it is needed.
 
 ---
 
@@ -69,7 +69,7 @@ If you want to have a list of figures/tables, the other alternative is not to us
 ### Changed
 
 - TeX Live 2020 is now the default.
-- Redo chapter number formnatting to work with June 2022 LaTeX update.
+- Redo chapter number formatting to work with June 2022 LaTeX update.
 - `make new` now sets correct thesis main filename in `Makefile`.
 - Bibliography is after the appendices in skeletons.
 
