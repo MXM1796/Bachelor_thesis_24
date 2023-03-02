@@ -59,6 +59,7 @@
 \DeclareBoolOption[true]{tableheading}
 \DeclareBoolOption[true]{biblatex}
 \DeclareBoolOption[true]{siunitx}
+\DeclareBoolOption[true]{numerr}
 \DeclareBoolOption[false]{eVkern}
 \DeclareBoolOption[false]{dcolumn}
 \DeclareBoolOption[true]{cleveref}
@@ -218,7 +219,12 @@
   }
 }{}
 
-% xtab and supertabular do not mix
+% numerr option needs siunitx package.
+\ifthenelse{\boolean{UBN@numerr}}{%
+  \UBN@siunitxtrue
+}{}
+
+% xtab and supertabular do not mix.
 \ifthenelse{\boolean{UBN@supertabular}}{%
   \UBN@xtabfalse
 }{%
@@ -667,6 +673,165 @@
 % Fixes appendices displaying in pdf viewer index/outline under first appendix
 % instead of under Appendix heading
 \ifthenelse{\boolean{UBN@bookmark}}{\RequirePackage{bookmark}}{}
+
+% Commands for separate statistical and systematic errors
+% as well as asymmetric errors.
+% Include options to steer rounding.
+\ifthenelse{\boolean{UBN@numerr}}{%
+  % Macro to make superscript and subscript the same width.
+  % This is needed as + and - can have different widths.
+  % Code is adapted from:
+  % https://tex.stackexchange.com/questions/291291/control-horizontal-alignment-of-sub-superscripts
+  \DeclareRobustCommand{\supsub}[2]{{%
+    \mathpalette\makesupsub{{#1}{#2}}%
+  }}
+
+  \providecommand{\@firstoftwo}[3]{#1}
+  \providecommand{\@secondoftwo}[3]{#2}
+  \newcommand{\makesupsub}[2]{%
+    \sbox\z@{$^{\@firstoftwo#2}$}%
+    \sbox\tw@{$_{\@secondoftwo#2}$}%
+    \dimen@=\wd\z@
+    \ifdim\wd\tw@>\wd\z@ \dimen@=\wd\tw@\fi
+    {\mkern0mu}%
+      ^{\mathmakebox[\dimen@][r]{\@firstoftwo#2}}%
+      _{\mathmakebox[\dimen@][r]{\@secondoftwo#2}}%
+  }
+
+  \newcommand*\valuesep{\,}
+  \sisetup{number-unit-product=\valuesep}
+  \newcommand*\numerrt[3][]{%
+    \begingroup
+    \sisetup{#1}%
+    \ensuremath{\pm \num{#2}\valuesep\text{(#3)}}%
+    \endgroup
+  }
+  % Keeping plus sign option depends on siunitx version.
+  \@ifpackageloaded{siunitx}{%
+    \@ifpackagelater{siunitx}{2021/04/09}{%
+      \typeout{ubonn-thesis: using siunitx version 3 options}
+      % Arguments are rounding digits, rounding type, superscript, subscript.
+      \NewDocumentCommand {\numpmerrx} { o o m m } {%
+        \IfNoValueTF {#1} {%
+          \ensuremath{\supsub{\num[print-implicit-plus]{#3}}{\num[print-implicit-plus]{#4}}}
+        }{%
+          \IfNoValueTF {#2} {%
+            \ensuremath{\supsub{\num[round-precision=#1, print-implicit-plus]{#3}}{\num[round-precision=#1, print-implicit-plus]{#4}}}
+          }{%
+            \ensuremath{\supsub{\num[round-mode=#2, round-precision=#1, print-implicit-plus]{#3}}{\num[round-mode=#2, round-precision=#1, print-implicit-plus]{#4}}}
+          }
+        }
+      }
+    }{
+      \typeout{ubonn-thesis: using siunitx version 2 options}
+      % Arguments are rounding digits, rounding type, superscript, subscript.
+      \NewDocumentCommand {\numpmerrx} { o o m m } {%
+        \IfNoValueTF {#1} {%
+          \ensuremath{\supsub{\num[retain-explicit-plus]{#3}}{\num[retain-explicit-plus]{#4}}}
+        }{%
+          \IfNoValueTF {#2} {%
+            \ensuremath{\supsub{\num[round-precision=#1, retain-explicit-plus]{#3}}{\num[round-precision=#1, retain-explicit-plus]{#4}}}
+          }{%
+            \ensuremath{\supsub{\num[round-mode=#2, round-precision=#1, retain-explicit-plus]{#3}}{\num[round-mode=#2, round-precision=#1, retain-explicit-plus]{#4}}}
+          }
+        }
+      }
+    }
+  }{}
+
+  % Numbers with rouding.
+  \NewDocumentCommand {\numR} { o m } {%
+    \IfNoValueTF {#1} {%
+      \num{#2}
+    }{%
+      \num[round-precision=#1]{#2}
+    }
+  }
+  \NewDocumentCommand {\numRF} { o m } {%
+    \IfNoValueTF {#1} {%
+      \num[round-mode=figures]{#2}
+    }{%
+      \num[round-mode=figures, round-precision=#1]{#2}
+    }
+  }
+  \NewDocumentCommand {\numRP} { o m } {%
+    \IfNoValueTF {#1} {%
+      \num[round-mode=places]{#2}
+    }{%
+      \num[round-mode=places, round-precision=#1]{#2}
+    }
+  }
+
+  % Asymmetric errors.
+  \NewDocumentCommand {\numpmerr} { o m m } {%
+    \begingroup
+      \IfValueT {#1} {\sisetup{#1}}%
+      \numpmerrx{#2}{#3}%
+    \endgroup
+  }
+  \NewDocumentCommand {\numpmerrt} { o m m m } {%
+    \begingroup
+      \IfValueT {#1} {\sisetup{#1}}%
+      \numpmerrx{#2}{#3}\valuesep\text{(#4)}%
+    \endgroup
+  }
+  \NewDocumentCommand {\qtypmerr} { o m m m m } {%
+    \begingroup
+      \IfValueT {#1} {\sisetup{#1}}%
+      \ensuremath{(\num{#2}\valuesep\numpmerr{#3}{#4})\valuesep{\unit{#5}}}%
+    \endgroup
+  }
+  \NewDocumentCommand {\qtyerrt} { o m m m m } {%
+    \begingroup
+      \IfValueT {#1} {\sisetup{#1}}%
+      \ensuremath{(\num{#2}\valuesep\numerrt{#3}{#4})\valuesep{(#5)}}%
+    \endgroup
+  }
+  \NewDocumentCommand {\qtyerrtt} { o m m m m m m } {%
+    \begingroup
+      \IfValueT {#1} {\sisetup{#1}}%
+      \ensuremath{(\num{#2}%
+      \valuesep\numerrt{#3}{#4}%
+      \valuesep\numerrt{#5}{#6})%
+      \valuesep{(#7)}}%
+    \endgroup
+  }
+  \NewDocumentCommand {\qtypmerrt} { o m m m m m } {%
+    \begingroup
+      \IfValueT {#1} {\sisetup{#1}}%
+      \ensuremath{(\num{#2}%
+      \valuesep\numpmerrt{#3}{#4}{#5})%
+      \valuesep\unit{#6}}%
+    \endgroup
+  }
+  \NewDocumentCommand {\qtypmerrtt} { o m m m m m m m m } {%
+    \begingroup
+      \IfValueT {#1} {\sisetup{#1}}%
+      \ensuremath{(\num{#2}%
+      \valuesep\numpmerrt{#3}{#4}{#5}%
+      \valuesep\numpmerrt{#6}{#7}{#8})%
+      \valuesep\unit{#9}}%
+    \endgroup
+  }
+  \NewDocumentCommand {\qtyerrs} { o m m m m } {%
+    \begingroup
+      \IfValueT {#1} {\sisetup{#1}}%
+      \ensuremath{(\num{#2}%
+      \valuesep\numerrt{#3}{stat.}%
+      \valuesep\numerrt{#4}{sys.})%
+      \valuesep\unit{#5}}%
+    \endgroup
+  }
+  \NewDocumentCommand {\qtypmerrs} { o m m m m m m } {%
+    \begingroup
+      \IfValueT {#1} {\sisetup{#1}}%
+      \ensuremath{(\num{#2}
+      \valuesep\numpmerrt{#3}{#4}{stat.}
+      \valuesep\numpmerrt{#5}{#6}{sys.})%
+      \valuesep\unit{#7}}%
+    \endgroup
+  }
+}
 
 % Add a \mynote command
 \ifthenelse{\boolean{UBN@todonotes}}{%
