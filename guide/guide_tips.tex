@@ -223,6 +223,7 @@ The following options exist:\\
   xtab & false & A package for tables that are longer than one page.\\
   biblatex & true & Include \Package{biblatex}.\\
   siunitx & true & Use the \Package{siunitx} package for typesetting units.\\
+  numerr & false & Macros for rounding and asymmetric errors.\\
   eVkern & false & Apply a kern of -0.1em to \unit{\eV} in order to move \enquote{e} and \enquote{V} closer together.
   This is not necessary if you use the \Package{newtx} font package.\\
   dcolumn & false & A package for helping to align things in tables.\\
@@ -300,8 +301,8 @@ It is not needed if you use the \Package{newtx} font package.}
   \Package{refcheck}.\footnote{%
   There is a conflict if you use \Package{refcheck}, \Package{subcaption} and \Package{hyperref} together.
   See \url{http://tex.stackexchange.com/questions/273970/conflict-refcheck-subcaption-packages-for-label-with-underscores} for a workaround.}
-  You need to run \LaTeX\ one more time for it to
-  work. It indicates both in the log file and the resulting PDF which
+  You need to run \LaTeX\ one more time for it to work.
+  It indicates both in the log file and the resulting PDF which
   figures, tables, equations and sections are referenced.
 
 \item Use a units package to format numbers and their units. Recent
@@ -329,8 +330,7 @@ It is not needed if you use the \Package{newtx} font package.}
   anything else in math mode) enclose them in \Macro{text}. You can
   also use \Macro{mathrm} or \Macro{textrm}. However, if you then use
   the same symbols in slides with a sans-serif font, the text may well
-  continue to be in a
-  serif font.\\
+  continue to be in a serif font.\\
   {\sffamily Compare: A common jet energy cut at the LHC is now
     \(p_{T}^{\text{jet}} > \qty{20}{\GeV}\), while at HERA we typically
     used \(p_{T}^{\mathrm{jet}} > \qty[detect-family=false]{6}{\GeV}\).
@@ -700,36 +700,81 @@ examples. \Package{siunitx} also contains useful and powerful tools
 for typesetting tables and as mentioned above can be used to round
 numbers. These aspects are discussed in \cref{sec:table}.
 
+Version 3 of \Package{siunitx} replaces \Macro{SI} with \Macro{qty}
+and \Macro{si} with \Macro{unit}.
+This version was released in June 2021,
+so it might take a while before you are affected by this change.
+The old macro names will continue to work.
+
 Note that the \Macro{clight} symbol that is used in the macro
 \Macro{MeVovercsq} to produce \unit{\MeVovercsq} is defined as \(c_{0}\) in
 \Package{siunitx} version 2. As this is not the way it is usually
 written in particle physics I redefined it using one of the following:
 \begin{tcblisting}{listing only, hbox}
 \DeclareSIUnit\clight{\text{\ensuremath{c}}}   % siunitx version 2
-\DeclareSIUnit\clight{\ensuremath{\mathit{c}}} % siunitx verson 3 (after 2021/04/09)
+\DeclareSIUnit\clight{\ensuremath{\mathit{c}}} % siunitx version 3 (after 2021/04/09)
 \end{tcblisting}
 
-Two things that are currently not built in are separate statistical and
-systematic errors and asymmetric errors. From the author I got some
-suggestions on how to define such things. They are included in
-\texttt{guide\_defs.sty} at present and can be added to
-\texttt{thesis\_defs.sty}.
-Several new macros have been defined there:
-\Macro{numerrt}, \Macro{numpmerr} and \Macro{numpmerrt} to write
-errors with a description, which are asymmetric and both, respectively.
-The corresponding macros for values and errors are
-\Macro{qtyerrt}, \Macro{qtypmerr} and \Macro{qtypmerrt}. For the macros
-whose names end with \enquote{\texttt{t}}, you also have to provide
-the descriptive text.
-If you have two errors then use \Macro{qtyerrtt}
-or \Macro{qtypmerrtt}, which have two or three more arguments, respectively.
-For the standard case of statistical and systematic
-errors, you can use the macros \Macro{qtyerrs} and
-\Macro{qtypmerrs}. Examples of their use are:
+%------------------------------------------------------------------------------
+\subsection{Rounding and numbers with asymmetric errors}%
+\label{sec:tips:pmerr}\index{asymmetric errors}\index{errors!asymmetric}
+
+Two things that are currently not built into the \Package{siunitx} package
+are separate statistical and  systematic errors and asymmetric errors.
+In addition it may be desirable to round the numbers.
+From the author I got some suggestions on how to define such things.
+They can be included by passing the option \Option{numerr} to 
+\Package{ubonn-thesis}.
+This option defines several new macros:
+\begin{itemize}
+  \item \Macro{numR}, \Macro{numRF} and  \Macro{numRP}
+    for rounding numbers.
+    \Macro{numRF} uses a fixed number of digits,
+    whose value can be  given as an optional argument.
+    \Macro{numRP} does the same, but with a fixed number of decimal places.
+  \item \Macro{numerrt}, \Macro{numpmerr} and \Macro{numpmerrt}
+    can be used to write errors with a description,
+    which are asymmetric and both, respectively.
+  \item The corresponding macros for values and errors are
+    \Macro{qtyerrt}, \Macro{qtypmerr} and \Macro{qtypmerrt}. For the macros
+    whose names end with \enquote{\texttt{t}}, you also have to provide
+    the descriptive text.
+  \item If you have two errors then use \Macro{qtyerrtt}
+    or \Macro{qtypmerrtt}, which have two or three more arguments, respectively.
+  \item For the standard case of statistical and systematic
+    errors, you can use the macros \Macro{qtyerrs} and
+    \Macro{qtypmerrs}.
+\end{itemize}
+For all the macros except \Macro{numR}, \Macro{numRF} and  \Macro{numRP}
+the first (optional) argument can be used to pass any options you like to
+the \Macro{num} command.
+
+Examples of the rounding macros' usage are:
+\begin{tcblisting}{}
+\sisetup{round-precision=3}
+\begin{tabular}{ll}
+  \numR{1234.5678}\\
+  \numRF{1234.5678} & \numRF[2]{1234.5678}\\
+  \numRP{1234.5678} & \numRP[2]{1234.5678}\\
+\end{tabular}
+\end{tcblisting}
+
+Examples of the asymmetric error macros are:
+\begin{tcblisting}{}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{ll}
+  \numpmerr{+0.1234}{-0.4567} & \numpmerr[round-mode=places, round-precision=2]{+0.1234}{-0.4567}\\
+  \numpmerrt{+0.1234}{-0.4567}{stat.} & \numpmerr[round-mode=places, round-precision=2]{+0.1234}{-0.4567}{sys.}\\
+\end{tabular}
+\end{tcblisting}
+    
+Examples of the quantities macros are:
 \begin{tcblisting}{}
 \begin{align*}
   \sigma & = \qtyerrs{3.42}{0.46}{0.32}{\pico\barn}\\
+  \sigma & = \qtyerrs[round-mode=places, round-precision=1]{3.42}{0.46}{0.32}{\pico\barn}\\
   \sigma & = \qtypmerr{3.42}{+0.46}{-0.32}{\pico\barn}\\
+  \sigma & = \qtypmerr[round-mode=figures, round-precision=2]{3.42}{+0.46}{-0.32}{\pico\barn}\\
   \sigma & = \qtypmerrt{3.42}{+0.46}{-0.32}{\stat}{\pico\barn}\\
   \sigma & = \qtypmerrs{3.42}{+0.46}{-0.32}{+0.06}{-0.04}{\pico\barn}\\
   \sigma & = \qtypmerrtt{3.42}{+0.46}{-0.32}{\stat}{+0.06}{-0.04}{\sys}{\pico\barn}
@@ -749,12 +794,12 @@ definitions, e.g.
 \end{equation*}    
 \end{tcblisting}
 
-Version 3 of \Package{siunitx} replaces \Macro{SI} with \Macro{qty}
-and \Macro{si} with \Macro{unit}.
-This version was released in June 2021,
-so it might take a while before you are affected by this change.
-The old macro names will continue to work.
+Rounding\index{rounding} is very nice and works well, but can slow down compilation considerably.
+More discussion on rounding can be found  in \cref{sec:table:siunitx}.
 
+Note that the macro \Macro{supsub} can be used to make the superscript and the subscript
+have the same width.
+This is needed as in some fonts \enquote{\(+\)} and \enquote{\(-\)} have  a different width.
 
 %------------------------------------------------------------------------------
 \section{Definitions in particle physics}%
@@ -972,6 +1017,15 @@ These are the ones I remember coming across so far:
   Correct: \enquote{\emph{We have to choose between xenon (Xe) and argon (Ar).}}
 \item \enquote{We loose \qty{50}{\%} of the signal due to this cut.}
   Correct: \enquote{\emph{We lose \qty{50}{\%} of the signal due to this cut.}}
+\item  \enquote{\emph{Its uncertain what its meaning is}}
+  Correct: \enquote{It's uncertain what its meaning is.}
+  In the first usage \enquote{it's} is short for \enquote{it is}.
+\item \enquote{\emph{Explain how the drawing looks.}}
+  Correct: \enquote{Explain what the drawing looks like.}
+\item \enquote{\emph{He raises the stone above his head to get a pay raise.}}
+  Correct: \enquote{He raises the stone above his head to get a pay rise.}
+\item \enquote{\emph{The agreement is well and the data are good described by the simulation.}}
+  Correct: \enquote{Good agreement is seen and the data are well described by the simulation.}
 \end{itemize}
 
 A general comment (which also applies to theses in other languages) is that you should avoid \enquote{fluff}.
