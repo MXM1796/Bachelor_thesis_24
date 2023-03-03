@@ -764,10 +764,26 @@ Examples of the asymmetric error macros are:
 \renewcommand{\arraystretch}{1.4}
 \begin{tabular}{ll}
   \numpmerr{+0.1234}{-0.4567} & \numpmerr[round-mode=places, round-precision=2]{+0.1234}{-0.4567}\\
-  \numpmerrt{+0.1234}{-0.4567}{stat.} & \numpmerr[round-mode=places, round-precision=2]{+0.1234}{-0.4567}{sys.}\\
+  \numpmerrt{+0.1234}{-0.4567}{stat.} & \numpmerrt[round-mode=places, round-precision=2]{+0.1234}{-0.4567}{sys.}\\
 \end{tabular}
 \end{tcblisting}
-    
+\begin{tcblisting}{}
+  \renewcommand{\arraystretch}{1.4}
+  \begin{equation*}
+  \begin{array}{ll}
+    \numpmerr{+0.1234}{-0.4567} & \numpmerr[round-mode=places, round-precision=2]{+0.1234}{-0.4567}\\
+    \numpmerrt{+0.1234}{-0.4567}{stat.} & \numpmerrt[round-mode=places, round-precision=2]{+0.1234}{-0.4567}{sys.}\\
+  \end{array}
+  \end{equation*}
+  \end{tcblisting}
+The first example is in text mode, while the second is in math mode.
+As you can see the macros work in both modes.\footnote{%
+If you compile the guide with \LuaLaTeX\ or \XeLaTeX\
+the superscripts and subscripts are not rendered correctly,
+neither in the listing nor in normal text, e.g.\ \numpmerr{+0.123}{-0.456}.
+The reason for this in being investigated.
+}
+
 Examples of the quantities macros are:
 \begin{tcblisting}{}
 \begin{align*}
