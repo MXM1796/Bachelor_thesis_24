@@ -1,0 +1,191 @@
+\RequireVersions{
+  *{application}{pdfTeX}  {0000/00/00 v1.40.24}
+  *{format} {LaTeX2e}     {2021-11-15 v2.e}
+  *{package}{snapshot}    {2020/06/17 v2.14}
+  *{class}  {scrbook}     {2021/11/13 v3.35}
+  *{package}{scrkbase}    {2021/11/13 v3.35}
+  *{package}{scrbase}     {2021/11/13 v3.35}
+  *{package}{scrlfile}    {2021/11/13 v3.35}
+  *{package}{scrlfile-hook}{2021/11/13 v3.35}
+  *{package}{scrlogo}     {2021/11/13 v3.35}
+  *{package}{keyval}      {2014/10/28 v1.15}
+  *{package}{tocbasic}    {2021/11/13 v3.35}
+  *{file}   {scrsize11pt.clo}{2021/11/13 v3.35}
+  *{package}{typearea}    {2021/11/13 v3.35}
+  *{package}{ubonn-thesis}{2023/03/03 v10.0.0}
+  *{package}{ifthen}      {2020/11/24 v1.1c}
+  *{package}{kvoptions}   {2020-10-07 v3.14}
+  *{package}{ltxcmds}     {2020-05-10 v1.25}
+  *{package}{kvsetkeys}   {2019/12/15 v1.18}
+  *{package}{iftex}       {2022/02/03 v1.0f}
+  *{package}{scrhack}     {2021/11/13 v3.35}
+  *{package}{xpatch}      {2020/03/25 v0.3a}
+  *{package}{expl3}       {2022-02-24 v3}
+  *{file}   {l3backend-pdftex.def}{2022-02-07 v3}
+  *{package}{xparse}      {2022-01-12 v3}
+  *{package}{etoolbox}    {2020/10/05 v2.5k}
+  *{package}{babel}       {2022/02/26 v3.73}
+  *{file}   {ngerman.ldf} {2021/02/27 v2.13}
+  *{file}   {UKenglish.ldf}{2017/06/06 v3.3r}
+  *{package}{iflang}      {2018/01/21 v1.7}
+  *{package}{infwarerr}   {2019/12/03 v1.5}
+  *{package}{pdftexcmds}  {2020-06-27 v0.33}
+  *{file}   {scrsize11pt.clo}{2021/11/13 v3.35}
+  *{package}{scrlayer-scrpage}{2021/11/13 v3.35}
+  *{package}{scrlayer}    {2021/11/13 v3.35}
+  *{package}{inputenc}    {2021/02/14 v1.3d}
+  *{package}{newtxtext}   {2022/02/28 v1.71(Michael}
+  *{package}{xkeyval}     {2020/11/20 v2.8}
+  *{file}   {xkeyval.tex} {2014/12/03 v2.7a}
+  *{package}{textcomp}    {2020/02/02 v2.0n}
+  *{package}{xstring}     {2021/07/21 v1.84}
+  *{package}{scalefnt}    {0000/00/00 v0.0}
+  *{file}   {binhex}      {0000/00/00 v0.0}
+  *{package}{fontaxes}    {2020/07/21 v1.0e}
+  *{package}{newtxmath}   {2022/01/16 v1.71}
+  *{package}{amsmath}     {2021/10/15 v2.17l}
+  *{package}{amstext}     {2021/08/26 v2.01}
+  *{package}{amsgen}      {1999/11/30 v2.0}
+  *{package}{amsbsy}      {1999/11/29 v1.2d}
+  *{package}{amsopn}      {2021/08/26 v2.02}
+  *{package}{ifxetex}     {2019/10/25 v0.7}
+  *{package}{ifluatex}    {2019/10/25 v1.5}
+  *{package}{centernot}   {2016/05/16 v1.4}
+  *{file}   {binhex}      {0000/00/00 v0.0}
+  *{package}{fontenc}     {0000/00/00 v0.0}
+  *{file}   {t1minntx.fd} {2022/01/20 v1.1}
+  *{package}{csquotes}    {2021-02-22 v5.2l}
+  *{file}   {csquotes.def}{2021-02-22 v5.2l}
+  *{file}   {csquotes.cfg}{0000/00/00 v0.0}
+  *{package}{mathtools}   {2022/02/07 v1.28a}
+  *{package}{calc}        {2017/05/25 v4.3}
+  *{package}{mhsetup}     {2021/03/18 v1.4}
+  *{package}{xfrac}       {2022-01-12 v3}
+  *{package}{graphicx}    {2021/09/16 v1.2d}
+  *{package}{graphics}    {2021/03/04 v1.4d}
+  *{package}{trig}        {2021/08/11 v1.11}
+  *{file}   {graphics.cfg}{2016/06/04 v1.11}
+  *{file}   {pdftex.def}  {2020/10/05 v1.2a}
+  *{package}{l3keys2e}    {2022-01-12 v2e}
+  *{package}{xtemplate}   {2022-01-12 v3}
+  *{package}{siunitx}     {2022-02-15 v3.0.49}
+  *{package}{translations}{2022/02/05 v1.12}
+  *{package}{array}       {2021/10/04 v2.5f}
+  *{package}{subcaption}  {2022/01/07 v1.5}
+  *{package}{caption}     {2022/03/01 v3.6b}
+  *{package}{caption3}    {2022/03/17 v2.3b}
+  *{file}   {caption-koma.sto}{2020/09/21 v2.0b}
+  *{package}{rotating}    {2016/08/11 v2.16d}
+  *{package}{booktabs}    {2020/01/12 v1.61803398}
+  *{package}{longtable}   {2021-09-01 v4.17}
+  *{package}{hepnicenames}{2014/12/01 v2.0)}
+  *{package}{heppennames} {2014/12/01 v2.0)}
+  *{package}{hepparticles}{2014/12/01 v2.0)}
+  *{package}{subdepth}    {2007/09/02 v0.1}
+  *{package}{xspace}      {2014/10/28 v1.13}
+  *{package}{mhchem}      {2021/12/31 v4.09}
+  *{package}{chemgreek}   {2020/01/16 v1.1a}
+  *{package}{microtype}   {2022/03/14 v3.0d}
+  *{file}   {microtype-pdftex.def}{2022/03/14 v3.0d}
+  *{file}   {microtype.cfg}{2022/03/14 v3.0d}
+  *{package}{xcolor}      {2021/10/31 v2.13}
+  *{file}   {color.cfg}   {2016/01/02 v1.6}
+  *{file}   {svgnam.def}  {2021/10/31 v2.13}
+  *{package}{setspace}    {2011/12/19 v6.7a}
+  *{file}   {setspace.hak}{2021/11/13 v3.35}
+  *{package}{scrdate}     {2021/11/13 v3.35}
+  *{package}{scrtime}     {2021/11/13 v3.35}
+  *{package}{bookmark}    {2020-11-06 v1.29}
+  *{package}{hyperref}    {2022-02-21 v7.00n}
+  *{package}{kvdefinekeys}{2019-12-19 v1.6}
+  *{package}{pdfescape}   {2019/12/09 v1.15}
+  *{package}{hycolor}     {2020-01-27 v1.10}
+  *{package}{letltxmacro} {2019/12/03 v1.6}
+  *{package}{auxhook}     {2019-12-17 v1.6}
+  *{file}   {pd1enc.def}  {2022-02-21 v7.00n}
+  *{package}{intcalc}     {2019/12/15 v1.3}
+  *{package}{etexcmds}    {2019/12/15 v1.7}
+  *{file}   {puenc.def}   {2022-02-21 v7.00n}
+  *{package}{url}         {2013/09/16 v3.4}
+  *{package}{bitset}      {2019/12/09 v1.3}
+  *{package}{bigintcalc}  {2019/12/15 v1.5}
+  *{package}{atbegshi-ltx}{2021/01/10 v1.0c}
+  *{file}   {hpdftex.def} {2022-02-21 v7.00n}
+  *{package}{atveryend-ltx}{2020/08/19 v1.0a}
+  *{package}{rerunfilecheck}{2019/12/05 v1.9}
+  *{package}{uniquecounter}{2019/12/15 v1.4}
+  *{file}   {bkm-pdftex.def}{2020-11-06 v1.29}
+  *{package}{biblatex}    {2022/02/02 v3.17}
+  *{package}{logreq}      {2010/08/04 v1.0}
+  *{file}   {logreq.def}  {2010/08/04 v1.0}
+  *{file}   {blx-dm.def}  {2022/02/02 v3.17}
+  *{file}   {blx-compat.def}{2022/02/02 v3.17}
+  *{file}   {biblatex.def}{2022/02/02 v3.17}
+  *{file}   {standard.bbx}{2022/02/02 v3.17}
+  *{file}   {numeric.bbx} {2022/02/02 v3.17}
+  *{file}   {numeric-comp.bbx}{2022/02/02 v3.17}
+  *{file}   {numeric-comp.cbx}{2022/02/02 v3.17}
+  *{file}   {biblatex.cfg}{0000/00/00 v0.0}
+  *{package}{blx-case-expl3}{2022/02/02 v3.17}
+  *{file}   {puenc-greekbasic.def}{2022-02-21 v7.00n}
+  *{file}   {psdextra.def}{2022-02-21 v7.00n}
+  *{package}{cleveref}    {2018/03/27 v0.21.4}
+  *{package}{ubonn-biblatex}{2023/03/03 v10.0.0}
+  *{package}{thesis_defs} {0000/00/00 v0.0}
+  *{package}{background}  {2014/03/04 v2.1}
+  *{package}{tikz}        {2021/05/15 v3.1.9a}
+  *{package}{pgf}         {2021/05/15 v3.1.9a}
+  *{package}{pgfrcs}      {2021/05/15 v3.1.9a}
+  *{file}   {pgfrcs.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfcore}     {2021/05/15 v3.1.9a}
+  *{package}{pgfsys}      {2021/05/15 v3.1.9a}
+  *{file}   {pgfsys.code.tex}{0000/00/00 v0.0}
+  *{file}   {pgfsyssoftpath.code.tex}{2021/05/15 v3.1.9a}
+  *{file}   {pgfsysprotocol.code.tex}{2021/05/15 v3.1.9a}
+  *{file}   {pgfcore.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfcomp-version-0-65}{2021/05/15 v3.1.9a}
+  *{package}{pgfcomp-version-1-18}{2021/05/15 v3.1.9a}
+  *{package}{pgffor}      {2021/05/15 v3.1.9a}
+  *{package}{pgfkeys}     {0000/00/00 v0.0}
+  *{file}   {pgfkeys.code.tex}{0000/00/00 v0.0}
+  *{package}{pgfmath}     {0000/00/00 v0.0}
+  *{file}   {pgfmath.code.tex}{0000/00/00 v0.0}
+  *{file}   {pgffor.code.tex}{0000/00/00 v0.0}
+  *{file}   {tikz.code.tex}{0000/00/00 v0.0}
+  *{package}{everypage}   {2020/10/17 v2.0b}
+  *{package}{afterpage}   {2014/10/28 v1.08}
+  *{file}   {t1ntxtlf.fd} {2021/05/24 v1.1}
+  *{file}   {omlntxmi.fd} {2015/08/25 v1.933}
+  *{file}   {untxexa.fd}  {2012/04/16 v1.933}
+  *{file}   {lmsntxsy.fd} {2016/07/02 v1.933}
+  *{file}   {lmxntxexx.fd}{2016/07/03 v1.933}
+  *{file}   {ot1minntx.fd}{2022/01/20 v1.0}
+  *{file}   {untxmia.fd}  {2018/04/14 v1.933}
+  *{file}   {untxsym.fd}  {2015/03/20 v1.933}
+  *{file}   {untxsyc.fd}  {2012/04/12 v1.933}
+  *{file}   {t1qhv.fd}    {2009/09/25 v1.2}
+  *{file}   {t1ntxtt.fd}  {2012/04/20 v3.1}
+  *{file}   {ts1ntxtlf.fd}{2015/01/18 v1.0}
+  *{-------}{Document-specific files:}{----}
+  *{file}   {supp-pdf.mkii}{0000/00/00 v0.0}
+  *{package}{epstopdf-base}{2020-01-24 v2.11}
+  *{file}   {epstopdf-sys.cfg}{2010/07/13 v1.3}
+  *{file}   {translations-basic-dictionary-english.trsl}{(english v0.0}
+  *{file}   {translations-basic-dictionary-german.trsl}{(german v0.0}
+  *{package}{ltcaption}   {2021/01/08 v1.4c}
+  *{file}   {mt-ptm.cfg}  {2006/04/20 v1.7}
+  *{package}{nameref}     {2021-04-02 v2.47}
+  *{package}{refcount}    {2019/12/15 v3.6}
+  *{package}{gettitlestring}{2019/12/15 v1.6}
+  *{file}   {british.lbx} {2022/02/02 v3.17}
+  *{file}   {english.lbx} {2022/02/02 v3.17}
+  *{file}   {UKenglish.lbx}{2022/02/02 v3.17}
+  *{file}   {german.lbx}  {2022/02/02 v3.17}
+  *{file}   {ngerman.lbx} {2022/02/02 v3.17}
+  *{file}   {mythesis.bbl}{0000/00/00 v0.0}
+  *{file}   {cover/Master_Submit_Title}{0000/00/00 v0.0}
+  *{file}   {thesis_acknowledge.tex}{0000/00/00 v0.0}
+  *{file}   {thesis_intro.tex}{0000/00/00 v0.0}
+  *{file}   {mt-cmr.cfg}  {2013/05/19 v2.2}
+  *{file}   {thesis_appendix.tex}{0000/00/00 v0.0}
+}
