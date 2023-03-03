@@ -7,7 +7,7 @@
 % See CHANGELOG.md or Git log for history of changes.
 % Responsible: Ian Brock (brock@physik.uni-bonn.de)
 %-------------------------------------------------------------------------------
-\ProvidesPackage{ubonn-biblatex}[2022/07/19 Version 9.1.0 University of Bonn biblatex style]
+\ProvidesPackage{ubonn-biblatex}[2023/03/03 Version 10.0.0 University of Bonn biblatex style]
 \NeedsTeXFormat{LaTeX2e}
 
 % Use kvoptions package to set options
@@ -27,14 +27,14 @@
 \DeclareBoolOption[true]{eprint}
 \DeclareBoolOption[false]{address}
 \DeclareBoolOption[false]{location}
-\DeclareStringOption{texlive}
+% \DeclareStringOption[0]{texlive}
 \ProcessKeyvalOptions*
 
 % TeX Live version not specified as an option
-\ifthenelse{\equal{\UBNB@texlive}{}}{%
-  \renewcommand*{\UBNB@texlive}{\texlive}
-}{}
-\typeout{Package ubonn-biblatex Info: UBNB@texlive is [\UBNB@texlive]}
+% \ifthenelse{\equal{\UBNB@texlive}{}}{%
+%   \renewcommand*{\UBNB@texlive}{\texlive}
+% }{}
+% \typeout{Package ubonn-biblatex Info: UBNB@texlive is [\UBNB@texlive]}
 
 % Set block mode
 \typeout{ubonn-biblatex: block set to \UBNB@block}
@@ -69,9 +69,15 @@
 }
 
 % date=year option works for TeX Live 2014 or so onwards
-\ifthenelse{\UBNB@texlive < 2014}{}{%
+\@ifpackagelater{biblatex}{2015/04/01}{%
+  \typeout{ubonn-biblatex: setting option date=year.}
   \ExecuteBibliographyOptions{date=year}
+}{%
+  \typeout{ubonn-biblatex: option date=year not yet available.}
 }
+% \ifthenelse{\UBNB@texlive < 2014}{}{%
+%   \ExecuteBibliographyOptions{date=year}
+% }
 
 % Don't want months
 \AtEveryBibitem{%

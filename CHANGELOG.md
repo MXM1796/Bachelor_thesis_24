@@ -1,5 +1,9 @@
 # Changelog
 
+*Responsible:* Ian Brock (i.brock@uni-bonn.de)
+
+Copyright (C) 2011-2023 Ian Brock.
+
 All notable changes to the University of Bonn thesis style are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
@@ -7,6 +11,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Changes are sorted into the following categories:
 Added, Changed, Deprecated, Removed, Fixed, Security.
+
+---
+
+## [10.0.0] - 2023-03-03
+
+### Added
+
+- Use the `numerr` option to add a series of macros for numbers and quantities
+  that should be rounded and/or have asymmetric errors.
+- Add macros to cope with different width subscripts and superscripts in asymmetric errors.
+- Add `siunitx` version 3 macro names (`\qty, \unit` etc.) if `siunitx` version 2 is used.
+- `firstinits` option is added back as `texlive` has been removed.
+
+### Changed
+
+- The webpage with the thesis guide has a new location.
+- Move from `siunitx` version 2 to version 3 macros, i.e. `\SI` to `\qty` and `\si` to `\unit`.
+- Adjust names of macros `\SIerr*` and `\SIpmerr*` to `\qtyerr*` and `\qtypmerr*`.
+
+### Deprecated
+
+- `firstinits` option should not be necessary for TeX Live 2015 and later.
+- `texlive` option is no longer needed or used.
+  Replaced with `\@ifpackagelater` and `\@ifclasslater`.
+
+### Removed
+
+- `TEXLIVE` removed as variable in `Makefile`s. Replaced with `TWEAKYEAR` in guide where it is needed.
 
 ---
 
@@ -37,7 +69,7 @@ If you want to have a list of figures/tables, the other alternative is not to us
 ### Changed
 
 - TeX Live 2020 is now the default.
-- Redo chapter number formnatting to work with June 2022 LaTeX update.
+- Redo chapter number formatting to work with June 2022 LaTeX update.
 - `make new` now sets correct thesis main filename in `Makefile`.
 - Bibliography is after the appendices in skeletons.
 
@@ -327,7 +359,7 @@ The following changes are ordered by date and do not have a version number assoc
     Also switched from `\usepackage` to `\RequirePackage` in `ubonn-thesis.sty.
 - 23 May 2011: Changed default font to `txfonts`. Added more font options and explanation.
 
-## [Unreleased] - 2021-11-XX
+## [Unreleased] - 2023-12-XX
 
 ### Added
 

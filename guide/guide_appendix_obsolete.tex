@@ -26,7 +26,7 @@ information, such things are collected in this appendix.
 
 Instead of \Package{SIunits}, I used to use \Package{hepunits}, which
 is based on \Package{SIunits} but includes units commonly used in
-particle physics such as \si{\GeV} and \si{\pico\barn}. Unfortunately
+particle physics such as \unit{\GeV} and \unit{\pico\barn}. Unfortunately
 the syntax of the \Package{hepunits} and \Package{units} packages is
 different even though they use the same macro name.
 In \Package{hepunits} you write \verb+\unit{10}{\GeV}+, while in
@@ -54,14 +54,14 @@ it does not appear to have the usual effect.
 Hence, if you use units in normal text it is probably wise to
 terminate them with \enquote{\textbackslash } or \enquote{\{\}}. Compare
 \begin{itemize}
-\item The \si{\GeV}is a
+\item The \unit{\GeV}is a
   heavily used unit in particle physics and cross-sections measured in
-  \si{\pico\barn}or \si{\nano\barn}are quite common.
-  Masses can be given in either \si{\MeVovercsq}or \si{\MeV}.
-\item The \si{\GeV} is a
+  \unit{\pico\barn}or \unit{\nano\barn}are quite common.
+  Masses can be given in either \unit{\MeVovercsq}or \unit{\MeV}.
+\item The \unit{\GeV} is a
   heavily used unit in particle physics and cross-sections measured in
-  \si{\pico\barn} or \si{\nano\barn} are quite common.
-  Masses can be given in either \si{\MeVovercsq} or \si{\MeV}.
+  \unit{\pico\barn} or \unit{\nano\barn} are quite common.
+  Masses can be given in either \unit{\MeVovercsq} or \unit{\MeV}.
 \end{itemize}
 In the first bullet the units were not terminated, while in the second
 they were.
@@ -91,7 +91,7 @@ the number and \verb+\(\cdot\)+. In the fourth example, where you use
 \$\ldots\$ if it includes characters from math mode.  Conversely if for
 some reason you want normal text in your units, you should put it
 inside \Macro{text}, e.g.\ the velocity of light is
-\(\SI{3E8}{\text{metres per second}}\). If you forgot the
+\(\qty{3E8}{\text{metres per second}}\). If you forgot the
 \Macro{text} command using\\
 \verb+\unit{\(3 \cdot \power{10}{8}\)}{metres per second}+ you would
 get:
@@ -122,16 +122,16 @@ If you compile the guide
 with a different font and the numbers \(1234.56\) and 1234.56 look the
 same then you do not have to worry!
 Recent versions of this guide contain a Palatino font combination that works in both
-text and math mode --- see the style file.
+text and math mode -- see the style file.
 There are other ways to get around the problem with Palatino.
 You can try either the \Package{pxfonts} or the
-\Package{mathpazo} packages --- for my taste the sans serif font used
+\Package{mathpazo} packages -- for my taste the sans serif font used
 in \Package{pxfonts} looks a bit better.
 
 For ranges with \Package{SIunits} and \Macro{unit} you can write
 \verb+\unit{\power{10}{4}--\power{10}{5}}{}+, which would look almost
 correct, but leaves some space for the unit! If you want to write
-between 5 and \SI{7}{\GeV}, then \Macro{unit} works well:
+between 5 and \qty{7}{\GeV}, then \Macro{unit} works well:
 \verb+\unit{5--7}{\GeV}+.
 
 
@@ -171,7 +171,7 @@ PDF\@. This is not totally trivial.
 The best way is to specify the options to the \Package{geometry}
 package so that the page size corresponds to the Feynman graph. For a
 graph with size $(50,50)$, as specified at the beginning of the
-\Env{fmfgraph*} environment (within \Macro{unitlength} in \si{\mm}), the
+\Env{fmfgraph*} environment (within \Macro{unitlength} in \unit{\mm}), the
 following wrapper works well:
 \begin{verbatim}
 \documentclass{article}
@@ -289,7 +289,7 @@ environment, which is why I include a short description here.
 % version),\index{MiKTeX}\index{TeXnic Center} \TeXnicCenter,
 % Ghostscript and Ghostview for all users. Once the installation was
 % finished, I also updated all the packages using the MiK\TeX{}
-% Maintenance (Admin) $\to$ Update (Admin) program. Be patient --- these
+% Maintenance (Admin) $\to$ Update (Admin) program. Be patient -- these
 % updates always take a while!
 
 % You should then be able to double-click on \texttt{mythesis.tex} and

@@ -17,17 +17,21 @@
 %-------------------------------------------------------------------------------
 
 % Main thesis style file
-\newcommand*{\guideversion}{9.1}
-\newcommand*{\texlive}{2020}
+\newcommand*{\guideversion}{10.0}
+\newcommand*{\TweakYear}{2020}
 
 \usepackage{ifthen}
 
 % diffcoeff package released in 2016 - define a simple form of \diff for earlier.
-\ifthenelse{\texlive < 2016}{%
+\ifthenelse{\TweakYear < 2016}{%
   \newcommand*{\diffcoeff}{diffcoeff=false}
   \newcommand*{\diff}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
 }{%
-  \newcommand*{\diffcoeff}{diffcoeff=true}
+  \ifthenelse{\TweakYear < 2018}{%
+    \newcommand*{\diffcoeff}{diffcoeff=true, diffcoeffISO=false}
+  }{%
+    \newcommand*{\diffcoeff}{diffcoeff=true}
+  }
 }
 
 % Thesis style file.
@@ -45,13 +49,13 @@
 \usepackage{import}
 \usepackage{standalone}
 % tabularray only as of TeX Live 2021.
-\ifthenelse{\texlive > 2020}{%
+\ifthenelse{\TweakYear > 2020}{%
   \usepackage{tabularray}
   \UseTblrLibrary{booktabs}
   \UseTblrLibrary{siunitx}
 }{}
 % TikZ-FeynHand only as of TeX Live 2017.
-\ifthenelse{\texlive > 2016}{%
+\ifthenelse{\TweakYear > 2016}{%
   \usepackage{tikz-feynhand}
 }{}
 \usepackage{tikz-feynman}
@@ -125,14 +129,14 @@
 \newcommand*{\thesisrefereetwo}{Prof.\ Dr.\ Anne Jones}
 % Date when thesis was submitted (Master/Diplom)
 % Year or Month, Year when thesis was submitted (PhD)
-\newcommand*{\thesissubmit}{XX.YY.2022}
-% \newcommand*{\thesissubmit}{Month 2022}
+\newcommand*{\thesissubmit}{XX.YY.2023}
+% \newcommand*{\thesissubmit}{Month 2023}
 % Date of thesis examination (PhD)
-\newcommand*{\thesispromotion}{XX.YY.2022}
+\newcommand*{\thesispromotion}{XX.YY.2023}
 % Month and year of the final printed version of the thesis
 \newcommand*{\thesismonth}{January}
-\newcommand*{\thesisyear}{2022}
-\newcommand*{\thesisnumber}{BONN-IR-2022-XXX}
+\newcommand*{\thesisyear}{2023}
+\newcommand*{\thesisnumber}{BONN-IR-2023-XXX}
 
 %-------------------------------------------------------------------------------
 % The abstract is only needed for the printed version. and should be in
@@ -167,7 +171,7 @@
 % \includeonly{%
 %   guide_acknowledge1,
 %   guide_intro,
-%   guide_tips
+%   guide_tips,
 %   guide_submit,
 %   guide_package,
 %   guide_figs,

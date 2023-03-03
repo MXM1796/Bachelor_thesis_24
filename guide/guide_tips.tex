@@ -52,12 +52,12 @@ the guide as a PDF file: \File{thesis\_guide.pdf}.  It can be
 obtained from:\\
 \url{http://www.pi.uni-bonn.de/teaching/uni-bonn-thesis}
 and\\
-\url{http://www.pi.uni-bonn.de/lehre/uni-bonn-thesis}.
+\url{https://www.pi.uni-bonn.de/brock/en/thesis-guide}.
 
 \par\noindent
 Once you have the files, you can then give the command:
 \begin{bashlisting}
-make new [THESIS=dirname] [TEXLIVE=YYYY]
+make new [THESIS=dirname]
 \end{bashlisting}
 \noindent to create a new directory with several files to help you get
 started. By default the directory name will be \texttt{mythesis}.
@@ -88,18 +88,18 @@ Can be downloaded from \url{https://github.com/stefanhepp/pplatex}.
 }
 is supposed to provide a nicely formatted version of the \LaTeX\ output on the command line.
 
-My original idea was that the style file should work for all recent
-\TeX\ installations.  However, some of the packages I recommend have
-been changing quite a lot over the past few years.
-You should therefore set the \TeXLive version you are using appropriately.
-The default setting is 2020.\footnote{%
-Setting the \TeXLive version to one that is lower than your installation should not cause any problems.}
-For an an up-to-date version of MikTeX (2.9) you should probably use the current year.
-Things should compile without any changes if you use \TeXLive 2016 or later.
-Look in the style file to see what changes are made depending on the year you use.
-You can change the \TeXLive version when you make a new thesis
-by giving a command like \enquote{\texttt{make new TEXLIVE=2021}}. %\footnote{%
-If you switch \TeXLive versions do a
+The style file should work for all recent \TeX\ installations.
+% However, some of the packages I recommend have
+% been changing quite a lot over the past few years.
+% You should therefore set the \TeXLive version you are using appropriately.
+% The default setting is 2020.\footnote{%
+% Setting the \TeXLive version to one that is lower than your installation should not cause any problems.}
+% For an an up-to-date version of MikTeX (2.9) you should probably use the current year.
+% Things should compile without any changes if you use \TeXLive 2016 or later.
+% Look in the style file to see what changes are made depending on the year you use.
+% You can change the \TeXLive version when you make a new thesis
+% by giving a command like \enquote{\texttt{make new TEXLIVE=2021}}. %\footnote{%
+If you switch to a newer \TeX\ versions do a
 \enquote{\texttt{make clean cleanbbl cleanblx}} in between.
 
 Note that as of version 2.1, the main file for the thesis
@@ -159,10 +159,10 @@ The main file for this guide is \texttt{guide/thesis\_guide.tex} and
 it includes the \LaTeX\ files in the directory \texttt{./guide} and
 some of the Feynman graphs in the directories 
 \texttt{./feynmf}, \texttt{pyfeyn}, \texttt{pyfeynhand} and \texttt{./tikz}.
-This guide should compile without changes for \TeXLive 2017 or later.
-However, you can get rid of some \Package{diffcoeff} warnings
-by setting the year to 2018 or later.
-For earlier versions set \Macro{texlive} in \texttt{thesis\_guide.tex} to the appropriate value.
+This guide should compile without changes for \TeXLive 2018 or later.
+% However, you can get rid of some \Package{diffcoeff} warnings
+% by setting the year to 2018 or later.
+For earlier versions set \Macro{TweakYear} in \texttt{thesis\_guide.tex} to the appropriate value.
 
 
 %------------------------------------------------------------------------------
@@ -206,8 +206,9 @@ The following options exist:\\
   PILibrary & false & Final version including an extra cover page for the PI library.\\
   thesistype & Unknown & Specify the thesis type.\\
   thesisversion & Draft & Specify the stage of the thesis.\\
-  texlive & 2020 & Specify the \TeXLive version.
-    You can also use the older command \verb|\newcommand*{\texlive}{2020}|.\\
+  texlive & 0 & Specify the \TeXLive version.
+    \emph{This option is deprecated and will be ignored.}\\
+    % You can also use the older command \verb|\newcommand*{\texlive}{2020}|.\\
   twoside & true & Margins set for two-sided printing.\\
   newtx & true & Use the \Package{newtx} font packages (newer version of \Package{txfonts}).\\
   txfonts & false & Use a Times-Roman-like font.\\
@@ -222,7 +223,8 @@ The following options exist:\\
   xtab & false & A package for tables that are longer than one page.\\
   biblatex & true & Include \Package{biblatex}.\\
   siunitx & true & Use the \Package{siunitx} package for typesetting units.\\
-  eVkern & false & Apply a kern of -0.1em to \si{\eV} in order to move \enquote{e} and \enquote{V} closer together.
+  numerr & false & Macros for rounding and asymmetric errors.\\
+  eVkern & false & Apply a kern of -0.1em to \unit{\eV} in order to move \enquote{e} and \enquote{V} closer together.
   This is not necessary if you use the \Package{newtx} font package.\\
   dcolumn & false & A package for helping to align things in tables.\\
   cleveref & true & Turn on use of the \Package{cleveref} package.\\
@@ -239,7 +241,7 @@ The following options exist:\\
   feynmp & false & Include the \Package{feynmp} package for Feynman graphs.\\
   titlesec & false & Use the \Package{titlesec} package for formatting chapter titles.\\
   astrobib & false & Adjust \Package{biblatex} options to conform to the usual astronomy style.\\
-  % firstinits & false & Use \Option{firstinits} instead of \Option{giveninits} for \Package{biblatex}.\\
+  firstinits & false & Use \Option{firstinits} instead of \Option{giveninits} for \Package{biblatex}.\\
   refsection & true & Set things up for references to be at the end of each chapter.\\
   floatopt & true & Adjust settings that control the number and placement of floats.\\
   todonotes & false & Turn on use of the \Package{todonotes} package and define \Macro{mynote}.\\
@@ -269,7 +271,7 @@ Fonts are by default selected using the filename.
 If for some reason this does not work you can try the \Option{fontname=true} option,
 which uses the font name instead.
 
-Depending on the font you use, you may find that the \enquote{e} and \enquote{V} in \si{\eV}, \si{\MeV} etc.\
+Depending on the font you use, you may find that the \enquote{e} and \enquote{V} in \unit{\eV}, \unit{\MeV} etc.\
 are too far apart.
 You can pass the option \Option{eVkern} to \Package{ubonn-thesis} in order to move them 0.1em closer together.\footnote{%
 It is not needed if you use the \Package{newtx} font package.}
@@ -299,8 +301,8 @@ It is not needed if you use the \Package{newtx} font package.}
   \Package{refcheck}.\footnote{%
   There is a conflict if you use \Package{refcheck}, \Package{subcaption} and \Package{hyperref} together.
   See \url{http://tex.stackexchange.com/questions/273970/conflict-refcheck-subcaption-packages-for-label-with-underscores} for a workaround.}
-  You need to run \LaTeX\ one more time for it to
-  work. It indicates both in the log file and the resulting PDF which
+  You need to run \LaTeX\ one more time for it to work.
+  It indicates both in the log file and the resulting PDF which
   figures, tables, equations and sections are referenced.
 
 \item Use a units package to format numbers and their units. Recent
@@ -308,7 +310,7 @@ It is not needed if you use the \Package{newtx} font package.}
   is a superior replacement of \Package{SIunits}. I used to
   use \Package{SIunits}, or rather \Package{hepunits} which is
   built on top of \Package{SIunits}, and defines common particle
-  physics units such as \si{\GeV}. Use of these packages is
+  physics units such as \unit{\GeV}. Use of these packages is
   discussed in \cref{sec:tips:units}.
   An alternative is the \Package{units} package.
 
@@ -328,13 +330,12 @@ It is not needed if you use the \Package{newtx} font package.}
   anything else in math mode) enclose them in \Macro{text}. You can
   also use \Macro{mathrm} or \Macro{textrm}. However, if you then use
   the same symbols in slides with a sans-serif font, the text may well
-  continue to be in a
-  serif font.\\
+  continue to be in a serif font.\\
   {\sffamily Compare: A common jet energy cut at the LHC is now
-    \(p_{T}^{\text{jet}} > \SI{20}{\GeV}\), while at HERA we typically
-    used \(p_{T}^{\mathrm{jet}} > \SI[detect-family=false]{6}{\GeV}\).
+    \(p_{T}^{\text{jet}} > \qty{20}{\GeV}\), while at HERA we typically
+    used \(p_{T}^{\mathrm{jet}} > \qty[detect-family=false]{6}{\GeV}\).
   }
-  The \si{\GeV} in the first expression is in sans-serif. This is
+  The \unit{\GeV} in the first expression is in sans-serif. This is
   because the
   \Macro{sisetup}\texttt{\{detect-family=true\}}
   option is set in \texttt{ubonn-thesis.sty}
@@ -353,7 +354,7 @@ It is not needed if you use the \Package{newtx} font package.}
   attention otherwise the symbol and the next word run together.
 
 \item Decide how you want to write abbreviations for particles and
-  stick to it --- you should probably define the particle names in your
+  stick to it -- you should probably define the particle names in your
   style file and always use them (also for quarks).
   There are packages \Package{hepnicenames} and \Package{heppennames},
   which use \Package{hepparticles}.\footnote{%
@@ -431,7 +432,7 @@ It is not needed if you use the \Package{newtx} font package.}
     \int y\,\mathrm{d}x\,.
   \end{equation*}
   This is also one of the the very few places, where it makes sense
-  to put some spacing in by hand --- normally you should leave this to \TeX.
+  to put some spacing in by hand -- normally you should leave this to \TeX.
   The \Package{derivative} package provides the command \verb|\odif{x}|,
   while the \Package{diffcoeff} package (as of version 3.0) provides the command \verb|\dl|,
   and you can add space using a syntax such as \verb|\dl2x|.\footnote{%
@@ -581,7 +582,7 @@ in \cref{sec:app:tex}.
   belongs in the main body of the text.
 
 \item Do not start trying to format figure and table captions inside
-  each caption --- use the options available in \KOMAScript{} to set
+  each caption -- use the options available in \KOMAScript{} to set
   such things at the beginning of the document.
 
 \item Do not worry about overfull boxes, positions of figures
@@ -617,8 +618,8 @@ such as \verb+1.4E4+ automatically:
 \begin{tcblisting}{}
 \num{1.4E4}\\
 \num[exponent-product=\cdot]{-3.4E-6}\\
-\SI{2.99467E8}{\metre\per\second}\\
-\SI[round-mode=places,round-precision=1]{2.99467E8}{\m.\s^{-1}}
+\qty{2.99467E8}{\metre\per\second}\\
+\qty[round-mode=places,round-precision=1]{2.99467E8}{\m.\s^{-1}}
 \end{tcblisting}
 \noindent
 Depending on the language or using the option \Option{exponent-product}
@@ -633,7 +634,7 @@ numbers in a single way and then a full stop or a comma will be used
 as the decimal point, depending on which language you set for your
 document. This means that computer generated decimal numbers can be
 output with commas in a German thesis just by changing the language of
-your thesis --- this for me is \LaTeX{} at its best! For example:
+your thesis -- this for me is \LaTeX{} at its best! For example:
 \begin{tcblisting}{}
 \num{1.2345E-3}\\
 \foreignlanguage{ngerman}{\num{1.2345E-3}}
@@ -660,10 +661,10 @@ e.g.\ per second. This can be changed for a single command.
 
 Some examples are given below:
 \begin{tcblisting}{}
-\(c\) is \SI{3E8}{\metre\per\second}\\
-\(c\) is \SI[per-mode=fraction, fraction-function=\sfrac]{3E8}{\metre\per\second}\\
-\(c = \SI[per-mode=symbol]{2.99E8}{\metre\per\second}\)\\
-\(\hbar\) is \SI{1.054E-34}{\joule.\second}
+\(c\) is \qty{3E8}{\metre\per\second}\\
+\(c\) is \qty[per-mode=fraction, fraction-function=\sfrac]{3E8}{\metre\per\second}\\
+\(c = \qty[per-mode=symbol]{2.99E8}{\metre\per\second}\)\\
+\(\hbar\) is \qty{1.054E-34}{\joule.\second}
 \end{tcblisting}
 \noindent
 The 1st example uses the default \Macro{per},
@@ -679,11 +680,11 @@ Angles are also very straightforward:
 \ang{90}
 \end{tcblisting}
 
-If you want to write something like \SI[parse-numbers=false]{90(99)}{\%},
+If you want to write something like \qty[parse-numbers=false]{90(99)}{\%},
 include the option \Option{parse-numbers=false} with the \Macro{SI} command,
 so that it does not try to interpret \num[parse-numbers=false]{90(99)}:
 \begin{tcblisting}{listing side text}
-\SI[parse-numbers=false]{90(99)}{\%}
+\qty[parse-numbers=false]{90(99)}{\%}
 \end{tcblisting}
 
 If you also want to use \Package{siunitx} in slides, where one usually
@@ -699,41 +700,87 @@ examples. \Package{siunitx} also contains useful and powerful tools
 for typesetting tables and as mentioned above can be used to round
 numbers. These aspects are discussed in \cref{sec:table}.
 
+Version 3 of \Package{siunitx} replaces \Macro{SI} with \Macro{qty}
+and \Macro{si} with \Macro{unit}.
+This version was released in June 2021,
+so it might take a while before you are affected by this change.
+The old macro names will continue to work.
+
 Note that the \Macro{clight} symbol that is used in the macro
-\Macro{MeVovercsq} to produce \si{\MeVovercsq} is defined as \(c_{0}\) in
+\Macro{MeVovercsq} to produce \unit{\MeVovercsq} is defined as \(c_{0}\) in
 \Package{siunitx} version 2. As this is not the way it is usually
-written in particle physics I redefined it using:
+written in particle physics I redefined it using one of the following:
 \begin{tcblisting}{listing only, hbox}
-\DeclareSIUnit\clight{\text{\ensuremath{c}}}
+\DeclareSIUnit\clight{\text{\ensuremath{c}}}   % siunitx version 2
+\DeclareSIUnit\clight{\ensuremath{\mathit{c}}} % siunitx version 3 (after 2021/04/09)
 \end{tcblisting}
 
-Two things that are currently not built in are separate statistical and
-systematic errors and asymmetric errors. From the author I got some
-suggestions on how to define such things. They are included in
-\texttt{guide\_defs.sty} at present and can be added to
-\texttt{thesis\_defs.sty}.
-Several new macros have been defined there:
-\Macro{numerrt}, \Macro{numpmerr} and \Macro{numpmerrt} to write
-errors with a description, which are asymmetric and both, respectively.
-The corresponding macros for values and errors are
-\Macro{SIerrt}, \Macro{SIpmerr} and \Macro{SIpmerrt}. For the macros
-whose names end with \enquote{\texttt{t}}, you also have to provide
-the descriptive text.
-If you have two errors then use \Macro{SIerrtt}
-or \Macro{SIpmerrtt}, which have two or three more arguments, respectively.
-For the standard case of statistical and systematic
-errors, you can use the macros \Macro{SIerrs} and
-\Macro{SIpmerrs}. Examples of their use are:
+%------------------------------------------------------------------------------
+\subsection{Rounding and numbers with asymmetric errors}%
+\label{sec:tips:pmerr}\index{asymmetric errors}\index{errors!asymmetric}
+
+Two things that are currently not built into the \Package{siunitx} package
+are separate statistical and  systematic errors and asymmetric errors.
+In addition it may be desirable to round the numbers.
+From the author I got some suggestions on how to define such things.
+They can be included by passing the option \Option{numerr} to 
+\Package{ubonn-thesis}.
+This option defines several new macros:
+\begin{itemize}
+  \item \Macro{numR}, \Macro{numRF} and  \Macro{numRP}
+    for rounding numbers.
+    \Macro{numRF} uses a fixed number of digits,
+    whose value can be  given as an optional argument.
+    \Macro{numRP} does the same, but with a fixed number of decimal places.
+  \item \Macro{numerrt}, \Macro{numpmerr} and \Macro{numpmerrt}
+    can be used to write errors with a description,
+    which are asymmetric and both, respectively.
+  \item The corresponding macros for values and errors are
+    \Macro{qtyerrt}, \Macro{qtypmerr} and \Macro{qtypmerrt}. For the macros
+    whose names end with \enquote{\texttt{t}}, you also have to provide
+    the descriptive text.
+  \item If you have two errors then use \Macro{qtyerrtt}
+    or \Macro{qtypmerrtt}, which have two or three more arguments, respectively.
+  \item For the standard case of statistical and systematic
+    errors, you can use the macros \Macro{qtyerrs} and
+    \Macro{qtypmerrs}.
+\end{itemize}
+For all the macros except \Macro{numR}, \Macro{numRF} and  \Macro{numRP}
+the first (optional) argument can be used to pass any options you like to
+the \Macro{num} command.
+
+Examples of the rounding macros' usage are:
+\begin{tcblisting}{}
+\sisetup{round-precision=3}
+\begin{tabular}{ll}
+  \numR{1234.5678}\\
+  \numRF{1234.5678} & \numRF[2]{1234.5678}\\
+  \numRP{1234.5678} & \numRP[2]{1234.5678}\\
+\end{tabular}
+\end{tcblisting}
+
+Examples of the asymmetric error macros are:
+\begin{tcblisting}{}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{ll}
+  \numpmerr{+0.1234}{-0.4567} & \numpmerr[round-mode=places, round-precision=2]{+0.1234}{-0.4567}\\
+  \numpmerrt{+0.1234}{-0.4567}{stat.} & \numpmerr[round-mode=places, round-precision=2]{+0.1234}{-0.4567}{sys.}\\
+\end{tabular}
+\end{tcblisting}
+    
+Examples of the quantities macros are:
 \begin{tcblisting}{}
 \begin{align*}
-  \sigma & = \SIerrs{3.42}{0.46}{0.32}{\pico\barn}\\
-  \sigma & = \SIpmerr{3.42}{+0.46}{-0.32}{\pico\barn}\\
-  \sigma & = \SIpmerrt{3.42}{+0.46}{-0.32}{\stat}{\pico\barn}\\
-  \sigma & = \SIpmerrs{3.42}{+0.46}{-0.32}{+0.06}{-0.04}{\pico\barn}\\
-  \sigma & = \SIpmerrtt{3.42}{+0.46}{-0.32}{\stat}{+0.06}{-0.04}{\sys}{\pico\barn}
+  \sigma & = \qtyerrs{3.42}{0.46}{0.32}{\pico\barn}\\
+  \sigma & = \qtyerrs[round-mode=places, round-precision=1]{3.42}{0.46}{0.32}{\pico\barn}\\
+  \sigma & = \qtypmerr{3.42}{+0.46}{-0.32}{\pico\barn}\\
+  \sigma & = \qtypmerr[round-mode=figures, round-precision=2]{3.42}{+0.46}{-0.32}{\pico\barn}\\
+  \sigma & = \qtypmerrt{3.42}{+0.46}{-0.32}{\stat}{\pico\barn}\\
+  \sigma & = \qtypmerrs{3.42}{+0.46}{-0.32}{+0.06}{-0.04}{\pico\barn}\\
+  \sigma & = \qtypmerrtt{3.42}{+0.46}{-0.32}{\stat}{+0.06}{-0.04}{\sys}{\pico\barn}
 \end{align*}
 \end{tcblisting}
-The last two examples use \Macro{SIpmerrs} and \Macro{SIpmerrtt} just
+The last two examples use \Macro{qtypmerrs} and \Macro{qtypmerrtt} just
 to show that they can both give the same output. If you need even more
 complicated combinations of errors, or more errors, have a look at the
 definitions, e.g.
@@ -743,16 +790,16 @@ definitions, e.g.
   \valuesep\numerrt{8.7}{\stat}%
   \valuesep\numpmerrt{+6.4}{-5.3}{\sys}%
   \valuesep\numerrt{8.2}{lumi.})%
-  \valuesep\si{\pico\barn}
+  \valuesep\unit{\pico\barn}
 \end{equation*}    
 \end{tcblisting}
 
-Version 3 of \Package{siunitx} replaces \Macro{SI} with \Macro{qty}
-and \Macro{si} with \Macro{unit}.
-This version was released in June 2021,
-so it might take a while before you are affected by this change.
-The old macro names will continue to work.
+Rounding\index{rounding} is very nice and works well, but can slow down compilation considerably.
+More discussion on rounding can be found  in \cref{sec:table:siunitx}.
 
+Note that the macro \Macro{supsub} can be used to make the superscript and the subscript
+have the same width.
+This is needed as in some fonts \enquote{\(+\)} and \enquote{\(-\)} have  a different width.
 
 %------------------------------------------------------------------------------
 \section{Definitions in particle physics}%
@@ -822,7 +869,7 @@ easier: \(\overline{\text{B}}^{\pm}_{\text{c}}\) and
 \Package{hepparticles} tries to tweak the size of the bar to make it look good.
 
 Another problem is that, depending on the font you use, the spacing between \enquote{e} and \enquote{V}
-on \si{\eV} and its derivatives, e.g.\ \si{\GeV}, can be larger than you would like.
+on \unit{\eV} and its derivatives, e.g.\ \unit{\GeV}, can be larger than you would like.
 As this is font dependent the \Package{siunitx} package does not try to fix this.\footnote{%
 A discussion of this can be found in
 \url{http://tex.stackexchange.com/questions/219854/can-i-declare-a-new-automatic-kern-for-ev-without-modifying-font-metrics}.}
@@ -855,9 +902,9 @@ You simply write
 \end{tcblisting}
 You can steer how often the units are written out:
 \begin{tcblisting}{}
-\SIrange[range-units=repeat, range-phrase=--]{5}{7}{\GeV}\\
-\SIrange[range-units=single, range-phrase=--]{5}{7}{\GeV}\\
-\SIrange[range-units=brackets, range-phrase=--]{5}{7}{\GeV}
+\qtyrange[range-units=repeat, range-phrase=--]{5}{7}{\GeV}\\
+\qtyrange[range-units=single, range-phrase=--]{5}{7}{\GeV}\\
+\qtyrange[range-units=brackets, range-phrase=--]{5}{7}{\GeV}
 \end{tcblisting}
 In a single range, such settings are rather long-winded!
 However, they can be applied to the whole
@@ -870,7 +917,7 @@ file \texttt{thesis\_defs.sty} two macros \Macro{mysim} and
 can simply put everything in math mode: \(\mysim 10\%\) or \(\mysimeq 0.2\).
 An alternative is to use \Macro{SI} or \Macro{unit}, as there
 should actually be some space between the number and the \% sign,
-e.g.\ \verb+\(\sim\)\SI{10}{\%}+, which produces \(\sim\)\SI{10}{\%}, is
+e.g.\ \verb+\(\sim\)\qty{10}{\%}+, which produces \(\sim\)\qty{10}{\%}, is
 completely correct and does not need the use of \Macro{mysim}.
 
 What is the difference between \Macro{textrm} and
@@ -896,7 +943,7 @@ of the transverse energy of the highest energy jet:
 \end{tcblisting}
 As you can see
 from this example, the key difference is that \Macro{mathrm} switches
-to an upright font, but keeps you in math mode --- hence ignoring any
+to an upright font, but keeps you in math mode -- hence ignoring any
 spaces.
 \Macro{textrm} switches to text mode (with a serif font) and
 therefore pays attention to spaces.
@@ -922,7 +969,7 @@ Note that this fix does not work for \LuaLaTeX and \XeLaTeX and so is not applie
 For math mode the official \LaTeX\ macro is \verb|\(...\)|.
 \verb|$...$| is the \TeX\ primitive.
 It is therefore recommended to use \verb|\(...\)| for inline equations etc.,
-although it must be said that probably well over \SI{90}{\%} of people still use \verb|$...$|.
+although it must be said that probably well over \qty{90}{\%} of people still use \verb|$...$|.
 There still seem to be a few cases when \verb|\(...\)| leads to errors.
 This sometimes happened for \TeXLive versions from 2013 or earlier
 when used in figure or table captions.
@@ -968,8 +1015,17 @@ These are the ones I remember coming across so far:
   Correct: \enquote{\emph{We are not sensitive to this effect.}}
 \item \enquote{We have to choose between Xenon (Xe)  and Argon (Ar).}
   Correct: \enquote{\emph{We have to choose between xenon (Xe) and argon (Ar).}}
-\item \enquote{We loose \SI{50}{\%} of the signal due to this cut.}
-  Correct: \enquote{\emph{We lose \SI{50}{\%} of the signal due to this cut.}}
+\item \enquote{We loose \qty{50}{\%} of the signal due to this cut.}
+  Correct: \enquote{\emph{We lose \qty{50}{\%} of the signal due to this cut.}}
+\item  \enquote{\emph{Its uncertain what its meaning is}}
+  Correct: \enquote{It's uncertain what its meaning is.}
+  In the first usage \enquote{it's} is short for \enquote{it is}.
+\item \enquote{\emph{Explain how the drawing looks.}}
+  Correct: \enquote{Explain what the drawing looks like.}
+\item \enquote{\emph{He raises the stone above his head to get a pay raise.}}
+  Correct: \enquote{He raises the stone above his head to get a pay rise.}
+\item \enquote{\emph{The agreement is well and the data are good described by the simulation.}}
+  Correct: \enquote{Good agreement is seen and the data are well described by the simulation.}
 \end{itemize}
 
 A general comment (which also applies to theses in other languages) is that you should avoid \enquote{fluff}.
@@ -1019,7 +1075,7 @@ You can either capitalise just the first word (and proper names and acronyms),
 or every important word.
 Most journals have moved to the first option,
 but there are some that use the latter (most notably APS journals).
-Both are fine --- just be consistent!
+Both are fine -- just be consistent!
 
 %------------------------------------------------------------------------------
 \section{Line numbering}%
@@ -1032,7 +1088,7 @@ occasionally has some problems, I thought I would include some
 information here.
 
 \Package{lineno} is the package to use to get line numbers in your text,
-but sometimes a block of lines is not numbered --- see \cref{fig:lineno}a.
+but sometimes a block of lines is not numbered -- see \cref{fig:lineno}a.
 
 \begin{figure}[htbp]
   \centering
