@@ -18,7 +18,7 @@ wide that you would like to rotate it by \ang{90}?
 
 Also, how can you make your tables look more professional with for
 example thick and thin lines in appropriate places? This is easy to
-solve --- use the \Macro{toprule}, \Macro{midrule} and \Macro{bottomrule}
+solve -- use the \Macro{toprule}, \Macro{midrule} and \Macro{bottomrule}
 commands from the \Package{booktabs} package. These commands also
 produce much better spacing between these lines and the rows above and
 below. The \Package{booktabs} package gives you some advice on how
@@ -42,14 +42,14 @@ It includes options related to \Package{amsmath}, \Package{booktabs}, \Package{l
 There are improved ways of spanning columns and rows,
 removing the need for \Macro{multicolumn} and the \Package{multirow} package.
 There are many options for also making colourful tables, adjusting spacing etc.,
-while the defautl row spacing looks to be better than the standard one in the \Env{tabular} and \Env{array} environments.
+while the default row spacing looks to be better than the standard one in the \Env{tabular} and \Env{array} environments.
 The package was only released in 2021, so you need a recent version of \TeXLive to be able to use it.
 
 Tables usually go inside the \Env{table} environment so their position can \enquote{float}.
 In this chapter I use some tables inside \Env{table} and some inline.
 
 Don't forget to use the package \Package{cleveref} and macros such as \Macro{cref}
-to reference the tables --- see \cref{sec:package:appearance} for a few more details.
+to reference the tables -- see \cref{sec:package:appearance} for a few more details.
 
 There are good arguments for the table caption being above the table,
 while the figure caption should be below the figure.
@@ -257,7 +257,7 @@ You can use the \Option{table-number-alignment} option to change this.
 If you want to use \Macro{tablenum} in an
 \Option{S} column you have to enclose it in braces.
 You also need to do this with regular text,
-such as column headings --- see \cref{tab:viscosity}.
+such as column headings -- see \cref{tab:viscosity}.
 Note the use of \Macro{sisetup\{table-format=4.0\}}
 to define a default format for numbers in an \enquote{S} column,
 or that are formatted using \Macro{tablenum}.
@@ -314,7 +314,7 @@ as you can use alignment options with it.
 With \Option{S} you specify the format for the whole column.
 You should make sure
 that you specify the rounding mode in the preamble of the table (usually
-\Option{figures} or \Option{places} --- you can also choose \Option{off}).
+\Option{figures} or \Option{places} -- you can also choose \Option{off}).
 
 If you know that you are going to make such a table, it is easy
 to use either of these options to write it out in this format using a program. 
@@ -487,7 +487,7 @@ tricks with the formatting of the intercolumn separator
 \verb+@{\,\pm\!\!}+ to get the spacing nice! This confirms my
 statement above that the \Option{S} format is most useful for aligning
 simple numbers easily, while \Macro{tablenum} is very nice for rounding to
-a given precision --- note that you can use either the \Option{dp} or
+a given precision -- note that you can use either the \Option{dp} or
 \Option{sf} options to achieve what you want.
 
 If your header is wider than the content,
