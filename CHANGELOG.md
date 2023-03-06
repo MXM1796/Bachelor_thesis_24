@@ -18,7 +18,11 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ### Added
 
+- Add option `numpmcorr` to decide if macro for different width superscripts and subscripts is used.
+
 ### Changed
+
+- Rewrite of `numerr` macros to work better using `expl3`.
 
 ### Deprecated
 

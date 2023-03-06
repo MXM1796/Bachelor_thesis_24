@@ -224,6 +224,7 @@ The following options exist:\\
   biblatex & true & Include \Package{biblatex}.\\
   siunitx & true & Use the \Package{siunitx} package for typesetting units.\\
   numerr & false & Macros for rounding and asymmetric errors.\\
+  numpmcorr & false & Use macro for different width \enquote{\(+\)} and \enquote{\(-\)}.\\
   eVkern & false & Apply a kern of -0.1em to \unit{\eV} in order to move \enquote{e} and \enquote{V} closer together.
   This is not necessary if you use the \Package{newtx} font package.\\
   dcolumn & false & A package for helping to align things in tables.\\
@@ -762,27 +763,19 @@ Examples of the rounding macros' usage are:
 Examples of the asymmetric error macros are:
 \begin{tcblisting}{}
 \renewcommand{\arraystretch}{1.4}
-\begin{tabular}{ll}
+\begin{equation*}
+\begin{array}{ll}
   \numpmerr{+0.1234}{-0.4567} & \numpmerr[round-mode=places, round-precision=2]{+0.1234}{-0.4567}\\
   \numpmerrt{+0.1234}{-0.4567}{stat.} & \numpmerrt[round-mode=places, round-precision=2]{+0.1234}{-0.4567}{sys.}\\
-\end{tabular}
+\end{array}
+\end{equation*}
 \end{tcblisting}
-\begin{tcblisting}{}
-  \renewcommand{\arraystretch}{1.4}
-  \begin{equation*}
-  \begin{array}{ll}
-    \numpmerr{+0.1234}{-0.4567} & \numpmerr[round-mode=places, round-precision=2]{+0.1234}{-0.4567}\\
-    \numpmerrt{+0.1234}{-0.4567}{stat.} & \numpmerrt[round-mode=places, round-precision=2]{+0.1234}{-0.4567}{sys.}\\
-  \end{array}
-  \end{equation*}
-  \end{tcblisting}
-The first example is in text mode, while the second is in math mode.
-As you can see the macros work in both modes.\footnote{%
-If you compile the guide with \LuaLaTeX\ or \XeLaTeX\
-the superscripts and subscripts are not rendered correctly,
-neither in the listing nor in normal text, e.g.\ \numpmerr{+0.123}{-0.456}.
-The reason for this in being investigated.
-}
+% The first example is in text mode, while the second is in math mode.
+% As you can see the macros work in both modes.\footnote{%
+% If you compile the guide with \LuaLaTeX\ or \XeLaTeX\
+% the superscripts and subscripts are not rendered correctly,
+% neither in the listing nor in normal text, e.g.\ \numpmerr{+0.123}{-0.456}.
+% The reason for this in being investigated.}
 
 Examples of the quantities macros are:
 \begin{tcblisting}{}
@@ -813,9 +806,11 @@ definitions, e.g.
 Rounding\index{rounding} is very nice and works well, but can slow down compilation considerably.
 More discussion on rounding can be found  in \cref{sec:table:siunitx}.
 
-Note that the macro \Macro{supsub} can be used to make the superscript and the subscript
+Note that the option \Option{numpmcorr} can be used to make the superscript and the subscript
 have the same width.
-This is needed as in some fonts \enquote{\(+\)} and \enquote{\(-\)} have  a different width.
+This is needed as in some fonts \enquote{\(+\)} and \enquote{\(-\)} have a different width.
+This option is enabled by default as pdf\LaTeX\ has this problem.
+It is not needed (and slows things down) for \LuaLaTeX\ and \XeLaTeX.
 
 %------------------------------------------------------------------------------
 \section{Definitions in particle physics}%

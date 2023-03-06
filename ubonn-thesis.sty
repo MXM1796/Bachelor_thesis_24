@@ -60,6 +60,7 @@
 \DeclareBoolOption[true]{biblatex}
 \DeclareBoolOption[true]{siunitx}
 \DeclareBoolOption[true]{numerr}
+\DeclareBoolOption[true]{numpmcorr}
 \DeclareBoolOption[false]{eVkern}
 \DeclareBoolOption[false]{dcolumn}
 \DeclareBoolOption[true]{cleveref}
@@ -677,68 +678,91 @@
 % Commands for separate statistical and systematic errors
 % as well as asymmetric errors.
 % Include options to steer rounding.
+% Need a macro to make superscript and subscript the same width.
+% This is needed as + and - can have different widths (pdflatex problem).
+% The idea for the way to do this came from:
+% https://tex.stackexchange.com/questions/291291/control-horizontal-alignment-of-sub-superscripts
+\ExplSyntaxOn
+% \DeclareRobustCommand{\supsub}[2]{{%
+%   \mathpalette\makesupsub{{#1}{#2}}%
+% }}
 \ifthenelse{\boolean{UBN@numerr}}{%
-  % Macro to make superscript and subscript the same width.
-  % This is needed as + and - can have different widths.
-  % Code is adapted from:
-  % https://tex.stackexchange.com/questions/291291/control-horizontal-alignment-of-sub-superscripts
-  \DeclareRobustCommand{\supsub}[2]{{%
-    \mathpalette\makesupsub{{#1}{#2}}%
-  }}
+  \cs_new_protected:Npn \ubn_supsub:nn #1#2
+    {
+      \hbox_set:Nn \l_tmpa_box { \ensuremath { \c_math_superscript_token { #1 } } }
+      \hbox_set:Nn \l_tmpb_box { \ensuremath { \c_math_subscript_token { #2 } } }
+      % \box_show:N \l_tmpa_box
+      % \box_show:N \l_tmpb_box
+      \dim_compare:nNnTF { \box_wd:N \l_tmpa_box } > { \box_wd:N \l_tmpb_box }
+        { \dim_set:Nn \l_tmpa_dim { \box_wd:N \l_tmpa_box } }
+        { \dim_set:Nn \l_tmpa_dim { \box_wd:N \l_tmpb_box } }
+      \c_math_superscript_token { \mathmakebox[\l_tmpa_dim][r]{ #1 } }
+      \c_math_subscript_token   { \mathmakebox[\l_tmpa_dim][r]{ #2 } }
+      %\c_math_subscript_token { #1 } \c_math_superscript_token { #2 }
+    }
+  \cs_generate_variant:Nn \ubn_supsub:nn { xx }
+  % \providecommand{\@firstoftwo}[3]{#1}
+  % \providecommand{\@secondoftwo}[3]{#2}
+  % \newcommand{\makesupsub}[2]{%
+  %   \sbox\z@{$^{\@firstoftwo#2}$}%
+  %   \sbox\tw@{$_{\@secondoftwo#2}$}%
+  %   \dimen@=\wd\z@
+  %   \ifdim\wd\tw@>\wd\z@ \dimen@=\wd\tw@\fi
+  %   {\mkern0mu}%
+  %     \sp{\mathmakebox[\dimen@][r]{\@firstoftwo#2}}%
+  %     \sb{\mathmakebox[\dimen@][r]{\@secondoftwo#2}}%
+  % }
 
-  \providecommand{\@firstoftwo}[3]{#1}
-  \providecommand{\@secondoftwo}[3]{#2}
-  \newcommand{\makesupsub}[2]{%
-    \sbox\z@{$^{\@firstoftwo#2}$}%
-    \sbox\tw@{$_{\@secondoftwo#2}$}%
-    \dimen@=\wd\z@
-    \ifdim\wd\tw@>\wd\z@ \dimen@=\wd\tw@\fi
-    {\mkern0mu}%
-      ^{\mathmakebox[\dimen@][r]{\@firstoftwo#2}}%
-      _{\mathmakebox[\dimen@][r]{\@secondoftwo#2}}%
-}
-
-  \newcommand*\valuesep{\,}
-  \sisetup{number-unit-product=\valuesep}
-  \newcommand*\numerrt[3][]{%
-    \begingroup
-    \sisetup{#1}%
-    \ensuremath{\pm \num{#2}\valuesep\text{(#3)}}%
-    \endgroup
-  }
   % Keeping plus sign option depends on siunitx version.
-  \@ifpackageloaded{siunitx}{%
+  % Arguments are rounding digits, rounding type, superscript, subscript.
+  \tl_new:N \ubn_si_options_tl
+  \NewDocumentCommand {\numpmerrx} { o o m m } {
     \@ifpackagelater{siunitx}{2021/04/09}{%
-      \typeout{ubonn-thesis: using siunitx version 3 options}
-      % Arguments are rounding digits, rounding type, superscript, subscript.
-      \NewDocumentCommand {\numpmerrx} { o o m m } {%
-        \IfNoValueTF {#1} {%
-          \ensuremath{\supsub{\num[print-implicit-plus]{#3}}{\num[print-implicit-plus]{#4}}}
-        }{%
-          \IfNoValueTF {#2} {%
-            \ensuremath{\supsub{\num[round-precision=#1, print-implicit-plus]{#3}}{\num[round-precision=#1, print-implicit-plus]{#4}}}
-          }{%
-            \ensuremath{\supsub{\num[round-mode=#2, round-precision=#1, print-implicit-plus]{#3}}{\num[round-mode=#2, round-precision=#1, print-implicit-plus]{#4}}}
-          }
+      \IfNoValueTF {#1} {
+        \tl_set:Nn \ubn_si_options_tl { print-implicit-plus }
+      }{
+        \IfNoValueTF {#2} {
+          \tl_set:Nn \ubn_si_options_tl { round-precision=#1, print-implicit-plus }
+        }{
+          \tl_set:Nn \ubn_si_options_tl { round-mode=#2, round-precision=#1, print-implicit-plus }
         }
       }
     }{
-      \typeout{ubonn-thesis: using siunitx version 2 options}
-      % Arguments are rounding digits, rounding type, superscript, subscript.
-      \NewDocumentCommand {\numpmerrx} { o o m m } {%
-        \IfNoValueTF {#1} {%
-          \ensuremath{\supsub{\num[retain-explicit-plus]{#3}}{\num[retain-explicit-plus]{#4}}}
-        }{%
-          \IfNoValueTF {#2} {%
-            \ensuremath{\supsub{\num[round-precision=#1, retain-explicit-plus]{#3}}{\num[round-precision=#1, retain-explicit-plus]{#4}}}
-          }{%
-            \ensuremath{\supsub{\num[round-mode=#2, round-precision=#1, retain-explicit-plus]{#3}}{\num[round-mode=#2, round-precision=#1, retain-explicit-plus]{#4}}}
-          }
+      \IfNoValueTF {#1} {
+        \tl_set:Nn \ubn_si_options_tl { retain-explicit-plus }
+      }{
+        \IfNoValueTF {#2} {
+          \tl_set:Nn \ubn_si_options_tl { round-precision=#1, retain-explicit-plus }
+        }{
+          \tl_set:Nn \ubn_si_options_tl { round-mode=#2, round-precision=#1, retain-explicit-plus }
         }
       }
     }
-  }{}
+    \ifthenelse{\boolean{UBN@numpmcorr}}{
+      % \tl_show:N \ubn_si_options_tl
+      \ubn_supsub:xx
+        { \exp_not:N \num [ \tl_use:N \ubn_si_options_tl ] {#3} }
+        { \exp_not:N \num [ \tl_use:N \ubn_si_options_tl ] {#4} }
+    }{
+      \tl_set:Nx \l_tmpa_tl { \exp_not:N \num [ \tl_use:N \ubn_si_options_tl ] {#3} }
+      \tl_set:Nx \l_tmpb_tl { \exp_not:N \num [ \tl_use:N \ubn_si_options_tl ] {#4} }
+      \c_math_superscript_token { \tl_use:N \l_tmpa_tl }
+      \c_math_subscript_token   { \tl_use:N \l_tmpb_tl }
+    }
+  }
+}{}
+\ExplSyntaxOff
 
+\ifthenelse{\boolean{UBN@numerr}}{%
+  \newcommand*\valuesep{\,}
+  \sisetup{number-unit-product=\valuesep}
+  % Basic error plus text.
+  \newcommand*\numerrt[3][]{%
+    \begingroup
+      \sisetup{#1}%
+      \ensuremath{\pm \num{#2}\valuesep\text{(#3)}}%
+    \endgroup
+  }
   % Numbers with rouding.
   \NewDocumentCommand {\numR} { o m } {%
     \IfNoValueTF {#1} {%
