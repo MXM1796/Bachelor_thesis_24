@@ -733,20 +733,26 @@ This option defines several new macros:
     \Macro{numRF} uses a fixed number of digits,
     whose value can be  given as an optional argument.
     \Macro{numRP} does the same, but with a fixed number of decimal places.
-  \item \Macro{numerrt}, \Macro{numpmerr} and \Macro{numpmerrt}
+    For \Macro{numR} you specify the rounding mode (and any other options)
+    using \Macro{sisetup} before calling it.
+  \item \Macro{numpmerr} can be used to pass the rounding precision
+    as the first optional argument and the mode as the second optional argument.
+  \item \Macro{numerrt}, \Macro{numpmerrx} and \Macro{numpmerrt}
     can be used to write errors with a description,
     which are asymmetric and both, respectively.
+    Any \Package{sisetup} options can be passed as the first (optional) argument.
   \item The corresponding macros for values and errors are
-    \Macro{qtyerrt}, \Macro{qtypmerr} and \Macro{qtypmerrt}. For the macros
+    \Macro{qtypmerr}, \Macro{qtyerrt}, \Macro{qtypmerrx} and \Macro{qtypmerrt}. For the macros
     whose names end with \enquote{\texttt{t}}, you also have to provide
     the descriptive text.
   \item If you have two errors then use \Macro{qtyerrtt}
-    or \Macro{qtypmerrtt}, which have two or three more arguments, respectively.
+    or \Macro{qtypmerrtt}, which have one or two more arguments, respectively.
   \item For the standard case of statistical and systematic
     errors, you can use the macros \Macro{qtyerrs} and
     \Macro{qtypmerrs}.
 \end{itemize}
-For all the macros except \Macro{numR}, \Macro{numRF} and  \Macro{numRP}
+For all the macros except \Macro{numRF}, \Macro{numRP}
+\Macro{numpmerr} and \Macro{qtypmerr}
 the first (optional) argument can be used to pass any options you like to
 the \Macro{num} command.
 
@@ -764,29 +770,28 @@ Examples of the asymmetric error macros are:
 \begin{tcblisting}{}
 \renewcommand{\arraystretch}{1.4}
 \begin{equation*}
-\begin{array}{ll}
-  \numpmerr{+0.1234}{-0.4567} & \numpmerr[round-mode=places, round-precision=2]{+0.1234}{-0.4567}\\
-  \numpmerrt{+0.1234}{-0.4567}{stat.} & \numpmerrt[round-mode=places, round-precision=2]{+0.1234}{-0.4567}{sys.}\\
+\begin{array}{lll}
+  \numpmerr{+0.1234}{-0.4567} & \numpmerr[2][places]{+0.1234}{-0.4567} &
+  \numpmerrx[round-mode=places, round-precision=2]{+0.1235}{-0.4568}\\
+  \numpmerrt{+0.1234}{-0.4567}{stat.} & \numpmerr[2]{+0.1236}{-0.4569}\,\text{(stat.)} &
+  \numpmerrt[round-mode=places, round-precision=2]{+0.1237}{-0.4560}{sys.}\\
 \end{array}
 \end{equation*}
 \end{tcblisting}
-% The first example is in text mode, while the second is in math mode.
-% As you can see the macros work in both modes.\footnote{%
-% If you compile the guide with \LuaLaTeX\ or \XeLaTeX\
-% the superscripts and subscripts are not rendered correctly,
-% neither in the listing nor in normal text, e.g.\ \numpmerr{+0.123}{-0.456}.
-% The reason for this in being investigated.}
 
 Examples of the quantities macros are:
 \begin{tcblisting}{}
 \begin{align*}
-  \sigma & = \qtyerrs{3.42}{0.46}{0.32}{\pico\barn}\\
-  \sigma & = \qtyerrs[round-mode=places, round-precision=1]{3.42}{0.46}{0.32}{\pico\barn}\\
-  \sigma & = \qtypmerr{3.42}{+0.46}{-0.32}{\pico\barn}\\
-  \sigma & = \qtypmerr[round-mode=figures, round-precision=2]{3.42}{+0.46}{-0.32}{\pico\barn}\\
-  \sigma & = \qtypmerrt{3.42}{+0.46}{-0.32}{\stat}{\pico\barn}\\
-  \sigma & = \qtypmerrs{3.42}{+0.46}{-0.32}{+0.06}{-0.04}{\pico\barn}\\
-  \sigma & = \qtypmerrtt{3.42}{+0.46}{-0.32}{\stat}{+0.06}{-0.04}{\sys}{\pico\barn}
+  \sigma & = \qtyerrs{3.42}{0.46}{0.32}{\pico\barn} & \Macro{qtyerrs}\\
+  \sigma & = \qtyerrs[round-mode=places, round-precision=1]{3.43}{0.46}{0.32}{\pico\barn} & \Macro{qtyerrs}\\
+  \sigma & = \qtyerrt[round-mode=places, round-precision=2]{3.43}{0.46}{stat.}{\pico\barn} & \Macro{qtyerrt}\\
+  \sigma & = \qtyerrtt{3.43}{0.46}{stat.}{0.32}{sys.}{\pico\barn} & \Macro{qtyerrtt}\\
+  \sigma & = \qtypmerr{3.44}{+0.46}{-0.32}{\pico\barn} & \Macro{qtypmerr}\\
+  \sigma & = \qtypmerr[2][figures]{3.45}{+0.46}{-0.32}{\pico\barn} & \Macro{qtypmerr}\\
+  \sigma & = \qtypmerrx[round-mode=figures, round-precision=2]{3.46}{+0.46}{-0.32}{\pico\barn} & \Macro{qtypmerrs}\\
+  \sigma & = \qtypmerrt{3.47}{+0.46}{-0.32}{stat.}{\pico\barn} & \Macro{qtypmerrt}\\
+  \sigma & = \qtypmerrs{3.48}{+0.46}{-0.32}{+0.06}{-0.04}{\pico\barn} & \Macro{qtypmerrs}\\
+  \sigma & = \qtypmerrtt{3.49}{+0.46}{-0.32}{stat.}{+0.06}{-0.04}{sys.}{\pico\barn} & \Macro{qtypmerrtt}
 \end{align*}
 \end{tcblisting}
 The last two examples use \Macro{qtypmerrs} and \Macro{qtypmerrtt} just
@@ -796,8 +801,8 @@ definitions, e.g.
 \begin{tcblisting}{}
 \begin{equation*}
   \sigma_{t\bar{t}} = (\num{164.6}%
-  \valuesep\numerrt{8.7}{\stat}%
-  \valuesep\numpmerrt{+6.4}{-5.3}{\sys}%
+  \valuesep\numerrt{8.7}{stat.}%
+  \valuesep\numpmerrt{+6.4}{-5.3}{sys.}%
   \valuesep\numerrt{8.2}{lumi.})%
   \valuesep\unit{\pico\barn}
 \end{equation*}    
@@ -805,6 +810,48 @@ definitions, e.g.
 
 Rounding\index{rounding} is very nice and works well, but can slow down compilation considerably.
 More discussion on rounding can be found  in \cref{sec:table:siunitx}.
+
+Details of the arguments for all the macros can be found in \cref{tab:numerr,tab:qtyerr}.
+
+\begin{table}[htbp]
+  \caption{Arguments of error macros.
+  \enquote{prec} is short for the \Option{rounding-precision},
+  \enquote{mode} for the \Option{rounding-mode}.
+  Columns that start with \enquote{m} mean mandatory arguments.}
+  \label{tab:numerr}
+  \begin{tabular}{lllll}
+    Macro & Options & m1 & m2 & m3 \\
+    \Macro{numR}      & [sisetup]   & value & error \\
+    \Macro{numRF}     & [prec] & value & error \\
+    \Macro{numRP}     & [prec] & value & error \\
+    \Macro{numpmerr}  & [prec] [mode] & value & err+ & err-\\
+    \Macro{numpmerrx} & [siunitx] & value & err+ & err-\\
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \caption{Arguments of quantity macros.
+  \enquote{prec} is short for the \Option{rounding-precision},
+  \enquote{mode} for the \Option{rounding-mode},
+  \enquote{desc} is short for the description of what the error is,
+  \enquote{stat.} is short for statistical error,
+  \enquote{sys.} is short for systematic error/
+  Columns that start with \enquote{m} mean mandatory arguments.}
+  \label{tab:qtyerr}
+  \begin{tabular}{ll lllllll l}
+    Macro & Options & m1 & m2 & m3 & m4 & m5 & m6 & m7 & m8\\
+    \Macro{qtypmerr} & [prec] [mode] & value & err+ & err- & unit\\
+    \Macro{qtypmerrx} & [sisetup] & value & +err & err- & unit\\
+    \Macro{qtyerrt} & [sisetup] & value & error & desc & unit\\
+    \Macro{qtyerrtt} & [sisetup] & value & error & desc
+      & error & desc & unit\\
+    \Macro{qtypmerrt} & [sisetup] & value & err+ & err- & desc & unit\\
+    \Macro{qtypmerrtt} & [sisetup] & value & err+ & err- & desc
+      & err+ & err- & desc & unit\\
+      \Macro{qtyerrs} & [sisetup] & value & stat. & sys. & unit\\
+      \Macro{qtypmerrs} & [sisetup] & value & stat.+ & stat.- & sys.+ & sys- & unit\\
+    \end{tabular}
+\end{table}
 
 Note that the option \Option{numpmcorr} can be used to make the superscript and the subscript
 have the same width.

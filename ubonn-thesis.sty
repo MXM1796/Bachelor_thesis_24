@@ -696,27 +696,18 @@
       \dim_compare:nNnTF { \box_wd:N \l_tmpa_box } > { \box_wd:N \l_tmpb_box }
         { \dim_set:Nn \l_tmpa_dim { \box_wd:N \l_tmpa_box } }
         { \dim_set:Nn \l_tmpa_dim { \box_wd:N \l_tmpb_box } }
-      \c_math_superscript_token { \mathmakebox[\l_tmpa_dim][r]{ #1 } }
-      \c_math_subscript_token   { \mathmakebox[\l_tmpa_dim][r]{ #2 } }
+      \ensuremath{
+        \c_math_superscript_token { \mathmakebox[\l_tmpa_dim][r]{ #1 } }
+        \c_math_subscript_token   { \mathmakebox[\l_tmpa_dim][r]{ #2 } }
+      }
       %\c_math_subscript_token { #1 } \c_math_superscript_token { #2 }
     }
   \cs_generate_variant:Nn \ubn_supsub:nn { xx }
-  % \providecommand{\@firstoftwo}[3]{#1}
-  % \providecommand{\@secondoftwo}[3]{#2}
-  % \newcommand{\makesupsub}[2]{%
-  %   \sbox\z@{$^{\@firstoftwo#2}$}%
-  %   \sbox\tw@{$_{\@secondoftwo#2}$}%
-  %   \dimen@=\wd\z@
-  %   \ifdim\wd\tw@>\wd\z@ \dimen@=\wd\tw@\fi
-  %   {\mkern0mu}%
-  %     \sp{\mathmakebox[\dimen@][r]{\@firstoftwo#2}}%
-  %     \sb{\mathmakebox[\dimen@][r]{\@secondoftwo#2}}%
-  % }
-
+  
   % Keeping plus sign option depends on siunitx version.
   % Arguments are rounding digits, rounding type, superscript, subscript.
   \tl_new:N \ubn_si_options_tl
-  \NewDocumentCommand {\numpmerrx} { o o m m } {
+  \NewDocumentCommand {\numpmerr} { o o m m } {
     \@ifpackagelater{siunitx}{2021/04/09}{%
       \IfNoValueTF {#1} {
         \tl_set:Nn \ubn_si_options_tl { print-implicit-plus }
@@ -746,8 +737,10 @@
     }{
       \tl_set:Nx \l_tmpa_tl { \exp_not:N \num [ \tl_use:N \ubn_si_options_tl ] {#3} }
       \tl_set:Nx \l_tmpb_tl { \exp_not:N \num [ \tl_use:N \ubn_si_options_tl ] {#4} }
-      \c_math_superscript_token { \tl_use:N \l_tmpa_tl }
-      \c_math_subscript_token   { \tl_use:N \l_tmpb_tl }
+      \ensuremath{
+        \c_math_superscript_token { \tl_use:N \l_tmpa_tl }
+        \c_math_subscript_token   { \tl_use:N \l_tmpb_tl }
+      }
     }
   }
 }{}
@@ -787,28 +780,43 @@
   }
 
   % Asymmetric errors.
-  \NewDocumentCommand {\numpmerr} { o m m } {%
+  \NewDocumentCommand {\numpmerrx} { o m m } {%
     \begingroup
       \IfValueT {#1} {\sisetup{#1}}%
-      \numpmerrx{#2}{#3}%
+      \numpmerr{#2}{#3}%
     \endgroup
   }
   \NewDocumentCommand {\numpmerrt} { o m m m } {%
     \begingroup
       \IfValueT {#1} {\sisetup{#1}}%
-      \numpmerrx{#2}{#3}\valuesep\text{(#4)}%
+      \numpmerr{#2}{#3}\valuesep\text{(#4)}%
     \endgroup
   }
-  \NewDocumentCommand {\qtypmerr} { o m m m m } {%
+  \NewDocumentCommand {\qtypmerr} { o o m m m m } {%
+  \begingroup
+    \IfNoValueTF {#1} {%
+      \ensuremath{(\num{#3}\valuesep\numpmerr{#4}{#5})\valuesep\unit{#6}}%
+    }{
+      \IfNoValueTF {#2} {%
+        \ensuremath{(\num[round-precision=#1]{#3}\valuesep\numpmerr[#1]{#4}{#5})\valuesep\unit{#6}}%
+      }{%
+        \ensuremath{(\num[round-precision=#1, round-mode=#2]{#3}\valuesep\numpmerr[#1][#2]{#4}{#5})\valuesep\unit{#6}}%
+      }
+    }
+  \endgroup
+  }
+  \NewDocumentCommand {\qtypmerrx} { o m m m m } {%
     \begingroup
       \IfValueT {#1} {\sisetup{#1}}%
-      \ensuremath{(\num{#2}\valuesep\numpmerr{#3}{#4})\valuesep{\unit{#5}}}%
+      \ensuremath{(\num{#2}\valuesep\numpmerr{#3}{#4})\valuesep\unit{#5}}%
     \endgroup
   }
   \NewDocumentCommand {\qtyerrt} { o m m m m } {%
     \begingroup
       \IfValueT {#1} {\sisetup{#1}}%
-      \ensuremath{(\num{#2}\valuesep\numerrt{#3}{#4})\valuesep{(#5)}}%
+      \ensuremath{(\num{#2}%
+      \valuesep\numerrt{#3}{#4})%
+      \valuesep\unit{#5}}%
     \endgroup
   }
   \NewDocumentCommand {\qtyerrtt} { o m m m m m m } {%
@@ -817,7 +825,7 @@
       \ensuremath{(\num{#2}%
       \valuesep\numerrt{#3}{#4}%
       \valuesep\numerrt{#5}{#6})%
-      \valuesep{(#7)}}%
+      \valuesep\unit{#7}}%
     \endgroup
   }
   \NewDocumentCommand {\qtypmerrt} { o m m m m m } {%

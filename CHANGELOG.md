@@ -14,7 +14,7 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
-## [10.1.0-alpha] - 2023-12-XX
+## [11.0.0-alpha] - 2024-01-XX
 
 ### Added
 
@@ -22,11 +22,15 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ### Changed
 
-- Rewrite of `numerr` macros to work better using `expl3`.
+- Rewrite of `\numerr` etc. macros to work better using `expl3`.
+  Some of the changes are not backwards compatible - see tables documentation in thesis guide.
+- Meaning of `numpmerr` and `numpmerrx` macros reversed to be more consistent.
 
 ### Deprecated
 
 ### Removed
+
+- Remove support and documentation for TeX Live versions older than 2017.
 
 ### Fixed
 
