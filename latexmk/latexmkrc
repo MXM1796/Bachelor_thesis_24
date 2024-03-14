@@ -11,3 +11,8 @@ sub makeglossaries {
   popd;
   return $return;
 }
+
+# Stuff needed to run axodraw2 - taken from the manual.
+add_cus_dep( "ax1", "ax2", 0, "axohelp" );
+sub axohelp { return system "axohelp \"$_[0]\""; }
+$clean_ext .= " %R.ax1 %R.ax2";
