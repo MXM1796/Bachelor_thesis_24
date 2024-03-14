@@ -17,21 +17,16 @@
 %-------------------------------------------------------------------------------
 
 % Main thesis style file
-\newcommand*{\guideversion}{10.0}
-\newcommand*{\TweakYear}{2020}
+\newcommand*{\guideversion}{11.0}
+\newcommand*{\TweakYear}{2023}
 
 \usepackage{ifthen}
 
-% diffcoeff package released in 2016 - define a simple form of \diff for earlier.
-\ifthenelse{\TweakYear < 2016}{%
-  \newcommand*{\diffcoeff}{diffcoeff=false}
-  \newcommand*{\diff}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+% diffcoeff package released in 2016 and modified a few times since.
+\ifthenelse{\TweakYear < 2018}{%
+  \newcommand*{\diffcoeff}{diffcoeff=true, diffcoeffISO=false}
 }{%
-  \ifthenelse{\TweakYear < 2018}{%
-    \newcommand*{\diffcoeff}{diffcoeff=true, diffcoeffISO=false}
-  }{%
-    \newcommand*{\diffcoeff}{diffcoeff=true}
-  }
+  \newcommand*{\diffcoeff}{diffcoeff=true}
 }
 
 % Thesis style file.
@@ -55,9 +50,7 @@
   \UseTblrLibrary{siunitx}
 }{}
 % TikZ-FeynHand only as of TeX Live 2017.
-\ifthenelse{\TweakYear > 2016}{%
-  \usepackage{tikz-feynhand}
-}{}
+\usepackage{tikz-feynhand}
 \usepackage{tikz-feynman}
 \usepackage{tikz}
 \usepackage{tikz-3dplot}
@@ -68,6 +61,7 @@
 
 % Other packages needed for the guide.
 % \usepackage{physics}
+\usepackage{axodraw2}
 \usepackage{makeidx}
 \usepackage[acronym, toc, nosuper]{glossaries} % docdef=restricted, 
 \usepackage{metalogo}
@@ -129,14 +123,14 @@
 \newcommand*{\thesisrefereetwo}{Prof.\ Dr.\ Anne Jones}
 % Date when thesis was submitted (Master/Diplom)
 % Year or Month, Year when thesis was submitted (PhD)
-\newcommand*{\thesissubmit}{XX.YY.2023}
-% \newcommand*{\thesissubmit}{Month 2023}
+\newcommand*{\thesissubmit}{XX.YY.2024}
+% \newcommand*{\thesissubmit}{Month 2024}
 % Date of thesis examination (PhD)
-\newcommand*{\thesispromotion}{XX.YY.2023}
+\newcommand*{\thesispromotion}{XX.YY.2024}
 % Month and year of the final printed version of the thesis
 \newcommand*{\thesismonth}{January}
-\newcommand*{\thesisyear}{2023}
-\newcommand*{\thesisnumber}{BONN-IR-2023-XXX}
+\newcommand*{\thesisyear}{2024}
+\newcommand*{\thesisnumber}{BONN-IR-2024-XXX}
 
 %-------------------------------------------------------------------------------
 % The abstract is only needed for the printed version. and should be in
