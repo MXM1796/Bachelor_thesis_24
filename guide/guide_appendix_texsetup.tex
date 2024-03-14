@@ -84,7 +84,7 @@ in \TeXstudio \Option{Options \(\rightarrow\) Configure TexStudio \(\rightarrow\
 You can also make a glossary from within \TeXstudio.
 In order to do this you have to define a user build command.
 You can find such commands under:
-\textsf{Options} $\to$ \textsf{Configure TeXstudio} $\to$ \textsf{Build}.
+\Option{Options} $\to$ \Option{Configure TeXstudio} $\to$ \Option{Build}.
 I defined a new command which I called \enquote{BuildWithGlossary}.
 This executes \texttt{pdflatex, biber, makeindex, makeglossary, pdflatex, pdflatex}.
 
@@ -100,7 +100,7 @@ The big advantage is that you have one editor for both documentation and code.
 It works quite well for writing \LaTeX,
 but assumes that you know the \LaTeX\ commands that you want to include.
 Rapid development is ongoing,
-also for the \LaTeX\ extension \textsf{\LaTeX\ Workshop}\index{LaTeX Workshop@\LaTeX\ Workshop} that you should certainly install.
+also for the \LaTeX\ extension \texttt{\LaTeX\ Workshop}\index{LaTeX Workshop@\LaTeX\ Workshop} that you should certainly install.
 If you have \Command{chktex} installed you should also enable it,
 as it helps you to find errors 
 and gives a lot of information on the quality of your \LaTeX.
@@ -327,6 +327,7 @@ echo 'export PATH=/opt/texbin:${PATH}' > texlive.sh
 sudo cp texlive.sh /etc/profile.d/
 sudo ln -s /usr/local/texlive/2020/bin/x86_64-linux /opt/texbin
 \end{bashlisting}
+%
 \noindent You probably have to login again to activate the new \texttt{PATH}.
 Check whether it is correct with
 \begin{bashlisting}
@@ -414,7 +415,7 @@ I installed Perl from \url{https://strawberryperl.com},
 rebooted and \Command{latexmk} then worked.
 
 If you want to install GNU Make you can try the following:
-You should install the \enquote{Minimal Gnu for Windows} from \url{http://www.mingw.org}.
+You should install the \enquote{Minimal Gnu for Windows} from \url{https://www.mingw-w64.org/}.
 I downloaded and ran \texttt{mingw-get-setup.exe}.
 Once you have installed it you can run the \enquote{MinGW Installer} to install the software you want.
 I think you should install \Package{msys-base} from \enquote{Basic Setup}.
@@ -435,8 +436,8 @@ include appropriate \texttt{mpost} commands in your \LaTeX\ file(s), %chktex 36
 as discussed in \cref{sec:fig:feynman:feynmp}, Feynman graphs made
 using \Package{feynmp} work well.
 With \TeXstudio, you can simply
-include this option in the pdf\LaTeX\ command: \textsf{Options} $\to$
-\textsf{Configure TeXstudio} $\to$ \textsf{Commands}.
+include this option in the pdf\LaTeX\ command: \Option{Options} $\to$
+\Option{Configure TeXstudio} $\to$ \Option{Commands}.
 
 I have not invested any effort in trying to get \texttt{feynmf}
 working under Windows. The output files are produced, but I have not

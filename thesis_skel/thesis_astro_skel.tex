@@ -81,14 +81,14 @@
 \newcommand*{\thesisrefereetwo}{Prof.\ Dr.\ Anne Jones}
 % Date when thesis was submitted (Master/Diplom)
 % Year or Month, Year when thesis was submitted (PhD)
-\newcommand*{\thesissubmit}{XX.YY.2023}
-% \newcommand*{\thesissubmit}{Month 2023}
+\newcommand*{\thesissubmit}{XX.YY.2024}
+% \newcommand*{\thesissubmit}{Month 2024}
 % Date of thesis examination (PhD)
-\newcommand*{\thesispromotion}{XX.YY.2023}
+\newcommand*{\thesispromotion}{XX.YY.2024}
 % Month and year of the final printed version of the thesis
 \newcommand*{\thesismonth}{MMM}
-\newcommand*{\thesisyear}{2023}
-\newcommand*{\thesisnumber}{BONN-IR-2023-XXX}
+\newcommand*{\thesisyear}{2024}
+\newcommand*{\thesisnumber}{BONN-IR-2024-XXX}
 % Dedication
 % \newcommand*{\thesisdedication}{}
 
@@ -129,10 +129,13 @@
 % \input{thesis_glossary}
 
 % Draft version - add the word DRAFT on the cover pages
+% Also add the date and time of compilation and turn on line numbers (if option is set).
 \ifthenelse{\equal{\ThesisVersion}{Draft}}{%
   \usepackage{background}
   \backgroundsetup{contents=DRAFT, color=blue!30}
-}
+  \ifoot[\today{} \thistime]{\today{} \thistime}
+  \ifthenelse{\boolean{ThesisLineno}}{\linenumbers}{}
+ }
 
 %------------------------------------------------------------------------------
 \begin{document}
@@ -205,9 +208,5 @@
 % You could instead add your acknowledgements here - don't forget to
 % also add them to \includeonly above
 % \include{thesis_acknowledge}
-
-%------------------------------------------------------------------------------
-% CV needed when you submit your PhD thesis
-% \input{thesis_cv}
 
 \end{document}

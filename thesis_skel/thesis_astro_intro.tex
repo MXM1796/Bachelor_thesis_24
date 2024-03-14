@@ -28,7 +28,7 @@ However, a few examples are included to help you get started:
   missing transverse energy, even though it is calculated using a vector sum.
 \end{itemize}
 Note that the examples of units assume that you are using the
-\textsf{siunitx} package.
+\Package{siunitx} package.
 
 It also is probably a good idea to include a few well formatted
 references in the thesis skeleton. More detailed suggestions on what
@@ -44,7 +44,7 @@ citation types to use can be found in the \enquote{Thesis Guide}~\cite{thesis-gu
   \texttt{@online} or \texttt{@booklet}for such things;
 \item something that is only available online~\citep{thesis-guide}.
 \end{itemize}
-Note that astronomy publications use citation commands defined by \textsf{natbib}.
+Note that astronomy publications use citation commands defined by \Package{natbib}.
 You should choose which one you want to use:
 \begin{itemize}
 \item \textbackslash citep: a citation~\citep{pdg2010,Aad:2010ey};
@@ -59,6 +59,34 @@ The line at the beginning of this file is used by TeXstudio etc.\ to
 specify which is the master \LaTeX\ file, so that you can compile your thesis
 directly from this file.
 If your thesis is called something other than \texttt{mythesis}, adjust it as appropriate.
+
+For demonstration purposes,
+we include a figure and a table that a referenced using the \texttt{cleveref} package.
+\Cref{fig:nothing} does not show much,
+while \cref{tab:little} is not much better.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\textcolor{red}{This is not really a figure!}}
+  \caption{A caption for a figure that is not really there.
+    Just for fun we can refer to the contents of \cref{tab:little}.}
+  \label{fig:nothing}
+\end{figure}
+
+\begin{table}[htbp]
+  \caption{A table with not much in it.
+    Just for fun we can refer to the contents of \cref{fig:nothing}.}
+  \label{tab:little}
+  \centering
+  \begin{tabular}{ll}
+    \toprule
+    Number & Letter \\
+    \midrule
+    1 & A \\
+    2 & B \\
+    \bottomrule  
+  \end{tabular}
+\end{table}
 
 % Print the bibliography starting on the same page at the end of the chapter.
 % \printbibliography[heading=subbibliography]
