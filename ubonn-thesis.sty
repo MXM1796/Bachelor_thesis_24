@@ -470,19 +470,14 @@
     \DeclareSIUnit\electronvolt{\text{\electronvoltsymbol}}
     % \DeclareSIUnit\electronvolt{\text{e\kern-.1em V}}
   }{}
-  \@ifpackagelater{siunitx}{2021/04/09}{%
-    \PackageInfo{ubonn-thesis}{Using~siunitx~version~3~options}
-    \newcommand*{\UBN@siunitx_version}{3}
-  }{%
-    \PackageInfo{ubonn-thesis}{Using~siunitx~version~2~options}
-    \newcommand*{\UBN@siunitx_version}{2}
-  }
   % Version 3 of siunitx changes.
   \@ifpackagelater{siunitx}{2021/04/09}{%
-    \typeout{ubonn-thesis: using siunitx version 3}
+    \PackageInfo{ubonn-thesis}{Using siunitx version 3 options}
+    \newcommand*{\UBN@siunitxVersion}{3}
     \DeclareSIUnit\clight{\ensuremath{\mathit{c}}}
   }{
-    \typeout{ubonn-thesis: defining siunitx version 3 macros}
+    \PackageInfo{ubonn-thesis}{Using siunitx version 2 options}
+    \newcommand*{\UBN@siunitxVersion}{2}
     \let\qty\SI
     \let\unit\si
     \let\complexnum\num
@@ -717,7 +712,7 @@
   % Arguments are rounding digits, rounding type, superscript, subscript.
   \tl_new:N \ubn_si_options_tl
   \NewDocumentCommand {\numpmerr} { o o m m } {
-    \ifthenelse{\UBN@siunitx_version > 2}{%
+    \ifthenelse{\UBN@siunitxVersion > 2}{%
       \IfNoValueTF {#1} {
         \tl_set:Nn \ubn_si_options_tl { print-implicit-plus }
       }{
