@@ -1,8 +1,8 @@
 # Changelog
 
-*Responsible:* Ian Brock (i.brock@uni-bonn.de)
+*Responsible:* Ian Brock (<i.brock@uni-bonn.de>)
 
-Copyright (C) 2011-2023 Ian Brock.
+Copyright (C) 2011-2024 Ian Brock.
 
 All notable changes to the University of Bonn thesis style are documented in this file.
 
@@ -14,27 +14,26 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
-## [11.0.0-alpha] - 2024-01-XX
+## [11.0.0] - 2024-03-14
 
 ### Added
 
 - Add option `numpmcorr` to decide if macro for different width superscripts and subscripts is used.
+- Add options `lineno` and `linenofix` to get line numbers in a draft thesis.
+  `linenofix` should make numbering work around AMS math environments like `align`.
+- Add an `axodraw2` example.
 
 ### Changed
 
 - Rewrite of `\numerr` etc. macros to work better using `expl3`.
-  Some of the changes are not backwards compatible - see tables documentation in thesis guide.
+  Some of the changes are not backwards compatible - see tables documentation in the thesis guide.
 - Meaning of `numpmerr` and `numpmerrx` macros reversed to be more consistent.
-
-### Deprecated
+- CV is a separate document, as it should not be included in a PhD thesis.
+- Date and time of compilation shown for draft thesis.
 
 ### Removed
 
-- Remove support and documentation for TeX Live versions older than 2017.
-
-### Fixed
-
-### Security
+- Started removing support and documentation for TeX Live versions older than 2017.
 
 ---
 
@@ -383,7 +382,7 @@ The following changes are ordered by date and do not have a version number assoc
     Also switched from `\usepackage` to `\RequirePackage` in `ubonn-thesis.sty.
 - 23 May 2011: Changed default font to `txfonts`. Added more font options and explanation.
 
-## [Unreleased] - 2023-12-XX
+## [Unreleased] - 2024-12-XX
 
 ### Added
 

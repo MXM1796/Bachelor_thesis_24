@@ -6,7 +6,7 @@ See `CHANGELOG.md` or Git log for history of changes.
 
 *Responsible:* Ian Brock (i.brock@uni-bonn.de)
 
-Copyright (C) 2011-2023 Ian Brock
+Copyright (C) 2011-2024 Ian Brock
 
 ------
 
