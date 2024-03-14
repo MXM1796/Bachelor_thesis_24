@@ -1,0 +1,120 @@
+%------------------------------------------------------------------------------
+% Fancy Feynman graph for ttbar production in a pp machine.
+%
+% Original example from Richard Nisius.
+%------------------------------------------------------------------------------
+\begin{axopicture}(320,245)(0,0)
+%
+ \SetWidth{0.9}	
+ \CBox( 0, 0)(320,245){Black}{White}
+ \SetColor{Black}
+ \SetTextScale{2.0}
+ \PSTextScalesLikeGraphicsfalse
+%
+%-- Proton Proton
+ \LongArrow( 80,130)(155,130)
+ \LongArrow(240,130)(165,130)
+ \Text( 60,122)[lb]{\Black{\Pp}}
+ \Text(246,122)[lb]{\Black{\Pp}}
+%
+%-- Top Quark
+ \SetColor{Blue}
+ \ArrowLine(160,130)(180,150)
+ \Text(160,146)[lb]{\Blue{\Pqt}}
+%
+%-- Bottom Quark
+ \SetColor{Blue}
+ \ArrowLine(180,150)(200,190)
+ \Text(174,170)[lb]{\Blue{\Pqb}}
+%
+%-- b-Jet
+ \SetColor{Black}
+ \Line(200,190)(200,208)
+ \Line(200,190)(210,210)
+ \Line(200,190)(220,208)
+ \CCirc(200,190){3}{Black}{Gray}
+ \GOval(210,210)(13, 8)(80){0.9}
+ \Text(200,222)[lb]{\Black{\scriptsize \Pqb-jet}}
+%
+%-- W-Boson
+ \SetColor{Magenta}
+ \DashLine(180,150)(230,170){4}
+ \Text(197,135)[lb]{\Magenta{\PWp}}
+%
+%-- W-Decay
+ \SetColor{Blue}
+ \ArrowLine(230,170)(260,190)
+ \ArrowLine(260,160)(230,170)
+ \Text(230,183)[lb]{\Blue{\Pq}}
+ \Text(240,144)[lb]{\Blue{\Pq}}
+%
+%-- upper light Jet
+ \SetColor{Black}
+ \Line(260,190)(269,213)
+ \Line(260,190)(270,200)
+ \Line(260,190)(280,198)
+ \CCirc(260,190){3}{Black}{Gray}
+ \GOval(275,205)(13, 8)(50){0.9}
+ \Text(292,200)[lb]{\scriptsize jet}
+%
+%-- lower light Jet
+ \SetColor{Black}
+ \Line(260,160)(276,163)
+ \Line(260,160)(276,155)
+ \Line(260,160)(276,148)
+ \CCirc(260,160){3}{Black}{Gray}
+ \GOval(279,155)(13, 8)(150){0.9}
+ \Text(292,143)[lb]{\scriptsize jet}
+%
+% ----------------------------------------------------------------------
+%
+%-- Anti-top quark
+ \SetColor{Blue}
+ \ArrowLine(140,110)(160,130)
+ \Text(155,102)[lb]{\Blue{\Paqt}}
+%
+%-- Bottom Quark
+ \SetColor{Blue}
+ \ArrowLine(160, 70)(140,110)
+ \Text(132, 75)[lb]{\Blue{\Paqb}}
+%
+%-- b-jet
+ \SetColor{Black}
+ \Line(160, 70)(156, 40)
+ \Line(160, 70)(166, 50)
+ \Line(160, 70)(176, 50)
+ \CCirc(160, 70){3}{Black}{Gray}
+ \GOval(168, 45)(13, 8)(110){0.9}
+ \Text(155, 20)[lb]{\Black{\scriptsize \Pqb-jet}}
+%
+%-- W-boson
+ \SetColor{Magenta}
+ \DashLine(140,110)(100, 80){4}
+ \Text( 95, 90)[lb]{\Magenta{\PWm}}
+%
+%-- W-decay
+ \SetColor{Blue}
+ \ArrowLine(100, 80)(100, 50)
+ \ArrowLine( 50, 60)(100, 80)
+ \Text(105, 60)[lb]{\Blue{\Pq}}
+ \Text( 60, 75)[lb]{\Blue{\Pq}}
+%
+%-- upper light jet
+ \SetColor{Black}
+ \Line( 50, 60)( 42, 40)
+ \Line( 50, 60)( 30, 45)
+ \Line( 50, 60)( 20, 49)
+ \CCirc( 50, 60){3}{Black}{Gray}
+ \GOval( 32, 44)(13, 8)(70){0.9}
+ \Text( 90,  2)[lb]{\Black{\scriptsize jet}}
+%
+%-- lower light jet
+ \SetColor{Black}
+ \Line(100, 50)(110, 30)
+ \Line(100, 50)(100, 30)
+ \Line(100, 50)( 90, 30)
+ \CCirc(100, 50){3}{Black}{Gray}
+ \GOval(100, 27)(13, 8)( 90){0.9}
+ \Text( 12, 20)[lb]{\Black{\scriptsize jet}}
+%
+\end{axopicture}
