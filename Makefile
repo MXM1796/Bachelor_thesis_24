@@ -48,7 +48,7 @@ LATEXMK = latexmk -pdf
 
 .PHONY: skelcopy \
 	feynmf feynmp tikz pyfeyn pyfeynhand \
-	cleanfeynmf cleanfeynmp cleantikz cleanpyfeyn cleanpictpdf \
+	cleanfeynmf cleanfeynmp cleantikz cleanaxodraw cleanpyfeyn cleanpictpdf \
 	help test
 
 # New thesis
@@ -124,7 +124,7 @@ pyfeynhand: $(PYFEYNHANDFILES)
 
 cleanall: clean cleanpictpdf
 
-clean: cleanfeynmf cleanfeynmp cleantikz cleanpyfeynhand
+clean: cleanfeynmf cleanfeynmp cleantikz cleanaxodraw cleanpyfeynhand
 
 cleanfeynmf:
 	-rm *.mf *.tfm *.t1 *.600gf *.600pk *.log
@@ -139,6 +139,9 @@ cleanfeynmp:
 
 cleantikz:
 	-rm $(TIKZDIR)/*.log $(TIKZDIR)/*.aux
+
+cleanaxodraw:
+	-rm *.ax1 *.ax2
 
 cleanpyfeynhand:
 	-rm $(PYFEYNHANDDIR)/*.aux $(PYFEYNHANDDIR)/*.log
@@ -161,9 +164,10 @@ help:
 	@echo "tikz:   run tikz for all .tex files in $(TIKZDIR)"
 	@echo "pyfeyn: run Python for all .py files in $(PYFEYNDIR)"
 	@echo "pyfeynhand: run Python for all .py files in $(PYFEYNHANDDIR)"
-	@echo "cleanfeynmf: clean up feynmf output files"
-	@echo "cleanfeynmp: clean up feynmp output files"
-	@echo "cleantikz:   clean up tikz auxiliary output files"
+	@echo "cleanfeynmf:  clean up feynmf output files"
+	@echo "cleanfeynmp:  clean up feynmp output files"
+	@echo "cleantikz:    clean up tikz auxiliary output files"
+	@echo "cleanaxodraw: clean up axodraw2 auxiliary output files"
 	@echo "cleanpyfeynhand: clean up pyfeynhand auxiliary output files"
 
 test:

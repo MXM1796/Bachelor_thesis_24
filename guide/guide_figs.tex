@@ -332,6 +332,8 @@ Two possibilities are \Package{TikZ-Feynman} and \Package{TikZ-FeynHand}.
 I have written a Python wrapper for \Package{TikZ-FeynHand},
 which hopefully allows me to combine the best of both worlds!
 The wrapper code and an example can be found in the \File{pyfeynhand} directory.
+More details on the use of \Package{TikZ-FeynHand} and my Python wrapper \Package{PyFeynhand}
+can be found in \cref{sec:fig:feynman:tikz}.
 
 Before I started using Python packages, I followed the example of many people,
 where I found one way doing making graphs and never changed!
@@ -339,26 +341,24 @@ I used \texttt{Mn\_Fit},
 mainly because I wrote it and therefore know inside out how it works.
 Examples can be found on my web page:
 \url{http://pi.physik.uni-bonn.de/~brock/feynman}.
-Alternatives include \Package{axodraw} and the \Package{feynmf} or
+Alternatives include \Package{axodraw2} and the \Package{feynmf} or
 \Package{feynmp} packages.
+
+An example using the package \Package{axodraw} is available in \cref{sec:fig:axodraw}.
+Several people have claimed
+that \texttt{jaxodraw} is the way to go. This is a Java package which
+you can download from \url{https://jaxodraw.sourceforge.io}. It has
+a Graphical User Interface (GUI) to \Package{axodraw} and so is simple and
+straightforward to use.
 
 The use of \Package{feynmf} and \Package{feynmp} is
 described in \cref{sec:fig:feynman:feynmp}, while a few
 examples of usage of \Package{\TikZ} are given in
 \cref{sec:fig:feynman:tikz}.
-Usage of \Package{TikZ-FeynHand} and my Python wrapper \Package{PyFeynhand}
-can also be found in \cref{sec:fig:feynman:tikz}.
 Examples of Feynman graphs made
 with \Package{feynmf} and \Package{feynmp} can be found in the \texttt{feynmf} directory;
 those made with \Package{TikZ-FeynHand} can be found in the \texttt{pyfeynhand} and \texttt{tikz} subdirectories;
 while those made with \Package{\TikZ} can be found in the \texttt{tikz} subdirectory.
-
-Instructions on how to use \Package{axodraw} may come at a later
-date -- contributions would be welcome! Several people have claimed
-that \texttt{jaxodraw} is the way to go. This is a Java package which
-you can download from \url{http://jaxodraw.sourceforge.net/}. It has
-a Graphical User Interface (GUI) to \Package{axodraw} and so is simple and
-straightforward to use.
 
 \begin{tcblisting}{}
 This paragraph illustrates how to reference different parts of a
@@ -411,11 +411,7 @@ while the \TeX{} file was originally created using the Python wrapper.
 \centering
 \begin{subfigure}{0.5\figwidth}
   \centering
-  \ifthenelse{\TweakYear > 2016}{%
-    \input{../tikz/tdecay.tex}
-  }{%
-    \missingfigure{TeX Live version does not include TikZ-FeynHand}
-  }
+  \input{../tikz/tdecay.tex}
   \caption{\LaTeX\ file}%
   \label{fig:feyn:tdecay1}
 \end{subfigure}
@@ -511,11 +507,7 @@ In the \Package{TikZ-FeynHand} graph, I use lots of colours to illustrate how th
 }
 \subcaptionbox{TikZ-FeynHand\label{fig:feyn:feynhand}}
   [0.325\textwidth]{\fbox{%
-    \ifthenelse{\TweakYear > 2016}{%
-      \input{../tikz/moeller-feynhand.tex}
-    }{%
-      \missingfigure{TeX Live version does not include TikZ-FeynHand}
-    }
+    \input{../tikz/moeller-feynhand.tex}
   }
 }
 \caption{Feynman graphs drawn with \Package{feynmp}, \Package{\TikZ} and \Package{TikZ-FeynHand}.
@@ -606,6 +598,35 @@ into your thesis directory, e.g.\ \File{mythesis}.
 \end{tcblisting}
 \end{figure}
 
+
+%------------------------------------------------------------------------------
+\subsection{Axodraw}%
+\label{sec:fig:axodraw}\index{axodraw}
+
+\Cref{fig:axodraw:ppttbar} was given to me by Richard Nisius and illustrates some of the
+things that can be done using the \Package{axodraw} package.
+
+\begin{figure}[htbp]
+\begin{tcblisting}{}
+\centering
+\input{../axodraw/pp-tt-btoX}
+\caption{\ttbar production in \Pp{}\Pp collisions.}%
+\label{fig:axodraw:ppttbar}
+\end{tcblisting}
+\end{figure}
+  
+
+If you use \texttt{pdflatex} to compile your document,
+you need to either run \texttt{axohelp file}\index{axohelp} after \texttt{pdflatex file},
+or add the following lines to your \texttt{latexmk}\index{latexmk} configuration.
+
+\begin{bashlisting}
+add_cus_dep( "ax1", "ax2", 0, "axohelp" );
+sub axohelp { return system "axohelp \"$_[0]\""; }
+$clean_ext .= " %R.ax1 %R.ax2";
+\end{bashlisting}
+
+See the \Package{axodraw2} manual for more information.
 
 %------------------------------------------------------------------------------
 \subsection{FeynMP}%

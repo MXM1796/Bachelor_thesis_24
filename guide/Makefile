@@ -85,6 +85,7 @@ cleanguide:
 	-rm $(GUIDE)-blx.bib $(GUIDE).bcf $(GUIDE).run.xml
 	-rm $(GUIDE).fdb_latexmk .$(GUIDE).lb $(GUIDE).synctex.gz
 	-rm $(GUIDE).ind $(GUIDE).idx $(GUIDE).ilg
+	-rm $(GUIDE).ax1 $(GUIDE).ax2
 	-rm $(GUIDE).acn $(GUIDE).acr $(GUIDE).alg
 	-rm $(GUIDE).glg $(GUIDE).glo $(GUIDE).gls
 	-rm $(GUIDE).ist $(GUIDE).fls $(GUIDE).xdv $(GUIDE).wrt $(GUIDE).listing
