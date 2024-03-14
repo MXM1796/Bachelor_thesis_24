@@ -244,6 +244,8 @@ The following options exist:\\
   astrobib & false & Adjust \Package{biblatex} options to conform to the usual astronomy style.\\
   firstinits & false & Use \Option{firstinits} instead of \Option{giveninits} for \Package{biblatex}.\\
   refsection & true & Set things up for references to be at the end of each chapter.\\
+  lineno & false & Show line numbers -- only works in \Option{Draft} mode.\\
+  linenofix & true & Fix line numbers around AMS math environments without using the \Package{linenomath} environment.\\
   floatopt & true & Adjust settings that control the number and placement of floats.\\
   todonotes & false & Turn on use of the \Package{todonotes} package and define \Macro{mynote}.\\
   shownotes & false & Show the ToDo notes (also turns on \Option{todonotes}).\\
@@ -465,7 +467,7 @@ In the past couple of years,
 I have switched to the Visual Studio Code\index{Visual Studio Code} editor instead.
 The main reason for this is so that I can use the same program
 for editing scripts, e.g.\ a \File{Makefile}, as I use for \LaTeX\ code.
-The \textsf{LaTeX Workshop}\index{LaTeX Workshop@\LaTeX\ Workshop} extension is being actively developed
+The \texttt{LaTeX Workshop}\index{LaTeX Workshop@\LaTeX\ Workshop} extension is being actively developed
 and is very nice.
 The \Package{Spell Right} spelling checker works very well
 and I have also activated the use of \Package{ChkTeX} to improve my \LaTeX\ syntax.
@@ -1140,13 +1142,11 @@ Both are fine -- just be consistent!
 \label{sec:tips:lineno}\index{lineno}\index{line numbers}
 %------------------------------------------------------------------------------
 
-You probably do not need line numbers when writing your
-thesis (who knows?). However, as this is a very useful package that
-occasionally has some problems, I thought I would include some
-information here.
-
-\Package{lineno} is the package to use to get line numbers in your text,
-but sometimes a block of lines is not numbered -- see \cref{fig:lineno}a.
+This is a very useful package that may be useful when writing your thesis
+and occasionally has some problems.
+Hence, I thought I would include some information here.
+Pass the option \Option{lineno=true} to \Package{ubonn-thesis} to get line numbers.
+This will only turn on line numbers when in \Option{Draft} mode.
 
 \begin{figure}[htbp]
   \centering
@@ -1159,15 +1159,19 @@ but sometimes a block of lines is not numbered -- see \cref{fig:lineno}a.
   \label{fig:lineno}
 \end{figure}
 
+Sometimes a block of lines is not numbered -- see \cref{fig:lineno}a.
 Such problems are associated with text that is close to math mode environments.
-Some of the problems can be solved by using a new
+Most of the problems can be solved by using a new
 version of the \Package{lineno} package.
-However, this only works for \enquote{standard} \LaTeX{}
-math environments: \Env{displaymath}, \Env{equation} and \Env{eqnarray}, while it does
-not work for recommended \Package{amsmath} environments such as \Env{equation*},
+However, while this works for \enquote{standard} \LaTeX{}
+math environments: \Env{displaymath}, \Env{equation} and \Env{eqnarray},
+it may not work for recommended \Package{amsmath} environments such as \Env{equation*},
 \Env{align(*)} and \Env{alignat(*)}. % chktex 36
+If the option \Option{linenofix} is set, which is default,
+then it should also work for these environments.
+If this option causes other problems turn it off and use the solution below.
 
-The solution is to enclose the equation in \Env{linenomath} environment, e.g.
+Enclose the equation in \Env{linenomath} environment, e.g.
 \begin{tcblisting}{listing only}
 The total visible cross section for inclusive heavy-quark jet
 production, \(\sigma^{q}\), with \(q\in\{b,c\}\) is given by
@@ -1183,7 +1187,6 @@ number of reconstructed heavy-quark jets in data, which was determined
 \end{tcblisting}
 \noindent
 Then the line numbering will be correct, see \cref{fig:lineno}b.
-The ATLAS \Package{atlasdoc} class contains a patch that gets round this problem.
 
 
 %------------------------------------------------------------------------------

@@ -6,15 +6,15 @@
 % See CHANGELOG.md or Git log for history of changes.
 % Responsible: Ian Brock (brock@physik.uni-bonn.de).
 %------------------------------------------------------------------------------
-\ProvidesPackage{ubonn-thesis}[2023/03/31 Version 10.1.0-alpha University of Bonn thesis package]
+\ProvidesPackage{ubonn-thesis}[2024/03/14 Version 11.0.0 University of Bonn thesis package]
 \NeedsTeXFormat{LaTeX2e}
 % Needs 2015 TeX Live or later - this contains version 3.19 of KOMA-Script.
 \NeedsTeXFormat{LaTeX2e}[2015/01/01]
 
-% Set TeX Live version
+% Set TeX Live version.
 % \providecommand*{\texlive}{0}
 
-% Set institute information
+% Set institute information.
 \providecommand*{\InstituteName}{\PI}
 \providecommand*{\inInstitute}{\inPI}
 \providecommand*{\InstituteAddress}{\PIaddress}
@@ -79,6 +79,8 @@
 \DeclareBoolOption[false]{astrobib}
 \DeclareBoolOption[false]{firstinits}
 \DeclareBoolOption[true]{floatopt}
+\DeclareBoolOption[false]{lineno}
+\DeclareBoolOption[true]{linenofix}
 \DeclareBoolOption[false]{todonotes}
 \DeclareBoolOption[false]{shownotes}
 \DeclareBoolOption[false]{showframe}
@@ -257,7 +259,7 @@
   \newcommand*{\UBN@initials}{giveninits=true}
 }
 
-% If asked to show notes also turn on todonotes
+% If asked to show notes also turn on todonotes.
 \ifthenelse{\boolean{UBN@shownotes}}{\UBN@todonotestrue}{}
 
 % Specify the language(s) in the documentclass and then use babel.
@@ -865,6 +867,34 @@
   }
 }
 
+% Add line numbers if requested and
+% try to avoid adding linenomath around unknown environments.
+% Code adapted from https://tex.stackexchange.com/questions/436011/linenomath-printing-extra-numbers-on-last-line-of-multline-align-flalign-envir
+\newboolean{ThesisLineno}
+\ifthenelse{\boolean{UBN@lineno}}{%
+  \setboolean{ThesisLineno}{true}
+  \RequirePackage{lineno}
+  \ifthenelse{\boolean{UBN@linenofix}}{%
+    \RequirePackage{xpatch}
+    \newcommand*\linenomathpatchAMS[1]{%
+      \expandafter\xpretocmd\csname #1\endcsname {\linenomathAMS}{}{}%
+      \expandafter\xpretocmd\csname #1*\endcsname{\linenomathAMS}{}{}%
+      \expandafter\xapptocmd\csname end#1\endcsname {\endlinenomath}{}{}%
+      \expandafter\xapptocmd\csname end#1*\endcsname{\endlinenomath}{}{}%
+    }
+    \expandafter\ifx\linenomath\linenomathWithnumbers
+      \typeout{atlasdoc: add line numbers to equations}
+      \let\linenomathAMS\linenomathWithnumbers
+      \xpatchcmd\linenomathAMS{\advance\postdisplaypenalty\linenopenalty}{}{\typeout{atlasdoc xpatch: Extra linenumber patch worked}}{\typeout{*** atlasdoc xpatch: Extra linenumber patch failed}}
+    \else
+      \typeout{atlasdoc: do not add line numbers to equations}
+      \let\linenomathAMS\linenomathNonumbers
+    \fi
+  }{}
+}{%
+  \setboolean{ThesisLineno}{false}
+}
+
 % Add a \mynote command
 \ifthenelse{\boolean{UBN@todonotes}}{%
   \ifthenelse{\boolean{UBN@shownotes}}{%
@@ -1152,7 +1182,7 @@
 \newcommand*{\inPI}{im Physikalischen Institut}
 \newcommand{\PIaddress}{Physikalisches Institut der\\
 Universität Bonn\\
-Nussallee 12\\
+Nußallee 12\\
 D-53115 Bonn}
 
 \newcommand*{\HISKP}{Helmholtz-Institut für\\ Strahlen- und Kernphysik}
@@ -1160,7 +1190,7 @@ D-53115 Bonn}
 \newcommand{\HISKPaddress}{Helmholtz-Institut für\\
  Strahlen- und Kernphysik\\
 Universität Bonn\\
-Nussallee 14--16\\
+Nußallee 14--16\\
 D-53115 Bonn}
 
 \newcommand*{\IAP}{Institut für Angewandte Physik}
