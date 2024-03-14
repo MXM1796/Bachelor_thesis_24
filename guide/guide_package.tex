@@ -221,15 +221,17 @@ Some other useful packages, some of which are included in
     \toprule
     \Package{IEEEtrantools} & Contains useful environments for multiline equations.\\
     \Package{feynmp} & Draw Feynman graphs with Metapost.\\
-    \Package{axodraw} & Draw Feynman graphs.\\
+    \Package{axodraw2} & Draw Feynman graphs. \Package{axodraw2} is a newer replacement for \Package{axodraw}.\\
     \Package{tikz} & General drawing package that can also be used for Feynman graphs.\\
     \Package{standalone} & Allows you to have a document that you can
     directly compile for each figure and also input to another document.\\
     \Package{hyperref} & Adds \Macro{url} command as well as ability
     to click on entries on table of contents etc.\\
+    \Package{lineno} & Show line numbers.\\
     \Package{todonotes} & Nice package to add notes to your text.
       You can also use it to indicate missing figures.\\
     \Package{background} & Allows you to add things like DRAFT across the whole document page.\\
+    \Package{gitver} & Allows you to output information on the Git version used for the document.\\
     \Package{subfiles} & Provides a nice alternative to \Macro{include} and \Macro{includeonly}.\\
     \Package{tabularx} & Allows fixed table width with flexible column widths.\\
     \Package{floatrow} & Add ability to define own floats.\\
@@ -306,6 +308,12 @@ in the file \File{mythesis.dep} (or whatever your main filename is).
 A file \File{mythesis.dep} can be found in the main directory of \File{ubonn-thesis}.
 This contains the list of dependencies (and their version numbers) from the version of \TeXLive
 I used when last updating the package.
+If you want to record the Git version used when compiling your thesis
+you can try out the \Package{gitver} package.
+Pass the option \Option{noheader} to the package.
+In order for \Pakcage{gitver} to work, 
+you have to pass the option \Option{-shell-escape} to
+\texttt{pdflatex} or \texttt{latexmk}.
 
 If you want to include code listings,
 you can use the packages \Package{tcolorbox} or \Package{listings}.
