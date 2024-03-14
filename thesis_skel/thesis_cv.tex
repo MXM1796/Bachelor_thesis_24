@@ -1,7 +1,28 @@
+\documentclass[PhD, ngerman, UKenglish]{scrartcl}
+%------------------------------------------------------------------------------
+% This file contains a skeleton thesis for
+% a Physics or Astronomy Institute in the University of Bonn.
+
+% Specify the thesis type as an option: PhD, Master, Diplom, Bachelor.
+% Specify the thesis stage as an option: Draft (default), Submit, Final, PILibrary.
+
+% Specify the language(s) in the class and then use babel.
+% If you need more than one language, give the default language last,
+% e.g. ngerman, UKenglish for a thesis in British (UK) English where you want
+% to be able to set the language to German for some part of it.
+
+%------------------------------------------------------------------------------
+% Pass TeX Live version to the package.
+% Use command pdflatex --version to find out which version you are running.
+% twoside=true is suitable for printing, while twoside=false is probably better for PDF version.
+\usepackage[twoside=false]{../ubonn-thesis}
+
 \definecolor{lightgray}{gray}{0.8}
 \newcolumntype{L}{>{\raggedleft}p{0.15\textwidth}}
 \newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+\begin{document}
 
 \thispagestyle{empty}
 \section*{Curriculum Vitae}
@@ -41,3 +62,5 @@ German & Mother tongue \\
 English & Fluent \\
 Russian & Basic
 \end{tabular}
+
+\end{document}
