@@ -4,7 +4,7 @@ Thesis style that can be used for bachelor, master and PhD theses
 in physics and astronomy (and other subjects) at the University of Bonn.
 See `CHANGELOG.md` or Git log for history of changes.
 
-*Responsible:* Ian Brock (i.brock@uni-bonn.de)
+*Responsible:* Ian Brock (<i.brock@uni-bonn.de>)
 
 Copyright (C) 2011-2024 Ian Brock
 
