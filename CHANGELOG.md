@@ -14,7 +14,7 @@ Added, Changed, Deprecated, Removed, Fixed, Security.
 
 ---
 
-## [11.0.0] - 2024-03-14
+## [11.0.0] - 2024-03-19
 
 ### Added
 
