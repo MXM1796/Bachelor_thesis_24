@@ -1,0 +1,20 @@
+\babel@toc {UKenglish}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {UKenglish}{}\relax 
+\babel@toc {UKenglish}{}\relax 
+\babel@toc {UKenglish}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\babel@toc {UKenglish}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction to SNSPD}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Working principle of SNSP}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Building set up for Detector Characterization}{5}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Characterization of SNSPD}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dark Count Rate}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Efficiency}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Recovery time}{7}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Other Characteristics}{7}{section.4.4}%
+\contentsline {chapter}{\numberline {A}Useful information}{9}{appendix.A}%
+\contentsline {chapter}{\nonumberline Bibliography}{11}{chapter*.11}%
+\contentsline {chapter}{\nonumberline List of Figures}{13}{chapter*.12}%
+\contentsline {chapter}{\nonumberline List of Tables}{15}{chapter*.13}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
