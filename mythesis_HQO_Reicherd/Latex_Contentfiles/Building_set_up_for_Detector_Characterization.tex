@@ -1,6 +1,94 @@
 % !TEX root = mythesis.tex
 
 %==============================================================================
-\chapter{Building set up for Detector Characterization}
-\label{sec:SNSPD_set_up}
+\chapter{Faint laser source for detector characterization}
+\label{sec:SNSPD_setup}
 %==============================================================================
+
+Counting photons one has to consider the characteristics of the emitter source as well.
+Here I focus only on the characteristics of a laser source affecting the characterization I made.
+For this first, I briefly sum up characteristics of a laser light source and its conditions it gives us for our detector
+characterization.
+Further, I make considerations regarding the inherent blindspots of laser light due to the randomness nature of photons
+in coherent light.
+Afterward, I introduce the setup I build for characterizing our SNSPD.\\
+
+\section*{Characteristics of faint laser sources}
+
+Using a laser source enables us, considering the emitting light as monochromatic beam with angular frequency $\omega$
+and constant Intensity I. The Photon flux of a laser is defined as the photon average number passing through
+a cross-section in unit time:
+
+\begin{align}
+    \Phi = \frac{I A}{\hbar \omega} = \frac{P}{\hbar \omega} \text{photons $s^{-1}$}
+\end{align}
+
+where \textit{I} is the current of photon, \textit{A} the cross-section, \textit{P} the laser power and $\omega$ the angular frequency which
+depends on the wavelength.
+
+The average number of registered counts $N(T)$ for a given detection time T by a detector is given by:
+
+\begin{align}
+    \text{N(T)} = \text{T} \Phi \eta= \frac{P T \eta}{\hbar \omega} \text{photons}
+\end{align}
+
+and hence the registered counts $\mathbb{R}$ per unit time by:
+
+\begin{align}
+    \mathcal{R} = \frac{\text{N(T)}}{\text{T}} = \eta \Phi= \frac{P \eta}{\hbar \omega} \text{photons  $s^{-1}$}
+\end{align}
+
+where \textit{$\eta$} is the efficiency of the detector system.
+
+This detection count rate is restricted by the largest amount on the dead time of the detector.
+
+\begin{align}
+    \mathcal{R_{\max}} \propto \frac{1}{\tau_{d}}
+\end{align} \\
+
+Because the used laser has a minimum threshold power which corresponds to a photonrate above the maximum one,
+one has to attenuate the laser power in order to detect all events.
+
+The photon statistic of coherent light, in our case (in reasonable approximation) of our laser light,
+is given by poisson statistics.
+This characteristic stems from discrete nature of photons and hence non-equidistant spacing between photons.
+Measuring single photons, one has to ensure that we have a neglectable amount of photons in the segment
+of the deadtime because else our light characteristics inherently forbid us measuring each of the incoming photons.\\
+
+This is calculated by looking at the propability of measuring one photon per length segment, given by the deadtime.
+First, we consider one Length segment given by the deadtime $\tau_{\text{d}}$ and the measurement time $\tau_{\text{m}}$:
+\begin{align}
+    L_{\text{d}} = \frac{c}{\tau_{\text{d}}}\\
+    L_{\text{m}} = \frac{c}{\tau_{\text{m}}}
+\end{align}
+
+Through this, we can calculate for a given measurement time the average photon rate per length segment $L_{\text{m}}$
+and further the probability of finding one photon in the particular line segment $L_{\text{d}}$:
+
+\begin{align}
+    \bar{n} = \Phi \frac{L_{\text{m}}}{c}\\
+    p = \frac{\bar{n}}{\text{N}}
+\end{align}
+
+Where $N = \frac{c}{L_{\text{d}}}$ are the subsegments of the measured length segment $L_{\text{m}}$.
+
+This enables us to calculate the probability p of finding n Photons per deadtime segment $L_{\text{d}}$ and
+including this in our measurements.
+
+\section*{Experimental setup}
+
+Though not measured by ourselves first, it is known from \textcolor{red}{Zitat} deadtime of the detector is around 20-25ns.
+This gives us a theoretical maximum detection rate of $\mathcal{R_{\max}} \propto \frac{1}{\tau_{d}} = 25-50\si{M\Hz}$.
+In order to realize this laser attenuation the following set was build:
+
+
+
+
+%Relying on: https://nano-optics.physik.uni-siegen.de/education/teaching/lab_courses/sps-exp-manual.pdf
+
+- Basics of photon distribution of laser, attenuation, poisson statistics \\
+- Set up for laser attenuation \\
+- Single Photon Detection paper \\
+
+
+

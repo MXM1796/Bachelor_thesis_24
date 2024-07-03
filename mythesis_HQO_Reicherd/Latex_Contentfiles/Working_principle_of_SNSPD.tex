@@ -1,8 +1,58 @@
 % !TEX root = mythesis.tex
+\graphicspath{{/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/}}
 
 %==============================================================================
-\chapter{Working principle of SNSP}
+\chapter{Working principle of SNSPDs}
 \label{sec:SNSPD_working_principle}
 %==============================================================================
 
+In its essence, the SNSPD consists of four parts, seen in fig. \ref{fig:SNSPD_rough_structure}.
+A saphire underground, a detection area made out of a superconducting nanowire in a serpentine winding and placed ont the
+saphire underground, a gold contact to supply a bias current through the superconducting nanowire and a fiber coupled
+to the detection area.\\
+The sapphire layer is used to efficiently dissipate the heat when the wire heats up. \\
+Moreover, the set up is first cooled below the critical temperature of the superconductor ($2-3 \text{K}$),
+and a bias current is applied to the superconductor that is lower than the critical current.
 
+\begin{figure}[hhh]
+\includegraphics[width=12cm]{SNSPD_grober_aufbau}
+\caption{(a) Schematic structure of a superconducting nanowire single photon detector \cite{steudle-2012}}
+\label{fig:SNSPD_rough_structure}
+\end{figure}
+
+The detection process can be understood along the detection circle in fig. \ref{fig: SNSPD_process}.
+
+\begin{figure}[hhh]
+\includegraphics[width=12cm]{SNSPD_Ablauf}
+\caption{Schematic detection cycle of a superconducting nanowire single photon detector \cite{singlequantum_snsd_nodate} }
+\label{fig: SNSPD_process}
+\end{figure}
+
+Single photons hitting a superconducting nanowire (ii) and break up individual Cooper pairs.
+This leads to a local reduction of the critical current below the bias current and in turn to a localised area where
+the superconductivity is interrupted, this local area forms the so-called \("\)hotspot\("\) (iii).
+This hotspot forms a resistance area because the bias current exceeds the critical current.
+In response, the current flows around this hotspot (iv), whereby the local current density in the side areas next to the
+hotspot again exceeds the critical current, due to a higher current density.
+This excess also causes a resistance in the side channels due to the critical temperature being exceeded (v).
+Ultimately, this increase in resistance can be measured in the form of a voltage pulse.
+The non-superconducting area is then cooled down by the cryogenic environment and returns to the superconducting state
+(iv—i).\\
+
+One important technical detail is the fiber coupling of this detector because the efficiency
+and timing jitter depend on it.
+Depending on in which polarization the light hits the meander, the efficiency changes.
+When light hits the wire orthogonally polarized to the wire direction, the photon is less efficiently absorbed, than
+polarized parallel to the wire. \\ As seen in fig. \ref{fig:SNSPD_fiber_coupling} the coupled fibre in our characterized
+detector is parallel polarized to the nanowire.\\
+Moreover, to cover the whole light, shined out of the fibre, the geometry of the detection zone is constructed as a
+round plate and has roughly the same diameter as the fibre output (FC/PC). A smaller area would risk not absorbing each
+photon and a larger area would increase the time leading the signal to the computer unit.
+
+\begin{figure}[hhh]
+\includegraphics[width=12cm]{SNSPD_Meander_fiber_coupling}
+\caption{Scematic set up of the fiber coupling of a superconducting nanowire single photon detector \textcolor{red}{Zitieren!}}
+\label{fig:SNSPD_fiber_coupling}
+\end{figure}
+%Nur Technische Details die für die Charakterisierung relevant sind (max 2 Seiten)
+%Physikalische Motivation (Warum frage sehr wichtig)

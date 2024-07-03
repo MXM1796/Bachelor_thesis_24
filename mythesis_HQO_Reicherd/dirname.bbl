@@ -19,20 +19,211 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
-    \entry{latexwiki}{online}{}{}
+    \entry{steudle-2012}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=f18f117d5814e43693afa7d3e7c76d73}{%
+           family={Steudle},
+           familyi={S\bibinitperiod},
+           given={Gesine\bibnamedelimb A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=b0f7a5be90881daf6fe38fb5cee424d8}{%
+           family={Schietinger},
+           familyi={S\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ba984937eff96efab9450d6bce4c61be}{%
+           family={Höckel},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ae7c1e2999b4188c1559923e830c775f}{%
+           family={Dorenbos},
+           familyi={D\bibinitperiod},
+           given={Sander\bibnamedelimb N.},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=685b5816bb4de42757aef9d030612d94}{%
+           family={Zadeh},
+           familyi={Z\bibinitperiod},
+           given={Iman\bibnamedelimb E.},
+           giveni={I\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=5655b8102897278003d63641e002f565}{%
+           family={Zwiller},
+           familyi={Z\bibinitperiod},
+           given={Valery},
+           giveni={V\bibinitperiod}}}%
+        {{hash=6081ee6e75faeea9e13d2dfd92abc3e3}{%
+           family={Benson},
+           familyi={B\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce9aeb067755af195d104e41ee7d0cea}
+      \strng{fullhash}{a4532d3fc3edce4e4bf86edac44a71dc}
+      \strng{fullhashraw}{a4532d3fc3edce4e4bf86edac44a71dc}
+      \strng{bibnamehash}{ce9aeb067755af195d104e41ee7d0cea}
+      \strng{authorbibnamehash}{ce9aeb067755af195d104e41ee7d0cea}
+      \strng{authornamehash}{ce9aeb067755af195d104e41ee7d0cea}
+      \strng{authorfullhash}{a4532d3fc3edce4e4bf86edac44a71dc}
+      \strng{authorfullhashraw}{a4532d3fc3edce4e4bf86edac44a71dc}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{\LaTeX}
-      \field{urlday}{1}
-      \field{urlmonth}{7}
-      \field{urlyear}{2021}
-      \field{urldateera}{ce}
+      \field{day}{15}
+      \field{journaltitle}{Physical review. A, Atomic, molecular, and optical physics/Physical review, A, Atomic, molecular, and optical physics}
+      \field{month}{11}
+      \field{number}{5}
+      \field{title}{Measuring the quantum nature of light with a single source and a single detector}
+      \field{volume}{86}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1103/physreva.86.053814
+      \endverb
       \verb{urlraw}
-      \verb https://en.wikibooks.org/wiki/LaTeX
+      \verb https://doi.org/10.1103/physreva.86.053814
       \endverb
       \verb{url}
-      \verb https://en.wikibooks.org/wiki/LaTeX
+      \verb https://doi.org/10.1103/physreva.86.053814
+      \endverb
+    \endentry
+    \entry{singlequantum_snsd_nodate}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c67b8c190cf1944d20a5a30c3099b851}{%
+           family={{singlequantum.com}},
+           familyi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{c67b8c190cf1944d20a5a30c3099b851}
+      \strng{fullhash}{c67b8c190cf1944d20a5a30c3099b851}
+      \strng{fullhashraw}{c67b8c190cf1944d20a5a30c3099b851}
+      \strng{bibnamehash}{c67b8c190cf1944d20a5a30c3099b851}
+      \strng{authorbibnamehash}{c67b8c190cf1944d20a5a30c3099b851}
+      \strng{authornamehash}{c67b8c190cf1944d20a5a30c3099b851}
+      \strng{authorfullhash}{c67b8c190cf1944d20a5a30c3099b851}
+      \strng{authorfullhashraw}{c67b8c190cf1944d20a5a30c3099b851}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://singlequantum.com/wp-content/uploads/2023/06/Single-Quantum-Operation-Principle-print.pdf}}
+      \field{note}{Accessed: 2023-06}
+      \field{title}{Superconducting Nanowire Single Photon Detectors Operation principle}
+      \field{year}{n.d.}
+    \endentry
+    \entry{shalm_single-photon_2013}{misc}{}{}
+      \name{author}{18}{}{%
+        {{hash=f6fe8d40cfe918ed534f008ab1c4c727}{%
+           family={Shalm},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f2384b950cf6f8296598b47813b05a5f}{%
+           family={Baek},
+           familyi={B\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fb0c9a478f67e860c3cbe3399e4f91d8}{%
+           family={Calkins},
+           familyi={C\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0856b2b1089191c792b42ed3e73d6a48}{%
+           family={Dyer},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=868a36f1aa58359ca31de07d079cc809}{%
+           family={Gerrits},
+           familyi={G\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=22696441c45a1a69a4df7bb9ecc9417f}{%
+           family={Glancy},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=abdbf2c22a77b4c9a08b71b3e77a1d98}{%
+           family={Harrington},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4dbefc66c057b235417daa3bf7657637}{%
+           family={Lamas\bibnamedelima Linares},
+           familyi={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a2d7e8cddb14f4989f4783b198fb9c9b}{%
+           family={Lita},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d23b47b692b8f56bca44b75a966a6273}{%
+           family={Knill},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1e6a02f4cfca63ac91b8cafa2609cd3f}{%
+           family={Marsili},
+           familyi={M\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8bb9512ce9b0d688b4e7bbd1a99ba800}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f1da98ff949181ac3d85c9107d8c92bc}{%
+           family={Mirin},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4416e6e6eccc2c2a182a5564cf634802}{%
+           family={Nam},
+           familyi={N\bibinitperiod},
+           given={S.\bibnamedelimi W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=a6836ca39dfbff1940c35ce49481e540}{%
+           family={Shainline},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3a207b24eda7910d54a8715581231ebc}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=94c822f61bd0c3cf5060a0f077256ecf}{%
+           family={Vayshenker},
+           familyi={V\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=d3e416d70a00d06c53df9dee45edef95}{%
+           family={Verma},
+           familyi={V\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{e73f8ff295a003a18c1635781ad6c42a}
+      \strng{fullhash}{adc9dc44a95086b60acccbe3e3682140}
+      \strng{fullhashraw}{adc9dc44a95086b60acccbe3e3682140}
+      \strng{bibnamehash}{e73f8ff295a003a18c1635781ad6c42a}
+      \strng{authorbibnamehash}{e73f8ff295a003a18c1635781ad6c42a}
+      \strng{authornamehash}{e73f8ff295a003a18c1635781ad6c42a}
+      \strng{authorfullhash}{adc9dc44a95086b60acccbe3e3682140}
+      \strng{authorfullhashraw}{adc9dc44a95086b60acccbe3e3682140}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Computer Scientist QCRYPT}
+      \field{note}{National Institute of Standards and Technology}
+      \field{title}{Single-Photon Detector Tutorial}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://qcrypt.github.io/2013.qcrypt.net/contributions/Shalm-slides.pdf
+      \endverb
+      \verb{url}
+      \verb https://qcrypt.github.io/2013.qcrypt.net/contributions/Shalm-slides.pdf
       \endverb
     \endentry
   \enddatalist

@@ -7,7 +7,13 @@
 \babel@toc {UKenglish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces (a) Schematic structure of a superconducting nanowire single photon detector \blx@tocontentsinit {0}\cite {steudle-2012}}}{3}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Scematic set up of the fiber coupling of a superconducting nanowire single photon detector \blx@tocontentsinit {0}\cite {steudle-2012}}}{3}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Schematic detection cycle of a superconducting nanowire single photon detector \blx@tocontentsinit {0}\cite {singlequantum_snsd_nodate} }}{4}{figure.caption.7}%
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Sketch of the components in the detector setup where photons can be lost and consequently there is a probability ($\eta _{\text {K}}$, $\eta _{\text {A}}$ or $\eta _{\text {R}}$) that the photon is not taken into account in the detection process.}}{8}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Schematic efficiency curve for the detection of a photon\blx@tocontentsinit {0}\cite {shalm_single-photon_2013}. On the Y axis is the efficiency $\eta $, where $\eta _{G}$ is the device efficiency. On the X axis is the time course of the efficiency}}{8}{figure.caption.13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

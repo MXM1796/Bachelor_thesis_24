@@ -1,25 +1,81 @@
 % !TEX root = mythesis.tex
 
+% Add the external directory to the graphics path
+\graphicspath{{/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/}}
+
 %==============================================================================
-\chapter{Characterization of SNSPD}
+\chapter{Characterization of our SNSPD}
 \label{sec:SNSPD_Characterization}
 %==============================================================================
+Vom Experiment aus Theorie erklären \\ schauen ob Unterkapitel passt
 
-In the literature, four central characteristics for EPD have emerged to quantize the quality of detectors.
-The detector efficiency, the dead count rate, the recovery time and the timing jitter.
-In general there are more than those like after-pulsing or signal-to-noise ration however these four are the most comon ones.\\
+
+In the literature, four central characteristics have emerged to quantize the quality of single photon detectors and
+make their performance comparable.
+This characteristics are the detector efficiency, the dead count rate, the recovery time and the timing jitter.
+In this thesis, I focus on the first three characteristics.
+In general, there are more than these introduced ones,
+like an after-pulsing or signal-to-noise ratio, however, these are the most important in the context of this thesis.
 
 \section{Dark Count Rate}
-\subsection*{Theory}
+The \textbf{dark count rate} is the rate of measured detection events that were not intentionally sent to the source.
+The dark count rate can be caused by statistical fluctuations in the measurement electronics
+or by scattered or ambient light. \\
+
 \subsection*{Measurement set up}
 \subsection*{Results and Discussion}
 
 \section{Efficiency}
-\subsection*{Theory}
+In \textbf{efficiency}, there are three types of efficiencies that describe independent loss processes in detection.
+An efficiency can be equated with the probability that a process under consideration will occur.\\
+These three efficiencies are the coupling efficiency ($\eta_{\text{K}}$),
+the absorption efficiency ($\eta_{\text{A}}$) and the registration efficiency ($\eta_{\text{R}}$).
+The graph \ref{fig: single_efficiency_terms} shows that when a photon is sent to a detector via an optical fibre,
+not all photons can be coupled into the fibre due to material and symmetry properties.
+The probability of coupling is called the \textit{coupling efficiency}. \\
+When photons hit the detector, there is always a probability that the photon will not be absorbed by the detector.
+This is described by the \textit{absorption efficiency}. \\
+Finally, there is always a probability that the photon will not be registered by the measuring electronics.
+This is expressed with the \textit{Registration efficiency}. \\
+
+\begin{figure}[hhh]
+\includegraphics[width=7cm]{Effizienzen}
+\caption{Sketch of the components in the detector setup where photons can be lost and consequently there is a probability ($\eta_{\text{K}}$, $\eta_{\text{A}}$ or $\eta_{\text{R}}$) that the photon is not taken into account in the detection process.}
+\label{fig: single_efficiency_terms}
+\end{figure}
+
+These three terms are brought together in two efficiency terms: the device efficiency
+($\eta_{\text{G}} = \eta_{\text{A}} \cdot \eta_{\text{R}}$) and the system efficiency
+($\eta_{\text{S}} = \eta_{\text{A}} \cdot \eta_{\text{R}} \cdot \eta_{\text{K}}$).
+The device's efficiency $\eta_{\text{G}}$ is that of the device itself and the efficiency would be if photons were sent
+to the detector in a free environment.
+The system's efficiency $\eta_{\text{S}}$ also takes into account the coupling losses in the optical fibre.
+This is the case if the detector is connected to a fibre, as the device properties or the experiment does not allow
+photon detection in a free environment.\\
+
 \subsection*{Measurement set up}
 \subsection*{Results and Discussion}
 \section{Recovery time}
-\subsection*{Theory}
+The concept of \textbf{recovery time} is visually described in graph\ref{fig:Recovery_time}. \\
+\begin{figure}[hhh]
+\includegraphics[width=7cm]{recovery_time_principle}
+\caption{Schematic efficiency curve for the detection of a photon\cite{shalm_single-photon_2013}. On the Y axis is the
+efficiency $\eta$, where $\eta_{G}$ is the device efficiency. On the X axis is the time course of the efficiency}.
+\label{fig:Recovery_time}
+\end{figure}
+
+When a photon hits the detector of an EPD and is absorbed, the efficiency of the detector drops to zero and no further
+photon can be measured for a period of time.
+This elapsed time is called the dead time.
+The efficiency then rises again to its original device efficiency.
+This period is called the reset time.
+The characteristic curve between the two times forms the start of the increase to full efficiency.
+The sum of both times forms the recovery time.
+
 \subsection*{Measurement set up}
+
 \subsection*{Results and Discussion}
-\section{Other Characteristics}
+\section{Discussion}
+Influence of timing jitter on efficiency and recovery time.
+- No Afterpulsing
+- Temperature 2.9 instead of 2.5Í

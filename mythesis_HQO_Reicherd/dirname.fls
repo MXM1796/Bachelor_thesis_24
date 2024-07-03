@@ -321,28 +321,20 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/late
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/ngerman.lbx
 INPUT ./thesis_defs.sty
 INPUT thesis_defs.sty
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtlf.fd
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtlf.fd
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtlf.fd
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/color.sty
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/import/import.sty
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/import/import.sty
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtlf.fd
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtlf.fd
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtlf.fd
 INPUT ./dirname.aux
 INPUT ./dirname.aux
 INPUT dirname.aux
-INPUT ./thesis_acknowledge.aux
-INPUT ./thesis_acknowledge.aux
-INPUT thesis_acknowledge.aux
-INPUT ./Latex_Contentfiles/Introduction_to_SNSPD.aux
-INPUT ./Latex_Contentfiles/Introduction_to_SNSPD.aux
-INPUT Latex_Contentfiles/Introduction_to_SNSPD.aux
-INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.aux
-INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.aux
-INPUT Latex_Contentfiles/Working_principle_of_SNSPD.aux
-INPUT ./Latex_Contentfiles/Building_set_up_for_Detector_Characterization.aux
-INPUT ./Latex_Contentfiles/Building_set_up_for_Detector_Characterization.aux
-INPUT Latex_Contentfiles/Building_set_up_for_Detector_Characterization.aux
-INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.aux
-INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.aux
-INPUT Latex_Contentfiles/Characterization_of_SNSPD.aux
+INPUT ./Latex_Contentfiles/thesis_acknowledge.aux
+INPUT ./Latex_Contentfiles/thesis_acknowledge.aux
+INPUT Latex_Contentfiles/thesis_acknowledge.aux
 INPUT ./Latex_Contentfiles/thesis_appendix.aux
 INPUT ./Latex_Contentfiles/thesis_appendix.aux
 INPUT Latex_Contentfiles/thesis_appendix.aux
@@ -439,6 +431,24 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microtype/mt-msa.cfg
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microtype/mt-msa.cfg
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microtype/mt-msa.cfg
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microtype/mt-msb.cfg
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microtype/mt-msb.cfg
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microtype/mt-msb.cfg
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
@@ -464,9 +474,20 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
-OUTPUT thesis_acknowledge.aux
+INPUT ./Latex_Contentfiles/thesis_acknowledge.tex
+INPUT ./Latex_Contentfiles/thesis_acknowledge.tex
+OUTPUT Latex_Contentfiles/thesis_acknowledge.aux
+INPUT ./Latex_Contentfiles/thesis_acknowledge.tex
+INPUT ./Latex_Contentfiles/thesis_acknowledge.tex
+INPUT Latex_Contentfiles/thesis_acknowledge.tex
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tex-gyre/t1qhv.fd
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tex-gyre/t1qhv.fd
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tex-gyre/t1qhv.fd
@@ -498,6 +519,16 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxbexa.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxbexa.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxbexa.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtt.fd
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtt.fd
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtt.fd
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/txfonts/t1xtt.tfm
 INPUT ./dirname.toc
 INPUT ./dirname.toc
 INPUT dirname.toc
@@ -528,7 +559,6 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 OUTPUT dirname.toc
 INPUT ./Latex_Contentfiles/Introduction_to_SNSPD.tex
 INPUT ./Latex_Contentfiles/Introduction_to_SNSPD.tex
-OUTPUT Latex_Contentfiles/Introduction_to_SNSPD.aux
 INPUT ./Latex_Contentfiles/Introduction_to_SNSPD.tex
 INPUT ./Latex_Contentfiles/Introduction_to_SNSPD.tex
 INPUT Latex_Contentfiles/Introduction_to_SNSPD.tex
@@ -538,61 +568,161 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/tex-gyre/ec-qhvb.tfm
 INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
 INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
-OUTPUT Latex_Contentfiles/Working_principle_of_SNSPD.aux
 INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
 INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
 INPUT Latex_Contentfiles/Working_principle_of_SNSPD.tex
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_grober_aufbau.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_grober_aufbau.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_grober_aufbau.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_grober_aufbau.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_grober_aufbau.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_grober_aufbau.png
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Ablauf.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Ablauf.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Ablauf.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Ablauf.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Ablauf.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Ablauf.png
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaX.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxsy.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txsys.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Meander_fiber_coupling.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Meander_fiber_coupling.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Meander_fiber_coupling.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Meander_fiber_coupling.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Meander_fiber_coupling.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Meander_fiber_coupling.png
 INPUT ./Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex
 INPUT ./Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex
-OUTPUT Latex_Contentfiles/Building_set_up_for_Detector_Characterization.aux
 INPUT ./Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex
 INPUT ./Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex
 INPUT Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmi5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmi5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsy5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsy5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmia.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmia.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmi5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmi5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsy5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsy5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmia.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmia.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmia.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxsy7.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txsys.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaX.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
 INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.tex
 INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.tex
-OUTPUT Latex_Contentfiles/Characterization_of_SNSPD.aux
 INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.tex
 INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.tex
 INPUT Latex_Contentfiles/Characterization_of_SNSPD.tex
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi7.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi5.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI5.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/tex-gyre/ec-qhvb.tfm
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmi.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmi7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsy.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsy7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmia.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmia.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
+INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
+INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
+INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
+INPUT Latex_Contentfiles/Conclusion_and_Outlook.tex
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi7.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
 INPUT ./Latex_Contentfiles/thesis_appendix.tex
 INPUT ./Latex_Contentfiles/thesis_appendix.tex
 OUTPUT Latex_Contentfiles/thesis_appendix.aux
 INPUT ./Latex_Contentfiles/thesis_appendix.tex
 INPUT ./Latex_Contentfiles/thesis_appendix.tex
 INPUT Latex_Contentfiles/thesis_appendix.tex
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-sc-t1.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtt.fd
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtt.fd
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtt.fd
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/txfonts/t1xtt.tfm
-INPUT ./dirname.lof
-INPUT ./dirname.lof
-INPUT dirname.lof
-OUTPUT dirname.lof
-INPUT ./dirname.lot
-INPUT ./dirname.lot
-INPUT dirname.lot
-OUTPUT dirname.lot
 INPUT dirname.aux
-INPUT ./thesis_acknowledge.aux
-INPUT ./thesis_acknowledge.aux
-INPUT thesis_acknowledge.aux
-INPUT ./Latex_Contentfiles/Introduction_to_SNSPD.aux
-INPUT ./Latex_Contentfiles/Introduction_to_SNSPD.aux
-INPUT Latex_Contentfiles/Introduction_to_SNSPD.aux
-INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.aux
-INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.aux
-INPUT Latex_Contentfiles/Working_principle_of_SNSPD.aux
-INPUT ./Latex_Contentfiles/Building_set_up_for_Detector_Characterization.aux
-INPUT ./Latex_Contentfiles/Building_set_up_for_Detector_Characterization.aux
-INPUT Latex_Contentfiles/Building_set_up_for_Detector_Characterization.aux
-INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.aux
-INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.aux
-INPUT Latex_Contentfiles/Characterization_of_SNSPD.aux
+INPUT ./Latex_Contentfiles/thesis_acknowledge.aux
+INPUT ./Latex_Contentfiles/thesis_acknowledge.aux
+INPUT Latex_Contentfiles/thesis_acknowledge.aux
 INPUT ./Latex_Contentfiles/thesis_appendix.aux
 INPUT ./Latex_Contentfiles/thesis_appendix.aux
 INPUT Latex_Contentfiles/thesis_appendix.aux
@@ -600,11 +730,26 @@ INPUT dirname.run.xml
 OUTPUT dirname.run.xml
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ec-tlf.enc
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/tex-gyre/q-ec.enc
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/NewTXMI.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/NewTXMI.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/NewTXMI5.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/NewTXMI5.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/NewTXMI7.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/NewTXMI7.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/tex-gyre/qhvb.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/tex-gyre/qhvb.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/txfonts/t1xtt.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/txfonts/t1xtt.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txmiaX.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txmiaX.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txsym.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txsym.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txsys.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txsys.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztmb.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztmb.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztmr.pfb

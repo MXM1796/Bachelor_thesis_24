@@ -1,4 +1,4 @@
-\documentclass[Bachelor, ngerman, UKenglish]{scrbook}
+\documentclass[openany,oneside,Bachelor, ngerman, UKenglish]{scrbook}
 %------------------------------------------------------------------------------
 % This file contains a skeleton thesis for
 % a Physics or Astronomy Institute in the University of Bonn.
@@ -34,6 +34,9 @@
 % \usetikzlibrary{decorations.pathmorphing}
 % \usetikzlibrary{decorations.markings}
 \usepackage{thesis_defs}
+\usepackage{color}
+\usepackage{amsfonts}
+\usepackage{import}
 
 %------------------------------------------------------------------------------
 % Instead of colouring  links, cites, table of contents etc.
@@ -105,10 +108,12 @@
 % A simple \include command just inserts a \clearpage before and after the file
 % Note that \includeonly can be quite picky! Do not forget to put a
 % comma after the filename, otherwise it will simply be ignored!
-% \includeonly{%
-%   thesis_intro,
-%   thesis_appendix,
-%   thesis_acknowledge
+% \includeonly{
+%   Latex_Contentfiles/Introduction_to_SNSPD,
+%   Latex_Contentfiles/Working_principle_of_SNSPD,
+%   Latex_Contentfiles/Building_set_up_for_Detector_Characterization,
+%   Latex_Contentfiles/Characterization_of_SNSPD,
+%   Latex_Contentfiles/Conclusion_and_Outlook
 % }
 
 %------------------------------------------------------------------------------
@@ -117,6 +122,7 @@
 \graphicspath{%
   {figs/}%
   {figs/cover/}%
+  {/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/}%
 }
 
 %------------------------------------------------------------------------------
@@ -146,28 +152,20 @@
 %------------------------------------------------------------------------------
 % You can add your acknowledgements here - don't forget to also add
 % them to \includeonly above
-\include{thesis_acknowledge}
+\include{Latex_Contentfiles/thesis_acknowledge}
 
 \tableofcontents
 
 \mainmatter
 \pagestyle{scrheadings}
 
-
-
-
-
-% Turn off DRAFT for the following pages
-%\ifthenelse{\equal{\ThesisVersion}{Draft}}{%
-%  \backgroundsetup{contents={}}
-%}{}
-
 %------------------------------------------------------------------------------
 % Add your chapters here - don't forget to also add them to \includeonly above
-\include{Latex_Contentfiles/Introduction_to_SNSPD}
-\include{Latex_Contentfiles/Working_principle_of_SNSPD}
-\include{Latex_Contentfiles/Building_set_up_for_Detector_Characterization}
-\include{Latex_Contentfiles/Characterization_of_SNSPD}
+\input{Latex_Contentfiles/Introduction_to_SNSPD}
+\input{Latex_Contentfiles/Working_principle_of_SNSPD}
+\input{Latex_Contentfiles/Building_set_up_for_Detector_Characterization}
+\input{Latex_Contentfiles/Characterization_of_SNSPD}
+\input{Latex_Contentfiles/Conclusion_and_Outlook}
 
 % Uncomment the following command to get references per chapter.
 % Put it inside the file or change \include to \input if you do not want the references
@@ -203,8 +201,6 @@
 % Chapter/section numbers are turned off
 \backmatter
 
-\listoffigures
-\listoftables
 
 %------------------------------------------------------------------------------
 % Print the glossary and list of acronyms
