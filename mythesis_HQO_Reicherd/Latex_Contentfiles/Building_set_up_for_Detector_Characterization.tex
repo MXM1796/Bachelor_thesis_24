@@ -13,7 +13,7 @@ Further, I make considerations regarding the inherent blindspots of laser light 
 in coherent light.
 Afterward, I introduce the setup I build for characterizing our SNSPD.\\
 
-\section*{Characteristics of faint laser sources}
+\section{Characteristics of faint laser sources}
 
 Using a laser source enables us, considering the emitting light as monochromatic beam with angular frequency $\omega$
 and constant Intensity I. The Photon flux of a laser is defined as the photon average number passing through
@@ -75,12 +75,30 @@ Where $N = \frac{c}{L_{\text{d}}}$ are the subsegments of the measured length se
 This enables us to calculate the probability p of finding n Photons per deadtime segment $L_{\text{d}}$ and
 including this in our measurements.
 
-\section*{Experimental setup}
+\section{Experimental setup}
 
 Though not measured by ourselves first, it is known from \textcolor{red}{Zitat} deadtime of the detector is around 20-25ns.
 This gives us a theoretical maximum detection rate of $\mathcal{R_{\max}} \propto \frac{1}{\tau_{d}} = 25-50\si{M\Hz}$.
-In order to realize this laser attenuation the following set was build:
+In order to realize the laser attenuation the following setup was build:
 
+The first coupling of the laser light was done in order to operate with the beam on a lower stage, because the laserbeam 
+was due to its construction on an uplifted stage. 
+Afterward the beam passes a pbs to filter the horizontal polarized E field out. 
+Further a galile telescope was build out of one focal and one diffusing lens for minimizing the beam width so it fits fully 
+on the surface of the AOM crystal. The first order of the AOM was set for flexible voltage modulation of the laser.
+A cover was used to filter out the first from the zeroth order of the AOM. Then a flip mount was placed, where 
+Neutral density (ND) filers could be placed in and flexible placed in and out of the laser beam. 
+The ND filters have the function to attenuate the laser light. 
+At the end, before the laser light was again coupled in two waveplates where used to stabilize the light polarization regarding the
+slow axis of the fibre. Afterwards the light was coupled back into a fibre, so it can be send to the detector.
+It was important that the light was coupled in to a APC/PC to FC/PC optical fibre because the detector only had a FC/PC optical fibre
+input, in order to maintain higher efficiency coupling in the light.\\
+
+Besides, this optical setup had to be protected from environmental light. For this, the room where the setup was running was shielded 
+with alu foil which has a reflection coefficient of almost 90$\%$ at the operating wavelenght of 780nm. 
+Morverover a black box was build. It has the function to avoid further environmental light coupling into the fibre. Additionally, 
+the optical fibre running from the optical setup to the detector was shielded with alu foil as well to avoid absoption from the optical 
+fibre. 
 
 
 
