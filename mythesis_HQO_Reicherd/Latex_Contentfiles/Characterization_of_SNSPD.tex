@@ -10,19 +10,35 @@
 Vom Experiment aus Theorie erklären \\ schauen ob Unterkapitel passt
 
 
-In the literature, four central characteristics have emerged to quantize the quality of single photon detectors and
+In literature, four central characteristics have emerged to quantize the quality of single photon detectors and
 make their performance comparable.
-This characteristics are the detector efficiency, the dead count rate, the recovery time and the timing jitter.
+These characteristics are the detector efficiency, the dead count rate, the recovery time and the timing jitter.
 In this thesis, I focus on the first three characteristics.
 In general, there are more than these introduced ones,
-like an after-pulsing or signal-to-noise ratio, however, these are the most important in the context of this thesis.
+like an after-pulsing or signal-to-noise ratio; however, these are the most important in the context of this thesis.
 
 \section{Dark Count Rate}
-The \textbf{dark count rate} is the rate of measured detection events that were not intentionally sent to the source.
-The dark count rate can be caused by statistical fluctuations in the measurement electronics
-or by scattered or ambient light. \\
+The \textbf{dark count rate} (DCR) is the rate of measured detection events that were not intentionally sent to the source.
+It is measured in counts per Second and can be caused by statistical fluctuations in the measurement electronics
+or by scattered or ambient light from the environment.
+A low DCR is important because it allows differentiating between detected counts from the source and detected counts by
+environment and electronic noise. \\
+It increases the count resolution and enables at lower frequencies still high signal-to-noise ratios.
+Moreover, SNSPDs DCR depends on the bias current applied to the nanowire.
+Since the deadtime and the efficiency depends on the bias current as well, one has to find the best adjustment,
+where low DCR is assured as well as a low deadtime and high efficiency.
 
-\subsection*{Measurement set up}
+
+\subsection*{Measurement setup}
+
+Evaluating the DCR needs measurements in two measurement setups.
+First, a setup where the detector is unplugged from the source and covered fully in darkness, so one can assume no
+photons from the environment are hitting the detector.
+This enables measuring the DCR triggered by the electronics and the characteristic of the detector's operating mode.
+Second, a setup where the detector is plugged to the source (faint laser source in a blackbox) and hence also
+covered best as possible in darkness, so one can compare how many photons are are measured from the environment.
+
+The measurement setup is
 \subsection*{Results and Discussion}
 
 \section{Efficiency}
