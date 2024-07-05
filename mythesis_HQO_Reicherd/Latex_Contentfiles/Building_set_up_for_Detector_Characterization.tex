@@ -98,7 +98,44 @@ Besides, this optical setup had to be protected from environmental light. For th
 with alu foil which has a reflection coefficient of almost 90$\%$ at the operating wavelenght of 780nm. 
 Morverover a black box was build. It has the function to avoid further environmental light coupling into the fibre. Additionally, 
 the optical fibre running from the optical setup to the detector was shielded with alu foil as well to avoid absoption from the optical 
-fibre. 
+fibre. \\
+
+Neutral density (ND) filter calibration \\
+
+We exactly need to know how many photons (related to Power) hit our detector.
+For this we need to measure the power (or number of photons) of the laser light we shining on the detector.
+The light we want to shine on the detector is very weak.
+So weak, we cannot measure it with powermeters or any other measurement devices (except with the uncharacterized detector)
+This weak power cannot reached by regulating the laser power down by the laser device (why not? laser minimum power function
+only with a power higher than required), but has to be done by Neutral Density filters.
+So our laser power we send to the detector depends on ND filter.\\
+
+Now there are two challenges relying on ND filters.
+First, since the fabric values are not precise, the filters need to be calibrated ourselves.
+Second, one single ND filter cannot attenuate the laser power enough and therefore one has to stack several density
+filters on each other, since their OD values are adding up.
+
+From these two constraints, we need to calibrate the ND filters carefully, to get precise and accurate OD values of the
+ND filters.
+
+To get accurate results, we measure the OD value with two methods to rule out systematic errors in our results.
+The first method measures the OD values, where the ND filters are set in the flip mount as described in graph \ref{}.
+The second method measures the OD values after the fibre coupling directly in front of the powermeter
+outside the blackbox.
+
+The attenuation of ND filters is quantized by the Optical density (OD) value.
+The measurement of the OD values done by sending light on the filter and measuring the power with and
+without the filter.
+The OD value is then calculated by the logarithmic value of the inverse transmission value.
+The transmission value is given by the proportion of the power with the filter compared without the filter.
+
+Afterward, the final OD values of each method were averaged and the corresponding systematic and statistical errors are
+considered to get the closest to the true OD value for the ND filters.
+
+Based one these OD values each measurement involving the laser was done.
+
+%uncertainties package (python)
+
 
 
 

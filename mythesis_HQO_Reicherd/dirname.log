@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  3 JUL 2024 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  5 JUL 2024 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2262,7 +2262,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--96
 
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
+Underfull \hbox (badness 10000) in paragraph at lines 97--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--112
+
+ []
+
+
+LaTeX Warning: Reference `' on page 7 undefined on input line 122.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
 
@@ -2270,94 +2288,110 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--110
 
 [7]
 chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--24
-
- []
-
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 11.28003pt on input line 25.
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--40
-
- []
-
-</Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/Effizienzen.png, id=118, 402.303pt x 155.6214pt>
-File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
-le Photon Detection/Effizienzen.png Graphic file (type png)
-<use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
-e Photon Detection/Effizienzen.png>
-Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
-roseminar/Figs Single Photon Detection/Effizienzen.png  used on input line 42.
-(pdftex.def)             Requested size: 199.16928pt x 77.0435pt.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 43.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.0pt on input line 43.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.3pt on input line 43.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.3pt on input line 43.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 43.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.0pt on input line 43.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.3pt on input line 43.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.3pt on input line 43.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.3pt on input line 43.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.3pt on input line 43.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 43.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 43.
+(Font)              scaled to size 11.28003pt on input line 32.
 
 
 [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 47--55
+Underfull \hbox (badness 10000) in paragraph at lines 56--68
 
  []
 
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/recovery_time_principle.png, id=127, 461.5644pt x 173.9298pt>
+oton Detection/Effizienzen.png, id=123, 402.303pt x 155.6214pt>
+File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
+le Photon Detection/Effizienzen.png Graphic file (type png)
+<use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
+e Photon Detection/Effizienzen.png>
+Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
+roseminar/Figs Single Photon Detection/Effizienzen.png  used on input line 70.
+(pdftex.def)             Requested size: 199.16928pt x 77.0435pt.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 10.0pt on input line 72.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 7.3pt on input line 72.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 10.0pt on input line 72.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 7.3pt on input line 72.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 10.0pt on input line 72.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 7.3pt on input line 72.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 10.0pt on input line 72.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 7.3pt on input line 72.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 10.0pt on input line 72.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 7.3pt on input line 72.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 10.0pt on input line 72.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 7.3pt on input line 72.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 10.0pt on input line 72.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 7.3pt on input line 72.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 10.0pt on input line 72.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 7.3pt on input line 72.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 72.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.5pt on input line 72.
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
+
+ []
+
+
+
+[9 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
+ Photon Detection/Effizienzen.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 91--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--106
+
+ []
+
+</Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
+oton Detection/recovery_time_principle.png, id=133, 461.5644pt x 173.9298pt>
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/recovery_time_principle.png Graphic file (type png)
 <use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
 e Photon Detection/recovery_time_principle.png>
 Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
 roseminar/Figs Single Photon Detection/recovery_time_principle.png  used on inp
-ut line 61.
+ut line 117.
 (pdftex.def)             Requested size: 199.16928pt x 75.05109pt.
 ) (Latex_Contentfiles/Conclusion_and_Outlook.tex
 
-[9 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
- Photon Detection/Effizienzen.png> </Users/maxim.re/Studium/Physik B.Sc./Semest
-er_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png>]
+[10 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
+e Photon Detection/recovery_time_principle.png>]
 
-
-[10]
+[11]
 chapter 5.
 )
 
-[11
+[12
 
 ]
 \openout2 = `Latex_Contentfiles/thesis_appendix.aux'.
@@ -2366,7 +2400,7 @@ chapter 5.
 chapter A.
 )
 
-[12
+[13
 
 
 ]
@@ -2378,7 +2412,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-[13
+[14
 
 
 
@@ -2391,16 +2425,20 @@ Package cleveref Info: loaded `ngerman' language definitions on input line 16.
 LaTeX2e <2024-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'dirname.run.xml'.
 \openout1 = `dirname.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42288 strings out of 475854
- 859330 string characters out of 5776366
+ 42308 strings out of 475854
+ 859713 string characters out of 5776366
  1943905 words of memory out of 5000000
- 64134 multiletter control sequences out of 15000+600000
- 710447 words of font info for 318 fonts, out of 8000000 for 9000
+ 64135 multiletter control sequences out of 15000+600000
+ 711278 words of font info for 327 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
  108i,20n,147p,10904b,4064s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/
@@ -2425,9 +2463,9 @@ nstall/fonts/type1/public/newtx/ztmb.pfb></Users/maxim.re/Library/Application S
 upport/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztmr.pfb></Users/maxim.re
 /Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztm
 ri.pfb>
-Output written on dirname.pdf (17 pages, 2803776 bytes).
+Output written on dirname.pdf (18 pages, 2810305 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
  52866 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber dirname"] 1720021509.79082 "dirname.bcf" "dirname.bbl" "dirname" 1720021524.18573 0
+["biber dirname"] 1720021509.79082 "dirname.bcf" "dirname.bbl" "dirname" 1720185139.64809 0
   "bib/thesis_refs.bib" 1719828788.20663 5748 e9daaddedf31ea00b1466be4eed7d3c9 ""
-  "dirname.bcf" 1720021523.92292 108451 d36677661ac4ab1d411307acf9b6bb74 "pdflatex"
+  "dirname.bcf" 1720185139.38862 108451 d36677661ac4ab1d411307acf9b6bb74 "pdflatex"
   (generated)
   "dirname.bbl"
   "dirname.blg"
   (rewritten before read)
-["pdflatex"] 1720021520.17674 "dirname.tex" "dirname.pdf" "dirname" 1720021524.18611 0
+["pdflatex"] 1720185135.62154 "dirname.tex" "dirname.pdf" "dirname" 1720185139.64846 0
   "/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1720012226.32477 111327 a833ac442b5d17c8ef07af257d6af144 ""
   "/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1719519153.83888 21087292 e883be1fd9c75ded8d32b17d58f19a6b ""
   "/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc" 1719519177.79913 3136 bbe665bd0bb471a2da1e8fd326cff9fa ""
@@ -253,21 +253,21 @@
   "/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Meander_fiber_coupling.png" 1719830604.2952 368506 6578860bec9ff4d30eaabfaa5a6bc61a ""
   "/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_grober_aufbau.png" 1717967266 1422118 9d83df32e173522fa470553602bdf48a ""
   "/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png" 1716998099 52575 0cdde37cc94ca92f40ab790613370fe8 ""
-  "Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex" 1720021492.56729 5968 6b3ce373044f4c6bffbe93a2124f3d64 ""
-  "Latex_Contentfiles/Characterization_of_SNSPD.tex" 1719909012.0626 4617 b408f1aa2f1e479f60011e9e97b3ac0d ""
+  "Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex" 1720181549.76923 8172 e188608fa5307fb4767069eb5e9c8fe1 ""
+  "Latex_Contentfiles/Characterization_of_SNSPD.tex" 1720185130.08407 8073 dc56ea5fa76c2e3e940b5df618598e3e ""
   "Latex_Contentfiles/Conclusion_and_Outlook.tex" 1719906002.17012 256 b80723668bba19e8aba173f326a4c4d9 ""
   "Latex_Contentfiles/Introduction_to_SNSPD.tex" 1719906241.55602 242 0cd5720354792affeed3bf066ee20977 ""
   "Latex_Contentfiles/Working_principle_of_SNSPD.tex" 1720012288.92346 3724 4c5265992b96be3fe36204c9b1d72cd6 ""
-  "Latex_Contentfiles/thesis_acknowledge.aux" 1720021522.61138 4284 ee52ce0b789aa2591b6b96031226e136 "pdflatex"
+  "Latex_Contentfiles/thesis_acknowledge.aux" 1720185138.06484 4284 ee52ce0b789aa2591b6b96031226e136 "pdflatex"
   "Latex_Contentfiles/thesis_acknowledge.tex" 1719513186.7236 467 055b28993606406c300511ebf3d16662 ""
-  "Latex_Contentfiles/thesis_appendix.aux" 1720021523.86326 4500 70693208b1dee0e8be1ceeb215784311 "pdflatex"
+  "Latex_Contentfiles/thesis_appendix.aux" 1720185139.3329 4500 145c2603c7948ec10b34c388d6e93f06 "pdflatex"
   "Latex_Contentfiles/thesis_appendix.tex" 1719909012.07156 321 fe5057240a8f9a3c89821cd1ba71208f ""
   "cover/Bachelor_Title.tex" 1719778825.09508 1555 b4f5187b9eac1ca848f9796e05735412 ""
-  "dirname.aux" 1720021523.8939 11785 f08fac707dd4ba8df55ccffd30998c97 "pdflatex"
+  "dirname.aux" 1720185139.36147 11684 60025309117040acd2e22b8d43df23e0 "pdflatex"
   "dirname.bbl" 1720021511.98332 9053 3cc6bf5c51a305fec5824723f60b72f1 "biber dirname"
-  "dirname.run.xml" 1720021523.92404 2544 18efe100d8a84e0ea2f9337ea832c4b7 "pdflatex"
+  "dirname.run.xml" 1720185139.38964 2544 18efe100d8a84e0ea2f9337ea832c4b7 "pdflatex"
   "dirname.tex" 1720012367.14039 9058 c3abf724d1dbec93df4e4adf1ac8eca6 ""
-  "dirname.toc" 1720021523.92417 1305 e9b59e17137757544e612c7bd2459a68 "pdflatex"
+  "dirname.toc" 1720185139.38976 1306 baf4523243a173bc0ff7adfac5929313 "pdflatex"
   "thesis_defs.sty" 1719513186.719 1630 989ba5a87bc7ad1525f27d397e4e5824 ""
   "ubonn-biblatex.sty" 1719513186.72938 7096 aa9e8642117797dc418f150f889912a1 ""
   "ubonn-thesis.sty" 1719513186.72796 42289 18354fe39f3c41e369ac4363d6b133a4 ""

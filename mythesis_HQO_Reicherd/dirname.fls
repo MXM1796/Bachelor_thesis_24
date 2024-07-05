@@ -695,6 +695,9 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
 INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
 INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
 INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
@@ -706,9 +709,6 @@ INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
 INPUT Latex_Contentfiles/Conclusion_and_Outlook.tex
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi.vf
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi7.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI7.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm

@@ -12,10 +12,10 @@
 \contentsline {section}{\numberline {3.2}Experimental setup}{6}{section.3.2}%
 \contentsline {chapter}{\numberline {4}Characterization of our SNSPD}{8}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Dark Count Rate}{8}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Efficiency}{8}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Recovery time}{9}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Discussion}{10}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Conclusion and Outlook}{11}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Appendix}{12}{appendix.A}%
-\contentsline {chapter}{\nonumberline Bibliography}{13}{chapter*.14}%
+\contentsline {section}{\numberline {4.2}Efficiency}{9}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Recovery time}{10}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Discussion}{11}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusion and Outlook}{12}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Appendix}{13}{appendix.A}%
+\contentsline {chapter}{\nonumberline Bibliography}{14}{chapter*.14}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

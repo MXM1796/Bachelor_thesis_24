@@ -21,7 +21,7 @@ like an after-pulsing or signal-to-noise ratio; however, these are the most impo
 The \textbf{dark count rate} (DCR) is the rate of measured detection events that were not intentionally sent to the source.
 It is measured in counts per Second and can be caused by statistical fluctuations in the measurement electronics
 or by scattered or ambient light from the environment.
-A low DCR is important because it allows differentiating between detected counts from the source and detected counts by
+A low DCR is important because it allows differentiating between intended detected counts from the source and detected counts by
 environment and electronic noise. \\
 It increases the count resolution and enables at lower frequencies still high signal-to-noise ratios.
 Moreover, SNSPDs DCR depends on the bias current applied to the nanowire.
@@ -31,23 +31,35 @@ where low DCR is assured as well as a low deadtime and high efficiency.
 
 \subsection*{Measurement setup}
 
-Evaluating the DCR needs measurements in two measurement setups.
-First, a setup where the detector is unplugged from the source and covered fully in darkness, so one can assume no
+Evaluating the DCR needs measurements in two setups.
+First, a setup where the detector is unplugged from the source and covered fully in darkness.Like this one can assume no
 photons from the environment are hitting the detector.
 This enables measuring the DCR triggered by the electronics and the characteristic of the detector's operating mode.
-Second, a setup where the detector is plugged to the source (faint laser source in a blackbox) and hence also
-covered best as possible in darkness, so one can compare how many photons are are measured from the environment.
+The later means, the probability detecting photons raises if the bias current increases due to the lower energy gap
+its needed exceeding the critical temperature.
+
+Second, a setup where the detector is plugged to the faint laser source.
+This is done to compare this results with the first setup.
+We assume that the first setup has the lowest DCR.
+Comparing to it enables us to improve the setup as much as possible towards the first setup,
+hence we get the best signal to noise ratio.
+
+\subsection*{Results and Discussion}
+
+First the DCR is measured from the detector with cap on ...
+covered best as possible in darkness, so one can compare how many photons are measured from the environment. The
+coverage was done in two ways. On the one hand the optical setup was put into a blackbox
 
 The measurement setup is
-\subsection*{Results and Discussion}
 
 \section{Efficiency}
 In \textbf{efficiency}, there are three types of efficiencies that describe independent loss processes in detection.
-An efficiency can be equated with the probability that a process under consideration will occur.\\
+An efficiency can be equated with the probability that a quantum mechanically process under consideration will occur.\\
 These three efficiencies are the coupling efficiency ($\eta_{\text{K}}$),
 the absorption efficiency ($\eta_{\text{A}}$) and the registration efficiency ($\eta_{\text{R}}$).
-The graph \ref{fig: single_efficiency_terms} shows that when a photon is sent to a detector via an optical fibre,
-not all photons can be coupled into the fibre due to material and symmetry properties.
+The graph \ref{fig: single_efficiency_terms} shows schematically where the different loss process in the detection
+process appear. So, when a photon is sent to a detector via an optical fibre, not all photons can be coupled into the
+fibre due to material and symmetry properties.
 The probability of coupling is called the \textit{coupling efficiency}. \\
 When photons hit the detector, there is always a probability that the photon will not be absorbed by the detector.
 This is described by the \textit{absorption efficiency}. \\
@@ -56,22 +68,51 @@ This is expressed with the \textit{Registration efficiency}. \\
 
 \begin{figure}[hhh]
 \includegraphics[width=7cm]{Effizienzen}
-\caption{Sketch of the components in the detector setup where photons can be lost and consequently there is a probability ($\eta_{\text{K}}$, $\eta_{\text{A}}$ or $\eta_{\text{R}}$) that the photon is not taken into account in the detection process.}
+\caption{Sketch of the components in the detector setup where photonlosses appear and consequently a propability
+ ($\eta_{\text{K}}$, $\eta_{\text{A}}$ or $\eta_{\text{R}}$) has to be considered.}
 \label{fig: single_efficiency_terms}
 \end{figure}
 
-These three terms are brought together in two efficiency terms: the device efficiency
+In literature, these terms are brought together in two efficiency terms: the device efficiency
 ($\eta_{\text{G}} = \eta_{\text{A}} \cdot \eta_{\text{R}}$) and the system efficiency
 ($\eta_{\text{S}} = \eta_{\text{A}} \cdot \eta_{\text{R}} \cdot \eta_{\text{K}}$).
-The device's efficiency $\eta_{\text{G}}$ is that of the device itself and the efficiency would be if photons were sent
-to the detector in a free environment.
-The system's efficiency $\eta_{\text{S}}$ also takes into account the coupling losses in the optical fibre.
+The device's efficiency $\eta_{\text{G}}$ is that of the device itself and corresponds to photons sent
+to the detector in a free environment without any fibre coupling.
+The system's efficiency $\eta_{\text{S}}$ also takes into account the coupling losses to the optical fibre.
 This is the case if the detector is connected to a fibre, as the device properties or the experiment does not allow
 photon detection in a free environment.\\
 
 \subsection*{Measurement set up}
+
+The system detection efficiency $\eta_{s}$ is measured in different ways, each is pointing out a different variable
+the efficiency is depending on. Each measurement was done in the setup explained in part \textcolor{blue}{2.2}.
+\\
+
+First, we wanted to find the polarization axis were the maximum of the light is coupled to the slow axis of the fibre.
+This is explained by the technical fact that only the slow axis of the fibre is coupled to the output port of the
+detector. The explaination for this is the maximum $\eta_{A}$ explained in part\textcolor{blue}{2.1}.\\
+By adjusting the laser beam linear with a $\lambda$-4 plate first and afterwards rotating the $\lambda$-half plate
+in 10 degree steps it was possible to circulate the ligth axis and hence find the angle configuration were the maximum
+light was hitting the detector.
+This is important since measuring the efficiency aligned to a different axix would always
+put a systematic downshift error on the true efficiency of the detector\\
+
+That measurment also confirms malus law ..\\
+
+Second, the bias current und trigger voltage dependency was investigated.
+For this this polarization was aligned to the optimum.
+Afterwards, the bias current was swept from 0 to 35uA in 0.1uA steps and events within 200ms integration
+time were counted. This was done for four different trigger voltages. \\
+
+Finally, measurements for different input count rates were done.
+This was done by exchanging the ND filters combination to get different photon counts.
+Here I covered up a range from the KHz regime up to the MHz regime.
+Moreover, this measurement shows the saturation point, were no additional efficiency is acquired by lowering the count rate.
+
+
 \subsection*{Results and Discussion}
 \section{Recovery time}
+
 The concept of \textbf{recovery time} is visually described in graph\ref{fig:Recovery_time}. \\
 \begin{figure}[hhh]
 \includegraphics[width=7cm]{recovery_time_principle}
@@ -89,6 +130,29 @@ The characteristic curve between the two times forms the start of the increase t
 The sum of both times forms the recovery time.
 
 \subsection*{Measurement set up}
+
+The recovery time was measured here along the same idea provided above.
+Signals from the detector were send to a time tagger unit.
+This unit enabled, as the name implies, tagging incoming signals with a time tag.
+These tags could then be used to process the time distances between all signals to each other.
+Displaying the histogram of all distances gives us the same efficiency course, showed above explaining the recovery time.
+\\
+This measurement were done again for different bias currents and trigger voltages, in order to determine the best
+configuration for operating. \\
+
+Additionally, to these measurements analog signals were recorded with an oscilloscope.
+Reason, for this is to see how the generated pulses look like and wheter one can comprehend from them some sequences in our
+data evaluation.
+Like this get a better understanding of how the raw output signal changes when parameters as the bias current, the trigger
+voltage or the input power changes.\\
+
+
+
+
+
+
+The recoverytime was measured with a time tager connected to the computational unit of the detector.
+This was done to extract the analog signals and sent them to an alternative to process the data.
 
 \subsection*{Results and Discussion}
 \section{Discussion}
