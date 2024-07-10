@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber dirname"] 1720447599.27311 "dirname.bcf" "dirname.bbl" "dirname" 1720619876.67782 0
+["biber dirname"] 1720447599.27311 "dirname.bcf" "dirname.bbl" "dirname" 1720621522.45321 0
   "bib/thesis_refs.bib" 1719828788.20663 5748 e9daaddedf31ea00b1466be4eed7d3c9 ""
-  "dirname.bcf" 1720619876.39837 108451 d36677661ac4ab1d411307acf9b6bb74 "pdflatex"
+  "dirname.bcf" 1720621522.13684 108609 5164af5f4b3c5a42c3736d43caf9d9a6 "pdflatex"
   (generated)
   "dirname.bbl"
   "dirname.blg"
   (rewritten before read)
-["pdflatex"] 1720619846.04504 "dirname.tex" "dirname.pdf" "dirname" 1720619876.67822 2
+["pdflatex"] 1720621515.71124 "dirname.tex" "dirname.pdf" "dirname" 1720621522.45357 2
   "/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1720434464.80244 111327 a833ac442b5d17c8ef07af257d6af144 ""
   "/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk" 1720432975.55161 12668 4c2ee6d4ae803e809f91a4f357b7430a ""
   "/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1719519153.83888 21087292 e883be1fd9c75ded8d32b17d58f19a6b ""
@@ -259,21 +259,22 @@
   "/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Meander_fiber_coupling.png" 1719830604.2952 368506 6578860bec9ff4d30eaabfaa5a6bc61a ""
   "/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_grober_aufbau.png" 1717967266 1422118 9d83df32e173522fa470553602bdf48a ""
   "/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png" 1716998099 52575 0cdde37cc94ca92f40ab790613370fe8 ""
+  "/Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_280524_Final_attenuated_laser_set_up.png" 1716946610 14157652 f0f0c5e5012488601fcb9b1f9c09529d ""
   "Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex" 1720181549.76923 8172 e188608fa5307fb4767069eb5e9c8fe1 ""
-  "Latex_Contentfiles/Characterization_of_SNSPD.tex" 1720618319.1405 14772 78fb217fbdcfaa96146b177001eaa162 ""
+  "Latex_Contentfiles/Characterization_of_SNSPD.tex" 1720621496.06985 15172 043e30bd286467cabd65fd6e8bd6bfdf ""
   "Latex_Contentfiles/Conclusion_and_Outlook.tex" 1719906002.17012 256 b80723668bba19e8aba173f326a4c4d9 ""
   "Latex_Contentfiles/Introduction_to_SNSPD.tex" 1719906241.55602 242 0cd5720354792affeed3bf066ee20977 ""
   "Latex_Contentfiles/Working_principle_of_SNSPD.tex" 1720012288.92346 3724 4c5265992b96be3fe36204c9b1d72cd6 ""
-  "Latex_Contentfiles/thesis_acknowledge.aux" 1720619848.53075 4311 6eab2425eb911f60b0206fd3da301b63 "pdflatex"
+  "Latex_Contentfiles/thesis_acknowledge.aux" 1720621518.19061 4311 6eab2425eb911f60b0206fd3da301b63 "pdflatex"
   "Latex_Contentfiles/thesis_acknowledge.tex" 1719513186.7236 467 055b28993606406c300511ebf3d16662 ""
-  "Latex_Contentfiles/thesis_appendix.aux" 1720619876.33888 4527 c5b625ba33e0e883253c81a2eb9d7919 "pdflatex"
+  "Latex_Contentfiles/thesis_appendix.aux" 1720621522.07574 4527 ae9e19c3d381eee8731c359cc8d2cdff "pdflatex"
   "Latex_Contentfiles/thesis_appendix.tex" 1719909012.07156 321 fe5057240a8f9a3c89821cd1ba71208f ""
   "cover/Bachelor_Title.tex" 1719778825.09508 1555 b4f5187b9eac1ca848f9796e05735412 ""
-  "dirname.aux" 1720619876.37019 13328 007381db3bfcd9d00fc803a41e2e2080 "pdflatex"
+  "dirname.aux" 1720621522.10799 14276 ec8d50724479130fb1da4118ea72bcbe "pdflatex"
   "dirname.bbl" 1720447600.6262 9053 3cc6bf5c51a305fec5824723f60b72f1 "biber dirname"
-  "dirname.run.xml" 1720619876.39934 2544 18efe100d8a84e0ea2f9337ea832c4b7 "pdflatex"
-  "dirname.tex" 1720619831.83606 9181 cd7ff76cec20340293f7f793631dc95c ""
-  "dirname.toc" 1720619876.39971 1309 6a6f3f1961f56383a60ee778ce28d2da "pdflatex"
+  "dirname.run.xml" 1720621522.13808 2544 18efe100d8a84e0ea2f9337ea832c4b7 "pdflatex"
+  "dirname.tex" 1720620427.0549 9181 cd7ff76cec20340293f7f793631dc95c ""
+  "dirname.toc" 1720621522.13838 1309 fab7eb3c5cf86af1675ce623ef4c8591 "pdflatex"
   "figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png" 1720426662.75305 46760 ecf35b520d80a6ee1fb597af8a1e9070 ""
   "figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png" 1720426813.79963 28428 04191ba9f9df4e1361d9602d55e72ed3 ""
   "figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png" 1720448147.93116 55836 5ff2d61c86255ab8443541905b2f5a09 ""

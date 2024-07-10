@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  10 JUL 2024 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  10 JUL 2024 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2406,6 +2406,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [13 <./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png>]
 
+Package caption Warning: \label without proper reference on input line 140.
+See the caption package documentation for explanation.
+
+
 LaTeX Warning: Reference `fig: recovery_time_measurement_31_2_and_26uA' on page
  14 undefined on input line 113.
 
@@ -2420,11 +2424,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--123
  []
 
 
+Package caption Warning: \label without proper reference on input line 140.
+See the caption package documentation for explanation.
+
+
 LaTeX Warning: Reference `fig: recovery_time_measurement_31_2_and_26uA' on page
  14 undefined on input line 128.
 
 <figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png, i
-d=167, 415.5525pt x 331.7193pt>
+d=169, 415.5525pt x 331.7193pt>
 File: figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.p
 ng Graphic file (type png)
 <use figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.pn
@@ -2433,7 +2441,7 @@ Package pdftex.def Info: figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg
 _300-600mV_thesis.png  used on input line 133.
 (pdftex.def)             Requested size: 196.85619pt x 157.14311pt.
 <figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png, id=
-168, 415.5525pt x 331.7193pt>
+170, 415.5525pt x 331.7193pt>
 File: figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
  Graphic file (type png)
 <use figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png>
@@ -2457,7 +2465,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--194
  []
 
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/Effizienzen.png, id=180, 402.303pt x 155.6214pt>
+oton Detection/Effizienzen.png, id=182, 402.303pt x 155.6214pt>
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/Effizienzen.png Graphic file (type png)
 <use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
@@ -2504,22 +2512,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--232
 l.246 ...el f^^c3^^bcr NQO Excelitas SPCS - Note #
                                                   7
 ? 
+<~/sciebo/Bilder_BA_MaxR/HQO_280524_Final_attenuated_laser_set_up.png, id=188, 
+3035.34pt x 4047.12pt>
+File: ~/sciebo/Bilder_BA_MaxR/HQO_280524_Final_attenuated_laser_set_up.png Grap
+hic file (type png)
+<use ~/sciebo/Bilder_BA_MaxR/HQO_280524_Final_attenuated_laser_set_up.png>
+Package pdftex.def Info: ~/sciebo/Bilder_BA_MaxR/HQO_280524_Final_attenuated_la
+ser_set_up.png  used on input line 250.
+(pdftex.def)             Requested size: 341.43306pt x 455.18874pt.
 ) (Latex_Contentfiles/Conclusion_and_Outlook.tex
 
 [16 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
 e Photon Detection/Effizienzen.png>]
-chapter 5.
-)
 
-[17
+[17 </Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_280524_Final_attenuated_laser_se
+t_up.png>]
+
+[18
 
 
 ]
+chapter 5.
+)
+
+[19]
 \openout2 = `Latex_Contentfiles/thesis_appendix.aux'.
 
  (Latex_Contentfiles/thesis_appendix.tex
 
-[18
+[20
 
 
 
@@ -2527,9 +2548,9 @@ chapter 5.
 chapter A.
 )
 
-[19]
+[21]
 
-[20
+[22
 
 
 
@@ -2543,9 +2564,9 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-[21]
+[23]
 
-[22
+[24
 
 
 ] (dirname.aux
@@ -2561,18 +2582,15 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'dirname.run.xml'.
 \openout1 = `dirname.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42538 strings out of 475854
- 866678 string characters out of 5776366
+ 42554 strings out of 475854
+ 867544 string characters out of 5776366
  1943905 words of memory out of 5000000
- 64335 multiletter control sequences out of 15000+600000
+ 64348 multiletter control sequences out of 15000+600000
  712664 words of font info for 332 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
  108i,20n,147p,10904b,4064s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2599,9 +2617,9 @@ plication Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztmb.pfb></Use
 rs/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publi
 c/newtx/ztmr.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/ins
 tall/fonts/type1/public/newtx/ztmri.pfb>
-Output written on dirname.pdf (28 pages, 2979373 bytes).
+Output written on dirname.pdf (30 pages, 23349650 bytes).
 PDF statistics:
- 347 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 53910 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 53915 words of extra memory for PDF output out of 61914 (max. 10000000)
 
