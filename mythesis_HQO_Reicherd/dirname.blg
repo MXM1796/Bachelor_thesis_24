@@ -1,17 +1,17 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'dirname.blg'
-[53] biber-darwin:340> INFO - === Mon Jul  8, 2024, 16:06:40
-[65] Biber.pm:420> INFO - Reading 'dirname.bcf'
-[114] Biber.pm:994> INFO - Found 3 citekeys in bib section 0
-[123] Biber.pm:4463> INFO - Processing section 0
-[130] Biber.pm:4654> INFO - Looking for bibtex file 'bib/thesis_refs.bib' for section 0
-[132] bibtex.pm:1713> INFO - LaTeX decoding ...
-[144] bibtex.pm:1519> INFO - Found BibTeX data source 'bib/thesis_refs.bib'
-[190] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
-[190] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[190] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-UK'
-[190] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-UK'
-[196] bbl.pm:676> INFO - Writing 'dirname.bbl' with encoding 'UTF-8'
-[198] bbl.pm:779> INFO - Output to dirname.bbl
-[198] Biber.pm:131> WARN - legacy year field 'n.d.' in entry 'singlequantum_snsd_nodate' is not an integer - this will probably not sort properly.
-[198] Biber.pm:133> INFO - WARNINGS: 1
+[142] biber-MSWIN64:340> INFO - === 
+[205] Biber.pm:420> INFO - Reading 'dirname.bcf'
+[356] Biber.pm:994> INFO - Found 3 citekeys in bib section 0
+[374] Biber.pm:4463> INFO - Processing section 0
+[387] Biber.pm:4654> INFO - Looking for bibtex file 'bib/thesis_refs.bib' for section 0
+[496] bibtex.pm:1713> INFO - LaTeX decoding ...
+[517] bibtex.pm:1519> INFO - Found BibTeX data source 'bib/thesis_refs.bib'
+[596] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[596] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[596] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-UK'
+[596] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-UK'
+[605] bbl.pm:676> INFO - Writing 'dirname.bbl' with encoding 'UTF-8'
+[611] bbl.pm:779> INFO - Output to dirname.bbl
+[612] Biber.pm:131> WARN - legacy year field 'n.d.' in entry 'singlequantum_snsd_nodate' is not an integer - this will probably not sort properly.
+[613] Biber.pm:133> INFO - WARNINGS: 1
