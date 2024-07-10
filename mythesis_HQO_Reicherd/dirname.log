@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  10 JUL 2024 18:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  10 JUL 2024 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2365,40 +2365,40 @@ le Photon Detection/recovery_time_principle.png Graphic file (type png)
 e Photon Detection/recovery_time_principle.png>
 Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
 roseminar/Figs Single Photon Detection/recovery_time_principle.png  used on inp
-ut line 105.
+ut line 104.
 (pdftex.def)             Requested size: 341.43306pt x 128.6609pt.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 107.
+(Font)              scaled to size 10.0pt on input line 106.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 107.
+(Font)              scaled to size 7.3pt on input line 106.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.0pt on input line 107.
+(Font)              scaled to size 10.0pt on input line 106.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.3pt on input line 107.
+(Font)              scaled to size 7.3pt on input line 106.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 107.
+(Font)              scaled to size 10.0pt on input line 106.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.3pt on input line 107.
+(Font)              scaled to size 7.3pt on input line 106.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 107.
+(Font)              scaled to size 10.0pt on input line 106.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 107.
+(Font)              scaled to size 7.3pt on input line 106.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.0pt on input line 107.
+(Font)              scaled to size 10.0pt on input line 106.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.3pt on input line 107.
+(Font)              scaled to size 7.3pt on input line 106.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.0pt on input line 107.
+(Font)              scaled to size 10.0pt on input line 106.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.3pt on input line 107.
+(Font)              scaled to size 7.3pt on input line 106.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 107.
+(Font)              scaled to size 10.0pt on input line 106.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.3pt on input line 107.
+(Font)              scaled to size 7.3pt on input line 106.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.0pt on input line 107.
+(Font)              scaled to size 10.0pt on input line 106.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.3pt on input line 107.
+(Font)              scaled to size 7.3pt on input line 106.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2412,7 +2412,7 @@ ng Graphic file (type png)
 <use figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.pn
 g>
 Package pdftex.def Info: figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg
-_300-600mV_thesis.png  used on input line 133.
+_300-600mV_thesis.png  used on input line 131.
 (pdftex.def)             Requested size: 218.73059pt x 174.60571pt.
 <figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png, id=
 170, 415.5525pt x 331.7193pt>
@@ -2421,10 +2421,10 @@ File: figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
 <use figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png>
 
 Package pdftex.def Info: figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_3
-00-600mV_thesis.png  used on input line 138.
+00-600mV_thesis.png  used on input line 136.
 (pdftex.def)             Requested size: 218.73059pt x 174.60571pt.
 
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 131--140
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 129--138
 [][]  [] 
  []
 
@@ -2441,86 +2441,93 @@ le.png Graphic file (type png)
 <use ~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_singl
 e.png>
 Package pdftex.def Info: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_t
-v_600mV_double_single.png  used on input line 163.
+v_600mV_double_single.png  used on input line 159.
 (pdftex.def)             Requested size: 341.43306pt x 215.09877pt.
-
-
-LaTeX Warning: Reference `Oscillating_bias_current' on page 15 undefined on inp
-ut line 183.
-
-<~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png, id=184, 462.
+<~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png, id=185, 462.
 2871pt x 178.266pt>
 File: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png Graphic 
 file (type png)
 <use ~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png>
 Package pdftex.def Info: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_c
-urrent.png  used on input line 187.
+urrent.png  used on input line 181.
 (pdftex.def)             Requested size: 341.43306pt x 131.66179pt.
 
-Underfull \vbox (badness 2285) has occurred while \output is active []
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
 [15 </Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600m
 V_double_single.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--217
+<figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png, id=195
+, 415.5525pt x 331.7193pt>
+File: figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png Gr
+aphic file (type png)
+<use figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png>
+Package pdftex.def Info: figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_
+600mV_thesis.png  used on input line 205.
+(pdftex.def)             Requested size: 341.43306pt x 272.5633pt.
 
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--237
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
 [16 </Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current
 .png>]
+Underfull \hbox (badness 10000) in paragraph at lines 213--225
+
+ []
+
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/Effizienzen.png, id=200, 402.303pt x 155.6214pt>
+oton Detection/Effizienzen.png, id=203, 402.303pt x 155.6214pt>
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/Effizienzen.png Graphic file (type png)
 <use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
 e Photon Detection/Effizienzen.png>
 Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
-roseminar/Figs Single Photon Detection/Effizienzen.png  used on input line 239.
+roseminar/Figs Single Photon Detection/Effizienzen.png  used on input line 228.
 
-(pdftex.def)             Requested size: 199.16928pt x 77.0435pt.
+(pdftex.def)             Requested size: 341.43306pt x 132.08171pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 241.
+(Font)              scaled to size 7.3pt on input line 230.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 241.
+(Font)              scaled to size 5.5pt on input line 230.
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--253
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--259
+Underfull \hbox (badness 10000) in paragraph at lines 234--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--268
+
+[17 <./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 249--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--275
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--264
 
  []
 
 ) (Latex_Contentfiles/Conclusion_and_Outlook.tex
 
-[17 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
+[18 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
 e Photon Detection/Effizienzen.png>]
-
-[18]
 chapter 5.
 )
 
@@ -2579,11 +2586,11 @@ Package logreq Info: Writing requests to 'dirname.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42571 strings out of 475854
- 868645 string characters out of 5776366
+ 42589 strings out of 475854
+ 869594 string characters out of 5776366
  1943905 words of memory out of 5000000
- 64362 multiletter control sequences out of 15000+600000
- 712756 words of font info for 333 fonts, out of 8000000 for 9000
+ 64374 multiletter control sequences out of 15000+600000
+ 714203 words of font info for 337 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
  108i,20n,147p,10904b,4064s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/
@@ -2609,9 +2616,9 @@ plication Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztmb.pfb></Use
 rs/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publi
 c/newtx/ztmr.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/ins
 tall/fonts/type1/public/newtx/ztmri.pfb>
-Output written on dirname.pdf (30 pages, 3225391 bytes).
+Output written on dirname.pdf (30 pages, 3260617 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
- 53920 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 373 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 53925 words of extra memory for PDF output out of 61914 (max. 10000000)
 

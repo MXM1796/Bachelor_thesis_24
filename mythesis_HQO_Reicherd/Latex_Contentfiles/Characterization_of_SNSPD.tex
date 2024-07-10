@@ -144,11 +144,9 @@ First, for low trigger voltages, the dead time is longer and decrease for increa
 This can be seen for the lower and higher bias current.
 The reason for this behavior can be explained best by looking at an exemplary raw analog signal (see fig \ref{fig: analog_signal_31_2_uA_double_peak})
 of two consequent pulses.
-
 One can see two pulses, where the second signal comes close ($\approx 20ns$) after the first one.
 Physically, that means, while the current in the superconducting wire wasn't fully at the default bias current of
 31.2uA, a second photon already hit the detector.
-
 If the trigger is below 500mV the time tagger will count this signal as one count, since the second pulse came when
 the remaining voltage of the wire was above 500mV.
 So it is a pulse on the falling edge of the first one.
@@ -158,7 +156,7 @@ Therefore, we see this ealier raise in fig \ref{fig: recovery_time_measurement_3
 
 \begin{figure}[H]
  \centering
- \includegraphics[width=12cm]{\string~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single}
+ \includegraphics[width=12cm]{~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single}
  \caption{Analog signal from channel 1 for bias current 31.2uA and a trigger of 600mV. x-axis: time in 50ns steps, y-axis
  voltage in 500mV steps}
  \label{fig: analog_signal_31_2_uA_double_peak}
@@ -174,40 +172,43 @@ This is also comprehensible by Ohm's law.
 Due to the lower pulse, the regime, where one pulse can be resolved by a trigger voltage setting of 600mV but not by a
 trigger voltage of 500mV becomes smaller.
 Hence, one can see that the counts per bin equalize for increasing time distances.
-
-
 Third, a small peak, in the range of 24-27ns can be seen clearly in the course with a bias current of 31.2uA.
 This small peak is more suppressed with a lower bias current.
-A plausible solution can be understood along fig \ref{Oscillating_bias_current}.
+A plausible solution can be understood along fig \ref{fig: Oscillating_bias_current}.
 
-\begin{figure}[H]
+\begin{figure}[hhh]
  \centering
- \includegraphics[width=12cm]{\string~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current}
+ \includegraphics[width=12cm]{~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current}
  \caption{Scetch of brief oscillating current and subsequent levelling to the bias current}
  \label{fig: Oscillating_bias_current}
 \end{figure}
-
 
 Following the detection of a current, the course of the current does not proceed directly and precisely to the bias current.
 Instead, it oscillates for a brief period and then rapidly reaches equilibrium.
 In the small oscillating period, the Dark count rate raises exponentially (seen in fig: \ref{fig: DCR_black_box_to_exp})
 and adds to the detected counts.
-
 Finally, one can conclude that regarding the recovery time its best to operate the detector close to the bias current,
 in order to have a higher pulse and therefore steeper reset times, closer dead times, therefore
 corresponding to shorter recovery times.
 A reasonable trigger point for a bias current of 31.2uA is 600mV, which yields to the lowest recovery time.
-Finally, the recovery time for $I_{B} = 31.2uA$ and 600mV can be estimated graphically, as visualized
-in fig: \ref{}.
+Finally, the recovery time for $I_{B} = 31.2uA$ and 600mV can be determined.
+This is done, by calculating the raise of the function for the dividing line between dead and reset time.
+Hence, the point where the accumulated gradients average (close) to zero builds out point in time, where the reset
+time, hence the recovery time ends.
+The calculated points are visualized in fig: \ref{fig: recovery_time} and the final recovery time is
+$\tau_{recovery} = (21.21 \pm 0.34) ns$, where $\tau_{dead} = (14.13 \pm 0.14) ns$ is the dead time where the detector is
+not responsive at all and $\tau_{reset} = (7.08 \pm 0.36) ns$  the reset time, where the detector is responsive with a
+lower efficiency.
 
-\begin{figure}[H]
+\begin{figure}[hhh]
  \centering
- \includegraphics[width=12cm]{\string~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current}
- \caption{Scetch of brief oscillating current and subsequent levelling to the bias current}
- \label{fig: Oscillating_bias_current}
+ \includegraphics[width=12cm]{figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis}
+ \caption{Histogram of distances between signals for $I_{B} = 31.2uA$ and 600mV. H- and v-lines indicate the dead-;
+ reset- and recovery time}
+ \label{fig: recovery_time}
 \end{figure}
 
-
+\newpage
 \section{Efficiency}
 In \textbf{efficiency}, there are three types of efficiencies that describe independent loss processes in detection.
 An efficiency can be equated with the probability that a quantum mechanically process under consideration will occur.\\
@@ -223,10 +224,11 @@ Finally, there is always a probability that the photon will not be registered by
 This is expressed with the \textit{Registration efficiency}. \\
 
 \begin{figure}[hhh]
-\includegraphics[width=7cm]{Effizienzen}
-\caption{Sketch of the components in the detector setup where photonlosses appear and consequently a propability
- ($\eta_{\text{K}}$, $\eta_{\text{A}}$ or $\eta_{\text{R}}$) has to be considered.}
-\label{fig: single_efficiency_terms}
+    \centering
+    \includegraphics[width=12cm]{Effizienzen}
+    \caption{Sketch of the components in the detector setup where photonlosses appear and consequently a propability
+     ($\eta_{\text{K}}$, $\eta_{\text{A}}$ or $\eta_{\text{R}}$) has to be considered.}
+    \label{fig: single_efficiency_terms}
 \end{figure}
 
 In literature, these terms are brought together in two efficiency terms: the device efficiency
