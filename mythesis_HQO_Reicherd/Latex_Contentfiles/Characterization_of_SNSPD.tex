@@ -90,7 +90,6 @@ Up to this limit, the DCR is located in the regime of 1-10Hz regime, providing a
 signal to a noise ratio.
 
 \section{Recovery time}\label{sec:recovery-time}
-
 The concept of the recovery time is visually depicted in fig \ref{fig:Recovery_time}.
 When a photon hits the detector and is absorbed, the efficiency of the detector drops to zero and no further photon can
 be measured for a certain period of time.
@@ -109,17 +108,16 @@ The sum $\tau_{rec} = \tau_{r} + \tau_{d}$ of both times forms the recovery time
 \end{figure}
 
 \subsection*{Measurement set up}
-
 The recovery time was measured in the setup seen in fig \ref{fig: recovery_time_measurement_31_2_and_26uA} and measures the recovery time
 along the same idea provided above.
 The raw analog signals from the detector were directly transmitted to a time tagger unit (Time Tagger 20)
 by Swabian instruments (\href{https://www.swabianinstruments.com/time-tagger/}{link})
-with self-adjustable trigger voltages, a device deadtime of 6ns and a maximal counting rate of 9MHz.\\
+with self-adjustable trigger voltages, a device deadtime of 6ns and a maximal counting rate of 9MHz.
 
 This unit enabled the tagging of incoming signals with a time tag, as implied by its name.
 Subsequently, the tags were used to process the time distances between all signals.
 The histogram of all distances provides the same efficiency course as previously described,
-which provides the detectors recovery time for one channel at a determined bias current and trigger voltage.\\
+which provides the detectors recovery time for one channel at a determined bias current and trigger voltage.
 
 Consequently, I determined the recovery time of channel 1.
 For this, I conducted measurements for two different bias currents (26 and 31.2uA)
@@ -128,54 +126,86 @@ its optimal configuration regarding bias current and trigger voltage.
 Results are presented in fig \ref{fig: recovery_time_measurement_31_2_and_26uA}.
 
 \begin{figure}[H]
-  \begin{subfigure}[t]{.45\textwidth}
+  \begin{subfigure}[t]{.5\textwidth}
     \centering
     \includegraphics[width=\linewidth]{figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{.45\textwidth}
+  \begin{subfigure}[t]{.5\textwidth}
     \centering
     \includegraphics[width=\linewidth]{figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis}
   \end{subfigure}
-  \label{fig: recovery_time_measurement_31_2_and_26uA}
   \caption{isjdiajias}
+  \label{fig: recovery_time_measurement_31_2_and_26uA}
 \end{figure}
 
 The results show three different trends.
 First, for low trigger voltages, the dead time is longer and decrease for increasing trigger voltages.
 This can be seen for the lower and higher bias current.
-The reason for this behavior can be explained best by looking at the raw analog signals.
-In fig
+The reason for this behavior can be explained best by looking at an exemplary raw analog signal (see fig \ref{fig: analog_signal_31_2_uA_double_peak})
+of two consequent pulses.
 
+One can see two pulses, where the second signal comes close ($\approx 20ns$) after the first one.
+Physically, that means, while the current in the superconducting wire wasn't fully at the default bias current of
+31.2uA, a second photon already hit the detector.
 
+If the trigger is below 500mV the time tagger will count this signal as one count, since the second pulse came when
+the remaining voltage of the wire was above 500mV.
+So it is a pulse on the falling edge of the first one.
+However, if the trigger is over 500mV both consecutive pulses will be counted by the time tagging unit as single counts.
+This allows more individual pulses to be counted separately with a small gap between them. 
+Therefore, we see this ealier raise in fig \ref{fig: recovery_time_measurement_31_2_and_26uA}.
 
-Second, for the lower bias current (26uA), the slope tends to decrease toward the end of the reset time.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=12cm]{\string~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single}
+ \caption{Analog signal from channel 1 for bias current 31.2uA and a trigger of 600mV. x-axis: time in 50ns steps, y-axis
+ voltage in 500mV steps}
+ \label{fig: analog_signal_31_2_uA_double_peak}
+\end{figure}
+
+Secondly, for the lower bias current (26uA), the slope tends to decrease towards the end of the reset time.
 Moreover, the courses of the reset time for each trigger voltage are converging towards each other earlier.
 In comparison, with a bias current of 31.2uA the four different courses are separate till they reach their peak.
+This can be explained by the fact that, depending on the bias current, the resistance block caused by a
+photon hitting the superconducting nanowire is different.
+According to Ohm's law, a low bias current corresponds to lower voltage pulses and vice versa, for the same resistivity.
+This is also comprehensible by Ohm's law.
+Due to the lower pulse, the regime, where one pulse can be resolved by a trigger voltage setting of 600mV but not by a
+trigger voltage of 500mV becomes smaller.
+Hence, one can see that the counts per bin equalize for increasing time distances.
+
+
 Third, a small peak, in the range of 24-27ns can be seen clearly in the course with a bias current of 31.2uA.
-This small peak is more surpressed in with a lower bias current.
-Especially, the peak is higher for lower trigger voltages in the higher bias current regime.
+This small peak is more suppressed with a lower bias current.
+A plausible solution can be understood along fig \ref{Oscillating_bias_current}.
 
-This was done on the basis that different bias currents influence the recovery of the nanowire back to its
-superconducting state.
-Furthermore, the trigger voltage can influence the amount of detected photons.
-A trigger voltage that is too low will result in the recording of only a single photon, should two photons arrive in
-quick succession.
-Like this, the second photon will not be triggered due to the low trigger voltage of the computing device
-(in this case, the Time Tagger 20).
-Furthermore, the photon rate was maintained below 9 MHz in order to remain within the operational
-range of the time tagger.
-
-Additionally, to these measurements analog signals were recorded with an oscilloscope.
-Reason, for this is to see how the generated pulses look like and wheter one can comprehend from them some sequences in our
-data evaluation.
-Like this get a better understanding of how the raw output signal changes when parameters as the bias current, the trigger
-voltage or the input power changes.\\
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=12cm]{\string~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current}
+ \caption{Scetch of brief oscillating current and subsequent levelling to the bias current}
+ \label{fig: Oscillating_bias_current}
+\end{figure}
 
 
-The recoverytime was measured with a time tager connected to the computational unit of the detector.
-This was done to extract the analog signals and sent them to an alternative to process the data.
+Following the detection of a current, the course of the current does not proceed directly and precisely to the bias current.
+Instead, it oscillates for a brief period and then rapidly reaches equilibrium.
+In the small oscillating period, the Dark count rate raises exponentially (seen in fig: \ref{fig: DCR_black_box_to_exp})
+and adds to the detected counts.
 
+Finally, one can conclude that regarding the recovery time its best to operate the detector close to the bias current,
+in order to have a higher pulse and therefore steeper reset times, closer dead times, therefore
+corresponding to shorter recovery times.
+A reasonable trigger point for a bias current of 31.2uA is 600mV, which yields to the lowest recovery time.
+Finally, the recovery time for $I_{B} = 31.2uA$ and 600mV can be estimated graphically, as visualized
+in fig: \ref{}.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=12cm]{\string~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current}
+ \caption{Scetch of brief oscillating current and subsequent levelling to the bias current}
+ \label{fig: Oscillating_bias_current}
+\end{figure}
 
 
 \section{Efficiency}
@@ -240,15 +270,8 @@ Moreover, this measurement shows the saturation point, were no additional effici
 
 \subsection*{Results and Discussion}
 \section{Discussion}
-Influence of timing jitter on efficiency and recovery time.
-- No Afterpulsing
-- Temperature 2.9 instead of 2.5Í
-- Photon counters formel für NQO Excelitas SPCS - Note #7
+%Influence of timing jitter on efficiency and recovery time.
+%- No Afterpulsing
+%- Temperature 2.9 instead of 2.5Í
+%- Photon counters formel für NQO Excelitas SPCS - Note #7
 
-\begin{figure}[H]
- \centering
- \includegraphics[width=12cm]{\string~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single}
- \caption{Schematic efficiency curve for the detection of a photon\cite{shalm_single-photon_2013}. On the Y axis is the
- efficiency $\eta$, where $\eta_{G}$ is the device efficiency. On the X axis is the time course of the efficiency}.
- \label{fig:dsf}
-\end{figure}
