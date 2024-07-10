@@ -326,6 +326,25 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/late
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts.sty
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/import/import.sty
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/import/import.sty
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/float.sty
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/koma-script/float.hak
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/koma-script/float.hak
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/koma-script/float.hak
+INPUT ./Latex_Contentfiles/thesis_acknowledge.tex
+INPUT ./Latex_Contentfiles/thesis_acknowledge.tex
+INPUT ./Latex_Contentfiles/Introduction_to_SNSPD.tex
+INPUT ./Latex_Contentfiles/Introduction_to_SNSPD.tex
+INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
+INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
+INPUT ./Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex
+INPUT ./Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex
+INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.tex
+INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.tex
+INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
+INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
+INPUT ./Latex_Contentfiles/thesis_appendix.tex
+INPUT ./Latex_Contentfiles/thesis_appendix.tex
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtlf.fd
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtlf.fd
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtlf.fd
@@ -667,12 +686,29 @@ INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.tex
 INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.tex
 INPUT Latex_Contentfiles/Characterization_of_SNSPD.tex
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/tex-gyre/ec-qhvb.tfm
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecrm1095.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microtype/mt-cmr.cfg
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microtype/mt-cmr.cfg
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microtype/mt-cmr.cfg
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1095.tfm
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmi.tfm
@@ -693,25 +729,37 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi7.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
 INPUT Latex_Contentfiles/Conclusion_and_Outlook.tex
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi7.vf
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI7.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
 INPUT ./Latex_Contentfiles/thesis_appendix.tex
 INPUT ./Latex_Contentfiles/thesis_appendix.tex
 OUTPUT Latex_Contentfiles/thesis_appendix.aux
@@ -729,6 +777,8 @@ INPUT Latex_Contentfiles/thesis_appendix.aux
 INPUT dirname.run.xml
 OUTPUT dirname.run.xml
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ec-tlf.enc
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/tex-gyre/q-ec.enc

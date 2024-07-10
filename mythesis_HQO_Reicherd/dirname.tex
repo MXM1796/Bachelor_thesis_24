@@ -1,4 +1,4 @@
-\documentclass[openany,oneside,Bachelor, ngerman, UKenglish]{scrbook}
+\documentclass[Bachelor, ngerman, UKenglish]{scrbook}
 %------------------------------------------------------------------------------
 % This file contains a skeleton thesis for
 % a Physics or Astronomy Institute in the University of Bonn.
@@ -37,6 +37,8 @@
 \usepackage{color}
 \usepackage{amsfonts}
 \usepackage{import}
+\usepackage{float}
+
 
 %------------------------------------------------------------------------------
 % Instead of colouring  links, cites, table of contents etc.
@@ -108,13 +110,15 @@
 % A simple \include command just inserts a \clearpage before and after the file
 % Note that \includeonly can be quite picky! Do not forget to put a
 % comma after the filename, otherwise it will simply be ignored!
-% \includeonly{
-%   Latex_Contentfiles/Introduction_to_SNSPD,
-%   Latex_Contentfiles/Working_principle_of_SNSPD,
-%   Latex_Contentfiles/Building_set_up_for_Detector_Characterization,
-%   Latex_Contentfiles/Characterization_of_SNSPD,
-%   Latex_Contentfiles/Conclusion_and_Outlook
-% }
+ \includeonly{
+   Latex_Contentfiles/thesis_acknowledge,
+   Latex_Contentfiles/Introduction_to_SNSPD,
+   Latex_Contentfiles/Working_principle_of_SNSPD,
+   Latex_Contentfiles/Building_set_up_for_Detector_Characterization,
+   Latex_Contentfiles/Characterization_of_SNSPD,
+   Latex_Contentfiles/Conclusion_and_Outlook,
+   Latex_Contentfiles/thesis_appendix
+ }
 
 %------------------------------------------------------------------------------
 % Give a list of directories where figures can be found. Do not leave
@@ -147,7 +151,7 @@
 % Make cover and title pages
 \makethesistitle
 
-\pagestyle{scrplain}
+%\pagestyle{scrplain}
 
 %------------------------------------------------------------------------------
 % You can add your acknowledgements here - don't forget to also add

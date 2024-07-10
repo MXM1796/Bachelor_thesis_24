@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  5 JUL 2024 15:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  10 JUL 2024 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -52,18 +52,6 @@ Package: tocbasic 2023/07/07 v3.41 KOMA-Script package (handling toc-files)
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `toc' on input line 135.
-Class scrbook Info: You've used standard option `openany'.
-(scrbook)           This is correct!
-(scrbook)           Internally I'm using `open=any'.
-(scrbook)           If you'd like to set the option with \KOMAoptions,
-(scrbook)           you'd have to use `open=any' there
-(scrbook)           instead of `openany', too.
-Class scrbook Info: You've used standard option `oneside'.
-(scrbook)           This is correct!
-(scrbook)           Internally I'm using `twoside=false'.
-(scrbook)           If you'd like to set the option with \KOMAoptions,
-(scrbook)           you'd have to use `twoside=false' there
-(scrbook)           instead of `oneside', too.
 Class scrbook Info: File `scrsize11pt.clo' used instead of
 (scrbook)           file `scrsize11.clo' to setup font sizes on input line 2691
 .
@@ -78,12 +66,6 @@ ma-script/typearea.sty
 Package: typearea 2023/07/07 v3.41 KOMA-Script package (type area)
 \ta@bcor=\skip50
 \ta@div=\count194
-Package typearea Info: You've used standard option `oneside'.
-(typearea)             This is correct!
-(typearea)             Internally I'm using `twoside=false'.
-(typearea)             If you'd like to set the option with \KOMAoptions,
-(typearea)             you'd have to use `twoside=false' there
-(typearea)             instead of `oneside', too.
 \ta@hblk=\skip51
 \ta@vblk=\skip52
 \ta@temp=\skip53
@@ -94,8 +76,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 418.25555pt
 (typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 17.3562pt
-(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)              \evensidemargin = 47.2316pt
+(typearea)              \oddsidemargin  = -12.5192pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 595.80026pt
 (typearea)              \topmargin      = -25.16531pt
@@ -324,8 +306,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 448.13095pt
 (typearea)              DIV departure   = -14%
-(typearea)              \evensidemargin = 2.4185pt
-(typearea)              \oddsidemargin  = 2.4185pt
+(typearea)              \evensidemargin = 27.31467pt
+(typearea)              \oddsidemargin  = -22.47766pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 609.40027pt
 (typearea)              \topmargin      = -1.84941pt
@@ -1602,96 +1584,115 @@ LaTeX Font Info:    Redeclaring math symbol \lozenge on input line 142.
 port/import.sty
 Package: import 2020/04/01  v 6.2
 )
+(/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fl
+oat/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count480
+\float@exts=\toks36
+\float@box=\box77
+\@float@everytoks=\toks37
+\@floatcapt=\box78
+)
+Package scrhack Info: loading float hack on input line 41.
+
+(/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ko
+ma-script/float.hak
+File: float.hak 2023/07/07 v3.41 KOMA-Script scrhack part (hacking package floa
+t)
+Package scrhack Info: redefining \newfloat on input line 163.
+Package scrhack Info: redefining \listof on input line 163.
+Package scrhack Info: undefining \float@addtolists on input line 163.
+)
 LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line
- 145.
+ 149.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ne
 wtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 145.
+(Font)              scaled to size 10.95pt on input line 149.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (dirname.aux (Latex_Contentfiles/thesis_acknowledge.aux)
 (Latex_Contentfiles/thesis_appendix.aux))
 \openout1 = `dirname.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 145.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 149.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 145.
+ 149.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ne
 wtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 149.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-145.
+149.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ne
 wtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 149.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 145.
+ 149.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ne
 wtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 149.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 145.
+e 149.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ne
 wtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 145.
-LaTeX Font Info:    ... okay on input line 145.
-Package scrbase Info: activating UKenglish \partname on input line 145.
-Package scrbase Info: activating UKenglish \chaptername on input line 145.
-Package scrbase Info: activating UKenglish \appendixname on input line 145.
-Package scrbase Info: activating UKenglish \figurename on input line 145.
-Package scrbase Info: activating UKenglish \tablename on input line 145.
-Package scrbase Info: activating UKenglish \contentsname on input line 145.
-Package scrbase Info: activating UKenglish \listfigurename on input line 145.
-Package scrbase Info: activating UKenglish \listtablename on input line 145.
-Package scrbase Info: activating UKenglish \bibname on input line 145.
-Package scrbase Info: activating UKenglish \indexname on input line 145.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+Package scrbase Info: activating UKenglish \partname on input line 149.
+Package scrbase Info: activating UKenglish \chaptername on input line 149.
+Package scrbase Info: activating UKenglish \appendixname on input line 149.
+Package scrbase Info: activating UKenglish \figurename on input line 149.
+Package scrbase Info: activating UKenglish \tablename on input line 149.
+Package scrbase Info: activating UKenglish \contentsname on input line 149.
+Package scrbase Info: activating UKenglish \listfigurename on input line 149.
+Package scrbase Info: activating UKenglish \listtablename on input line 149.
+Package scrbase Info: activating UKenglish \bibname on input line 149.
+Package scrbase Info: activating UKenglish \indexname on input line 149.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/context/
 base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count480
+\scratchcounter=\count481
 \scratchdimen=\dimen279
-\scratchbox=\box77
-\nofMPsegments=\count481
-\nofMParguments=\count482
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count483
+\scratchbox=\box79
+\nofMPsegments=\count482
+\nofMParguments=\count483
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count484
 \MPscratchDim=\dimen280
-\MPnumerator=\count484
-\makeMPintoPDFobject=\count485
-\everyMPtoPDFconversion=\toks37
+\MPnumerator=\count485
+\makeMPintoPDFobject=\count486
+\everyMPtoPDFconversion=\toks39
 )
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ep
 stopdf-pkg/epstopdf-base.sty
@@ -1703,10 +1704,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@mv@tabular=\count486
-\c@mv@boldtabular=\count487
-LaTeX Info: Command `\dddot' is already robust on input line 145.
-LaTeX Info: Command `\ddddot' is already robust on input line 145.
+\c@mv@tabular=\count487
+\c@mv@boldtabular=\count488
+LaTeX Info: Command `\dddot' is already robust on input line 149.
+LaTeX Info: Command `\ddddot' is already robust on input line 149.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tr
 anslations/dicts/translations-basic-dictionary-english.trsl
@@ -1719,8 +1720,9 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `german'. on input line 145.
+or `german'. on input line 149.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -1731,21 +1733,21 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Package chemgreek Info: Activating mapping `newtx' on line 145.
+Package chemgreek Info: Activating mapping `newtx' on line 149.
 
-LaTeX Info: Redefining \microtypecontext on input line 145.
-Package microtype Info: Applying patch `item' on input line 145.
-Package microtype Info: Applying patch `toc' on input line 145.
-Package microtype Info: Applying patch `eqnum' on input line 145.
-Package microtype Info: Applying patch `footnote' on input line 145.
-Package microtype Info: Applying patch `verbatim' on input line 145.
+LaTeX Info: Redefining \microtypecontext on input line 149.
+Package microtype Info: Applying patch `item' on input line 149.
+Package microtype Info: Applying patch `toc' on input line 149.
+Package microtype Info: Applying patch `eqnum' on input line 149.
+Package microtype Info: Applying patch `footnote' on input line 149.
+Package microtype Info: Applying patch `verbatim' on input line 149.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 145.
+LaTeX Info: Redefining \showhyphens on input line 149.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1766,7 +1768,7 @@ Package scrdate Info: \dateenglish not defined.
 (scrdate)             \todaysname probably cannot use \dayname@english.
 Package scrdate Info: \datenewzealand not defined.
 (scrdate)             \todaysname probably cannot use \dayname@newzealand.
-Package hyperref Info: Link coloring ON on input line 145.
+Package hyperref Info: Link coloring ON on input line 149.
 Package biblatex Info: Trying to load language 'UKenglish'...
 Package biblatex Info: ... file 'UKenglish.lbx' found.
 
@@ -1821,97 +1823,97 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'dirname.bbl' found.
  (dirname.bbl)
-Package biblatex Info: Reference section=0 on input line 145.
-Package biblatex Info: Reference segment=0 on input line 145.
+Package biblatex Info: Reference section=0 on input line 149.
+Package biblatex Info: Reference segment=0 on input line 149.
 
 ubonn-thesis: thesis dedication not defined
 Document dirname, Info: Bachelor thesis
 (cover/Bachelor_Title.tex)
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 148.
+(Font)              scaled to size 10.95pt on input line 152.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 20.74pt on input line 148.
+(Font)              scaled to size 20.74pt on input line 152.
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
-e 148.
+e 152.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ne
 wtx/ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.95pt on input line 148.
+(Font)              scaled to size 10.95pt on input line 152.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `minntx' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 148.
+(Font)              scaled to size 8.0pt on input line 152.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.1pt on input line 148.
+(Font)              scaled to size 6.1pt on input line 152.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.95pt on input line 148.
+(Font)              scaled to size 10.95pt on input line 152.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 148.
+(Font)              scaled to size 8.0pt on input line 152.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.1pt on input line 148.
+(Font)              scaled to size 6.1pt on input line 152.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.95pt on input line 148.
+(Font)              scaled to size 10.95pt on input line 152.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 148.
+(Font)              scaled to size 8.0pt on input line 152.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.1pt on input line 148.
+(Font)              scaled to size 6.1pt on input line 152.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.95pt on input line 148.
+(Font)              scaled to size 10.95pt on input line 152.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 148.
+(Font)              scaled to size 8.0pt on input line 152.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.1pt on input line 148.
+(Font)              scaled to size 6.1pt on input line 152.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-148.
+152.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ne
 wtx/untxmia.fd
 File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.95pt on input line 148.
+(Font)              scaled to size 10.95pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 148.
+(Font)              scaled to size 8.0pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.1pt on input line 148.
+(Font)              scaled to size 6.1pt on input line 152.
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-148.
+152.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ne
 wtx/untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.95pt on input line 148.
+(Font)              scaled to size 10.95pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 148.
+(Font)              scaled to size 8.0pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.1pt on input line 148.
+(Font)              scaled to size 6.1pt on input line 152.
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-148.
+152.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ne
 wtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.95pt on input line 148.
+(Font)              scaled to size 10.95pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 148.
+(Font)              scaled to size 8.0pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.1pt on input line 148.
+(Font)              scaled to size 6.1pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.95pt on input line 148.
+(Font)              scaled to size 10.95pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 148.
+(Font)              scaled to size 8.0pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.1pt on input line 148.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 148
+(Font)              scaled to size 6.1pt on input line 152.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 152
 .
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/am
@@ -1922,7 +1924,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 crotype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 148
+LaTeX Font Info:    Trying to load font information for U+msb on input line 152
 .
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/am
@@ -1934,58 +1936,58 @@ crotype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 148.
+(Font)              scaled to size 14.4pt on input line 152.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 14.4pt on input line 148.
+(Font)              scaled to size 14.4pt on input line 152.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.5pt on input line 148.
+(Font)              scaled to size 10.5pt on input line 152.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.9pt on input line 148.
+(Font)              scaled to size 7.9pt on input line 152.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 14.4pt on input line 148.
+(Font)              scaled to size 14.4pt on input line 152.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.5pt on input line 148.
+(Font)              scaled to size 10.5pt on input line 152.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.9pt on input line 148.
+(Font)              scaled to size 7.9pt on input line 152.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 14.4pt on input line 148.
+(Font)              scaled to size 14.4pt on input line 152.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.5pt on input line 148.
+(Font)              scaled to size 10.5pt on input line 152.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.9pt on input line 148.
+(Font)              scaled to size 7.9pt on input line 152.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 14.4pt on input line 148.
+(Font)              scaled to size 14.4pt on input line 152.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.5pt on input line 148.
+(Font)              scaled to size 10.5pt on input line 152.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.9pt on input line 148.
+(Font)              scaled to size 7.9pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 14.4pt on input line 148.
+(Font)              scaled to size 14.4pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.5pt on input line 148.
+(Font)              scaled to size 10.5pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.9pt on input line 148.
+(Font)              scaled to size 7.9pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 14.4pt on input line 148.
+(Font)              scaled to size 14.4pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.5pt on input line 148.
+(Font)              scaled to size 10.5pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.9pt on input line 148.
+(Font)              scaled to size 7.9pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 14.4pt on input line 148.
+(Font)              scaled to size 14.4pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.5pt on input line 148.
+(Font)              scaled to size 10.5pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.9pt on input line 148.
+(Font)              scaled to size 7.9pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 14.4pt on input line 148.
+(Font)              scaled to size 14.4pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.5pt on input line 148.
+(Font)              scaled to size 10.5pt on input line 152.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.9pt on input line 148.
+(Font)              scaled to size 7.9pt on input line 152.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 148.
-Package cleveref Info: loaded `ngerman' language definitions on input line 148.
+(Font)              scaled to size 17.28pt on input line 152.
+Package cleveref Info: loaded `ngerman' language definitions on input line 152.
 
 
 
@@ -1999,7 +2001,7 @@ Package cleveref Info: loaded `ngerman' language definitions on input line 148.
 
 {/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdfte
 x/pdftex.map}]
-Package cleveref Info: loaded `ngerman' language definitions on input line 148.
+Package cleveref Info: loaded `ngerman' language definitions on input line 152.
 
 
 
@@ -2092,9 +2094,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 [3
 
 
+
 ]
-Package tocbasic Info: character protrusion at toc deactivated on input line 15
-7.
+
+[4
+
+
+
+
+]
+Package tocbasic Info: character protrusion at toc deactivated on input line 16
+1.
  (dirname.toc
 Package cleveref Info: loaded `ngerman' language definitions on input line 2.
 Package cleveref Info: loaded `ngerman' language definitions on input line 6.
@@ -2152,8 +2162,9 @@ LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
 
 
 
-[4
+[5]
 
+[6
 
 
 ] (Latex_Contentfiles/Introduction_to_SNSPD.tex
@@ -2167,6 +2178,10 @@ LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 [1
 
 
+]
+
+[2
+
 
 ]
 chapter 2.
@@ -2175,7 +2190,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.1pt on input line 14.
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/SNSPD_grober_aufbau.png, id=57, 1001.1804pt x 548.2884pt>
+oton Detection/SNSPD_grober_aufbau.png, id=70, 1001.1804pt x 548.2884pt>
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/SNSPD_grober_aufbau.png Graphic file (type png)
 <use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
@@ -2187,7 +2202,7 @@ ine 18.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 19.
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/SNSPD_Ablauf.png, id=62, 417.56pt x 284.06125pt>
+oton Detection/SNSPD_Ablauf.png, id=75, 417.56pt x 284.06125pt>
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/SNSPD_Ablauf.png Graphic file (type png)
 <use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
@@ -2206,12 +2221,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--41
 
 
 
-[2
-
- </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single P
-hoton Detection/SNSPD_grober_aufbau.png>]
+[3 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
+ Photon Detection/SNSPD_grober_aufbau.png>]
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/SNSPD_Meander_fiber_coupling.png, id=76, 1802.735pt x 949.5475pt
+oton Detection/SNSPD_Meander_fiber_coupling.png, id=89, 1802.735pt x 949.5475pt
 >
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/SNSPD_Meander_fiber_coupling.png Graphic file (type png)
@@ -2227,11 +2240,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex
 
-[3 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
+[4 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
  Photon Detection/SNSPD_Ablauf.png>]
 
-[4 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
+[5 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
  Photon Detection/SNSPD_Meander_fiber_coupling.png>]
+
+[6
+
+
+]
 chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--15
@@ -2242,9 +2260,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 26.
 
 
-[5
-
-]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
@@ -2261,7 +2277,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--96
 
 
 
-[6]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 97--102
 
  []
@@ -2277,7 +2293,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--112
  []
 
 
-LaTeX Warning: Reference `' on page 7 undefined on input line 122.
+LaTeX Warning: Reference `' on page 9 undefined on input line 122.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 144--147
@@ -2286,134 +2302,242 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
 ) (Latex_Contentfiles/Characterization_of_SNSPD.tex
 
-[7]
-chapter 4.
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 11.28003pt on input line 32.
+[9]
 
+[10
 
-[8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 56--68
+chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--26
 
  []
 
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 11.28003pt on input line 35.
+
+
+[11]
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 57.
+
+(/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mi
+crotype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 57.
+<figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png, id=143, 421.3341pt x 331
+.7193pt>
+File: figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png Graphic file (type p
+ng)
+<use figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png>
+Package pdftex.def Info: figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png  
+used on input line 62.
+(pdftex.def)             Requested size: 256.0748pt x 201.61453pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+ []
+
+<figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png, id=144, 421.3341pt x 331.7193pt
+>
+File: figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png Graphic file (type png)
+<use figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png>
+Package pdftex.def Info: figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png  used on
+ input line 77.
+(pdftex.def)             Requested size: 256.0748pt x 201.61453pt.
+
+Underfull \vbox (badness 6708) has occurred while \output is active []
+
+
+
+[12 <./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png>]
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/Effizienzen.png, id=123, 402.303pt x 155.6214pt>
-File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
-le Photon Detection/Effizienzen.png Graphic file (type png)
-<use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
-e Photon Detection/Effizienzen.png>
-Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
-roseminar/Figs Single Photon Detection/Effizienzen.png  used on input line 70.
-(pdftex.def)             Requested size: 199.16928pt x 77.0435pt.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 72.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.0pt on input line 72.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.3pt on input line 72.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.3pt on input line 72.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 72.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.0pt on input line 72.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.3pt on input line 72.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.3pt on input line 72.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.3pt on input line 72.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.3pt on input line 72.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 72.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 72.
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--90
-
- []
-
-
-
-[9 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
- Photon Detection/Effizienzen.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 91--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--106
-
- []
-
-</Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/recovery_time_principle.png, id=133, 461.5644pt x 173.9298pt>
+oton Detection/recovery_time_principle.png, id=155, 461.5644pt x 173.9298pt>
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/recovery_time_principle.png Graphic file (type png)
 <use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
 e Photon Detection/recovery_time_principle.png>
 Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
 roseminar/Figs Single Photon Detection/recovery_time_principle.png  used on inp
-ut line 117.
-(pdftex.def)             Requested size: 199.16928pt x 75.05109pt.
+ut line 105.
+(pdftex.def)             Requested size: 341.43306pt x 128.6609pt.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 10.0pt on input line 107.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 7.3pt on input line 107.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 10.0pt on input line 107.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 7.3pt on input line 107.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 10.0pt on input line 107.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 7.3pt on input line 107.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 10.0pt on input line 107.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 7.3pt on input line 107.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 10.0pt on input line 107.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 7.3pt on input line 107.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 10.0pt on input line 107.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 7.3pt on input line 107.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 10.0pt on input line 107.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 7.3pt on input line 107.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 10.0pt on input line 107.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 7.3pt on input line 107.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[13 <./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png>]
+
+LaTeX Warning: Reference `hjj' on page 14 undefined on input line 113.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--123
+
+ []
+
+<figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png, i
+d=167, 415.5525pt x 331.7193pt>
+File: figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.p
+ng Graphic file (type png)
+<use figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.pn
+g>
+Package pdftex.def Info: figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg
+_300-600mV_thesis.png  used on input line 131.
+(pdftex.def)             Requested size: 196.85619pt x 157.14311pt.
+<figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png, id=
+168, 415.5525pt x 331.7193pt>
+File: figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
+ Graphic file (type png)
+<use figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png>
+
+Package pdftex.def Info: figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_3
+00-600mV_thesis.png  used on input line 136.
+(pdftex.def)             Requested size: 196.85619pt x 157.14311pt.
+
+
+[14 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
+e Photon Detection/recovery_time_principle.png> <./figs/HQO_20240708_Deadtime_C
+hannel_1_Bias_31_2uA_trigg_300-600mV_thesis.png> <./figs/HQO_20240708_Deadtime_
+Channel_1_Bias_26uA_trigg_300-600mV_thesis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 151--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--176
+
+ []
+
+</Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
+oton Detection/Effizienzen.png, id=180, 402.303pt x 155.6214pt>
+File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
+le Photon Detection/Effizienzen.png Graphic file (type png)
+<use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
+e Photon Detection/Effizienzen.png>
+Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
+roseminar/Figs Single Photon Detection/Effizienzen.png  used on input line 178.
+
+(pdftex.def)             Requested size: 199.16928pt x 77.0435pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 180.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.5pt on input line 180.
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--192
+
+ []
+
+
+
+[15 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
+e Photon Detection/Effizienzen.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 195--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
+
+ []
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.228 ...el f^^c3^^bcr NQO Excelitas SPCS - Note #
+                                                  7
+? 
 ) (Latex_Contentfiles/Conclusion_and_Outlook.tex
 
-[10 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
-e Photon Detection/recovery_time_principle.png>]
-
-[11]
+[16]
 chapter 5.
 )
 
-[12
+[17
+
 
 ]
 \openout2 = `Latex_Contentfiles/thesis_appendix.aux'.
 
  (Latex_Contentfiles/thesis_appendix.tex
+
+[18
+
+
+
+]
 chapter A.
 )
 
-[13
+[19]
+
+[20
+
+
 
 
 ]
 chapter without number
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 186.
+(Font)              scaled to size 10.95pt on input line 190.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/ntxtlf/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
 
-[14
+[21]
 
+[22
 
 
 ] (dirname.aux
@@ -2429,43 +2553,47 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'dirname.run.xml'.
 \openout1 = `dirname.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42308 strings out of 475854
- 859713 string characters out of 5776366
+ 42537 strings out of 475854
+ 866586 string characters out of 5776366
  1943905 words of memory out of 5000000
- 64135 multiletter control sequences out of 15000+600000
- 711278 words of font info for 327 fonts, out of 8000000 for 9000
+ 64334 multiletter control sequences out of 15000+600000
+ 712664 words of font info for 332 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
  108i,20n,147p,10904b,4064s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/
-dvips/newtx/ntx-ec-tlf-pc.enc}{/Users/maxim.re/Library/Application Support/MiKT
-eX/texmfs/install/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/Users/maxim.re/Library
-/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ot1-tlf.en
-c}{/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/
-dvips/tex-gyre/q-ec.enc}</Users/maxim.re/Library/Application Support/MiKTeX/tex
-mfs/install/fonts/type1/public/newtx/NewTXMI.pfb></Users/maxim.re/Library/Appli
-cation Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/NewTXMI5.pfb></Us
-ers/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publ
-ic/newtx/NewTXMI7.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmf
-s/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></Users/maxim.re/Libra
-ry/Application Support/MiKTeX/texmfs/install/fonts/type1/public/tex-gyre/qhvb.p
+dvips/newtx/ntx-ec-tlf-pc.enc} </Users/maxim.re/Library/Application Support/MiK
+TeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk>{/Users/maxim.re
+/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ec
+-tlf.enc}{/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fon
+ts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/Users/maxim.re/Library/Application Support
+/MiKTeX/texmfs/install/fonts/enc/dvips/tex-gyre/q-ec.enc}</Users/maxim.re/Libra
+ry/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/NewTXMI.p
 fb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/typ
-e1/public/txfonts/t1xtt.pfb></Users/maxim.re/Library/Application Support/MiKTeX
-/texmfs/install/fonts/type1/public/newtx/txmiaX.pfb></Users/maxim.re/Library/Ap
-plication Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txsym.pfb></Us
-ers/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publ
-ic/newtx/txsys.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/i
-nstall/fonts/type1/public/newtx/ztmb.pfb></Users/maxim.re/Library/Application S
-upport/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztmr.pfb></Users/maxim.re
-/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztm
-ri.pfb>
-Output written on dirname.pdf (18 pages, 2810305 bytes).
+e1/public/newtx/NewTXMI5.pfb></Users/maxim.re/Library/Application Support/MiKTe
+X/texmfs/install/fonts/type1/public/newtx/NewTXMI7.pfb></Users/maxim.re/Library
+/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/f
+onts/type1/public/tex-gyre/qhvb.pfb></Users/maxim.re/Library/Application Suppor
+t/MiKTeX/texmfs/install/fonts/type1/public/txfonts/t1xtt.pfb></Users/maxim.re/L
+ibrary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txmia
+X.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/
+type1/public/newtx/txsym.pfb></Users/maxim.re/Library/Application Support/MiKTe
+X/texmfs/install/fonts/type1/public/newtx/txsys.pfb></Users/maxim.re/Library/Ap
+plication Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztmb.pfb></Use
+rs/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publi
+c/newtx/ztmr.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/ins
+tall/fonts/type1/public/newtx/ztmri.pfb>
+Output written on dirname.pdf (28 pages, 2978608 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
- 52866 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 53910 words of extra memory for PDF output out of 61914 (max. 10000000)
 

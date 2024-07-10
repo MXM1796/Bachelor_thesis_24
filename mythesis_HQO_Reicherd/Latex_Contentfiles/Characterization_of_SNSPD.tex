@@ -1,58 +1,182 @@
 % !TEX root = mythesis.tex
 
 % Add the external directory to the graphics path
-\graphicspath{{/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/}}
+%\graphicspath{{/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/}}
 
 %==============================================================================
 \chapter{Characterization of our SNSPD}
 \label{sec:SNSPD_Characterization}
 %==============================================================================
-Vom Experiment aus Theorie erklären \\ schauen ob Unterkapitel passt
 
-
-In literature, four central characteristics have emerged to quantize the quality of single photon detectors and
+In literature, four central characteristics have emerged to quantify the quality of single photon detectors and
 make their performance comparable.
-These characteristics are the detector efficiency, the dead count rate, the recovery time and the timing jitter.
-In this thesis, I focus on the first three characteristics.
-In general, there are more than these introduced ones,
-like an after-pulsing or signal-to-noise ratio; however, these are the most important in the context of this thesis.
+These characteristics are the detector efficiency, the dark count rate (DCR), the recovery time and the timing jitter.
+In this thesis, I focus on the detector efficiency, the dark count rate (DCR) and the recovery time.
+There are more than these introduced ones, like an after-pulsing, but these are the most important in the context
+of this thesis.
 
-\section{Dark Count Rate}
-The \textbf{dark count rate} (DCR) is the rate of measured detection events that were not intentionally sent to the source.
-It is measured in counts per Second and can be caused by statistical fluctuations in the measurement electronics
+\section{Dark Count Rate}\label{sec:dark-count-rate}
+The dark count rate (DCR) is the rate of measured detection events that were not intentionally sent to the source.
+It is measured in counts per second and can be caused by statistical fluctuations in the measurement electronics
 or by scattered or ambient light from the environment.
-A low DCR is important because it allows differentiating between intended detected counts from the source and detected counts by
-environment and electronic noise. \\
-It increases the count resolution and enables at lower frequencies still high signal-to-noise ratios.
-Moreover, SNSPDs DCR depends on the bias current applied to the nanowire.
-Since the deadtime and the efficiency depends on the bias current as well, one has to find the best adjustment,
-where low DCR is assured as well as a low deadtime and high efficiency.
+A low DCR is important and allows differentiation between intended detected counts from the source and detected counts
+by environment and electronic noise.
+Furthermore, an increase in the count resolution is achieved, enabling the detection of high signal-to-noise ratios at
+lower input frequencies.\\
 
+In the context of SNSPDs, the DCR is dependent on the bias current applied to the nanowire.
+This is due to the fact that if the bias current approaches the critical current, the electronic noise easily exceeds
+the energy gap required to trigger a pulse.
+Furthermore, it is important to perform DCR measurements first in the characterisation process.
+This serves to determine the limit, where general measurements are not distorted by high noise due to high DCR.
+Consequently, modifications to the DCR configuration serve as the baseline for all subsequent measurements
+with the detector and the associated setup.
 
 \subsection*{Measurement setup}
 
-Evaluating the DCR needs measurements in two setups.
-First, a setup where the detector is unplugged from the source and covered fully in darkness.Like this one can assume no
-photons from the environment are hitting the detector.
-This enables measuring the DCR triggered by the electronics and the characteristic of the detector's operating mode.
-The later means, the probability detecting photons raises if the bias current increases due to the lower energy gap
-its needed exceeding the critical temperature.
+In order to evaluate the DCR, it is necessary to perform measurements in two different setups.
+First, a setup in which the detector is disconnected from the source and covered entirely in darkness.
+In such a setup, it can be assumed that no photons from the surrounding environment are striking the detector.
+This allows for the measurement of the DCR triggered by the electronics and the characteristic of the detector's operating mode.
 
-Second, a setup where the detector is plugged to the faint laser source.
-This is done to compare this results with the first setup.
-We assume that the first setup has the lowest DCR.
-Comparing to it enables us to improve the setup as much as possible towards the first setup,
-hence we get the best signal to noise ratio.
+The later means, the probability a signal is triggered by the detector raises if the bias current increases and the
+difference $\Delta I= I_c - I_B$ to the critical current decreases.
+This is due to the lower energy gap its needed exceeding the critical temperature.
+
+The second setup involves connecting the detector to the faint laser source.
+This is done in order to facilitate a comparison of the results obtained in the two different setups.
+It is assumed that the first setup has the lowest DCR.
+A comparison of the two configurations enables the most optimal improvement of the latter towards the former.
+This ultimately yields the highest signal-to-noise ratio.
 
 \subsection*{Results and Discussion}
 
-First the DCR is measured from the detector with cap on ...
+Firstly, the DCR is measured with the protection cap in place on the output connector of the detector.
+This configuration represents the most shielded environment from external light sources and serves as the reference
+value for the optimal DCR values.
+The measurement was conducted by sweeping the bias current from 0 to 35 µA in 0.1 µA increments with an
+integration time of 200 ms.
+
+\begin{figure}[hhh]
+ \centering
+ \includegraphics[width=9cm]{figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis}
+ \caption{Dark count rate (DCR) where the output channel of the detector which was protected by an aluminium cap.}
+ \label{fig: DCR_Cap_on}
+\end{figure}
+
+As expected, the DCR raises with decreasing difference $ \Delta I= I_c - I_B$ due to raising probability that
+weak electronic noises trigger a signal. \\
+
+Subsequently, the DCR was measured on two further realizations.
+In the initial configuration, an optical fibre was linked to the detector's output channel and the experiment's output connector.
+In the second realization, the same connection was maintained, but the setup was fully protected by a self-constructed black box.
+Furthermore, the optical fibre was enclosed within an aluminium foil layer to prevent photons from coupling through the fibre's cladding.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=9cm]{figs/HQO_20240708_DCR_Channel_0_Ba_thesis}
+ \caption{Dark count rate (DCR) of both measurement realizations, compared to the DCR with the cap on.}
+ \label{fig: DCR_black_box_to_exp}
+\end{figure}
+
+The orange course demonstrates that in the absence of protection, a significant number of photons from the environment
+are able to couple through various potential pathways, including the fibre cladding and the connection to the experiment.\\
+In contrast, the fully protected setup (shown by the green course) exhibits an analogous course to the setup with the cap
+on fig \ref{fig: DCR_Cap_on}.
+The DCR of the coupled and protected setup is comparable to the DCR with a cap on.
+The high peaks at $\approx 3$ and $\approx 14$uA are artifacts resulting probably of still some leakages in the protection.
+Lastly, all further measurements have to be done at a bias current of $ I_B < \approx 32$uA.
+Up to this limit, the DCR is located in the regime of 1-10Hz regime, providing a high lower frequency range for a high
+signal to a noise ratio.
+
+\section{Recovery time}\label{sec:recovery-time}
+
+The concept of the recovery time is visually depicted in fig \ref{fig:Recovery_time}.
+When a photon hits the detector and is absorbed, the efficiency of the detector drops to zero and no further photon can
+be measured for a certain period of time.
+This elapsed time is called the dead time $\tau_{d}$.
+The efficiency then rises again to its original device efficiency $\eta_{G}$.
+This period is called the reset time $\tau_{r}$.
+The characteristic curve between the two times forms the start of the increase to full efficiency.
+The sum $\tau_{rec} = \tau_{r} + \tau_{d}$ of both times forms the recovery time.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=12cm]{recovery_time_principle}
+ \caption{Schematic efficiency curve for the detection of a photon\cite{shalm_single-photon_2013}. On the Y axis is the
+ efficiency $\eta$, where $\eta_{G}$ is the device efficiency. On the X axis is the time course of the efficiency}.
+ \label{fig:Recovery_time}
+\end{figure}
+
+\subsection*{Measurement set up}
+
+The recovery time was measured in the setup seen in fig \ref{fig: recovery_time_measurement_31_2_and_26uA} and measures the recovery time
+along the same idea provided above.
+The raw analog signals from the detector were directly transmitted to a time tagger unit (Time Tagger 20)
+by Swabian instruments (\href{https://www.swabianinstruments.com/time-tagger/}{link})
+with self-adjustable trigger voltages, a device deadtime of 6ns and a maximal counting rate of 9MHz.\\
+
+This unit enabled the tagging of incoming signals with a time tag, as implied by its name.
+Subsequently, the tags were used to process the time distances between all signals.
+The histogram of all distances provides the same efficiency course as previously described,
+which provides the detectors recovery time for one channel at a determined bias current and trigger voltage.\\
+
+Consequently, I determined the recovery time of channel 1.
+For this, I conducted measurements for two different bias currents (26 and 31.2uA)
+(below the high noise limit provided by the DCR measurements) and four trigger voltages (300, 400, 500 and 600mV) to find
+its optimal configuration regarding bias current and trigger voltage.
+Results are presented in fig \ref{fig: recovery_time_measurement_31_2_and_26uA}.
+
+\begin{figure}[H]
+  \begin{subfigure}[t]{.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{.45\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis}
+  \end{subfigure}
+  \label{fig: recovery_time_measurement_31_2_and_26uA}
+  \caption{isjdiajias}
+\end{figure}
+
+The results show three different trends.
+First, for low trigger voltages, the dead time is longer and decrease for increasing trigger voltages.
+This can be seen for the lower and higher bias current.
+The reason for this behavior can be explained best by looking at the raw analog signals.
+In fig
 
 
-covered best as possible in darkness, so one can compare how many photons are measured from the environment. The
-coverage was done in two ways. On the one hand the optical setup was put into a blackbox
 
-The measurement setup is
+Second, for the lower bias current (26uA), the slope tends to decrease toward the end of the reset time.
+Moreover, the courses of the reset time for each trigger voltage are converging towards each other earlier.
+In comparison, with a bias current of 31.2uA the four different courses are separate till they reach their peak.
+Third, a small peak, in the range of 24-27ns can be seen clearly in the course with a bias current of 31.2uA.
+This small peak is more surpressed in with a lower bias current.
+Especially, the peak is higher for lower trigger voltages in the higher bias current regime.
+
+This was done on the basis that different bias currents influence the recovery of the nanowire back to its
+superconducting state.
+Furthermore, the trigger voltage can influence the amount of detected photons.
+A trigger voltage that is too low will result in the recording of only a single photon, should two photons arrive in
+quick succession.
+Like this, the second photon will not be triggered due to the low trigger voltage of the computing device
+(in this case, the Time Tagger 20).
+Furthermore, the photon rate was maintained below 9 MHz in order to remain within the operational
+range of the time tagger.
+
+Additionally, to these measurements analog signals were recorded with an oscilloscope.
+Reason, for this is to see how the generated pulses look like and wheter one can comprehend from them some sequences in our
+data evaluation.
+Like this get a better understanding of how the raw output signal changes when parameters as the bias current, the trigger
+voltage or the input power changes.\\
+
+
+The recoverytime was measured with a time tager connected to the computational unit of the detector.
+This was done to extract the analog signals and sent them to an alternative to process the data.
+
+
 
 \section{Efficiency}
 In \textbf{efficiency}, there are three types of efficiencies that describe independent loss processes in detection.
@@ -113,51 +237,10 @@ Moreover, this measurement shows the saturation point, were no additional effici
 
 
 \subsection*{Results and Discussion}
-\section{Recovery time}
-
-The concept of \textbf{recovery time} is visually described in graph\ref{fig:Recovery_time}. \\
-\begin{figure}[hhh]
-\includegraphics[width=7cm]{recovery_time_principle}
-\caption{Schematic efficiency curve for the detection of a photon\cite{shalm_single-photon_2013}. On the Y axis is the
-efficiency $\eta$, where $\eta_{G}$ is the device efficiency. On the X axis is the time course of the efficiency}.
-\label{fig:Recovery_time}
-\end{figure}
-
-When a photon hits the detector of an EPD and is absorbed, the efficiency of the detector drops to zero and no further
-photon can be measured for a period of time.
-This elapsed time is called the dead time.
-The efficiency then rises again to its original device efficiency.
-This period is called the reset time.
-The characteristic curve between the two times forms the start of the increase to full efficiency.
-The sum of both times forms the recovery time.
-
-\subsection*{Measurement set up}
-
-The recovery time was measured here along the same idea provided above.
-Signals from the detector were send to a time tagger unit.
-This unit enabled, as the name implies, tagging incoming signals with a time tag.
-These tags could then be used to process the time distances between all signals to each other.
-Displaying the histogram of all distances gives us the same efficiency course, showed above explaining the recovery time.
-\\
-This measurement were done again for different bias currents and trigger voltages, in order to determine the best
-configuration for operating. \\
-
-Additionally, to these measurements analog signals were recorded with an oscilloscope.
-Reason, for this is to see how the generated pulses look like and wheter one can comprehend from them some sequences in our
-data evaluation.
-Like this get a better understanding of how the raw output signal changes when parameters as the bias current, the trigger
-voltage or the input power changes.\\
-
-
-
-
-
-
-The recoverytime was measured with a time tager connected to the computational unit of the detector.
-This was done to extract the analog signals and sent them to an alternative to process the data.
 
 \subsection*{Results and Discussion}
 \section{Discussion}
 Influence of timing jitter on efficiency and recovery time.
 - No Afterpulsing
 - Temperature 2.9 instead of 2.5Í
+- Photon counters formel für NQO Excelitas SPCS - Note #7
