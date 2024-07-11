@@ -1,279 +1,1 @@
-% !TEX root = mythesis.tex
-
-% Add the external directory to the graphics path
-%\graphicspath{{/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/}}
-
-%==============================================================================
-\chapter{Characterization of our SNSPD}
-\label{sec:SNSPD_Characterization}
-%==============================================================================
-
-In literature, four central characteristics have emerged to quantify the quality of single photon detectors and
-make their performance comparable.
-These characteristics are the detector efficiency, the dark count rate (DCR), the recovery time and the timing jitter.
-In this thesis, I focus on the detector efficiency, the dark count rate (DCR) and the recovery time.
-There are more than these introduced ones, like an after-pulsing, but these are the most important in the context
-of this thesis.
-
-\section{Dark Count Rate}\label{sec:dark-count-rate}
-The dark count rate (DCR) is the rate of measured detection events that were not intentionally sent to the source.
-It is measured in counts per second and can be caused by statistical fluctuations in the measurement electronics
-or by scattered or ambient light from the environment.
-A low DCR is important and allows differentiation between intended detected counts from the source and detected counts
-by environment and electronic noise.
-Furthermore, an increase in the count resolution is achieved, enabling the detection of high signal-to-noise ratios at
-lower input frequencies.\\
-
-In the context of SNSPDs, the DCR is dependent on the bias current applied to the nanowire.
-This is due to the fact that if the bias current approaches the critical current, the electronic noise easily exceeds
-the energy gap required to trigger a pulse.
-Furthermore, it is important to perform DCR measurements first in the characterisation process.
-This serves to determine the limit, where general measurements are not distorted by high noise due to high DCR.
-Consequently, modifications to the DCR configuration serve as the baseline for all subsequent measurements
-with the detector and the associated setup.
-
-\subsection*{Measurement setup}
-
-In order to evaluate the DCR, it is necessary to perform measurements in two different setups.
-First, a setup in which the detector is disconnected from the source and covered entirely in darkness.
-In such a setup, it can be assumed that no photons from the surrounding environment are striking the detector.
-This allows for the measurement of the DCR triggered by the electronics and the characteristic of the detector's operating mode.
-
-The later means, the probability a signal is triggered by the detector raises if the bias current increases and the
-difference $\Delta I= I_c - I_B$ to the critical current decreases.
-This is due to the lower energy gap its needed exceeding the critical temperature.
-
-The second setup involves connecting the detector to the faint laser source.
-This is done in order to facilitate a comparison of the results obtained in the two different setups.
-It is assumed that the first setup has the lowest DCR.
-A comparison of the two configurations enables the most optimal improvement of the latter towards the former.
-This ultimately yields the highest signal-to-noise ratio.
-
-\subsection*{Results and Discussion}
-
-Firstly, the DCR is measured with the protection cap in place on the output connector of the detector.
-This configuration represents the most shielded environment from external light sources and serves as the reference
-value for the optimal DCR values.
-The measurement was conducted by sweeping the bias current from 0 to 35 µA in 0.1 µA increments with an
-integration time of 200 ms.
-
-\begin{figure}[hhh]
- \centering
- \includegraphics[width=9cm]{figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis}
- \caption{Dark count rate (DCR) where the output channel of the detector which was protected by an aluminium cap.}
- \label{fig: DCR_Cap_on}
-\end{figure}
-
-As expected, the DCR raises with decreasing difference $ \Delta I= I_c - I_B$ due to raising probability that
-weak electronic noises trigger a signal. \\
-
-Subsequently, the DCR was measured on two further realizations.
-In the initial configuration, an optical fibre was linked to the detector's output channel and the experiment's output connector.
-In the second realization, the same connection was maintained, but the setup was fully protected by a self-constructed black box.
-Furthermore, the optical fibre was enclosed within an aluminium foil layer to prevent photons from coupling through the fibre's cladding.
-
-\begin{figure}[H]
- \centering
- \includegraphics[width=9cm]{figs/HQO_20240708_DCR_Channel_0_Ba_thesis}
- \caption{Dark count rate (DCR) of both measurement realizations, compared to the DCR with the cap on.}
- \label{fig: DCR_black_box_to_exp}
-\end{figure}
-
-The orange course demonstrates that in the absence of protection, a significant number of photons from the environment
-are able to couple through various potential pathways, including the fibre cladding and the connection to the experiment.\\
-In contrast, the fully protected setup (shown by the green course) exhibits an analogous course to the setup with the cap
-on fig \ref{fig: DCR_Cap_on}.
-The DCR of the coupled and protected setup is comparable to the DCR with a cap on.
-The high peaks at $\approx 3$ and $\approx 14$uA are artifacts resulting probably of still some leakages in the protection.
-Lastly, all further measurements have to be done at a bias current of $ I_B < \approx 32$uA.
-Up to this limit, the DCR is located in the regime of 1-10Hz regime, providing a high lower frequency range for a high
-signal to a noise ratio.
-
-\section{Recovery time}\label{sec:recovery-time}
-The concept of the recovery time is visually depicted in fig \ref{fig:Recovery_time}.
-When a photon hits the detector and is absorbed, the efficiency of the detector drops to zero and no further photon can
-be measured for a certain period of time.
-This elapsed time is called the dead time $\tau_{d}$.
-The efficiency then rises again to its original device efficiency $\eta_{G}$.
-This period is called the reset time $\tau_{r}$.
-The characteristic curve between the two times forms the start of the increase to full efficiency.
-The sum $\tau_{rec} = \tau_{r} + \tau_{d}$ of both times forms the recovery time.
-
-\begin{figure}[H]
- \centering
- \includegraphics[width=12cm]{recovery_time_principle}
- \caption{Schematic efficiency curve for the detection of a photon\cite{shalm_single-photon_2013}. On the Y axis is the
- efficiency $\eta$, where $\eta_{G}$ is the device efficiency. On the X axis is the time course of the efficiency}.
- \label{fig:Recovery_time}
-\end{figure}
-
-\subsection*{Measurement set up}
-The recovery time was measured in the setup seen in fig \ref{fig: recovery_time_measurement_31_2_and_26uA} and measures the recovery time
-along the same idea provided above.
-The raw analog signals from the detector were directly transmitted to a time tagger unit (Time Tagger 20)
-by Swabian instruments (\href{https://www.swabianinstruments.com/time-tagger/}{link})
-with self-adjustable trigger voltages, a device deadtime of 6ns and a maximal counting rate of 9MHz.
-
-This unit enabled the tagging of incoming signals with a time tag, as implied by its name.
-Subsequently, the tags were used to process the time distances between all signals.
-The histogram of all distances provides the same efficiency course as previously described,
-which provides the detectors recovery time for one channel at a determined bias current and trigger voltage.
-
-Consequently, I determined the recovery time of channel 1.
-For this, I conducted measurements for two different bias currents (26 and 31.2uA)
-(below the high noise limit provided by the DCR measurements) and four trigger voltages (300, 400, 500 and 600mV) to find
-its optimal configuration regarding bias current and trigger voltage.
-Results are presented in fig \ref{fig: recovery_time_measurement_31_2_and_26uA}.
-
-\begin{figure}[H]
-  \begin{subfigure}[t]{.5\textwidth}
-    \centering
-    \includegraphics[width=\linewidth]{figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{.5\textwidth}
-    \centering
-    \includegraphics[width=\linewidth]{figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis}
-  \end{subfigure}
-  \caption{isjdiajias}
-  \label{fig: recovery_time_measurement_31_2_and_26uA}
-\end{figure}
-
-The results show three different trends.
-First, for low trigger voltages, the dead time is longer and decrease for increasing trigger voltages.
-This can be seen for the lower and higher bias current.
-The reason for this behavior can be explained best by looking at an exemplary raw analog signal (see fig \ref{fig: analog_signal_31_2_uA_double_peak})
-of two consequent pulses.
-One can see two pulses, where the second signal comes close ($\approx 20ns$) after the first one.
-Physically, that means, while the current in the superconducting wire wasn't fully at the default bias current of
-31.2uA, a second photon already hit the detector.
-If the trigger is below 500mV the time tagger will count this signal as one count, since the second pulse came when
-the remaining voltage of the wire was above 500mV.
-So it is a pulse on the falling edge of the first one.
-However, if the trigger is over 500mV both consecutive pulses will be counted by the time tagging unit as single counts.
-This allows more individual pulses to be counted separately with a small gap between them. 
-Therefore, we see this ealier raise in fig \ref{fig: recovery_time_measurement_31_2_and_26uA}.
-
-\begin{figure}[H]
- \centering
- \includegraphics[width=12cm]{~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single}
- \caption{Analog signal from channel 1 for bias current 31.2uA and a trigger of 600mV. x-axis: time in 50ns steps, y-axis
- voltage in 500mV steps}
- \label{fig: analog_signal_31_2_uA_double_peak}
-\end{figure}
-
-Secondly, for the lower bias current (26uA), the slope tends to decrease towards the end of the reset time.
-Moreover, the courses of the reset time for each trigger voltage are converging towards each other earlier.
-In comparison, with a bias current of 31.2uA the four different courses are separate till they reach their peak.
-This can be explained by the fact that, depending on the bias current, the resistance block caused by a
-photon hitting the superconducting nanowire is different.
-According to Ohm's law, a low bias current corresponds to lower voltage pulses and vice versa, for the same resistivity.
-This is also comprehensible by Ohm's law.
-Due to the lower pulse, the regime, where one pulse can be resolved by a trigger voltage setting of 600mV but not by a
-trigger voltage of 500mV becomes smaller.
-Hence, one can see that the counts per bin equalize for increasing time distances.
-Third, a small peak, in the range of 24-27ns can be seen clearly in the course with a bias current of 31.2uA.
-This small peak is more suppressed with a lower bias current.
-A plausible solution can be understood along fig \ref{fig: Oscillating_bias_current}.
-
-\begin{figure}[hhh]
- \centering
- \includegraphics[width=12cm]{~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current}
- \caption{Scetch of brief oscillating current and subsequent levelling to the bias current}
- \label{fig: Oscillating_bias_current}
-\end{figure}
-
-Following the detection of a current, the course of the current does not proceed directly and precisely to the bias current.
-Instead, it oscillates for a brief period and then rapidly reaches equilibrium.
-In the small oscillating period, the Dark count rate raises exponentially (seen in fig: \ref{fig: DCR_black_box_to_exp})
-and adds to the detected counts.
-Finally, one can conclude that regarding the recovery time its best to operate the detector close to the bias current,
-in order to have a higher pulse and therefore steeper reset times, closer dead times, therefore
-corresponding to shorter recovery times.
-A reasonable trigger point for a bias current of 31.2uA is 600mV, which yields to the lowest recovery time.
-Finally, the recovery time for $I_{B} = 31.2uA$ and 600mV can be determined.
-This is done, by calculating the raise of the function for the dividing line between dead and reset time.
-Hence, the point where the accumulated gradients average (close) to zero builds out point in time, where the reset
-time, hence the recovery time ends.
-The calculated points are visualized in fig: \ref{fig: recovery_time} and the final recovery time is
-$\tau_{recovery} = (21.21 \pm 0.34) ns$, where $\tau_{dead} = (14.13 \pm 0.14) ns$ is the dead time where the detector is
-not responsive at all and $\tau_{reset} = (7.08 \pm 0.36) ns$  the reset time, where the detector is responsive with a
-lower efficiency.
-
-\begin{figure}[hhh]
- \centering
- \includegraphics[width=12cm]{figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis}
- \caption{Histogram of distances between signals for $I_{B} = 31.2uA$ and 600mV. H- and v-lines indicate the dead-;
- reset- and recovery time}
- \label{fig: recovery_time}
-\end{figure}
-
-\newpage
-\section{Efficiency}
-In \textbf{efficiency}, there are three types of efficiencies that describe independent loss processes in detection.
-An efficiency can be equated with the probability that a quantum mechanically process under consideration will occur.\\
-These three efficiencies are the coupling efficiency ($\eta_{\text{K}}$),
-the absorption efficiency ($\eta_{\text{A}}$) and the registration efficiency ($\eta_{\text{R}}$).
-The graph \ref{fig: single_efficiency_terms} shows schematically where the different loss process in the detection
-process appear. So, when a photon is sent to a detector via an optical fibre, not all photons can be coupled into the
-fibre due to material and symmetry properties.
-The probability of coupling is called the \textit{coupling efficiency}. \\
-When photons hit the detector, there is always a probability that the photon will not be absorbed by the detector.
-This is described by the \textit{absorption efficiency}. \\
-Finally, there is always a probability that the photon will not be registered by the measuring electronics.
-This is expressed with the \textit{Registration efficiency}. \\
-
-\begin{figure}[hhh]
-    \centering
-    \includegraphics[width=12cm]{Effizienzen}
-    \caption{Sketch of the components in the detector setup where photonlosses appear and consequently a propability
-     ($\eta_{\text{K}}$, $\eta_{\text{A}}$ or $\eta_{\text{R}}$) has to be considered.}
-    \label{fig: single_efficiency_terms}
-\end{figure}
-
-In literature, these terms are brought together in two efficiency terms: the device efficiency
-($\eta_{\text{G}} = \eta_{\text{A}} \cdot \eta_{\text{R}}$) and the system efficiency
-($\eta_{\text{S}} = \eta_{\text{A}} \cdot \eta_{\text{R}} \cdot \eta_{\text{K}}$).
-The device's efficiency $\eta_{\text{G}}$ is that of the device itself and corresponds to photons sent
-to the detector in a free environment without any fibre coupling.
-The system's efficiency $\eta_{\text{S}}$ also takes into account the coupling losses to the optical fibre.
-This is the case if the detector is connected to a fibre, as the device properties or the experiment does not allow
-photon detection in a free environment.\\
-
-\subsection*{Measurement set up}
-
-The system detection efficiency $\eta_{s}$ is measured in different ways, each is pointing out a different variable
-the efficiency is depending on. Each measurement was done in the setup explained in part \textcolor{blue}{2.2}.
-\\
-
-First, we wanted to find the polarization axis were the maximum of the light is coupled to the slow axis of the fibre.
-This is explained by the technical fact that only the slow axis of the fibre is coupled to the output port of the
-detector. The explaination for this is the maximum $\eta_{A}$ explained in part\textcolor{blue}{2.1}.\\
-By adjusting the laser beam linear with a $\lambda$-4 plate first and afterwards rotating the $\lambda$-half plate
-in 10 degree steps it was possible to circulate the ligth axis and hence find the angle configuration were the maximum
-light was hitting the detector.
-This is important since measuring the efficiency aligned to a different axix would always
-put a systematic downshift error on the true efficiency of the detector\\
-
-That measurment also confirms malus law ..\\
-
-Second, the bias current und trigger voltage dependency was investigated.
-For this this polarization was aligned to the optimum.
-Afterwards, the bias current was swept from 0 to 35uA in 0.1uA steps and events within 200ms integration
-time were counted. This was done for four different trigger voltages. \\
-
-Finally, measurements for different input count rates were done.
-This was done by exchanging the ND filters combination to get different photon counts.
-Here I covered up a range from the KHz regime up to the MHz regime.
-Moreover, this measurement shows the saturation point, were no additional efficiency is acquired by lowering the count rate.
-
-
-\subsection*{Results and Discussion}
-
-\subsection*{Results and Discussion}
-\section{Discussion}
-%Influence of timing jitter on efficiency and recovery time.
-%- No Afterpulsing
-%- Temperature 2.9 instead of 2.5Í
-%- Photon counters formel für NQO Excelitas SPCS - Note #7
-
+% !TEX root = mythesis.tex% Add the external directory to the graphics path%\graphicspath{{/Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/}}%==============================================================================\chapter{Characterization of our SNSPD}\label{sec:SNSPD_Characterization}%==============================================================================In literature, four central characteristics have emerged to quantify the quality of single photon detectors andmake their performance comparable.These characteristics are the detector efficiency, the dark count rate (DCR), the recovery time and the timing jitter.In this thesis, I focus on the detector efficiency, the dark count rate (DCR) and the recovery time.There are more than these introduced ones, like an after-pulsing, but these are the most important in the contextof this thesis.\section{Dark Count Rate}\label{sec:dark-count-rate}The dark count rate (DCR) is the rate of measured detection events that were not intentionally sent to the source.It is measured in counts per second and can be caused by statistical fluctuations in the measurement electronicsor by scattered or ambient light from the environment.A low DCR is important and allows differentiation between intended detected counts from the source and detected countsby environment and electronic noise.Furthermore, an increase in the count resolution is achieved, enabling the detection of high signal-to-noise ratios atlower input frequencies.\\In the context of SNSPDs, the DCR is dependent on the bias current applied to the nanowire.This is due to the fact that if the bias current approaches the critical current, the electronic noise easily exceedsthe energy gap required to trigger a pulse.Furthermore, it is important to perform DCR measurements first in the characterisation process.This serves to determine the limit, where general measurements are not distorted by high noise due to high DCR.Consequently, modifications to the DCR configuration serve as the baseline for all subsequent measurementswith the detector and the associated setup.\subsection*{Measurement and results}In order to evaluate the DCR, it is necessary to perform measurements in two different setups.First, a setup in which the detector is disconnected from the source and covered entirely in darkness.In such a setup, it can be assumed that no photons from the surrounding environment are striking the detector.This allows for the measurement of the DCR triggered by the electronics and the characteristic of the detector's operating mode.The later means, the probability a signal is triggered by the detector raises if the bias current increases and thedifference $\Delta I= I_c - I_B$ to the critical current decreases.This is due to the lower energy gap its needed exceeding the critical temperature.The second setup involves connecting the detector to the faint laser source.This is done in order to facilitate a comparison of the results obtained in the two different setups.It is assumed that the first setup has the lowest DCR.A comparison of the two configurations enables the most optimal improvement of the latter towards the former.This ultimately yields the highest signal-to-noise ratio.Firstly, the DCR is measured with the protection cap in place on the output connector of the detector.This configuration represents the most shielded environment from external light sources and serves as the referencevalue for optimal DCR values.The measurement was conducted by sweeping the bias current from 0 to 35 µA in 0.1 µA increments with anintegration time of 200 ms.\begin{figure} \centering \includegraphics[width=0.8\textwidth]{figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis} \caption{Dark count rate (DCR) where the output channel of the detector which was protected by an aluminium cap.} \label{fig: DCR_Cap_on}\end{figure}As expected, the DCR raises with decreasing difference $ \Delta I= I_c - I_B$ due to raising probability thatweak electronic noises trigger a signal. \\Subsequently, the DCR was measured on two further realizations.In the initial configuration, an optical fibre was linked to the detector's output channel and the experiment's output connector.In the second realization, the same connection was maintained, but the setup was fully protected by a self-constructed black box.Furthermore, the optical fibre was enclosed within an aluminium foil layer to prevent photons from coupling through the fibre's cladding.\begin{figure} \centering \includegraphics[width=0.8\textwidth]{figs/HQO_20240708_DCR_Channel_0_Ba_thesis} \caption{Dark count rate (DCR) of both measurement realizations, compared to the DCR with the cap on.} \label{fig: DCR_black_box_to_exp}\end{figure}The orange course demonstrates that in the absence of protection, a significant number of photons from the environmentare able to couple through various potential pathways, including the fibre cladding and the connection to the experiment.\\In contrast, the fully protected setup (shown by the green course) exhibits an analogous course to the setup with the capon fig \ref{fig: DCR_Cap_on}.The DCR of the coupled and protected setup is comparable to the DCR with a cap on.The high peaks at $\approx 3$ and $\approx 14$uA are artifacts resulting probably of still some leakages in the protection.Lastly, all further measurements have to be done at a bias current of $ I_B < \approx 32$uA.Up to this limit, the DCR is located in the regime of 1-10Hz regime, providing a high lower frequency range for a highsignal to a noise ratio.\section{Recovery time}\label{sec:recovery-time}The concept of the recovery time is visually depicted in fig \ref{fig:Recovery_time}.When a photon hits the detector and is absorbed, the efficiency of the detector drops to zero and no further photon canbe measured for a certain period of time.This elapsed time is called the dead time $\tau_{d}$.The efficiency then rises again to its original device efficiency $\eta_{G}$.This period is called the reset time $\tau_{r}$.The characteristic curve between the two times forms the start of the increase to full efficiency.The sum $\tau_{rec} = \tau_{r} + \tau_{d}$ of both times forms the recovery time.\begin{figure} \centering \includegraphics[width=0.8\textwidth]{recovery_time_principle} \caption{Schematic efficiency curve for the detection of a photon\cite{shalm_single-photon_2013}. On the Y axis is the efficiency $\eta$, where $\eta_{G}$ is the device efficiency. On the X axis is the time course of the efficiency}. \label{fig:Recovery_time}\end{figure}\subsection*{Measurement and results}The recovery time was measured in the setup seen in fig \ref{fig: recovery_time_measurement_31_2_and_26uA} and measures the recovery timealong the same idea provided above.The raw analog signals from the detector were directly transmitted to a time tagger unit (Time Tagger 20)by Swabian instruments (\href{https://www.swabianinstruments.com/time-tagger/}{link})with self-adjustable trigger voltages, a device deadtime of 6ns and a maximal counting rate of 9MHz.This unit enabled the tagging of incoming signals with a time tag, as implied by its name.Subsequently, the tags were used to process the time distances between all signals.The histogram of all distances provides the same efficiency course as previously described,which provides the detectors recovery time for one channel at a determined bias current and trigger voltage.Consequently, I determined the recovery time of channel 1.For this, I conducted measurements for two different bias currents (26 and 31.2uA)(below the high noise limit provided by the DCR measurements) and four trigger voltages (300, 400, 500 and 600mV) to findits optimal configuration regarding bias current and trigger voltage.Results are presented in fig \ref{fig: recovery_time_measurement_31_2_and_26uA}.\begin{figure}  \begin{subfigure}[t]{.5\textwidth}    \centering    \includegraphics[width=\linewidth]{figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis}  \end{subfigure}  \hfill  \begin{subfigure}[t]{.5\textwidth}    \centering    \includegraphics[width=\linewidth]{figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis}  \end{subfigure}  \caption{isjdiajias}  \label{fig: recovery_time_measurement_31_2_and_26uA}\end{figure}The results show three different trends.First, for low trigger voltages, the dead time is longer and decrease for increasing trigger voltages.This can be seen for the lower and higher bias current.The reason for this behavior can be explained best by looking at an exemplary raw analog signal (see fig \ref{fig: analog_signal_31_2_uA_double_peak})of two consequent pulses.One can see two pulses, where the second signal comes close ($\approx 20ns$) after the first one.Physically, that means, while the current in the superconducting wire wasn't fully at the default bias current of31.2uA, a second photon already hit the detector.If the trigger is below 500mV the time tagger will count this signal as one count, since the second pulse came whenthe remaining voltage of the wire was above 500mV.So it is a pulse on the falling edge of the first one.However, if the trigger is over 500mV both consecutive pulses will be counted by the time tagging unit as single counts.This allows more individual pulses to be counted separately with a small gap between them. Therefore, we see this ealier raise in fig \ref{fig: recovery_time_measurement_31_2_and_26uA}.\begin{figure} \centering \includegraphics[width=0.8\textwidth]{~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single} \caption{Analog signal from channel 1 for bias current 31.2uA and a trigger of 600mV. x-axis: time in 50ns steps, y-axis voltage in 500mV steps} \label{fig: analog_signal_31_2_uA_double_peak}\end{figure}Secondly, for the lower bias current (26uA), the slope tends to decrease towards the end of the reset time.Moreover, the courses of the reset time for each trigger voltage are converging towards each other earlier.In comparison, with a bias current of 31.2uA the four different courses are separate till they reach their peak.This can be explained by the fact that, depending on the bias current, the resistance block caused by aphoton hitting the superconducting nanowire is different.According to Ohm's law, a low bias current corresponds to lower voltage pulses and vice versa, for the same resistivity.This is also comprehensible by Ohm's law.Due to the lower pulse, the regime, where one pulse can be resolved by a trigger voltage setting of 600mV but not by atrigger voltage of 500mV becomes smaller.Hence, one can see that the counts per bin equalize for increasing time distances.Third, a small peak, in the range of 24-27ns can be seen clearly in the course with a bias current of 31.2uA.This small peak is more suppressed with a lower bias current.A plausible solution can be understood along fig \ref{fig: Oscillating_bias_current}.\begin{figure} \centering \includegraphics[width=0.8\textwidth]{~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current} \caption{Scetch of brief oscillating current and subsequent levelling to the bias current} \label{fig: Oscillating_bias_current}\end{figure}Following the detection of a current, the course of the current does not proceed directly and precisely to the bias current.Instead, it oscillates for a brief period and then rapidly reaches equilibrium.In the small oscillating period, the Dark count rate raises exponentially (seen in fig: \ref{fig: DCR_black_box_to_exp})and adds to the detected counts.Finally, one can conclude that regarding the recovery time its best to operate the detector close to the bias current,in order to have a higher pulse and therefore steeper reset times, closer dead times, thereforecorresponding to shorter recovery times.A reasonable trigger point for a bias current of 31.2uA is 600mV, which yields to the lowest recovery time.Finally, the recovery time for $I_{B} = 31.2uA$ and 600mV can be determined.This is done, by calculating the raise of the function for the dividing line between dead and reset time.Hence, the point where the accumulated gradients average (close) to zero builds out point in time, where the resettime, hence the recovery time ends.The calculated points are visualized in fig: \ref{fig: recovery_time} and the final recovery time is$\tau_{recovery} = (21.21 \pm 0.34) ns$, where $\tau_{dead} = (14.13 \pm 0.14) ns$ is the dead time where the detector isnot responsive at all and $\tau_{reset} = (7.08 \pm 0.36) ns$  the reset time, where the detector is responsive with alower efficiency.\begin{figure} \centering \includegraphics[width=0.8\textwidth]{figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis} \caption{Histogram of distances between signals for $I_{B} = 31.2uA$ and 600mV. H- and v-lines indicate the dead-; reset- and recovery time} \label{fig: recovery_time}\end{figure}\FloatBarrier\section{Efficiency}In \textbf{efficiency}, there are three types of efficiencies that describe independent loss processes in detection.An efficiency can be equated with the probability that a quantum mechanically process under consideration will occur.\\These three efficiencies are the coupling efficiency ($\eta_{\text{K}}$),the absorption efficiency ($\eta_{\text{A}}$) and the registration efficiency ($\eta_{\text{R}}$).The graph \ref{fig: single_efficiency_terms} shows schematically where the different loss in the detectionprocess appears.When a photon is sent to a detector via an optical fibre, not all photons can be coupled into thefibre.The probability of coupling is called the \textit{coupling efficiency}. \\When photons hit the detector, there is always a probability that the photon will not be absorbed by the detector.This is due to material and symmetry properties.This is described by the \textit{absorption efficiency}. \\Finally, there is always a probability that the photon will not be registered by the measuring electronics.This is expressed with the \textit{Registration efficiency}. \\\begin{figure}    \centering    \includegraphics[width=0.8\textwidth]{Effizienzen}    \caption{Sketch of the components in the detector setup where photonlosses appear and consequently a propability     ($\eta_{\text{K}}$, $\eta_{\text{A}}$ or $\eta_{\text{R}}$) has to be considered.}    \label{fig: single_efficiency_terms}\end{figure}In literature, these terms are brought together in two efficiency terms: the device efficiency($\eta_{\text{G}} = \eta_{\text{A}} \cdot \eta_{\text{R}}$) and the system efficiency($\eta_{\text{S}} = \eta_{\text{A}} \cdot \eta_{\text{R}} \cdot \eta_{\text{K}}$).The device's efficiency $\eta_{\text{G}}$ is that of the device itself and corresponds to photons sentto the detector in a free environment without any fibre coupling.The system's efficiency $\eta_{\text{S}}$ also takes the coupling losses to the optical fibre into account.This is the case if the detector is connected to a fibre, as the device properties or the experiment does not allowphoton detection in a free environment.\\\subsection*{Measurement and results}In the given setup, it is only possible to measure the system detection efficiency because the detector is already built witha fixed coupling to an internal fibre.This precoupled internal fibre is connected to a fibre to fibre port (FC/PC to FC/PC).Through this one, one can connect the detecor with an external fibre and access the detector. \\The system detection efficiency $\eta_{s}$ is measured in different ways, each pointing out a different dependency.Each measurement was done in the setup explained in part \textcolor{blue}{2.2}.In addition, the order of the measurements is a relevant factor, as the conclusions drawn for one measurementare influenced by the preceding measurements.It is first necessary to align the polarisation of the laser light with the slow axis of the fibreconnected to the output port of the detector.Along the manual the coupled light needs to polarized along the slow axis of the fibre.This is explained by the technical fact that only the slow axis of the fibre is coupled to the output port of thedetector.The reason for this preselection of polarization is the related maximum $\eta_{A}$, explained in part\textcolor{blue}{2.1}.\\By adjusting the laser beam linear with a $\lambda$-4 plate first and rotating the $\lambda$-half platein 10 degree steps afterwards, it was possible to circulate the polarisation axis.With this, it was possible to find the angle configuration were the maximum of light was coupled to the slow axis of the fibre.This is important since measuring subsequent efficiency measurements aligned to a different axis wouldput a systematic downshift on the true efficiency of the detector.\\In the figures \ref{fig: angle_dependend_countrate_sde} the count rate and the resulting system detection efficiencies are depicted.\begin{figure}  \begin{subfigure}[t]{.5\textwidth}    \centering    \includegraphics[width=\linewidth]{figs/HQO_2024011_countrate_angle_thesis}  \end{subfigure}  \hfill  \begin{subfigure}[t]{.5\textwidth}    \centering    \includegraphics[width=\linewidth]{figs/HQO_2024011_sde_angle_thesis}  \end{subfigure}  \caption{(a) Angle dependent countrate (b) Angle dependent system detection efficiency}  \label{fig: angle_dependend_countrate_sde}\end{figure}Second, the bias current und trigger voltage dependency was investigated.For this the polarization was aligned to the optimum.Afterwards, the bias current was swept from 0 to 35uA in 0.1uA steps and events within 200ms integrationtime were counted.The measurements were conducted with the integrated counting unit of the detector, as there was no requirement for time tagging.This was done for four different trigger voltages.\begin{figure}    \centering    \includegraphics[width=0.8\textwidth]{figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis}    \caption{System detection efficiency for different bias currents and trigger voltages}    \label{fig: sde_bias_current_tv_300_1000}\end{figure}One see that at lower trigger voltage of 300mV the count rate oscillates a bit, which again corresponds likely to the increaseddark count rates as explained in \ref{fig: Oscillating_bias_current}.Furthermore, one can see that for lower trigger voltages the detected counts for lower bias currents are higher.This is due to lower voltage pulses in lower bias current regimes.Hence, with a lower trigger voltage one can count already signals, however, with a very low count rate.Another behaviour is the saturation and is reached at around $I_{Bias} \approx 20uA$.Here the maximum count rate is reached and the efficiency course continues without any big change.At the end at a bias current of  $I_{Bias} \approx 32uA$ the efficiency drops, because the critical current is reached.After this, the detector stops counting, corresponding to a efficiency of zero.Finally, measurements for different count rates were done.This was done by putting together different ND filter combinations in order to get different OD values and therefore differentcount rates.To avoid the oscilation of count rates near the critical current as seen in fig \ref{fig: sde_bias_current_tv_300_1000}a trigger voltage of 750mV is used.\begin{figure}    \centering    \includegraphics[width=0.8\textwidth]{figs/HQO_20240711_sde_bias_current_750_thesis}    \caption{Course of system detection efficiency for different bias current and count rates}    \label{fig: sde_bias_current_750_thesis}\end{figure}As the count rate does not change with trigger voltage, as seen in \ref{fig: sde_bias_current_750_thesis} the maximum count rateat the point of constant efficiency is taken.\begin{figure}    \centering    \includegraphics[width=0.8\textwidth]{figs/HQO_20240711_sde_photon_rate_750_thesis}    \caption{Course of system detection efficiency for different count rates}    \label{fig: sde_count_rates_750_thesis}\end{figure}In fig \ref{fig: sde_count_rates_750_thesis} one can see that the system detection efficiency is decreasing with increasingcount rates.Moreover, the measurement show the saturation point of a photon rate of$ 1.12 \pm 0.32$, at a system detection efficiency of$(87.308 \pm 9.159) \%$, were no additional efficiency is acquired by lowering the count rate.\FloatBarrier\subsection*{Results and Discussion}\subsection*{Results and Discussion}\section{Discussion}%#TODO - Freitag% durch lesen und verbessern% Grafiken auf englisch% Grafiken und plotgrößen anpassen% Diskussion schreiben%Influence of timing jitter on efficiency and recovery time.%- No Afterpulsing%- Temperature 2.9 instead of 2.5Í%- Photon counters formel für NQO Excelitas SPCS - Note #7

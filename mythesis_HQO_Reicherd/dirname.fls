@@ -331,6 +331,8 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/late
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/koma-script/float.hak
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/koma-script/float.hak
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/koma-script/float.hak
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/placeins/placeins.sty
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/placeins/placeins.sty
 INPUT ./Latex_Contentfiles/thesis_acknowledge.tex
 INPUT ./Latex_Contentfiles/thesis_acknowledge.tex
 INPUT ./Latex_Contentfiles/Introduction_to_SNSPD.tex
@@ -778,6 +780,36 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
+INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
+INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
+INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
+INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
+INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
+INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
+INPUT ./figs/HQO_2024011_sde_angle_thesis.png
+INPUT ./figs/HQO_2024011_sde_angle_thesis.png
+INPUT ./figs/HQO_2024011_sde_angle_thesis.png
+INPUT ./figs/HQO_2024011_sde_angle_thesis.png
+INPUT ./figs/HQO_2024011_sde_angle_thesis.png
+INPUT ./figs/HQO_2024011_sde_angle_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
+INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
+INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
+INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
+INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
+INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
+INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
+INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
