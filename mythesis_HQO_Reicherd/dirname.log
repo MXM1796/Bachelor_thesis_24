@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  11 JUL 2024 20:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  15 JUL 2024 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -326,8 +326,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 448.13095pt
 (typearea)              DIV departure   = -14%
-(typearea)              \evensidemargin = 27.31467pt
-(typearea)              \oddsidemargin  = -22.47766pt
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 609.40027pt
 (typearea)              \topmargin      = -1.84941pt
@@ -344,8 +344,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 437.46118pt
 (typearea)              DIV departure   = -11%
-(typearea)              \evensidemargin = 24.9436pt
-(typearea)              \oddsidemargin  = -9.43683pt
+(typearea)              \evensidemargin = 14.86656pt
+(typearea)              \oddsidemargin  = 14.86656pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 609.40027pt
 (typearea)              \topmargin      = -1.84941pt
@@ -1546,8 +1546,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 437.46118pt
 (typearea)              DIV departure   = -19%
-(typearea)              \evensidemargin = 24.9436pt
-(typearea)              \oddsidemargin  = -9.43683pt
+(typearea)              \evensidemargin = 14.86656pt
+(typearea)              \oddsidemargin  = 14.86656pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 609.40027pt
 (typearea)              \topmargin      = -1.84941pt
@@ -1826,7 +1826,15 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'dirname.bbl' found.
- (dirname.bbl)
+ (dirname.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                manual_single_quantum_snspd
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 151.
 Package biblatex Info: Reference segment=0 on input line 151.
 
@@ -2002,7 +2010,6 @@ Package cleveref Info: loaded `ngerman' language definitions on input line 154.
 
 
 
-
 {/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdfte
 x/pdftex.map}]
 Package cleveref Info: loaded `ngerman' language definitions on input line 154.
@@ -2100,13 +2107,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 ]
-
-[4
-
-
-
-
-]
 Package tocbasic Info: character protrusion at toc deactivated on input line 16
 3.
  (dirname.toc
@@ -2166,9 +2166,9 @@ LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
 
 
 
-[5]
+[4
 
-[6
+
 
 
 ] (Latex_Contentfiles/Introduction_to_SNSPD.tex
@@ -2182,10 +2182,6 @@ LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 [1
 
 
-]
-
-[2
-
 
 ]
 chapter 2.
@@ -2194,7 +2190,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.1pt on input line 14.
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/SNSPD_grober_aufbau.png, id=70, 1001.1804pt x 548.2884pt>
+oton Detection/SNSPD_grober_aufbau.png, id=57, 1001.1804pt x 548.2884pt>
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/SNSPD_grober_aufbau.png Graphic file (type png)
 <use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
@@ -2206,7 +2202,7 @@ ine 19.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 20.
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/SNSPD_Ablauf.png, id=75, 417.56pt x 284.06125pt>
+oton Detection/SNSPD_Ablauf.png, id=62, 417.56pt x 284.06125pt>
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/SNSPD_Ablauf.png Graphic file (type png)
 <use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
@@ -2225,10 +2221,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--43
 
 
 
-[3 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
- Photon Detection/SNSPD_grober_aufbau.png>]
+[2
+
+
+ </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single P
+hoton Detection/SNSPD_grober_aufbau.png>]
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/SNSPD_Meander_fiber_coupling.png, id=89, 1802.735pt x 949.5475pt
+oton Detection/SNSPD_Meander_fiber_coupling.png, id=76, 1802.735pt x 949.5475pt
 >
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/SNSPD_Meander_fiber_coupling.png Graphic file (type png)
@@ -2244,16 +2243,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex
 
-[4 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
+[3 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
  Photon Detection/SNSPD_Ablauf.png>]
 
-[5 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
+[4 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single
  Photon Detection/SNSPD_Meander_fiber_coupling.png>]
-
-[6
-
-
-]
 chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--15
@@ -2264,7 +2258,10 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 26.
 
 
-[7]
+[5
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
@@ -2281,51 +2278,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--96
 
 
 
-[8]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 97--102
 
  []
 
+<figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png, id=113, 594.3003p
+t x 253.4268pt>
+File: figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png Graphic file 
+(type png)
+<use figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png>
+Package pdftex.def Info: figs/HQO_20240712_faint_laser_source_full_set_up_thesi
+s.png  used on input line 105.
+(pdftex.def)             Requested size: 349.97028pt x 149.23822pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--112
+Underfull \hbox (badness 10000) in paragraph at lines 112--119
 
  []
 
 
-LaTeX Warning: Reference `' on page 9 undefined on input line 122.
+LaTeX Warning: Reference `' on page 7 undefined on input line 129.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--147
+
+[7 <./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 151--154
 
  []
 
 ) (Latex_Contentfiles/Characterization_of_SNSPD.tex
 
-[9]
-
-[10
-
-
-]
+[8]
 chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--26
+Underfull \hbox (badness 10000) in paragraph at lines 18--25
 
  []
 
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 11.28003pt on input line 35.
+(Font)              scaled to size 11.28003pt on input line 34.
 
 
-[11]
+[9
+
+
+]
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 55.
+            Default family used instead on input line 48.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mi
 crotype/mt-cmr.cfg
@@ -2334,268 +2339,265 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 55.
-<figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png, id=143, 421.3341pt x 331
-.7193pt>
-File: figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png Graphic file (type p
+            Default family used instead on input line 48.
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 59.
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 59.
+
+
+LaTeX Warning: Reference `fig: self_build black box' on page 10 undefined on in
+put line 66.
+
+<figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png, id=137, 419.166pt x 313.
+94089pt>
+File: figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png Graphic file (type p
 ng)
-<use figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png>
-Package pdftex.def Info: figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png  
-used on input line 60.
-(pdftex.def)             Requested size: 349.97028pt x 275.54459pt.
+<use figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png>
+Package pdftex.def Info: figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png  
+used on input line 91.
+(pdftex.def)             Requested size: 218.73059pt x 163.82503pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.0pt on input line 92.
+<figs/HQO_20240708_DCR_Channel_1_Ba_thesis.png, id=138, 419.166pt x 313.94089pt
+>
+File: figs/HQO_20240708_DCR_Channel_1_Ba_thesis.png Graphic file (type png)
+<use figs/HQO_20240708_DCR_Channel_1_Ba_thesis.png>
+Package pdftex.def Info: figs/HQO_20240708_DCR_Channel_1_Ba_thesis.png  used on
+ input line 97.
+(pdftex.def)             Requested size: 218.73059pt x 163.82503pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
-
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 89--103
+[][] [] 
  []
 
-<figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png, id=144, 421.3341pt x 331.7193pt
->
-File: figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png Graphic file (type png)
-<use figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png>
-Package pdftex.def Info: figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png  used on
- input line 75.
-(pdftex.def)             Requested size: 349.97028pt x 275.54459pt.
 
 
-[12 <./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png>]
-</Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/recovery_time_principle.png, id=154, 461.5644pt x 173.9298pt>
-File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
-le Photon Detection/recovery_time_principle.png Graphic file (type png)
-<use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
-e Photon Detection/recovery_time_principle.png>
-Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
-roseminar/Figs Single Photon Detection/recovery_time_principle.png  used on inp
-ut line 102.
-(pdftex.def)             Requested size: 349.97028pt x 131.8775pt.
+[10]
+<figs/HQO_20240712_recoverytime_visualized_engl.png, id=147, 464.937pt x 175.61
+61pt>
+File: figs/HQO_20240712_recoverytime_visualized_engl.png Graphic file (type png
+)
+<use figs/HQO_20240712_recoverytime_visualized_engl.png>
+Package pdftex.def Info: figs/HQO_20240712_recoverytime_visualized_engl.png  us
+ed on input line 126.
+(pdftex.def)             Requested size: 349.97028pt x 132.19678pt.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 104.
+(Font)              scaled to size 10.0pt on input line 128.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 104.
+(Font)              scaled to size 7.3pt on input line 128.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.0pt on input line 104.
+(Font)              scaled to size 10.0pt on input line 128.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.3pt on input line 104.
+(Font)              scaled to size 7.3pt on input line 128.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 104.
+(Font)              scaled to size 10.0pt on input line 128.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.3pt on input line 104.
+(Font)              scaled to size 7.3pt on input line 128.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 104.
+(Font)              scaled to size 10.0pt on input line 128.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 104.
+(Font)              scaled to size 7.3pt on input line 128.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.0pt on input line 104.
+(Font)              scaled to size 10.0pt on input line 128.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.3pt on input line 104.
+(Font)              scaled to size 7.3pt on input line 128.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.0pt on input line 104.
+(Font)              scaled to size 10.0pt on input line 128.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.3pt on input line 104.
+(Font)              scaled to size 7.3pt on input line 128.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 104.
+(Font)              scaled to size 10.0pt on input line 128.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.3pt on input line 104.
+(Font)              scaled to size 7.3pt on input line 128.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.0pt on input line 104.
+(Font)              scaled to size 10.0pt on input line 128.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.3pt on input line 104.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(Font)              scaled to size 7.3pt on input line 128.
 
 
-
-[13 <./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png>]
+[11 <./figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png> <./figs/HQO_202407
+08_DCR_Channel_1_Ba_thesis.png> <./figs/HQO_20240712_recoverytime_visualized_en
+gl.png>]
+<figs/HQO_20240712_recoverytime_setup.png, id=163, 476.0184pt x 132.7359pt>
+File: figs/HQO_20240712_recoverytime_setup.png Graphic file (type png)
+<use figs/HQO_20240712_recoverytime_setup.png>
+Package pdftex.def Info: figs/HQO_20240712_recoverytime_setup.png  used on inpu
+t line 144.
+(pdftex.def)             Requested size: 349.97028pt x 97.5911pt.
 <figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png, i
-d=168, 415.5525pt x 331.7193pt>
+d=168, 414.8298pt x 313.94089pt>
 File: figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.p
 ng Graphic file (type png)
 <use figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.pn
 g>
 Package pdftex.def Info: figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg
-_300-600mV_thesis.png  used on input line 129.
-(pdftex.def)             Requested size: 218.73059pt x 174.60571pt.
+_300-600mV_thesis.png  used on input line 163.
+(pdftex.def)             Requested size: 218.73059pt x 165.5304pt.
 <figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png, id=
-169, 415.5525pt x 331.7193pt>
+169, 414.8298pt x 313.94089pt>
 File: figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
  Graphic file (type png)
 <use figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png>
 
 Package pdftex.def Info: figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_3
-00-600mV_thesis.png  used on input line 134.
-(pdftex.def)             Requested size: 218.73059pt x 174.60571pt.
+00-600mV_thesis.png  used on input line 169.
+(pdftex.def)             Requested size: 218.73059pt x 165.5304pt.
 
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 127--136
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 162--173
 [][]  [] 
  []
 
 
 
-[14 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
-e Photon Detection/recovery_time_principle.png> <./figs/HQO_20240708_Deadtime_C
-hannel_1_Bias_31_2uA_trigg_300-600mV_thesis.png> <./figs/HQO_20240708_Deadtime_
-Channel_1_Bias_26uA_trigg_300-600mV_thesis.png>]
+[12 <./figs/HQO_20240712_recoverytime_setup.png> <./figs/HQO_20240708_Deadtime_
+Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png> <./figs/HQO_20240708_Deadtime
+_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png>]
 <~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.pn
-g, id=182, 420.32233pt x 264.79729pt>
+g, id=187, 420.32233pt x 264.79729pt>
 File: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_sing
 le.png Graphic file (type png)
 <use ~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_singl
 e.png>
 Package pdftex.def Info: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_t
-v_600mV_double_single.png  used on input line 157.
-(pdftex.def)             Requested size: 349.97028pt x 220.48068pt.
-<~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png, id=184, 462.
+v_600mV_double_single.png  used on input line 197.
+(pdftex.def)             Requested size: 218.73059pt x 137.79639pt.
+
+
+LaTeX Warning: Reference `fig: analog_signals_comparison' on page 13 undefined 
+on input line 209.
+
+<~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png, id=191, 462.
 2871pt x 178.266pt>
 File: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png Graphic 
 file (type png)
 <use ~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png>
 Package pdftex.def Info: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_c
-urrent.png  used on input line 179.
+urrent.png  used on input line 224.
 (pdftex.def)             Requested size: 349.97028pt x 134.95584pt.
 
-Underfull \vbox (badness 2142) has occurred while \output is active []
 
-
-
-[15 </Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600m
+[13 </Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600m
 V_double_single.png>]
-<figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png, id=194
-, 415.5525pt x 331.7193pt>
+<figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png, id=202
+, 414.8298pt x 313.94089pt>
 File: figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png Gr
 aphic file (type png)
 <use figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png>
 Package pdftex.def Info: figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_
-600mV_thesis.png  used on input line 203.
-(pdftex.def)             Requested size: 349.97028pt x 279.37624pt.
+600mV_thesis.png  used on input line 252.
+(pdftex.def)             Requested size: 218.73059pt x 165.5304pt.
 
 
-[16 </Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current
-.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--226
-
- []
-
-</Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/Effizienzen.png, id=202, 402.303pt x 155.6214pt>
-File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
-le Photon Detection/Effizienzen.png Graphic file (type png)
-<use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
-e Photon Detection/Effizienzen.png>
-Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
-roseminar/Figs Single Photon Detection/Effizienzen.png  used on input line 229.
-
-(pdftex.def)             Requested size: 349.97028pt x 135.38239pt.
+[14 </Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current
+.png> <./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
+>]
+<figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png, id=210, 41
+0.0118pt x 148.1535pt>
+File: figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png Graphi
+c file (type png)
+<use figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png>
+Package pdftex.def Info: figs/HQO_20240712_systemd_detection_efficiency_visuali
+zed_engl.png  used on input line 278.
+(pdftex.def)             Requested size: 349.97028pt x 126.46005pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 231.
+(Font)              scaled to size 7.3pt on input line 280.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 231.
+(Font)              scaled to size 5.5pt on input line 280.
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--243
-
- []
-
-
-
-[17 <./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png>]
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--251
+Underfull \hbox (badness 10000) in paragraph at lines 284--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--263
+
+[15 <./figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png>]
+
+LaTeX Warning: Citation 'manual_single_quantum_snspd' on page 16 undefined on i
+nput line 311.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--316
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--269
-
- []
-
-<figs/HQO_2024011_countrate_angle_thesis.png, id=210, 419.166pt x 331.7193pt>
+<figs/HQO_2024011_countrate_angle_thesis.png, id=224, 418.00967pt x 313.94089pt
+>
 File: figs/HQO_2024011_countrate_angle_thesis.png Graphic file (type png)
 <use figs/HQO_2024011_countrate_angle_thesis.png>
 Package pdftex.def Info: figs/HQO_2024011_countrate_angle_thesis.png  used on i
-nput line 276.
-(pdftex.def)             Requested size: 218.73059pt x 173.10242pt.
-<figs/HQO_2024011_sde_angle_thesis.png, id=211, 409.0482pt x 331.7193pt>
+nput line 327.
+(pdftex.def)             Requested size: 218.73059pt x 164.27533pt.
+<figs/HQO_2024011_sde_angle_thesis.png, id=225, 408.47005pt x 313.94089pt>
 File: figs/HQO_2024011_sde_angle_thesis.png Graphic file (type png)
 <use figs/HQO_2024011_sde_angle_thesis.png>
 Package pdftex.def Info: figs/HQO_2024011_sde_angle_thesis.png  used on input l
-ine 281.
-(pdftex.def)             Requested size: 218.73059pt x 177.37949pt.
+ine 333.
+(pdftex.def)             Requested size: 218.73059pt x 168.1076pt.
 
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 274--283
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 326--338
 [][]  [] 
  []
 
-<figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png, id=212, 412.6617pt 
-x 349.7868pt>
+<figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png, id=226, 408.3255pt 
+x 313.94089pt>
 File: figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png Graphic file (t
 ype png)
 <use figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png>
 Package pdftex.def Info: figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.
-png  used on input line 296.
-(pdftex.def)             Requested size: 349.97028pt x 296.64769pt.
+png  used on input line 347.
+(pdftex.def)             Requested size: 218.73059pt x 168.17467pt.
+
+LaTeX Warning: Citation 'manual_single_quantum_snspd' on page 16 undefined on i
+nput line 363.
 
 
-[18 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
-e Photon Detection/Effizienzen.png>]
-<figs/HQO_20240711_sde_bias_current_750_thesis.png, id=222, 412.6617pt x 331.71
-93pt>
+
+[16 <./figs/HQO_2024011_countrate_angle_thesis.png> <./figs/HQO_2024011_sde_ang
+le_thesis.png>]
+<figs/HQO_20240711_sde_bias_current_750_thesis.png, id=238, 408.3255pt x 313.94
+089pt>
 File: figs/HQO_20240711_sde_bias_current_750_thesis.png Graphic file (type png)
 
 <use figs/HQO_20240711_sde_bias_current_750_thesis.png>
 Package pdftex.def Info: figs/HQO_20240711_sde_bias_current_750_thesis.png  use
-d on input line 319.
-(pdftex.def)             Requested size: 349.97028pt x 281.32495pt.
-<figs/HQO_20240711_sde_photon_rate_750_thesis.png, id=224, 412.6617pt x 331.719
-3pt>
+d on input line 376.
+(pdftex.def)             Requested size: 218.73059pt x 168.17467pt.
+<figs/HQO_20240711_sde_photon_rate_750_thesis.png, id=239, 408.47005pt x 313.94
+089pt>
 File: figs/HQO_20240711_sde_photon_rate_750_thesis.png Graphic file (type png)
 <use figs/HQO_20240711_sde_photon_rate_750_thesis.png>
 Package pdftex.def Info: figs/HQO_20240711_sde_photon_rate_750_thesis.png  used
- on input line 329.
-(pdftex.def)             Requested size: 349.97028pt x 281.32495pt.
+ on input line 383.
+(pdftex.def)             Requested size: 218.73059pt x 168.1076pt.
+
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 374--387
+[][]  [] 
+ []
 
 
-[19 <./figs/HQO_2024011_countrate_angle_thesis.png> <./figs/HQO_2024011_sde_ang
-le_thesis.png>]
 
-[20 <./figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png>]
+[17 <./figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png> <./figs/HQO_2
+0240711_sde_bias_current_750_thesis.png> <./figs/HQO_20240711_sde_photon_rate_7
+50_thesis.png>]) (Latex_Contentfiles/Conclusion_and_Outlook.tex
 
-[21 <./figs/HQO_20240711_sde_bias_current_750_thesis.png>]
-
-[22 <./figs/HQO_20240711_sde_photon_rate_750_thesis.png>])
-(Latex_Contentfiles/Conclusion_and_Outlook.tex
-
-[23
-
-]
-
-[24
-
-
-]
+[18]
 chapter 5.
 )
 
-[25]
-\openout2 = `Latex_Contentfiles/thesis_appendix.aux'.
-
- (Latex_Contentfiles/thesis_appendix.tex
-
-[26
-
+[19
 
 
 ]
+\openout2 = `Latex_Contentfiles/thesis_appendix.aux'.
+
+ (Latex_Contentfiles/thesis_appendix.tex
 chapter A.
 )
 
-[27]
-
-[28
-
+[20
 
 
 
@@ -2606,11 +2608,17 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/ntxtlf/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
+! Misplaced alignment tab character &.
+<argument> ... technology/Superconductor science &
+                                                   technology
+l.192 \printbibliography[heading=bibintoc]
+                                          
+? 
 
 
-[29]
+[21
 
-[30
+
 
 
 ] (dirname.aux
@@ -2626,18 +2634,21 @@ L3 programming layer <2020/03/25>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'dirname.run.xml'.
 \openout1 = `dirname.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42690 strings out of 475854
- 873690 string characters out of 5776366
+ 42752 strings out of 475854
+ 876023 string characters out of 5776366
  1943905 words of memory out of 5000000
- 64460 multiletter control sequences out of 15000+600000
- 714295 words of font info for 338 fonts, out of 8000000 for 9000
+ 64526 multiletter control sequences out of 15000+600000
+ 717439 words of font info for 342 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
- 108i,20n,147p,10904b,4064s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,20n,147p,10904b,4066s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/
 dvips/newtx/ntx-ec-tlf-pc.enc} </Users/maxim.re/Library/Application Support/MiK
 TeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk>{/Users/maxim.re
@@ -2661,9 +2672,9 @@ plication Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztmb.pfb></Use
 rs/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publi
 c/newtx/ztmr.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/ins
 tall/fonts/type1/public/newtx/ztmri.pfb>
-Output written on dirname.pdf (36 pages, 3411823 bytes).
+Output written on dirname.pdf (25 pages, 5545676 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 53950 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 406 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
+ 56008 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -226,7 +226,181 @@
       \verb https://qcrypt.github.io/2013.qcrypt.net/contributions/Shalm-slides.pdf
       \endverb
     \endentry
+    \entry{autebert-2020}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=1aaa211c1d5127d34b79d9f7c2bc1862}{%
+           family={Autebert},
+           familyi={A\bibinitperiod},
+           given={Claire},
+           giveni={C\bibinitperiod}}}%
+        {{hash=12ea633873dbc751dd7b254bdf01bc5a}{%
+           family={Gras},
+           familyi={G\bibinitperiod},
+           given={Gaétan\bibnamedelimb Daniel\bibnamedelimb Michel},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3b8cc7272dc64cfee4cf607e1c5541e1}{%
+           family={Amri},
+           familyi={A\bibinitperiod},
+           given={Emna},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d48659baf4e978dadeb47d2e189a3eff}{%
+           family={Perrenoud},
+           familyi={P\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b1eee7c533d8387719b7e87464b7769c}{%
+           family={Caloz},
+           familyi={C\bibinitperiod},
+           given={Misael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=974f0cb090f5ca893f19589e78702a38}{%
+           family={Zbinden},
+           familyi={Z\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=43a407999baab84f74efe7bfa7f5069a}{%
+           family={Bussieres},
+           familyi={B\bibinitperiod},
+           given={Félix},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d244ea41c99a0fe882011a15c90196d7}
+      \strng{fullhash}{b4510eaaaf3576674c98864e126725ac}
+      \strng{fullhashraw}{b4510eaaaf3576674c98864e126725ac}
+      \strng{bibnamehash}{d244ea41c99a0fe882011a15c90196d7}
+      \strng{authorbibnamehash}{d244ea41c99a0fe882011a15c90196d7}
+      \strng{authornamehash}{d244ea41c99a0fe882011a15c90196d7}
+      \strng{authorfullhash}{b4510eaaaf3576674c98864e126725ac}
+      \strng{authorfullhashraw}{b4510eaaaf3576674c98864e126725ac}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{journaltitle}{Journal of applied physics}
+      \field{month}{8}
+      \field{number}{7}
+      \field{title}{Direct measurement of the recovery time of superconducting nanowire single-photon detectors}
+      \field{volume}{128}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1063/5.0007976
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/5.0007976
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/5.0007976
+      \endverb
+    \endentry
+    \entry{miki-2017}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=df972a9a636559b5e1762b12710c4fc1}{%
+           family={Miki},
+           familyi={M\bibinitperiod},
+           given={Shigehito},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1ca68e80ddaa88e1f954933cfa497af8}{%
+           family={Yabuno},
+           familyi={Y\bibinitperiod},
+           given={Masahiro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ddf4453f0d1e745ab1fb16276eb02819}{%
+           family={Yamashita},
+           familyi={Y\bibinitperiod},
+           given={Taro},
+           giveni={T\bibinitperiod}}}%
+        {{hash=82c54e722b092149c5ee35eb977e8dfd}{%
+           family={Terai},
+           familyi={T\bibinitperiod},
+           given={Hirotaka},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{90ca716f588c836d6682132a23793e6c}
+      \strng{fullhash}{0261d20bba452e78cf6145cedcc85276}
+      \strng{fullhashraw}{0261d20bba452e78cf6145cedcc85276}
+      \strng{bibnamehash}{0261d20bba452e78cf6145cedcc85276}
+      \strng{authorbibnamehash}{0261d20bba452e78cf6145cedcc85276}
+      \strng{authornamehash}{90ca716f588c836d6682132a23793e6c}
+      \strng{authorfullhash}{0261d20bba452e78cf6145cedcc85276}
+      \strng{authorfullhashraw}{0261d20bba452e78cf6145cedcc85276}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{journaltitle}{Optics express}
+      \field{month}{3}
+      \field{number}{6}
+      \field{title}{Stable, high-performance operation of a fiber-coupled superconducting nanowire avalanche photon detector}
+      \field{volume}{25}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{6796}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/oe.25.006796
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1364/oe.25.006796
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1364/oe.25.006796
+      \endverb
+    \endentry
+    \entry{natarajan-2012}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=96067b9da9d778e32b9fda2b7011e00e}{%
+           family={Natarajan},
+           familyi={N\bibinitperiod},
+           given={Chandra\bibnamedelimb M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a6e37b0f4c8b9f290d53dfc4abc3202f}{%
+           family={Tanner},
+           familyi={T\bibinitperiod},
+           given={Michael\bibnamedelimb G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=dd613bda808e19f8a200c33bc29d8221}{%
+           family={Hadfield},
+           familyi={H\bibinitperiod},
+           given={Robert\bibnamedelimb H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{fullhash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{fullhashraw}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{bibnamehash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{authorbibnamehash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{authornamehash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{authorfullhash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{authorfullhashraw}{84bd30ade52854eb94a39364a8a0155c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{journaltitle}{Superconductor science and technology/Superconductor science & technology}
+      \field{month}{4}
+      \field{number}{6}
+      \field{title}{Superconducting nanowire single-photon detectors: physics and applications}
+      \field{volume}{25}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{063001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0953-2048/25/6/063001
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/0953-2048/25/6/063001
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/0953-2048/25/6/063001
+      \endverb
+    \endentry
   \enddatalist
+  \missing{manual_single_quantum_snspd}
 \endrefsection
 \endinput
 

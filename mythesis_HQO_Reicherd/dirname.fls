@@ -682,6 +682,12 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi5.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI5.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
+INPUT ./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png
+INPUT ./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png
+INPUT ./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png
+INPUT ./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png
+INPUT ./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png
+INPUT ./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png
 INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.tex
 INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.tex
 INPUT ./Latex_Contentfiles/Characterization_of_SNSPD.tex
@@ -693,24 +699,25 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/late
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microtype/mt-cmr.cfg
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microtype/mt-cmr.cfg
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1095.tfm
-INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
-INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
-INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
-INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
-INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
-INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_0_Ba_thesis.png
-INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
-INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
-INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
-INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
-INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
-INPUT ./figs/HQO_20240708_DCR_Channel_0_Ba_thesis.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/recovery_time_principle.png
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT ./figs/HQO_20240708_DCR_Channel_1_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_Channel_1_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_Channel_1_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_Channel_1_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_Channel_1_Ba_thesis.png
+INPUT ./figs/HQO_20240708_DCR_Channel_1_Ba_thesis.png
+INPUT ./figs/HQO_20240712_recoverytime_visualized_engl.png
+INPUT ./figs/HQO_20240712_recoverytime_visualized_engl.png
+INPUT ./figs/HQO_20240712_recoverytime_visualized_engl.png
+INPUT ./figs/HQO_20240712_recoverytime_visualized_engl.png
+INPUT ./figs/HQO_20240712_recoverytime_visualized_engl.png
+INPUT ./figs/HQO_20240712_recoverytime_visualized_engl.png
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmi.tfm
@@ -731,55 +738,61 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
-INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi7.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI7.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
-INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
-INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
-INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
-INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
-INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
-INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
-INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
-INPUT /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/Effizienzen.png
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT ./figs/HQO_20240712_recoverytime_setup.png
+INPUT ./figs/HQO_20240712_recoverytime_setup.png
+INPUT ./figs/HQO_20240712_recoverytime_setup.png
+INPUT ./figs/HQO_20240712_recoverytime_setup.png
+INPUT ./figs/HQO_20240712_recoverytime_setup.png
+INPUT ./figs/HQO_20240712_recoverytime_setup.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_31_2uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
+INPUT ./figs/HQO_20240708_Deadtime_Channel_1_Bias_26uA_trigg_300-600mV_thesis.png
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmia.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaX.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
+INPUT /Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png
+INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
+INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
+INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
+INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
+INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
+INPUT ./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png
+INPUT ./figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png
+INPUT ./figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png
+INPUT ./figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png
+INPUT ./figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png
+INPUT ./figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png
+INPUT ./figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
 INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
 INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
