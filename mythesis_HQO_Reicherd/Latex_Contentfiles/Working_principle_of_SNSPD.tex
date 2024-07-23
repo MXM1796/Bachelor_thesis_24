@@ -5,14 +5,20 @@
 \chapter{Working principle of SNSPDs}
 \label{sec:SNSPD_working_principle}
 %==============================================================================
+This chapter will introduce the working principle of superconducting nanowire single photon detectors (SNSPDs).
+1-2 sentences to history for introduction
+Wikipedia provides good stuff for introduction
+Here only phenomenological explanations is given. More details can be found in ..
 
-In its essence, the SNSPD consists of four parts, seen in fig. \ref{fig:SNSPD_rough_structure}.
-A saphire underground, a detection area made out of a superconducting nanowire in a serpentine winding and placed ont the
-saphire underground, a gold contact to supply a bias current through the superconducting nanowire and a fiber coupled
-to the detection area.\\
-The sapphire layer is used to efficiently dissipate the heat when the wire heats up. \\
-Moreover, the set up is first cooled below the critical temperature of the superconductor ($2-3 \text{K}$),
-and a bias current is applied to the superconductor that is lower than the critical current.
+
+The SNSPD has four parts, as shown in figure \ref{fig:SNSPD_rough_structure}.
+The central detection area is made of a superconducting nanowire on a sapphire base.
+The superconducting nanowire is made of a thin film of a superconducting material, like niobium nitride (NbN).
+The sapphire layer is used to dissipate the heat when the wire heats up.
+Further, a gold contact supplies a bias current through the superconducting nanowire and an optical fibre is coupled to the detection area.
+
+To operate the system, the setup is cooled below the critical temperature of the superconductor to
+2-3K and a DC current is applied to the nanowire.
 
 \begin{figure}[hhh]
     \centering
@@ -21,24 +27,25 @@ and a bias current is applied to the superconductor that is lower than the criti
     \label{fig:SNSPD_rough_structure}
 \end{figure}
 
-The detection process can be understood along the detection circle in fig. \ref{fig: SNSPD_process}.
+The detection process is shown in the figure \ref{fig: SNSPD_process}.
 
 \begin{figure}[hhh]
     \centering
     \includegraphics[width=12cm]{SNSPD_Ablauf}
-    \caption{Schematic detection cycle of a superconducting nanowire single photon detector \cite{singlequantum_snsd_nodate} }
+    \caption{Schematic detection cycle of a superconducting nanowire single photon detector \cite{singlequantum_snsd_nodate}}
     \label{fig: SNSPD_process}
 \end{figure}
 
-Single photons hitting a superconducting nanowire (ii) and break up individual Cooper pairs.
+Photons hit the superconducting nanowire (ii) and break up individual Cooper pairs.
 This leads to a local reduction of the critical current below the bias current and in turn to a localised area where
 the superconductivity is interrupted, this local area forms the so-called \("\)hotspot\("\) (iii).
-This hotspot forms a resistance area because the bias current exceeds the critical current.
+This hotspot forms a resistance area because the critical temperature is exceeded by the energy of the photon.
 In response, the current flows around this hotspot (iv), whereby the local current density in the side areas next to the
 hotspot again exceeds the critical current, due to a higher current density.
-This excess also causes a resistance in the side channels due to the critical temperature being exceeded (v).
-Ultimately, this increase in resistance can be measured in the form of a voltage pulse.
-The non-superconducting area is then cooled down by the cryogenic environment and returns to the superconducting state
+If the critical current is exceeded, the superconductivity also breaks down in these areas.
+This excess also causes a resistance in the side channels of the nanowire (v).
+Ultimately, this rapid increase in resistance can be measured in form of a voltage pulse.
+The local non-superconducting area is then cooled down by the cryogenic environment and returns to the superconducting state
 (iv—i).\\
 
 One important technical detail is the fiber coupling of this detector because the efficiency

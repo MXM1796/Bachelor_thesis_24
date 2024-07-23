@@ -14,8 +14,11 @@
 \contentsline {section}{\numberline {4.1}Dark Count Rate}{9}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Recovery time}{11}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Efficiency}{15}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Discussion}{18}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Conclusion and Outlook}{19}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Appendix}{20}{appendix.A}%
-\contentsline {chapter}{\nonumberline Bibliography}{21}{chapter*.21}%
+\contentsline {section}{\numberline {4.4}Discussion}{19}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusion and Outlook}{20}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Appendix}{21}{appendix.A}%
+\contentsline {section}{\numberline {A.1}ND filter calibration}{21}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Recovery time measurements}{22}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Recovery time measurements - Oscillating bias current}{22}{subsection.A.2.1}%
+\contentsline {chapter}{\nonumberline Bibliography}{23}{chapter*.22}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

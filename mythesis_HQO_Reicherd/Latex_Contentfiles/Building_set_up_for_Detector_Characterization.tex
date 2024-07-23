@@ -5,152 +5,186 @@
 \label{sec:SNSPD_setup}
 %==============================================================================
 
-Counting photons one has to consider the characteristics of the emitter source as well.
-Here I focus only on the characteristics of a laser source affecting the characterization I made.
-For this first, I briefly sum up characteristics of a laser light source and its conditions it gives us for our detector
+Counting photons one has to consider not only the characteristics of the detector but from the emitter source as well.
+The section focus is the characteristics of the laser setup serving as a light source for the detector characterization.
+For this, I briefly sum up characteristics of a coherent laser light source and its conditions it gives for detector
 characterization.
-Further, I make considerations regarding the inherent blindspots of laser light due to the randomness nature of photons
-in coherent light.
-Afterward, I introduce the setup I build for characterizing our SNSPD.\\
+Furthermore, I introduce the setup I build for characterizing the SNSPD.
 
 \section{Characteristics of faint laser sources}\label{sec:characteristics_faint laser sources}
 
-Using a laser source enables us, considering the emitting light as monochromatic beam with angular frequency $\omega$
+%Question: How monochromatic is the laser light?
+
+Using a laser source enables us considering the emitting light as monochromatic beam with angular frequency $\omega$
 and constant Intensity I. The Photon flux of a laser is defined as the photon average number passing through
-a cross-section in unit time:
+a cross-section in one unit time:
 
 \begin{align}
     \Phi = \frac{I A}{\hbar \omega} = \frac{P}{\hbar \omega} \text{photons $s^{-1}$}
 \end{align}
 
-where \textit{I} is the current of photon, \textit{A} the cross-section, \textit{P} the laser power and $\omega$ the angular frequency which
+where \textit{I} is the current of photon, \textit{A} the cross-section, \textit{P} the laser power and $\omega = \frac{2 \pi c}{\lambda}$ the angular frequency which
 depends on the wavelength.
-
 The average number of registered counts $N(T)$ for a given detection time T by a detector is given by:
 
 \begin{align}
     \text{N(T)} = \text{T} \Phi \eta= \frac{P T \eta}{\hbar \omega} \text{photons}
 \end{align}
 
-and hence the registered counts $\mathbb{R}$ per unit time by:
+and hence the registered counts $\mathcal{R}$ per unit time is described by:
 
 \begin{align}
     \mathcal{R} = \frac{\text{N(T)}}{\text{T}} = \eta \Phi= \frac{P \eta}{\hbar \omega} \text{photons  $s^{-1}$}
 \end{align}
 
-where \textit{$\eta$} is the efficiency of the detector system.
+where \textit{$\eta$} is the efficiency of the detector system which is described in more detail in section \ref{sec:efficiency}.
 
-This detection count rate is restricted by the largest amount on the dead time of the detector.
-
-\begin{align}
-    \mathcal{R_{\max}} \propto \frac{1}{\tau_{d}}
-\end{align} \\
-
-Because the used laser has a minimum threshold power which corresponds to a photonrate above the maximum one,
-one has to attenuate the laser power in order to detect all events.
+The detector has a maximal detection count rate, and it is restricted by the recovery time \ref{sec:recovery-time} of the detector
+$\mathcal{R_{\max}} \propto \frac{1}{\tau_{r}}$.
+When sending to many photons at the same time to the detector latching appears \cite{single_quantum_scspcm} and counting
+in this state is not possible.
+Therefore, the photon rate send to the detector has to be below the maximal detection count rate of the detector.
+As consequence for this experiment, the laser power has to be attenuated to a level where the photon rate is below the
+maximal detection count rate of the detector.
 
 The photon statistic of coherent light, in our case (in reasonable approximation) of our laser light,
 is given by poisson statistics.
-This characteristic stems from discrete nature of photons and hence non-equidistant spacing between photons.
-Measuring single photons, one has to ensure that we have a neglectable amount of photons in the segment
-of the deadtime because else our light characteristics inherently forbid us measuring each of the incoming photons.\\
+This characteristic stems from discrete nature of photons, hence photons are random distributed with non-equidistant
+spacing between each other.
 
-This is calculated by looking at the propability of measuring one photon per length segment, given by the deadtime.
-First, we consider one Length segment given by the deadtime $\tau_{\text{d}}$ and the measurement time $\tau_{\text{m}}$:
+Considering the fact, that the detector is not able to detect photons within the deadtime and with significant lower efficiency
+in the reset time, one has to look at the probability of photons in those blind spots to include this in later evaluation.
+
+The amount of photons is calculated by looking at the probability measuring one photon per length segment, given by
+the deadtime and the reset time.
+First, we consider one Length segment given by the deadtime $\tau_{\text{d}}$, the reset time $\tau_{\text{d}}$ and
+the measurement time $\tau_{\text{m}}$:
+
 \begin{align}
-    L_{\text{d}} = \frac{c}{\tau_{\text{d}}}\\
-    L_{\text{m}} = \frac{c}{\tau_{\text{m}}}
+    L_{\text{d}} = c \tau_{\text{d}} \\
+    L_{\text{res}} = c \tau_{\text{res}} \\
+    L_{\text{m}} = c\tau_{\text{m}}
 \end{align}
 
-Through this, we can calculate for a given measurement time the average photon rate per length segment $L_{\text{m}}$
-and further the probability of finding one photon in the particular line segment $L_{\text{d}}$:
+With this, we can calculate for a given measurement time the average photon rate $\bar{n}$ per length segment $L_{\text{m}}$
 
 \begin{align}
     \bar{n} = \Phi \frac{L_{\text{m}}}{c}\\
+\end{align}
+
+and further the probability of finding one photon in the particular line segment $L_{\text{d}}$:
+
+\begin{align}
     p = \frac{\bar{n}}{\text{N}}
 \end{align}
 
 Where $N = \frac{c}{L_{\text{d}}}$ are the subsegments of the measured length segment $L_{\text{m}}$.
 
-This enables us to calculate the probability p of finding n Photons per deadtime segment $L_{\text{d}}$ and
-including this in our measurements.
+This enables us to calculate the probability $p_{dead}$ of finding n Photons per deadtime segment $L_{\text{d}}$ and
+$p_{res}$ per reset time segment.
+This probability yields the amount of photons we inherently can not measure due to the detector limitations, hence include
+this results in calculating the efficiency of the SNSPD.
 
 \section{Experimental setup}
 
-Though not measured by ourselves first, it is known from \textcolor{red}{Zitat} deadtime of the detector is around 20-25ns.
-This gives us a theoretical maximum detection rate of $\mathcal{R_{\max}} \propto \frac{1}{\tau_{d}} = 25-50\si{M\Hz}$.
-In order to realize the laser attenuation the following setup was build:
+From factory details it is known that the recovery time of the detector is located between 17 and 23ns, depending on the
+detector settings.
+This details can be confirmed by our measurements as well \ref{sec:recovery-time}.
+This gives a theoretical maximum detection rate with constant maximal possible efficiency of $\mathcal{R_{\max}} \propto \frac{1}{\tau_{d}} \approx 43-58\si{M\Hz}$.
+However, this rate would only hold, if the emitter would be a true single photon source with a consistent emitting rate, where
+photons are equidistantly spaced.
+Since we use a coherent laser source the counting rate is significantly lower than the theoretical maximum detection rate.
+From the factory we got specification of about 2-4 MHz as detection count rate with maximal detection efficiency \textcolor{red}{Source}.
 
-The first coupling of the laser light was done in order to operate with the beam on a lower stage, because the laserbeam 
+% Ist die theoretisch mögliche count rate nur durch den Fakt, dass wir keine EPD haben limitiert?
+% Das nur dewegen die Count rate so viel niedriger ist?
+
+The initial situation is that the minimum laser power of the laser source is higher than the maximal detection count rate of the detector.
+The reason for this is that the laser source does only lase with a constant power with a certain minimum power.
+Therefore, the laser power can not be regulated down by adjusting the input power of the laser, but has to be attenuated
+by neutral density filters afterwards.
+
+In order to realize the laser attenuation the setup shown in fig \ref{fig: faint_laser_source_full_set_up} was build.
+The first coupling of the laser light at the upper stage was done in order to operate with the beam on the lower stage, because the laserbeam
 was due to its construction on an uplifted stage. 
-Afterward the beam passes a pbs to filter the horizontal polarized E field out. 
-Further a galilei telescope was build out of one focal and one diffusing lens for minimizing the beam width so it fits fully
-on the surface of the AOM crystal. The first order of the AOM was set for flexible voltage modulation of the laser.
-A cover was used to filter out the first from the zeroth order of the AOM. Then a flip mount was placed, where 
-Neutral density (ND) filers could be placed in and flexible placed in and out of the laser beam. 
+Afterwards, on the lower stage the beam passes a half-wave plate $\lambda_2$ and polarization beam splitter (pbs) to filter the horizontal
+polarized E-field out.
+Further, a galilei telescope was build ($l_1$ and $l_2$) out of one focal and one diffusing lens for reducing the beam width, so it fits fully
+on the surface of the crystal of the Acousto-optic modulator (AOM).
+The first order of the AOM was used for flexible voltage modulation of the laser.
+A cover was used to filter out the first from the zeroth order of the AOM.
+Then a flip mount was placed, where Neutral density (ND) filers could be placed in and flexible placed in and out of the laser beam.
 The ND filters have the function to attenuate the laser light. 
-At the end, before the laser light was again coupled in two waveplates where used to stabilize the light polarization regarding the
-slow axis of the fibre. Afterwards the light was coupled back into a fibre, so it can be send to the detector.
-It was important that the light was coupled in to a APC/PC to FC/PC optical fibre because the detector only had a FC/PC optical fibre
-input, in order to maintain higher efficiency coupling in the light.\\
+At the end, before the laser light was again coupled in, again a half-wave plate $\lambda_2$ and quarter-wave plate $\lambda_4$ were used to
+stabilize and control the light polarization coupling in the fibre.
+As mentioned in \ref{sec:SNSPD_working_principle} the light was polarized according to the slow axis of the fibre.
+Afterwards the light was coupled back into a fibre, so it was directed to the detector.
+Technically, it was important coupling to a APC/PC to FC/PC optical fibre because the detector only had
+an FC/PC optical fibre input port, in order to maintain higher efficiency coupling in the light \cite{single_quantum_scspcm}.\\
 
-Besides, this optical setup had to be protected from environmental light. For this, the room where the setup was running was shielded 
-with alu foil which has a reflection coefficient of almost 90$\%$ at the operating wavelenght of 780nm. 
-Morverover a black box was build. It has the function to avoid further environmental light coupling into the fibre. Additionally, 
-the optical fibre running from the optical setup to the detector was shielded with alu foil as well to avoid absoption from the optical 
-fibre. \\
+Besides, this optical setup had to be protected from environmental light.
+For this, the room where the setup was running was shielded
+with alu foil which has a reflection coefficient of almost 90$\%$ at the operating wavelength of 780nm \textcolor{red}{Source}.
+Moreover, a black box was build.
+It has the function to avoid further environmental light coupling into the fibre.
+Additionally, the optical fibre running from the optical setup to the detector was shielded with alu foil as well to
+avoid absorption from the optical fibre. \\
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{figs/HQO_20240712_faint_laser_source_full_set_up_thesis}
-    \caption{Setup for the SNSPD characterization (Need to be updated)}
+    \caption{Set up for attenuation of a 780nm laser source from the Russian company \href{http://vitawave.ru/eng/}{Vitawave}}
     \label{fig: faint_laser_source_full_set_up}
 \end{figure}
 
-Neutral density (ND) filter calibration \\
 
-We exactly need to know how many photons (related to Power) hit our detector.
-For this we need to measure the power (or number of photons) of the laser light we shining on the detector.
-The light we want to shine on the detector is very weak.
-So weak, we cannot measure it with powermeters or any other measurement devices (except with the uncharacterized detector)
-This weak power cannot reached by regulating the laser power down by the laser device (why not? laser minimum power function
-only with a power higher than required), but has to be done by Neutral Density filters.
-So our laser power we send to the detector depends on ND filter.\\
+Based on those theoretical considerations and our experimental setup, one can approach the central goal to determine the
+amount of photons and with this, determine the efficiency of the detector.
 
-Now there are two challenges relying on ND filters.
-First, since the fabric values are not precise, the filters need to be calibrated ourselves.
-Second, one single ND filter cannot attenuate the laser power enough and therefore one has to stack several density
-filters on each other, since their OD values are adding up.
+Central, in order to do efficiency measurements, on the one hand one must send only a few photons (low power) and one must
+exactly know how many photons are send.
+For this we need to measure the power of the laser light, we are sending to the detector.
+However, the desired light is so weak, we cannot measure it with power-meters or any other measurement devices available to us.
+So our photon rate we are expecting to send to the detector depends on the ND filters and their optical density (OD) value, since it is the sole factor
+we can adjust our laser power (here transmission)($\text{T} = 10^{-\text{OD}}$), hence our amount of photons we send to the detector.\\
 
-From these two constraints, we need to calibrate the ND filters carefully, to get precise and accurate OD values of the
-ND filters.
+The challenge relying on ND filters is that the fabric values of their OD are not precise, hence the filters need to be calibrated by oneself and 
+as precise as possible, to get accurate and stable OD values for the ND filters.
 
-To get accurate results, we measure the OD value with two methods to rule out systematic errors in our results.
-The first method measures the OD values, where the ND filters are set in the flip mount as described in graph \ref{}.
+To get accurate results, the OD value of each filter is measured with two methods to reduce systematic errors.
+The first method measures the OD values, where the ND filters are set in the flip mount as shown in graph \ref{fig: faint_laser_source_full_set_up}.
 The second method measures the OD values after the fibre coupling directly in front of the powermeter
-outside the blackbox.
+outside the blackbox to avoid straying light from the elements in the setup.
 
-The attenuation of ND filters is quantized by the Optical density (OD) value.
-The measurement of the OD values done by sending light on the filter and measuring the power with and
-without the filter.
-The OD value is then calculated by the logarithmic value of the inverse transmission value.
-The transmission value is given by the proportion of the power with the filter compared without the filter.
+The attenuation of ND filters is quantized via the OD value and is connected to the transmission value $ \text{T} = 10^{(\text{OD}}$ of the outgoing light.
+Due to the logarithmic definition of the OD value, the OD values of the ND filters are added up when they are stacked on each other.
 
-Afterward, the final OD values of each method were averaged and the corresponding systematic and statistical errors are
-considered to get the closest to the true OD value for the ND filters.
+The measurement of the OD values was done by sending light on the filter and measuring the power with and without the filter.
+Moreover, only single ND filter measurements were in the measurable range, since the powermeter was not able 
+to measure the power of the attenuated laser light by several stacked ND filters. 
 
-Based one these OD values each measurement involving the laser was done.
+The OD value is then calculated by the logarithmic value of the inverse transmission value $\log_{10}(\frac{1}{\text{T}})$ .
+The transmission value is given by the proportion of the power with the filter compared without the filter $T = \frac{P_{\text{out}}}{P_{\text{in}}}$.
+Afterwards, the final OD values of each method were combined and the corresponding systematic and statistical errors are
+considered in order to get accurate OD values for the ND filters.
+Results of the measurements and error calculations can be found in section \ref{sec:ND_filter_calibration}.
+
+Based one these OD values the photon rate was determined.
 
 %uncertainties package (python)
 
 
 
 
+
 %Relying on: https://nano-optics.physik.uni-siegen.de/education/teaching/lab_courses/sps-exp-manual.pdf
 
-- Basics of photon distribution of laser, attenuation, poisson statistics \\
-- Set up for laser attenuation \\
-- Single Photon Detection paper \\
+%- Basics of photon distribution of laser, attenuation, poisson statistics \\
+%- Set up for laser attenuation \\
+%- Single Photon Detection paper \\
+%
+%Second, one single ND filter cannot attenuate the laser power enough and therefore one has to stack several ND
+%filters on each other, since their  values are adding up.
 
 \FloatBarrier
 %==============================================================================

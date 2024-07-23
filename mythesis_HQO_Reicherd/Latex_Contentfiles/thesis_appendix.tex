@@ -3,6 +3,200 @@
 \label{sec:app}
 %------------------------------------------------------------------------------
 
+\section{ND filter calibration}\label{sec:ND_filter_calibration}
+
+To calculate the OD value of the ND Filters, we first calculate the Transmission value:
+
+$T=\frac{P_{detected}}{P_{input}}$. 
+
+For the Error calculation we have to consider two error sources.
+Once the measurement uncertainty of the photodiode and the measurement uncertainty from reading the value from the Powermeter.
+Since the uncertainty from the photodiode is always 3$\%$ of the measured value, it does not contribute to the error,
+since the transmission is a division and this does not affect the overall relation.
+However, reading of the value from the powermeter provides always a different error because the last displayed order of
+magnitude of the displayed result on the powermeter fluctuates.
+
+Its also important to mention that after each adjustment for the fiber coupling, it was not possible to get to the same
+initial value.
+Therefore, we always have different power values we compare, though the filtering process was done always with the same
+amount of light power.
+So we have to consider an error from the fiber coupling and optimization.
+For this our $P_{input}$ value for the Transmission is in reality not the measured value we coupled in but
+the averaged value with an standard deviation as error.
+Also, this only applies for the first measurement method because we adjust there our fiber coupling.
+In the second measurement we have a stable $P_{input}$
+
+So for the transmission error we got:
+
+\begin{align}
+    \Delta T= \sqrt{\left(\frac{\Delta P_{detected}}{P_{input}}\right)^2 + \left(\frac{\Delta P_{input} P_{detected}}{ P_{input}^2}\right)^2}
+\end{align}.
+
+Where.
+
+\begin{align}
+    \Delta P_{Input} = \sqrt{(P^{Pow.meter read off}_{detected})^2 + (P^{STD, coupling}_{detected})^2}
+\end{align}
+
+And with the relation: $\text{OD}= \log(\frac{1}{T})$ we can calculate the error for the OD:
+$\Delta OD = \frac{\Delta T}{\ln(10) \cdot T}$ 
+
+Regarding the errors it is important to mention that the error of the photodiode is not relevant if we look at the error
+of the transmission rate because its the same for the measurement before and after the ND Filters.
+
+In general the measurement error of the photodiode is about 3$\%$ of the measured value \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=3328 Thorlabs - Powermeter specs}{Powermeter specs}.
+This error I considered only in the calculation for the output power error:
+
+Table with measurement values and results for Transmission value and OD Value
+
+\begin{table}[!ht]
+    \centering
+    \resizebox{\columnwidth}{!}{%
+    \label{tab:ND_filter_calibration}
+    \begin{tabular}{|l|l|l|l|l|l|l|l|}
+    \hline
+        \textbf{ID} & \textbf{Expectetd OD Value} & \textbf{Measured T Value} & \textbf{T\_Value Error Systematic} & \textbf{T Value Error stat} & \textbf{T Value Error} & \textbf{Mean OD Value} & \textbf{OD Value Error} \\ \hline
+        TP03337667 & 1,00 & 1,43E-01 & 67,697E-4 & 3,223E-03 & 7,50E-03 & 0,844 & 0,023 \\ \hline
+        TP03337667 (2) & 1,00 & 1,47E-01 & 50,474E-04 & 3,073E-03 & 5,91E-03 & 0,832 & 0,017 \\ \hline
+        TP03366490 & 3,00 & 8,26E-03 & 32,418E-05 & 1,882E-04 & 3,75E-04 & 2,083 & 0,020 \\ \hline
+        TP03366490 (2) & 3,00 & 7,93E-03 & 52,291E-05 & 1,744E-04 & 5,51E-04 & 2,101 & 0,030 \\ \hline
+        TP03275234 & 4,00 & 1,00E-03 & 5,318E-05 & 4,381E-05 & 6,89E-05 & 2,999 & 0,030 \\ \hline
+        TP03312353 & 4,00 & 1,04E-03 & 7,142E-05 & 4,312E-05 & 8,34E-05 & 2,983 & 0,035 \\ \hline
+        TP03271009 & 4,00 & 1,02E-03 & 4,842E-05 & 4,432E-05 & 6,56E-05 & 2,991 & 0,028 \\ \hline
+        TP03275234 (2) & 4,00 & 1,03E-03 & 6,566E-05 & 4,303E-05 & 7,85E-05 & 2,986 & 0,033 \\ \hline
+        TP03324728 & 5,00 & 1,80E-04 & 9,945E-06 & 3,843E-05 & 3,96E-05 & 3,744 & 0,095 \\ \hline
+        TP03287742 & 5,00 & 1,78E-04 & 4,196E-06 & 3,731E-05 & 3,75E-05 & 3,749 & 0,092 \\ \hline
+        TP03348187 (2) & 5,00 & 1,82E-04 & 4,506E-06 & 3,921E-05 & 3,95E-05 & 3,739 & 0,094 \\ \hline
+        TP03348187 & 5,00 & 1,82E-04 & 5,792E-06 & 3,862E-05 & 3,91E-05 & 3,739 & 0,093 \\ \hline
+    \end{tabular}%
+    }
+\end{table}
+
+
+Calculating the error for stacked ND filters. 
+The Error from
+
+\begin{align}
+    P_{input} = P^{initial}_{Input} \cdot 10^{-OD}
+\end{align}
+constructed out of the uncertainty of the Photodiode  $\Delta P^{initial}_{Input} = 0.03 \cdot P^{initial}_{Input} $ and the error of the ND Filters
+\begin{align}
+    \Leftarrow \Delta P_{input} = \sqrt{(\Delta P^{initial}_{Input} \cdot 10^{-OD})^2 + (P^{initial}_{Input} \cdot \log(10) \cdot \Delta OD)^2}
+\end{align}.
+
+The Error  $\Delta P_{detected} $ is reformed to a rate only in the order of a few hundred Herz and
+is neglectable compared to the  $\Delta P_{input}$.
+
+
+\section{Recovery time measurements}\label{sec:Recovery time measurements}
+
+\subsection{Recovery time measurements - Oscillating bias current} \label{subsec:recovery-time-measurements---oscillating_bias_current}
+
+%{| class="wikitable"
+%! Input Laser Power (W)  !! Wavelenght (nm)
+%|-
+%| 5,39E-04 || 780
+%|}
+%
+%{| class="wikitable"
+%! nr. !! ID !! Laser Power before (W) !! Laser Power before Mean (W) !! Laser Power before Std (W) !! Laser Power before Error (W) !! Measured Laser Power after (W) !! Measured T Value !! T Value Error !! Expectetd OD Value !! Measured OD Value !! OD Value Error !! Deviation in %
+%|-
+%| 1 || TP03337667 || 5,1170E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 7,8840E-05 || 1,50E-01 || 3,18E-03 || 1,00 || 0,8248 || 0,0092 || 17,52
+%|-
+%| 2 || TP03337667 (2) || 5,3000E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 8,0240E-05 || 1,52E-01 || 3,01E-03 || 1,00 || 0,8172 || 0,0086 || 18,28
+%|-
+%| 3 || TP03366490 || 5,1300E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 4,5210E-06 || 8,58E-03 || 1,85E-04 || 3,00 || 2,0663 || 0,0094 || 93,37
+%|-
+%| 4 || TP03366490 (2) || 5,3000E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 4,4500E-06 || 8,45E-03 || 1,71E-04 || 3,00 || 2,0732 || 0,0088 || 92,68
+%|-
+%| 5 || TP03275234 || 5,2600E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 5,5500E-07 || 1,05E-03 || 4,35E-05 || 4,00 || 2,9773 || 0,0179 || 102,27
+%|-
+%| 6 || TP03312353 || 5,3900E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 5,8500E-07 || 1,11E-03 || 4,28E-05 || 4,00 || 2,9544 || 0,0167 || 104,56
+%|-
+%| 7 || TP03271009 || 5,2300E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 5,6220E-07 || 1,07E-03 || 4,40E-05 || 4,00 || 2,9717 || 0,0179 || 102,83
+%|-
+%| 8 || TP03275234 (2) || 5,3900E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 5,7800E-07 || 1,10E-03 || 4,26E-05 || 4,00 || 2,9596 || 0,0169 || 104,04
+%|-
+%| 9 || TP03324728 || 5,2400E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 1,0030E-07 || 1,90E-04 || 3,84E-05 || 5,00 || 3,7203 || 0,0875 || 127,97
+%|-
+%| 10 || TP03287742 || 5,3900E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 9,6000E-08 || 1,82E-04 || 3,73E-05 || 5,00 || 3,7393 || 0,0888 || 126,07
+%|-
+%| 11 || TP03348187 (2) || 5,1300E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 9,8370E-08 || 1,87E-04 || 3,92E-05 || 5,00 || 3,7287 || 0,0911 || 127,13
+%|-
+%| 12 || TP03348187 || 5,2040E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 9,9150E-08 || 1,88E-04 || 3,86E-05 || 5,00 || 3,7253 || 0,0891 || 127,47
+%|-
+%| 13 || TP03312353 + TP03275234 (2) || 5,3900E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 1,1170E-09 || 2,12E-06 || 3,71E-05 || 8,00 || 5,6735 || 0,0238 || 232,65
+%|}
+
+
+%{| class="wikitable"
+%! nr. !! ID !! Laser Power before (W) !! Measured Laser Power after (W) !! Measured T Value !! T Value Error !! Expectetd OD Value !! Measured OD Value !! OD Value Error !! Deviation in %
+%|-
+%| 1 || TP03337667 || 5,13E-04 || 6,98E-05 || 0,1361 || 5,32E-04 || 1,00 || 0,8660 || 0,0017 || 13,40
+%|-
+%| 2 || TP03337667 (2) || 5,13E-04 || 7,30E-05 || 0,1422 || 5,56E-04 || 1,00 || 0,8469 || 0,0017 || 15,31
+%|-
+%| 3 || TP03366490 || 5,13E-04 || 4,07E-06 || 0,0079 || 3,12E-05 || 3,00 || 2,1004 || 0,0017 || 89,96
+%|-
+%| 4 || TP03366490 (2) || 5,13E-04 || 3,80E-06 || 0,0074 || 2,91E-05 || 3,00 || 2,1306 || 0,0017 || 86,94
+%|-
+%| 5 || TP03275234 || 5,13E-04 || 4,86E-07 || 0,0009 || 5,37E-06 || 4,00 || 3,0235 || 0,0025 || 97,65
+%|-
+%| 6 || TP03312353 || 5,13E-04 || 4,96E-07 || 0,0010 || 5,43E-06 || 4,00 || 3,0142 || 0,0024 || 98,58
+%|-
+%| 7 || TP03271009 || 5,13E-04 || 4,98E-07 || 0,0010 || 5,43E-06 || 4,00 || 3,0130 || 0,0024 || 98,70
+%|-
+%| 8 || TP03275234 (2) || 5,13E-04 || 4,96E-07 || 0,0010 || 5,42E-06 || 4,00 || 3,0150 || 0,0024 || 98,50
+%|-
+%| 9 || TP03324728 || 5,13E-04 || 8,75E-08 || 0,0002 || 7,71E-07 || 5,00 || 3,7682 || 0,0020 || 123,18
+%|-
+%| 10 || TP03287742 || 5,13E-04 || 8,92E-08 || 0,0002 || 7,82E-07 || 5,00 || 3,7598 || 0,0020 || 124,02
+%|-
+%| 11 || TP03348187 (2) || 5,13E-04 || 9,12E-08 || 0,0002 || 7,95E-07 || 5,00 || 3,7502 || 0,0019 || 124,98
+%|-
+%| 12 || TP03348187 || 5,13E-04 || 9,06E-08 || 0,0002 || 7,92E-07 || 5,00 || 3,7529 || 0,0019 || 124,71
+%|}
+
+\textbf{Method 1 and 2 combined:} In both tables above one can see that the second method has slightly higher values.
+This indicates a systematic error we dont know.
+Till now, we only considered statistical errors.
+Now if we want to calculate the true value we have to consider the systematic error as well.
+Here we determine the systematic error as half of the difference between the values from method one and
+method two $\Delta T_{syst} = \frac{T_{meth_2} - T_{meth_1}}{2}$  .
+So the final transmission error of the combined measurements is:
+$\Delta T = \sqrt{\Delta T_{stat}^2 + \Delta T_{syst}^2}$  
+
+%{| class="wikitable"
+%! ID !! Expectetd OD Value !! Measured T Value !! T_Value Error Systematic !! T Value Error stat !! T Value Error !! Mean OD Value !! OD Value Error
+%|-
+%| TP03337667 || 1,00 || 1,43E-01 || 0,006769666 || 3,22E-03 || 7,50E-03 || 0,8449 || 0,0228
+%|-
+%| TP03337667 (2) || 1,00 || 1,47E-01 || 0,005047419 || 3,07E-03 || 5,91E-03 || 0,8318 || 0,0174
+%|-
+%| TP03366490 || 3,00 || 8,26E-03 || 0,000324182 || 1,88E-04 || 3,75E-04 || 2,0830 || 0,0197
+%|-
+%| TP03366490 (2) || 3,00 || 7,93E-03 || 0,000522915 || 1,74E-04 || 5,51E-04 || 2,1010 || 0,0302
+%|-
+%| TP03275234 || 4,00 || 1,00E-03 || 5,31863E-05 || 4,38E-05 || 6,89E-05 || 2,9998 || 0,0299
+%|-
+%| TP03312353 || 4,00 || 1,04E-03 || 7,14296E-05 || 4,31E-05 || 8,34E-05 || 2,9833 || 0,0349
+%|-
+%| TP03271009 || 4,00 || 1,02E-03 || 4,84206E-05 || 4,43E-05 || 6,56E-05 || 2,9918 || 0,0280
+%|-
+%| TP03275234 (2) || 4,00 || 1,03E-03 || 6,56618E-05 || 4,30E-05 || 7,85E-05 || 2,9864 || 0,0330
+%|-
+%| TP03324728 || 5,00 || 1,80E-04 || 9,94546E-06 || 3,84E-05 || 3,96E-05 || 3,7436 || 0,0954
+%|-
+%| TP03287742 || 5,00 || 1,78E-04 || 4,19645E-06 || 3,73E-05 || 3,75E-05 || 3,7494 || 0,0915
+%|-
+%| TP03348187 (2) || 5,00 || 1,82E-04 || 4,50636E-06 || 3,92E-05 || 3,95E-05 || 3,7393 || 0,0940
+%|-
+%| TP03348187 || 5,00 || 1,82E-04 || 5,79273E-06 || 3,86E-05 || 3,91E-05 || 3,7388 || 0,0930
+%|}
+
+%This values kind of closely match with the values from thorlabs. 
+%[[Image:HQO_20240625_Photodiode_literature_Thorlabs.png|400px]] [[Image:HQO_20240624_ND_Filter_literature_Thorlabs.png|400px]]  
+
 In the appendix you usually include extra information that should be
 documented in your thesis, but not interrupt the flow.
 
