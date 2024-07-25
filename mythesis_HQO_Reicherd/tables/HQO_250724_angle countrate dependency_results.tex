@@ -1,5 +1,6 @@
 \begin{table}[!ht]
     \centering
+    \resizebox{\columnwidth}{!}{%
     \begin{tabular}{|l|l|l|l|l|l|l|}
     \hline
         Input laser Power (W) & OD Filter (multiple Added) & OD Error & Expected Output (W) & Outputerror (Measurment uncertainty)(+-) (W) & Output error (OD and Measurement uncertainty combined) (W) & Output error (OD and Measurement uncertainty combined) (MHz) \\ \hline
@@ -24,5 +25,7 @@
         5.111E-04 & 9.574 & 0.135 & 1.363E-13 & 4.090E-15 & 1.835E-14 & 0.072 \\ \hline
         5.111E-04 & 9.574 & 0.135 & 1.363E-13 & 4.090E-15 & 1.835E-14 & 0.072 \\ \hline
         5.111E-04 & 9.574 & 0.135 & 1.363E-13 & 4.090E-15 & 1.835E-14 & 0.072 \\ \hline
-    \end{tabular}
+    \end{tabular}%
+    }
+    \caption{Angle Dependent countrate results \label{tab:angle_dependend_countrate_results}}
 \end{table}
