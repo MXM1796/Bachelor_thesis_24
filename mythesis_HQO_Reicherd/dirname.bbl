@@ -19,6 +19,141 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{goltsman-2001}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=0bd70780e9c9d842cb1246cca27eb13b}{%
+           family={Gol’tsman},
+           familyi={G\bibinitperiod},
+           given={G.\bibnamedelimi N.},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=d1072fd87fb2c025a694f959d37b017e}{%
+           family={Okunev},
+           familyi={O\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod}}}%
+        {{hash=c8adea95a8ed1881f39d4b2142dbadf3}{%
+           family={Chulkova},
+           familyi={C\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=31d3aa2a9507a512c78ed77073f12758}{%
+           family={Lipatov},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0d9a4390dbf9dea6699cf8fdd0cbd91e}{%
+           family={Semenov},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a0a3f7d92384e48450a215ddfb09b6c3}{%
+           family={Smirnov},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=04405cfaf23c1dc1eb8eb48d227b1de2}{%
+           family={Voronov},
+           familyi={V\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=3e45ba3293e8891f7ed2b1177096c86b}{%
+           family={Dzardanov},
+           familyi={D\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c6a49bfb8c543aca0fa10ce45222eb3f}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=85cbe13ec0c534bcfb6c48adc2d770a5}{%
+           family={Sobolewski},
+           familyi={S\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1f6666cfe8eb0b52bc5d019154a5b1f}
+      \strng{fullhash}{cf9009be2b0bc32bd8d1c4ac008a6b73}
+      \strng{fullhashraw}{cf9009be2b0bc32bd8d1c4ac008a6b73}
+      \strng{bibnamehash}{b1f6666cfe8eb0b52bc5d019154a5b1f}
+      \strng{authorbibnamehash}{b1f6666cfe8eb0b52bc5d019154a5b1f}
+      \strng{authornamehash}{b1f6666cfe8eb0b52bc5d019154a5b1f}
+      \strng{authorfullhash}{cf9009be2b0bc32bd8d1c4ac008a6b73}
+      \strng{authorfullhashraw}{cf9009be2b0bc32bd8d1c4ac008a6b73}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{journaltitle}{Applied Physics Letters}
+      \field{month}{8}
+      \field{number}{6}
+      \field{title}{Picosecond superconducting single-photon optical detector}
+      \field{volume}{79}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{705\bibrangedash 707}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1063/1.1388868
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.1388868
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.1388868
+      \endverb
+    \endentry
+    \entry{natarajan-2012}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=96067b9da9d778e32b9fda2b7011e00e}{%
+           family={Natarajan},
+           familyi={N\bibinitperiod},
+           given={Chandra\bibnamedelimb M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a6e37b0f4c8b9f290d53dfc4abc3202f}{%
+           family={Tanner},
+           familyi={T\bibinitperiod},
+           given={Michael\bibnamedelimb G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=dd613bda808e19f8a200c33bc29d8221}{%
+           family={Hadfield},
+           familyi={H\bibinitperiod},
+           given={Robert\bibnamedelimb H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{fullhash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{fullhashraw}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{bibnamehash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{authorbibnamehash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{authornamehash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{authorfullhash}{84bd30ade52854eb94a39364a8a0155c}
+      \strng{authorfullhashraw}{84bd30ade52854eb94a39364a8a0155c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{journaltitle}{Superconductor science and technology/Superconductor science & technology}
+      \field{month}{4}
+      \field{number}{6}
+      \field{title}{Superconducting nanowire single-photon detectors: physics and applications}
+      \field{volume}{25}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{063001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0953-2048/25/6/063001
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/0953-2048/25/6/063001
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/0953-2048/25/6/063001
+      \endverb
+    \endentry
     \entry{steudle-2012}{article}{}{}
       \name{author}{7}{}{%
         {{hash=f18f117d5814e43693afa7d3e7c76d73}{%
@@ -65,8 +200,8 @@
       \strng{authornamehash}{ce9aeb067755af195d104e41ee7d0cea}
       \strng{authorfullhash}{a4532d3fc3edce4e4bf86edac44a71dc}
       \strng{authorfullhashraw}{a4532d3fc3edce4e4bf86edac44a71dc}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{15}
@@ -101,8 +236,8 @@
       \strng{authornamehash}{c67b8c190cf1944d20a5a30c3099b851}
       \strng{authorfullhash}{c67b8c190cf1944d20a5a30c3099b851}
       \strng{authorfullhashraw}{c67b8c190cf1944d20a5a30c3099b851}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://singlequantum.com/wp-content/uploads/2023/06/Single-Quantum-Operation-Principle-print.pdf}}
@@ -110,7 +245,7 @@
       \field{title}{Superconducting Nanowire Single Photon Detectors Operation principle}
       \field{year}{n.d.}
     \endentry
-    \entry{single_quantum_scspcm}{manual}{}{}
+    \entry{single-quantum-2022}{book}{}{}
       \name{author}{1}{}{%
         {{hash=fdca4210a2fc09b64febc761a499c182}{%
            family={{Single Quantum}},
@@ -124,62 +259,14 @@
       \strng{authornamehash}{fdca4210a2fc09b64febc761a499c182}
       \strng{authorfullhash}{fdca4210a2fc09b64febc761a499c182}
       \strng{authorfullhashraw}{fdca4210a2fc09b64febc761a499c182}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Single Quantum SCSPCM Manual}
-      \field{year}{2024}
-    \endentry
-    \entry{natarajan-2012}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=96067b9da9d778e32b9fda2b7011e00e}{%
-           family={Natarajan},
-           familyi={N\bibinitperiod},
-           given={Chandra\bibnamedelimb M.},
-           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=a6e37b0f4c8b9f290d53dfc4abc3202f}{%
-           family={Tanner},
-           familyi={T\bibinitperiod},
-           given={Michael\bibnamedelimb G.},
-           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=dd613bda808e19f8a200c33bc29d8221}{%
-           family={Hadfield},
-           familyi={H\bibinitperiod},
-           given={Robert\bibnamedelimb H.},
-           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{84bd30ade52854eb94a39364a8a0155c}
-      \strng{fullhash}{84bd30ade52854eb94a39364a8a0155c}
-      \strng{fullhashraw}{84bd30ade52854eb94a39364a8a0155c}
-      \strng{bibnamehash}{84bd30ade52854eb94a39364a8a0155c}
-      \strng{authorbibnamehash}{84bd30ade52854eb94a39364a8a0155c}
-      \strng{authornamehash}{84bd30ade52854eb94a39364a8a0155c}
-      \strng{authorfullhash}{84bd30ade52854eb94a39364a8a0155c}
-      \strng{authorfullhashraw}{84bd30ade52854eb94a39364a8a0155c}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{4}
-      \field{journaltitle}{Superconductor science and technology/Superconductor science & technology}
-      \field{month}{4}
-      \field{number}{6}
-      \field{title}{Superconducting nanowire single-photon detectors: physics and applications}
-      \field{volume}{25}
-      \field{year}{2012}
+      \field{month}{2}
+      \field{title}{Single Quantum EOS User Manual}
+      \field{year}{2022}
       \field{dateera}{ce}
-      \field{pages}{063001}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1088/0953-2048/25/6/063001
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1088/0953-2048/25/6/063001
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1088/0953-2048/25/6/063001
-      \endverb
     \endentry
     \entry{hadfield-2009}{article}{}{}
       \name{author}{1}{}{%
@@ -197,8 +284,8 @@
       \strng{authornamehash}{dd613bda808e19f8a200c33bc29d8221}
       \strng{authorfullhash}{dd613bda808e19f8a200c33bc29d8221}
       \strng{authorfullhashraw}{dd613bda808e19f8a200c33bc29d8221}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
@@ -235,8 +322,8 @@
       \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{2}
@@ -352,8 +439,8 @@
       \strng{authornamehash}{e73f8ff295a003a18c1635781ad6c42a}
       \strng{authorfullhash}{adc9dc44a95086b60acccbe3e3682140}
       \strng{authorfullhashraw}{adc9dc44a95086b60acccbe3e3682140}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{Computer Scientist QCRYPT}

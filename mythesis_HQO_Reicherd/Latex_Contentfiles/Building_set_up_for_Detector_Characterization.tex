@@ -5,11 +5,14 @@
 \label{sec:SNSPD_setup}
 %==============================================================================
 
-Counting photons one has to consider not only the characteristics of the detector but from the emitter source as well.
-The section focus is the characteristics of the laser setup serving as a light source for the detector characterization.
-For this, I briefly sum up characteristics of a coherent laser light source and its conditions it gives for detector
+In order to characterize a detector, it is necessary to consider not only the characteristics of the detector itself,
+but also those of the emitter source.
+This section will focus on the characteristics of the laser setup, which serves as a light source for the detector
 characterization.
-Furthermore, I introduce the setup I build for characterizing the SNSPD.
+In order to provide a brief overview of the characteristics of a coherent laser light source and the conditions it gives
+for detector characterization, I will first present a summary of the relevant information.
+Furthermore, I will introduce the setup that I have constructed for characterizing the SNSPD.
+
 
 \section{Characteristics of faint laser sources}\label{sec:characteristics_faint laser sources}
 
@@ -20,15 +23,15 @@ and constant Intensity I. The Photon flux of a laser is defined as the photon av
 a cross-section in one unit time:
 
 \begin{align}
-    \Phi = \frac{I A}{\hbar \omega} = \frac{P}{\hbar \omega} \text{photons $s^{-1}$}
+    \Phi = \frac{\text{I} \text{A}}{\hbar \omega} = \frac{\text{P}}{\hbar \omega} \text{photons $s^{-1}$}
 \end{align}
 
 where \textit{I} is the current of photon, \textit{A} the cross-section, \textit{P} the laser power and $\omega = \frac{2 \pi c}{\lambda}$ the angular frequency which
 depends on the wavelength.
-The average number of registered counts $N(T)$ for a given detection time T by a detector is given by:
+The average number of registered counts N(T) for a given detection time T by a detector is given by:
 
 \begin{align}
-    \text{N(T)} = \text{T} \Phi \eta= \frac{P T \eta}{\hbar \omega} \text{photons}
+    \text{N(T)} = \text{T} \Phi \eta= \frac{\text{P T} \eta}{\hbar \omega} \text{photons}
 \end{align}
 
 and hence the registered counts $\mathcal{R}$ per unit time is described by:
@@ -39,51 +42,49 @@ and hence the registered counts $\mathcal{R}$ per unit time is described by:
 
 where \textit{$\eta$} is the efficiency of the detector system which is described in more detail in section \ref{sec:efficiency}.
 
-The detector has a maximal detection count rate, and it is restricted by the recovery time \ref{sec:recovery-time} of the detector
-$\mathcal{R_{\max}} \propto \frac{1}{\tau_{r}}$.
-When sending to many photons at the same time to the detector latching appears \cite{single_quantum_scspcm} and counting
-in this state is not possible.
+The detector has a maximal detection count rate, and it is restricted by the recovery time ($\tau_{\text{recovery}} = \tau_{\text{rec}}$)\ref{sec:recovery-time} of the detector
+$\mathcal{R_{\max}} \propto \frac{1}{\tau_{\text{rec}}}$.
+
+Sending too many photons at once to the detector causes latching and prevents counting \cite{single-quantum-2022}.
 Therefore, the photon rate send to the detector has to be below the maximal detection count rate of the detector.
 As consequence for this experiment, the laser power has to be attenuated to a level where the photon rate is below the
 maximal detection count rate of the detector.
 
 The photon statistic of coherent light, in our case (in reasonable approximation) of our laser light,
 is given by poisson statistics.
-This characteristic stems from discrete nature of photons, hence photons are random distributed with non-equidistant
+
+This property originates from the discrete nature of photons, which are randomly distributed with non-equidistant
 spacing between each other.
 
 Considering the fact, that the detector is not able to detect photons within the deadtime and with significant lower efficiency
-in the reset time, one has to look at the probability of photons in those blind spots to include this in later evaluation.
+in the reset time, one has to look at the probability of photons in those blind spots to include this in later efficiency evaluation.
 
 The amount of photons is calculated by looking at the probability measuring one photon per length segment, given by
 the deadtime and the reset time.
-First, we consider one Length segment given by the deadtime $\tau_{\text{d}}$, the reset time $\tau_{\text{d}}$ and
-the measurement time $\tau_{\text{m}}$:
+First, we consider one Length segment given by the deadtime $\tau_{\text{d}}$:
 
 \begin{align}
-    L_{\text{d}} = c \tau_{\text{d}} \\
-    L_{\text{res}} = c \tau_{\text{res}} \\
-    L_{\text{m}} = c\tau_{\text{m}}
+    L_{\text{d}} = c \cdot \tau_{\text{d}} \\
 \end{align}
 
-With this, we can calculate for a given measurement time the average photon rate $\bar{n}$ per length segment $L_{\text{m}}$
+With this, we can calculate for a given measurement time the average photon rate $\bar{n}$ per length segment $L_{\text{d}}$
 
 \begin{align}
-    \bar{n} = \Phi \frac{L_{\text{m}}}{c}\\
+    \bar{n} = \Phi \frac{L_{\text{d}}}{c} = \Phi \cdot \tau_{\text{d}}\\
 \end{align}
 
-and further the probability of finding one photon in the particular line segment $L_{\text{d}}$:
+
+This enables us to calculate the probability, given by the poisson distribution,
 
 \begin{align}
-    p = \frac{\bar{n}}{\text{N}}
+    \text{P}_{\text{dead}}(n) = \frac{(\bar{n})^n}{n!} e^{-\bar{n}}
 \end{align}
 
-Where $N = \frac{c}{L_{\text{d}}}$ are the subsegments of the measured length segment $L_{\text{m}}$.
+of finding n Photons within the length segment, defined by the deadtime $\tau_{\text{d}}$.
 
-This enables us to calculate the probability $p_{dead}$ of finding n Photons per deadtime segment $L_{\text{d}}$ and
-$p_{res}$ per reset time segment.
-This probability yields the amount of photons we inherently can not measure due to the detector limitations, hence include
-this results in calculating the efficiency of the SNSPD.
+In accordance with the specified probability, the quantity of photons that are inherently unmeasurable due to the
+constraints of the detector can be calculated.
+
 
 \section{Experimental setup}
 
@@ -120,7 +121,7 @@ stabilize and control the light polarization coupling in the fibre.
 As mentioned in \ref{sec:SNSPD_working_principle} the light was polarized according to the slow axis of the fibre.
 Afterwards the light was coupled back into a fibre, so it was directed to the detector.
 Technically, it was important coupling to a APC/PC to FC/PC optical fibre because the detector only had
-an FC/PC optical fibre input port, in order to maintain higher efficiency coupling in the light \cite{single_quantum_scspcm}.\\
+an FC/PC optical fibre input port, in order to maintain higher efficiency coupling in the light \cite{single-quantum-2022}.\\
 
 Besides, this optical setup had to be protected from environmental light.
 For this, the room where the setup was running was shielded

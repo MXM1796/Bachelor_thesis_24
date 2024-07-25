@@ -6,14 +6,16 @@
 \label{sec:SNSPD_working_principle}
 %==============================================================================
 This chapter will introduce the working principle of superconducting nanowire single photon detectors (SNSPDs).
-1-2 sentences to history for introduction
-Wikipedia provides good stuff for introduction
-Here only phenomenological explanations is given. More details can be found in ..
-
+%1-2 sentences to history for introduction
+%Wikipedia provides good stuff for introduction
+The following section will provide an introduction to the principles in terms of their phenomenological aspects.
+For further details regarding the physics and mathematics behind superconducting nanowires, the reader is directed
+to the work of Gol’tsman et al \cite{goltsman-2001} and Hadfield et al \cite{natarajan-2012}.
 
 The SNSPD has four parts, as shown in figure \ref{fig:SNSPD_rough_structure}.
-The central detection area is made of a superconducting nanowire on a sapphire base.
-The superconducting nanowire is made of a thin film of a superconducting material, like niobium nitride (NbN).
+The central detection area is made of a superconducting nanowire ($\approx 100nm$ wide) on a sapphire base.
+To collect the whole output of the optical fibre, a pattern out of a
+thin superconducting film (like niobium nitride) is shaped into a meandering nanowire through nanofabrication \cite{single-quantum-2022}.
 The sapphire layer is used to dissipate the heat when the wire heats up.
 Further, a gold contact supplies a bias current through the superconducting nanowire and an optical fibre is coupled to the detection area.
 
@@ -44,19 +46,27 @@ In response, the current flows around this hotspot (iv), whereby the local curre
 hotspot again exceeds the critical current, due to a higher current density.
 If the critical current is exceeded, the superconductivity also breaks down in these areas.
 This excess also causes a resistance in the side channels of the nanowire (v).
-Ultimately, this rapid increase in resistance can be measured in form of a voltage pulse.
+Ultimately, this rapid increase in resistance can be measured in form of a voltage pulse, which can be seen in figure \ref{fig: SNSPD_single_voltage_pulse}.
 The local non-superconducting area is then cooled down by the cryogenic environment and returns to the superconducting state
 (iv—i).\\
 
-One important technical detail is the fiber coupling of this detector because the efficiency
-and timing jitter depend on it.
-Depending on in which polarization the light hits the meander, the efficiency changes.
-When light hits the wire orthogonally polarized to the wire direction, the photon is less efficiently absorbed, than
-polarized parallel to the wire. \\ As seen in fig. \ref{fig:SNSPD_fiber_coupling} the coupled fibre in our characterized
-detector is parallel polarized to the nanowire.\\
-Moreover, to cover the whole light, shined out of the fibre, the geometry of the detection zone is constructed as a
-round plate and has roughly the same diameter as the fibre output (FC/PC). A smaller area would risk not absorbing each
-photon and a larger area would increase the time leading the signal to the computer unit.
+
+%\begin{align}
+%    \centering
+%    \includegraphics[width=12cm]{SNSPD_Meander_fiber_coupling}
+%    \caption{Exemplary Analog voltage pulse of a SNSPD from an oscilloscope from channel 1 for a bias current of 31.2$\si{\micro \A}$and a trigger of 600$\si{\milli \V}$.
+% X-axis: time in 50ns steps (straight vertical yellow lines), Y-axis voltage in 500$\si{\milli \V}$ steps (straight horizontal yellow lines)}
+%    \label{fig:SNSPD_single_voltage_pulse}
+%\end{align}}
+
+Due to a polarization dependent absorption efficiency it is important to consider the technical detail of the geometry of the meander.
+In the used SNSPD, the meander design allows for a higher absorption efficiency if the e-field of the photons
+is parallel polarized to the wire direction than orthogonally polarized ones \cite{single-quantum-2022}.
+As depicted in figure \ref{fig:SNSPD_fiber_coupling} the coupled fibre slow axis in the characterized
+detector is parallel aligned to the nanowire to maximize the absorption efficiency.
+Other geometries are investigated and might enable a high absorption efficiency independent of the polarization \cite{zheng-2016}.
+
+
 
 \begin{figure}[hhh]
     \centering
