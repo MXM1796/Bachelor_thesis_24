@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber dirname"] 1721832285.26852 "dirname.bcf" "dirname.bbl" "dirname" 1721832298.98122 0
+["biber dirname"] 1721832285.26852 "dirname.bcf" "dirname.bbl" "dirname" 1721894557.91989 0
   "bib/standard_refs-biber.bib" 1719513186.7375 4329 61af5408c3c1b44c28eb2d39a930a449 ""
   "bib/thesis_refs.bib" 1721832014.69395 9103 de0dfdcba18dbe287d8ff628a0fcd6b9 ""
-  "dirname.bcf" 1721832298.68394 109545 8ebe53d171ab53861ae91ca06bf1ee64 "pdflatex"
+  "dirname.bcf" 1721894557.61313 109750 794b46f1f047da26cec89df864f99c82 "pdflatex"
   (generated)
   "dirname.bbl"
   "dirname.blg"
   (rewritten before read)
-["pdflatex"] 1721832286.92735 "dirname.tex" "dirname.pdf" "dirname" 1721832298.98162 2
+["pdflatex"] 1721894547.79109 "dirname.tex" "dirname.pdf" "dirname" 1721894557.92032 2
   "/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1721659717.02271 111327 a833ac442b5d17c8ef07af257d6af144 ""
   "/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk" 1719519334.11232 9292 aff04c7a2455d37b098e7c0f590d48c7 ""
   "/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1721661185.36157 11548 4ac361d8934f77d49549c69b4540be89 ""
@@ -276,20 +276,20 @@
   "/Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.png" 1720623053 137712 fdba8c40cf4258faa8c88f77d98faee8 ""
   "/Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png" 1720629688 39351 c35397354b4f14127b6a161822c12cd6 ""
   "Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex" 1721759362.7026 11590 1f69e8510a66752246d21a79d3a55229 ""
-  "Latex_Contentfiles/Characterization_of_SNSPD.tex" 1721821126.74731 26963 35366d9bffb4024cd7b8d1f2522330e7 ""
+  "Latex_Contentfiles/Characterization_of_SNSPD.tex" 1721894546.14163 27519 9aefbcce5310ca8f3eb1a8cc4ee9d88a ""
   "Latex_Contentfiles/Conclusion_and_Outlook.tex" 1719906002.17012 256 b80723668bba19e8aba173f326a4c4d9 ""
   "Latex_Contentfiles/Introduction_to_SNSPD.tex" 1719906241.55602 242 0cd5720354792affeed3bf066ee20977 ""
-  "Latex_Contentfiles/Working_principle_of_SNSPD.tex" 1721832276.88059 4868 46ad0acc56b9fd2303f8154a59dfd8eb ""
-  "Latex_Contentfiles/thesis_acknowledge.aux" 1721832289.5449 4311 6eab2425eb911f60b0206fd3da301b63 "pdflatex"
+  "Latex_Contentfiles/Working_principle_of_SNSPD.tex" 1721892435.21867 4826 c83cad36895687c835352e0e567a7c7e ""
+  "Latex_Contentfiles/thesis_acknowledge.aux" 1721894550.39596 4311 6eab2425eb911f60b0206fd3da301b63 "pdflatex"
   "Latex_Contentfiles/thesis_acknowledge.tex" 1719513186.7236 467 055b28993606406c300511ebf3d16662 ""
-  "Latex_Contentfiles/thesis_appendix.aux" 1721832294.83453 5873 d4ef221af8eb11be54afffdde825ccf2 "pdflatex"
-  "Latex_Contentfiles/thesis_appendix.tex" 1721669139.11452 11437 2242ad3e570fe9055398fd3aa7cbce09 ""
+  "Latex_Contentfiles/thesis_appendix.aux" 1721894555.63257 6390 6ec2f0ca7d81c0db3a2612fe7e1cc57e "pdflatex"
+  "Latex_Contentfiles/thesis_appendix.tex" 1721893876.71071 11599 28efa731c73cfc94a702ce36c1aef7fd ""
   "cover/Bachelor_Title.tex" 1719778825.09508 1555 b4f5187b9eac1ca848f9796e05735412 ""
-  "dirname.aux" 1721832298.65209 24826 c88ba78a9ec3d28aab223e066f0a6a0d "pdflatex"
+  "dirname.aux" 1721894557.58275 26074 d23296d46eece9fc6fae7229cd3ed975 "pdflatex"
   "dirname.bbl" 1721832286.74798 22865 20c58321f1b9e52e2d4310ca8288befa "biber dirname"
-  "dirname.run.xml" 1721832298.68556 2544 c876e533f2edd7375dbd719ea0807d72 "pdflatex"
+  "dirname.run.xml" 1721894557.61496 2544 c876e533f2edd7375dbd719ea0807d72 "pdflatex"
   "dirname.tex" 1721659800.19393 9217 74ef14e2f5c89cfa7ab281e0e68003f1 ""
-  "dirname.toc" 1721832298.68583 1616 00b37689d480311e5df4fa55038133ff "pdflatex"
+  "dirname.toc" 1721894557.6154 1753 c5be6fb88e1cea9ed5b16e1ffa84fad0 "pdflatex"
   "figs/HQO_2024011_countrate_angle_thesis.png" 1720778279.10114 139127 f4eea32cddfc7b3716562024bb3b9111 ""
   "figs/HQO_2024011_sde_angle_thesis.png" 1720778289.09723 172658 e2b58198b204eaa002e1f83d1187cbfb ""
   "figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png" 1720778426.53593 265230 6b37c940e730c3720bc8af1925400865 ""
