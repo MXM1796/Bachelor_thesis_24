@@ -154,6 +154,29 @@
       \verb https://doi.org/10.1088/0953-2048/25/6/063001
       \endverb
     \endentry
+    \entry{single-quantum-2022}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=fdca4210a2fc09b64febc761a499c182}{%
+           family={{Single Quantum}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fdca4210a2fc09b64febc761a499c182}
+      \strng{fullhash}{fdca4210a2fc09b64febc761a499c182}
+      \strng{fullhashraw}{fdca4210a2fc09b64febc761a499c182}
+      \strng{bibnamehash}{fdca4210a2fc09b64febc761a499c182}
+      \strng{authorbibnamehash}{fdca4210a2fc09b64febc761a499c182}
+      \strng{authornamehash}{fdca4210a2fc09b64febc761a499c182}
+      \strng{authorfullhash}{fdca4210a2fc09b64febc761a499c182}
+      \strng{authorfullhashraw}{fdca4210a2fc09b64febc761a499c182}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{Single Quantum EOS User Manual}
+      \field{year}{2022}
+      \field{dateera}{ce}
+    \endentry
     \entry{steudle-2012}{article}{}{}
       \name{author}{7}{}{%
         {{hash=f18f117d5814e43693afa7d3e7c76d73}{%
@@ -200,8 +223,8 @@
       \strng{authornamehash}{ce9aeb067755af195d104e41ee7d0cea}
       \strng{authorfullhash}{a4532d3fc3edce4e4bf86edac44a71dc}
       \strng{authorfullhashraw}{a4532d3fc3edce4e4bf86edac44a71dc}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{15}
@@ -236,8 +259,8 @@
       \strng{authornamehash}{c67b8c190cf1944d20a5a30c3099b851}
       \strng{authorfullhash}{c67b8c190cf1944d20a5a30c3099b851}
       \strng{authorfullhashraw}{c67b8c190cf1944d20a5a30c3099b851}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://singlequantum.com/wp-content/uploads/2023/06/Single-Quantum-Operation-Principle-print.pdf}}
@@ -245,28 +268,78 @@
       \field{title}{Superconducting Nanowire Single Photon Detectors Operation principle}
       \field{year}{n.d.}
     \endentry
-    \entry{single-quantum-2022}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=fdca4210a2fc09b64febc761a499c182}{%
-           family={{Single Quantum}},
-           familyi={S\bibinitperiod}}}%
+    \entry{zheng-2016}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=4eedbd345308da21aae807d267166163}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=766a28992d01d85fc0aa07b5fd0d81c6}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Ruiying},
+           giveni={R\bibinitperiod}}}%
+        {{hash=050879f3ac3a58746fb11135f38cc999}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Guanghao},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c95e8c8e7c7d1208959aa3ffd250b256}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Biaobing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b5f66e24dd8ce51db434779320c7ffab}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Lin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ff29ced796ff976c25650183cd141ad2}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Weiwei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=383ef476f431eaf108d4a77c75c2def5}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=70fc11c2eed9ca336c2220b24e415fd7}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Peiheng},
+           giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{fdca4210a2fc09b64febc761a499c182}
-      \strng{fullhash}{fdca4210a2fc09b64febc761a499c182}
-      \strng{fullhashraw}{fdca4210a2fc09b64febc761a499c182}
-      \strng{bibnamehash}{fdca4210a2fc09b64febc761a499c182}
-      \strng{authorbibnamehash}{fdca4210a2fc09b64febc761a499c182}
-      \strng{authornamehash}{fdca4210a2fc09b64febc761a499c182}
-      \strng{authorfullhash}{fdca4210a2fc09b64febc761a499c182}
-      \strng{authorfullhashraw}{fdca4210a2fc09b64febc761a499c182}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \strng{namehash}{ab17d62216f9c272ee6a0018f18eb2aa}
+      \strng{fullhash}{1139fcbec796715aead5b7c024c6d0f6}
+      \strng{fullhashraw}{1139fcbec796715aead5b7c024c6d0f6}
+      \strng{bibnamehash}{ab17d62216f9c272ee6a0018f18eb2aa}
+      \strng{authorbibnamehash}{ab17d62216f9c272ee6a0018f18eb2aa}
+      \strng{authornamehash}{ab17d62216f9c272ee6a0018f18eb2aa}
+      \strng{authorfullhash}{1139fcbec796715aead5b7c024c6d0f6}
+      \strng{authorfullhashraw}{1139fcbec796715aead5b7c024c6d0f6}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{2}
-      \field{title}{Single Quantum EOS User Manual}
-      \field{year}{2022}
+      \field{day}{7}
+      \field{journaltitle}{Scientific reports}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Design of a polarization-insensitive superconducting nanowire single photon detector with high detection efficiency}
+      \field{volume}{6}
+      \field{year}{2016}
       \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1038/srep22710
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/srep22710
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/srep22710
+      \endverb
     \endentry
     \entry{hadfield-2009}{article}{}{}
       \name{author}{1}{}{%
@@ -284,8 +357,8 @@
       \strng{authornamehash}{dd613bda808e19f8a200c33bc29d8221}
       \strng{authorfullhash}{dd613bda808e19f8a200c33bc29d8221}
       \strng{authorfullhashraw}{dd613bda808e19f8a200c33bc29d8221}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{1}
