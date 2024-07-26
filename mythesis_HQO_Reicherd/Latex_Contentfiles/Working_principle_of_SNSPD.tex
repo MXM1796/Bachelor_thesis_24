@@ -24,8 +24,11 @@ To operate the system, the setup is cooled below the critical temperature of the
 
 \begin{figure}[hhh]
     \centering
-    \includegraphics[width=0.5\linewidth]{figs/HQO_20240721_SNSPD_elementary_setup}
-    \caption{(a) Schematic structure of a superconducting nanowire single photon detector \cite{steudle-2012}}
+    \includegraphics[width=0.6\linewidth]{figs/HQO_20240721_SNSPD_elementary_setup}
+    \caption{(a) Scematic ilustration of the fundamental parts of a superconducting nanowire single photon detector \cite{steudle-2012}.
+    Detector area is made of a superconducting nanowire and is contacted from two sides with gold.
+    Optical fibre coupled to the detection area.
+    The fibre coupling realization of the characterized detector from Single Quantum is shown in figure \ref{fig:SNSPD_fiber_coupling}.}
     \label{fig:SNSPD_rough_structure}
 \end{figure}
 
@@ -34,7 +37,10 @@ The detection process is shown in the figure \ref{fig: SNSPD_process}.
 \begin{figure}[hhh]
     \centering
     \includegraphics[width=0.8\linewidth]{figs/HQO_20240725_detection_process_circle}
-    \caption{Schematic detection cycle of a superconducting nanowire single photon detector \cite{singlequantum_snsd_nodate}}
+    \caption{Schematic detection process cycle of a superconducting nanowire single photon detector \cite{singlequantum_snsd_nodate}.
+    Innercircle shows the parts of the dead time $\tau_{\text{dead}}$ and the reset time $\tau_{\text{reset}}$}.
+    Outer circle shows the parts of the detection process.
+    In the upper left side, the whole detector area is shown, the rey bars show the current flow in the zoomed in superconducting nanowire.
     \label{fig: SNSPD_process}
 \end{figure}
 
@@ -46,15 +52,16 @@ In response, the current flows around this hotspot (iv), whereby the local curre
 hotspot again exceeds the critical current, due to a higher current density.
 If the critical current is exceeded, the superconductivity also breaks down in these areas.
 This excess also causes a resistance in the side channels of the nanowire (v).
-Ultimately, this rapid increase in resistance can be measured in form of a voltage pulse, which can be seen in figure \ref{fig: SNSPD_single_voltage_pulse}.
+Ultimately, this rapid increase in resistance can be measured in form of a voltage pulse, which can be seen in figure \ref{fig:SNSPD_single_voltage_pulse}.
 The local non-superconducting area is then cooled down by the cryogenic environment and returns to the superconducting state
 (iv—i).\\
 
-\begin{figure}[hhh]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{SNSPD_Meander_fiber_coupling}
-    \caption{Scematic set up of the fiber coupling of a superconducting nanowire single photon detector \textcolor{red}{Zitieren!}}
-    \label{fig:SNSPD_fiber_coupling}
+    \includegraphics[width=0.8\linewidth]{figs/HQO_20240725_analog_signal_31.2uA_tv_600mV}
+    \caption{Single analog voltage pulse signal recorded with an oscilloscope from Lecroi with time resolution of 500MHz.
+    Voltage is depicted on the Y-axis and time on the X-axis. Single photon steems from a faint laser source (780nm) attenuated to 1.6KHz.}
+    \label{fig:SNSPD_single_voltage_pulse}
 \end{figure}
 
 
@@ -65,8 +72,13 @@ As depicted in figure \ref{fig:SNSPD_fiber_coupling} the coupled fibre slow axis
 detector is parallel aligned to the nanowire to maximize the absorption efficiency.
 Other geometries are investigated and might enable a high absorption efficiency independent of the polarization \cite{zheng-2016}.
 
-
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{SNSPD_Meander_fiber_coupling}
+    \caption{Fibre coupling set up to the superconducting nanowire detector area of the characterized detector by the Single Quantum \cite{singlequantum_snsd}.
+    Fibre coupling is made inhouse and is ajusted to maximize efficiency. Can can not be adjusted manually.}
+    \label{fig:SNSPD_fiber_coupling}
+\end{figure}
 
 %Nur Technische Details die für die Charakterisierung relevant sind (max 2 Seiten)
 %Physikalische Motivation (Warum frage sehr wichtig)

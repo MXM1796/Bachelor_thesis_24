@@ -67,20 +67,21 @@ First, we consider one Length segment given by the deadtime $\tau_{\text{d}}$:
     L_{\text{d}} = c \cdot \tau_{\text{d}} \\
 \end{align}
 
+$c$ denotes the speed of Light.
 With this, we can calculate for a given measurement time the average photon rate $\bar{n}$ per length segment $L_{\text{d}}$
 
 \begin{align}
-    \bar{n} = \Phi \frac{L_{\text{d}}}{c} = \Phi \cdot \tau_{\text{d}}\\
+    \bar{n} = \Phi \frac{L_{\text{d}}}{\text{L}_{\text{c}}}\\
 \end{align}
 
-
+$\text{L}_{\text{c}}$ denotes the length of light passing in one second.
 This enables us to calculate the probability, given by the poisson distribution,
 
 \begin{align}
     \text{P}_{\text{dead}}(n) = \frac{(\bar{n})^n}{n!} e^{-\bar{n}}
 \end{align}
 
-of finding n Photons within the length segment, defined by the deadtime $\tau_{\text{d}}$.
+of finding n Photons within the length segment, defined by the dead time $\tau_{\text{d}}$.
 
 In accordance with the specified probability, the quantity of photons that are inherently unmeasurable due to the
 constraints of the detector can be calculated.

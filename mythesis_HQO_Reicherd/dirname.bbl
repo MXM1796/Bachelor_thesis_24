@@ -341,6 +341,36 @@
       \verb https://doi.org/10.1038/srep22710
       \endverb
     \endentry
+    \entry{singlequantum_snsd}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b517cd902a39a25bacd4fe43df6468df}{%
+           family={{Single Quantm}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b517cd902a39a25bacd4fe43df6468df}
+      \strng{fullhash}{b517cd902a39a25bacd4fe43df6468df}
+      \strng{fullhashraw}{b517cd902a39a25bacd4fe43df6468df}
+      \strng{bibnamehash}{b517cd902a39a25bacd4fe43df6468df}
+      \strng{authorbibnamehash}{b517cd902a39a25bacd4fe43df6468df}
+      \strng{authornamehash}{b517cd902a39a25bacd4fe43df6468df}
+      \strng{authorfullhash}{b517cd902a39a25bacd4fe43df6468df}
+      \strng{authorfullhashraw}{b517cd902a39a25bacd4fe43df6468df}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Operation principle of SNSPD}
+      \field{urlday}{25}
+      \field{urlmonth}{7}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.singlequantum.com/technology/snspd/
+      \endverb
+      \verb{url}
+      \verb https://www.singlequantum.com/technology/snspd/
+      \endverb
+    \endentry
     \entry{hadfield-2009}{article}{}{}
       \name{author}{1}{}{%
         {{hash=dd613bda808e19f8a200c33bc29d8221}{%

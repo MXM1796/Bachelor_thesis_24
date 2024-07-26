@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  25 JUL 2024 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  26 JUL 2024 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2189,30 +2189,78 @@ LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 
 ]
 chapter 2.
-<figs/HQO_20240721_SNSPD_elementary_setup.png, id=71, 776.6616pt x 514.0806pt>
+<figs/HQO_20240721_SNSPD_elementary_setup.png, id=71, 776.6616pt x 481.3182pt>
 File: figs/HQO_20240721_SNSPD_elementary_setup.png Graphic file (type png)
 <use figs/HQO_20240721_SNSPD_elementary_setup.png>
 Package pdftex.def Info: figs/HQO_20240721_SNSPD_elementary_setup.png  used on 
 input line 27.
-(pdftex.def)             Requested size: 218.73059pt x 144.77307pt.
+(pdftex.def)             Requested size: 262.47937pt x 162.66188pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 28.
-<figs/HQO_20240725_detection_process_circle.png, id=76, 2352.6294pt x 1652.8149
+(Font)              scaled to size 10.0pt on input line 31.
+<figs/HQO_20240725_detection_process_circle.png, id=78, 2352.6294pt x 1689.6726
 pt>
 File: figs/HQO_20240725_detection_process_circle.png Graphic file (type png)
 <use figs/HQO_20240725_detection_process_circle.png>
 Package pdftex.def Info: figs/HQO_20240725_detection_process_circle.png  used o
-n input line 36.
-(pdftex.def)             Requested size: 349.97028pt x 245.86873pt.
+n input line 39.
+(pdftex.def)             Requested size: 349.97028pt x 251.3516pt.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 10.0pt on input line 41.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 7.3pt on input line 41.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 5.5pt on input line 41.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 10.0pt on input line 41.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 7.3pt on input line 41.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 5.5pt on input line 41.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 10.0pt on input line 41.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 7.3pt on input line 41.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 5.5pt on input line 41.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 10.0pt on input line 41.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 7.3pt on input line 41.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 5.5pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 10.0pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 7.3pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 5.5pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 10.0pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 7.3pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 5.5pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 10.0pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 7.3pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 5.5pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 10.0pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 7.3pt on input line 41.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 5.5pt on input line 41.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 41.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.5pt on input line 41.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `fig: SNSPD_single_voltage_pulse' on page 2 undefined 
-on input line 49.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--52
+Underfull \hbox (badness 10000) in paragraph at lines 47--58
 
  []
 
@@ -2222,25 +2270,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--52
 
 
  <./figs/HQO_20240721_SNSPD_elementary_setup.png>]
+<figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png, id=96, 613.13869pt x 325.
+07047pt>
+File: figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png Graphic file (type pn
+g)
+<use figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png>
+Package pdftex.def Info: figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png  u
+sed on input line 61.
+(pdftex.def)             Requested size: 349.97028pt x 185.54504pt.
+
+
+[3 <./figs/HQO_20240725_detection_process_circle.png>]
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/SNSPD_Meander_fiber_coupling.png, id=92, 1802.735pt x 949.5475pt
->
+oton Detection/SNSPD_Meander_fiber_coupling.png, id=108, 1802.735pt x 949.5475p
+t>
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/SNSPD_Meander_fiber_coupling.png Graphic file (type png)
 <use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
 e Photon Detection/SNSPD_Meander_fiber_coupling.png>
 Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
 roseminar/Figs Single Photon Detection/SNSPD_Meander_fiber_coupling.png  used o
-n input line 55.
+n input line 77.
 (pdftex.def)             Requested size: 349.97028pt x 184.3279pt.
-
-
-[3 <./figs/HQO_20240725_detection_process_circle.png> </Users/maxim.re/Studium/
-Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Mean
-der_fiber_coupling.png>])
+)
 (Latex_Contentfiles/Building_set_up_for_Detector_Characterization.tex
 
-[4]
+[4 <./figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png> </Users/maxim.re/Stu
+dium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD
+_Meander_fiber_coupling.png>]
 chapter 3.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 29.
@@ -2252,33 +2309,33 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 ]
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 108--125
+Underfull \hbox (badness 10000) in paragraph at lines 109--126
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--133
+Underfull \hbox (badness 10000) in paragraph at lines 127--134
 
  []
 
-<figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png, id=138, 594.3003p
+<figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png, id=147, 594.3003p
 t x 253.4268pt>
 File: figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png Graphic file 
 (type png)
 <use figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png>
 Package pdftex.def Info: figs/HQO_20240712_faint_laser_source_full_set_up_thesi
-s.png  used on input line 136.
+s.png  used on input line 137.
 (pdftex.def)             Requested size: 349.97028pt x 149.23822pt.
 
-
-[7 <./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 145--151
+Underfull \hbox (badness 10000) in paragraph at lines 146--152
 
  []
 
-) (Latex_Contentfiles/Characterization_of_SNSPD.tex
 
-[8]
+
+[7]) (Latex_Contentfiles/Characterization_of_SNSPD.tex
+
+[8 <./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png>]
 chapter 4.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 11.28003pt on input line 26.
@@ -2351,7 +2408,7 @@ LaTeX Info: Symbol \textmu not provided by
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 75.
-<figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png, id=169, 419.166pt x 313.
+<figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png, id=178, 419.166pt x 313.
 94089pt>
 File: figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png Graphic file (type p
 ng)
@@ -2362,7 +2419,7 @@ used on input line 79.
 
 
 [10]
-<figs/HQO_20240712_recoverytime_visualized_engl.png, id=181, 464.937pt x 175.61
+<figs/HQO_20240712_recoverytime_visualized_engl.png, id=190, 464.937pt x 175.61
 61pt>
 File: figs/HQO_20240712_recoverytime_visualized_engl.png Graphic file (type png
 )
@@ -2370,42 +2427,10 @@ File: figs/HQO_20240712_recoverytime_visualized_engl.png Graphic file (type png
 Package pdftex.def Info: figs/HQO_20240712_recoverytime_visualized_engl.png  us
 ed on input line 105.
 (pdftex.def)             Requested size: 349.97028pt x 132.19678pt.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 108.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 108.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.0pt on input line 108.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.3pt on input line 108.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 108.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.3pt on input line 108.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 108.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 108.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.0pt on input line 108.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.3pt on input line 108.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.0pt on input line 108.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.3pt on input line 108.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 108.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.3pt on input line 108.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.0pt on input line 108.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.3pt on input line 108.
 
 
 [11 <./figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png>]
-<figs/HQO_20240712_recoverytime_setup.png, id=193, 476.0184pt x 132.7359pt>
+<figs/HQO_20240712_recoverytime_setup.png, id=202, 476.0184pt x 132.7359pt>
 File: figs/HQO_20240712_recoverytime_setup.png Graphic file (type png)
 <use figs/HQO_20240712_recoverytime_setup.png>
 Package pdftex.def Info: figs/HQO_20240712_recoverytime_setup.png  used on inpu
@@ -2427,7 +2452,7 @@ LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 138.
 <figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-900mV_thesis.p
-ng, id=199, 421.18956pt x 313.94089pt>
+ng, id=208, 421.18956pt x 313.94089pt>
 File: figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-900mV_the
 sis.png Graphic file (type png)
 <use figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-900mV_thes
@@ -2438,7 +2463,7 @@ trigg_300-900mV_thesis.png  used on input line 144.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 9.0pt on input line 145.
 <figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis.png
-, id=200, 421.18956pt x 313.94089pt>
+, id=209, 421.18956pt x 313.94089pt>
 File: figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesi
 s.png Graphic file (type png)
 <use figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis
@@ -2454,10 +2479,6 @@ Overfull \hbox (1.64243pt too wide) in paragraph at lines 143--155
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 155.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 155.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 155.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 155.
@@ -2465,61 +2486,57 @@ LaTeX Info: Symbol \textmu not provided by
 
 [12 <./figs/HQO_20240712_recoverytime_visualized_engl.png> <./figs/HQO_20240712
 _recoverytime_setup.png>]
-<~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_single.pn
-g, id=215, 420.32233pt x 264.79729pt>
-File: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_sing
-le.png Graphic file (type png)
-<use ~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600mV_double_singl
-e.png>
-Package pdftex.def Info: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_t
-v_600mV_double_single.png  used on input line 176.
-(pdftex.def)             Requested size: 218.73059pt x 137.79639pt.
+<figs/HQO_20240725_analog_signal_double_pulse_31.2uA_tv_600mV.png, id=224, 622.
+82286pt x 325.07047pt>
+File: figs/HQO_20240725_analog_signal_double_pulse_31.2uA_tv_600mV.png Graphic 
+file (type png)
+<use figs/HQO_20240725_analog_signal_double_pulse_31.2uA_tv_600mV.png>
+Package pdftex.def Info: figs/HQO_20240725_analog_signal_double_pulse_31.2uA_tv
+_600mV.png  used on input line 176.
+(pdftex.def)             Requested size: 262.47937pt x 136.9949pt.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 178.
+            Default family used instead on input line 179.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 178.
-LaTeX Info: Symbol \textmu not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 182.
+            Default family used instead on input line 179.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 183.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 184.
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 185.
 
 
 LaTeX Warning: Reference `fig: analog_signals_comparison' on page 13 undefined 
-on input line 190.
+on input line 191.
 
 
 
-[13 </Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_Ana_signal_30uA_tv_600m
-V_double_single.png> <./figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_t
-rigg_300-900mV_thesis.png> <./figs/HQO_20240723_recovery_time_Channel_1_Bias_25
-uA_trigg_300-900mV_thesis.png>]
+[13 <./figs/HQO_20240725_analog_signal_double_pulse_31.2uA_tv_600mV.png> <./fig
+s/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-900mV_thesis.png> 
+<./figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis.p
+ng>]
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 192.
-<~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png, id=228, 462.
+            Default family used instead on input line 193.
+<~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png, id=237, 462.
 2871pt x 178.266pt>
 File: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png Graphic 
 file (type png)
 <use ~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png>
 Package pdftex.def Info: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_c
-urrent.png  used on input line 204.
+urrent.png  used on input line 205.
 (pdftex.def)             Requested size: 349.97028pt x 134.95584pt.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 218.
+            Default family used instead on input line 219.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 225.
-LaTeX Info: Symbol \textmu not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 226.
+            Default family used instead on input line 224.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 228.
@@ -2527,104 +2544,105 @@ LaTeX Info: Symbol \textmu not provided by
 
 [14 </Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current
 .png>]
-<figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png, id=237
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 240.
+<figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png, id=246
 , 421.18956pt x 313.94089pt>
 File: figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png Gr
 aphic file (type png)
 <use figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png>
 Package pdftex.def Info: figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_
-600mV_thesis.png  used on input line 238.
+600mV_thesis.png  used on input line 246.
 (pdftex.def)             Requested size: 218.73059pt x 163.03462pt.
-<figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png, id=240, 41
+<figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png, id=249, 41
 0.0118pt x 148.1535pt>
 File: figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png Graphi
 c file (type png)
 <use figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png>
 Package pdftex.def Info: figs/HQO_20240712_systemd_detection_efficiency_visuali
-zed_engl.png  used on input line 264.
+zed_engl.png  used on input line 272.
 (pdftex.def)             Requested size: 349.97028pt x 126.46005pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--280
+Underfull \hbox (badness 10000) in paragraph at lines 278--288
 
  []
 
 
 
 [15 <./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png>]
-LaTeX Info: Symbol \textmu not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 306.
 
 
 [16 <./figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png>]
-<figs/HQO_2024011_countrate_angle_thesis.png, id=267, 418.00967pt x 313.94089pt
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 349.
+<figs/HQO_2024011_countrate_angle_thesis.png, id=278, 418.00967pt x 313.94089pt
 >
 File: figs/HQO_2024011_countrate_angle_thesis.png Graphic file (type png)
 <use figs/HQO_2024011_countrate_angle_thesis.png>
 Package pdftex.def Info: figs/HQO_2024011_countrate_angle_thesis.png  used on i
-nput line 322.
+nput line 365.
 (pdftex.def)             Requested size: 218.73059pt x 164.27533pt.
-<figs/HQO_2024011_sde_angle_thesis.png, id=268, 408.47005pt x 313.94089pt>
+<figs/HQO_2024011_sde_angle_thesis.png, id=279, 408.47005pt x 313.94089pt>
 File: figs/HQO_2024011_sde_angle_thesis.png Graphic file (type png)
 <use figs/HQO_2024011_sde_angle_thesis.png>
 Package pdftex.def Info: figs/HQO_2024011_sde_angle_thesis.png  used on input l
-ine 328.
+ine 371.
 (pdftex.def)             Requested size: 218.73059pt x 168.1076pt.
 
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 321--336
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 364--379
 [][]  [] 
  []
 
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 342.
+            Default family used instead on input line 385.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 342.
-<figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png, id=275, 408.3255pt 
+            Default family used instead on input line 385.
+<figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png, id=286, 408.3255pt 
 x 313.94089pt>
 File: figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png Graphic file (t
 ype png)
 <use figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png>
 Package pdftex.def Info: figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.
-png  used on input line 347.
+png  used on input line 390.
 (pdftex.def)             Requested size: 218.73059pt x 168.17467pt.
 
-LaTeX Warning: Citation 'manual_single_quantum_snspd' on page 17 undefined on i
-nput line 363.
 
+[17]
 
-
-[17 <./figs/HQO_2024011_countrate_angle_thesis.png> <./figs/HQO_2024011_sde_ang
+[18 <./figs/HQO_2024011_countrate_angle_thesis.png> <./figs/HQO_2024011_sde_ang
 le_thesis.png> <./figs/HQO_20240711_sde_bias_current_tv_300_1000_thesis.png>]
-<figs/HQO_20240711_sde_bias_current_750_thesis.png, id=289, 408.3255pt x 313.94
+<figs/HQO_20240711_sde_bias_current_750_thesis.png, id=309, 408.3255pt x 313.94
 089pt>
 File: figs/HQO_20240711_sde_bias_current_750_thesis.png Graphic file (type png)
 
 <use figs/HQO_20240711_sde_bias_current_750_thesis.png>
 Package pdftex.def Info: figs/HQO_20240711_sde_bias_current_750_thesis.png  use
-d on input line 376.
+d on input line 419.
 (pdftex.def)             Requested size: 218.73059pt x 168.17467pt.
-<figs/HQO_20240711_sde_photon_rate_750_thesis.png, id=290, 408.47005pt x 313.94
+<figs/HQO_20240711_sde_photon_rate_750_thesis.png, id=310, 408.47005pt x 313.94
 089pt>
 File: figs/HQO_20240711_sde_photon_rate_750_thesis.png Graphic file (type png)
 <use figs/HQO_20240711_sde_photon_rate_750_thesis.png>
 Package pdftex.def Info: figs/HQO_20240711_sde_photon_rate_750_thesis.png  used
- on input line 383.
+ on input line 426.
 (pdftex.def)             Requested size: 218.73059pt x 168.1076pt.
 
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 374--387
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 417--430
 [][]  [] 
  []
 
 ) (Latex_Contentfiles/Conclusion_and_Outlook.tex
 
-[18 <./figs/HQO_20240711_sde_bias_current_750_thesis.png> <./figs/HQO_20240711_
+[19 <./figs/HQO_20240711_sde_bias_current_750_thesis.png> <./figs/HQO_20240711_
 sde_photon_rate_750_thesis.png>]
 chapter 5.
 )
 
-[19
+[20
 
 
 ]
@@ -2634,7 +2652,7 @@ chapter 5.
 chapter A.
 
 
-[20
+[21
 
 
 
@@ -2712,9 +2730,9 @@ Overfull \hbox (381.77339pt too wide) in paragraph at lines 3--28
 
 )
 
-[21])
+[22])
 
-[22]
+[23]
 chapter without number
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 193.
@@ -2729,14 +2747,14 @@ l.193 \printbibliography[heading=bibintoc]
 ? 
 
 
-[23
+[24
 
 
 
 
 ]
 
-[24] (dirname.aux
+[25] (dirname.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 12.
 Package cleveref Info: loaded `ngerman' language definitions on input line 16.
  (Latex_Contentfiles/thesis_acknowledge.aux)
@@ -2754,22 +2772,20 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                dirname
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'dirname.run.xml'.
 \openout1 = `dirname.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42946 strings out of 475854
- 880312 string characters out of 5776366
+ 42975 strings out of 475854
+ 881194 string characters out of 5776366
  1973905 words of memory out of 5000000
- 64649 multiletter control sequences out of 15000+600000
- 744504 words of font info for 396 fonts, out of 8000000 for 9000
+ 64665 multiletter control sequences out of 15000+600000
+ 745284 words of font info for 400 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
  108i,20n,147p,10904b,4066s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/
@@ -2799,9 +2815,9 @@ re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/z
 tmb.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/font
 s/type1/public/newtx/ztmr.pfb></Users/maxim.re/Library/Application Support/MiKT
 eX/texmfs/install/fonts/type1/public/newtx/ztmri.pfb>
-Output written on dirname.pdf (28 pages, 5934697 bytes).
+Output written on dirname.pdf (29 pages, 6308371 bytes).
 PDF statistics:
- 523 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 66795 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 549 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
+ 66800 words of extra memory for PDF output out of 74296 (max. 10000000)
 
