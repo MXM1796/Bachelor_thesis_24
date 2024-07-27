@@ -14,15 +14,15 @@
 \contentsline {section}{\numberline {4.1}Dark Count Rate}{9}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Recovery time}{11}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Efficiency}{15}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Discussion}{20}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Conclusion and Outlook}{21}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Appendix}{22}{appendix.A}%
-\contentsline {section}{\numberline {A.1}ND filter calibration}{22}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Angle dependent countrate and $\eta _{\text {sde}}$}{23}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Recovery time measurements}{24}{section.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}Recovery time measurements - Oscillating bias current}{24}{subsection.A.3.1}%
-\contentsline {subsection}{\numberline {A.3.2}Polarization alignment for system detection efficiency measurements}{24}{subsection.A.3.2}%
-\contentsline {section}{\numberline {A.4}Recorings of analog pulses}{24}{section.A.4}%
-\contentsline {section}{\numberline {A.5}Bias sweeping for different count rates}{24}{section.A.5}%
-\contentsline {chapter}{\nonumberline Bibliography}{25}{chapter*.26}%
+\contentsline {section}{\numberline {4.4}Discussion}{22}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusion and Outlook}{23}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Appendix}{24}{appendix.A}%
+\contentsline {section}{\numberline {A.1}ND filter calibration}{24}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Angle dependent countrate and $\eta _{\text {sde}}$}{25}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Recovery time measurements}{26}{section.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}Recovery time measurements - Oscillating bias current}{26}{subsection.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}Polarization alignment for system detection efficiency measurements}{26}{subsection.A.3.2}%
+\contentsline {section}{\numberline {A.4}Recorings of analog pulses}{26}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Bias sweeping for different count rates}{26}{section.A.5}%
+\contentsline {chapter}{\nonumberline Bibliography}{27}{chapter*.31}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

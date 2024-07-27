@@ -812,12 +812,6 @@ INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
 INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
 INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
 INPUT ./figs/HQO_2024011_countrate_angle_thesis.png
-INPUT ./figs/HQO_2024011_sde_angle_thesis.png
-INPUT ./figs/HQO_2024011_sde_angle_thesis.png
-INPUT ./figs/HQO_2024011_sde_angle_thesis.png
-INPUT ./figs/HQO_2024011_sde_angle_thesis.png
-INPUT ./figs/HQO_2024011_sde_angle_thesis.png
-INPUT ./figs/HQO_2024011_sde_angle_thesis.png
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Bold-tlf-t1.tfm
 INPUT ./figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_8_92.png
 INPUT ./figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_8_92.png
@@ -831,6 +825,9 @@ INPUT ./figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png
 INPUT ./figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png
 INPUT ./figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png
 INPUT ./figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxsy7.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txsys.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
 INPUT ./figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png
 INPUT ./figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png
 INPUT ./figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png
@@ -843,18 +840,24 @@ INPUT ./figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png
 INPUT ./figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png
 INPUT ./figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png
 INPUT ./figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png
-INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
-INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
-INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
-INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
-INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
-INPUT ./figs/HQO_20240711_sde_bias_current_750_thesis.png
-INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
-INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
-INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
-INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
-INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
-INPUT ./figs/HQO_20240711_sde_photon_rate_750_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
+INPUT ./figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png
+INPUT ./figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png
+INPUT ./figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png
+INPUT ./figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png
+INPUT ./figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png
+INPUT ./figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_log_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_log_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_log_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_log_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_log_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_log_thesis.png
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex
 INPUT ./Latex_Contentfiles/Conclusion_and_Outlook.tex

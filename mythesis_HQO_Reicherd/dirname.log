@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  26 JUL 2024 20:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  27 JUL 2024 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2582,73 +2582,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 278--288
 
 [15 <./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png>]
 
-
-[16 <./figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 326--328
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
 
  []
 
+
+
+[16 <./figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png>]
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 347.
-<figs/HQO_2024011_countrate_angle_thesis.png, id=280, 418.00967pt x 313.94089pt
+            Default family used instead on input line 351.
+<figs/HQO_2024011_countrate_angle_thesis.png, id=282, 418.00967pt x 313.94089pt
 >
 File: figs/HQO_2024011_countrate_angle_thesis.png Graphic file (type png)
 <use figs/HQO_2024011_countrate_angle_thesis.png>
 Package pdftex.def Info: figs/HQO_2024011_countrate_angle_thesis.png  used on i
-nput line 363.
-(pdftex.def)             Requested size: 218.73059pt x 164.27533pt.
-<figs/HQO_2024011_sde_angle_thesis.png, id=281, 408.47005pt x 313.94089pt>
-File: figs/HQO_2024011_sde_angle_thesis.png Graphic file (type png)
-<use figs/HQO_2024011_sde_angle_thesis.png>
-Package pdftex.def Info: figs/HQO_2024011_sde_angle_thesis.png  used on input l
-ine 369.
-(pdftex.def)             Requested size: 218.73059pt x 168.1076pt.
-
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 362--377
-[][]  [] 
- []
-
+nput line 386.
+(pdftex.def)             Requested size: 349.97028pt x 262.84148pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 377.
-
-LaTeX Warning: Reference `sec:ND_filter_calibration' on page 17 undefined on in
-put line 377.
+(Font)              scaled to size 10.0pt on input line 388.
 
 
-LaTeX Warning: Reference `sec:ND_filter_calibration' on page 17 undefined on in
-put line 377.
+LaTeX Warning: Reference `sec: ND_filter_calibration' on page 17 undefined on i
+nput line 388.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `sec: ND_filter_calibration' on page 17 undefined on i
+nput line 388.
 
+
+
+[17]
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 385.
+            Default family used instead on input line 421.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 388.
+            Default family used instead on input line 424.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 388.
-<figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_8_92.png, id=286, 411.5
+            Default family used instead on input line 424.
+<figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_8_92.png, id=293, 411.5
 0539pt x 313.94089pt>
 File: figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_8_92.png Graphic f
 ile (type png)
 <use figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_8_92.png>
 Package pdftex.def Info: figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis
-_8_92.png  used on input line 393.
+_8_92.png  used on input line 429.
 (pdftex.def)             Requested size: 218.73059pt x 166.87169pt.
-<figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png, id=287, 418.0
+<figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png, id=294, 418.0
 0967pt x 313.94089pt>
 File: figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png Graphic f
 ile (type png)
 <use figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png>
 Package pdftex.def Info: figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis
-_9_72.png  used on input line 399.
+_9_72.png  used on input line 435.
 (pdftex.def)             Requested size: 218.73059pt x 164.27533pt.
 
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 392--407
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 428--443
 [][]  [] 
  []
 
@@ -2657,79 +2648,96 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[17]
-
-[18 <./figs/HQO_2024011_countrate_angle_thesis.png> <./figs/HQO_2024011_sde_ang
-le_thesis.png> <./figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_8_92.p
-ng> <./figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png>]
-<figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png, id=313, 421.18956
+[18 <./figs/HQO_2024011_countrate_angle_thesis.png>]
+<figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png, id=309, 421.18956
 pt x 313.94089pt>
 File: figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png Graphic file 
 (type png)
 <use figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png>
 Package pdftex.def Info: figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600m
-V.png  used on input line 431.
+V.png  used on input line 467.
 (pdftex.def)             Requested size: 218.73059pt x 163.03462pt.
-<figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png, id=314, 421.1895
+<figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png, id=310, 421.1895
 6pt x 313.94089pt>
 File: figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png Graphic file
  (type png)
 <use figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png>
 Package pdftex.def Info: figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_
-06.png  used on input line 437.
+06.png  used on input line 473.
 (pdftex.def)             Requested size: 218.73059pt x 163.03462pt.
 
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 430--446
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 466--477
 [][]  [] 
  []
 
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 446.
+            Default family used instead on input line 483.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 446.
+            Default family used instead on input line 483.
 
-LaTeX Warning: Reference `fig: ' on page 19 undefined on input line 450.
+LaTeX Warning: Reference `fig: ' on page 19 undefined on input line 487.
 
+
+
+[19 <./figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_8_92.png> <./figs
+/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png> <./figs/HQO_202407
+26_analog_signal_OD_9.57_31.2uA_tv_600mV.png> <./figs/HQO_20240726_analog_signa
+l_31.2uA_tv_600mV_OD_12_06.png>]
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 465.
+            Default family used instead on input line 505.
 
 
-[19 <./figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png> <./figs/HQO
-_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png>]
+LaTeX Warning: Reference `tab:sde_count_rate_table' on page 20 undefined on inp
+ut line 515.
 
-LaTeX Warning: Reference `fig: ' on page 20 undefined on input line 475.
+<figs/HQO_20240727_sde_count_rate_thesis.png, id=325, 414.8298pt x 313.94089pt>
 
-<figs/HQO_20240711_sde_bias_current_750_thesis.png, id=326, 408.3255pt x 313.94
-089pt>
-File: figs/HQO_20240711_sde_bias_current_750_thesis.png Graphic file (type png)
+File: figs/HQO_20240727_sde_count_rate_thesis.png Graphic file (type png)
+<use figs/HQO_20240727_sde_count_rate_thesis.png>
+Package pdftex.def Info: figs/HQO_20240727_sde_count_rate_thesis.png  used on i
+nput line 519.
+(pdftex.def)             Requested size: 349.97028pt x 264.863pt.
+<figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png, id=329, 421.18956pt x 317.
+69891pt>
+File: figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png Graphic file (type png
+)
+<use figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png>
+Package pdftex.def Info: figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png  us
+ed on input line 535.
+(pdftex.def)             Requested size: 218.73059pt x 164.98622pt.
+<figs/HQO_20240727_sde_count_rate_log_thesis.png, id=330, 419.166pt x 314.08542
+pt>
+File: figs/HQO_20240727_sde_count_rate_log_thesis.png Graphic file (type png)
+<use figs/HQO_20240727_sde_count_rate_log_thesis.png>
+Package pdftex.def Info: figs/HQO_20240727_sde_count_rate_log_thesis.png  used 
+on input line 542.
+(pdftex.def)             Requested size: 218.73059pt x 163.90047pt.
 
-<use figs/HQO_20240711_sde_bias_current_750_thesis.png>
-Package pdftex.def Info: figs/HQO_20240711_sde_bias_current_750_thesis.png  use
-d on input line 480.
-(pdftex.def)             Requested size: 218.73059pt x 168.17467pt.
-<figs/HQO_20240711_sde_photon_rate_750_thesis.png, id=327, 408.47005pt x 313.94
-089pt>
-File: figs/HQO_20240711_sde_photon_rate_750_thesis.png Graphic file (type png)
-<use figs/HQO_20240711_sde_photon_rate_750_thesis.png>
-Package pdftex.def Info: figs/HQO_20240711_sde_photon_rate_750_thesis.png  used
- on input line 487.
-(pdftex.def)             Requested size: 218.73059pt x 168.1076pt.
-
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 478--491
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 533--550
 [][]  [] 
  []
 
-) (Latex_Contentfiles/Conclusion_and_Outlook.tex
 
-[20 <./figs/HQO_20240711_sde_bias_current_750_thesis.png> <./figs/HQO_20240711_
-sde_photon_rate_750_thesis.png>]
+
+[20]
+
+LaTeX Warning: Reference `fig:sde_count_rates_750_thesis' on page 21 undefined 
+on input line 587.
+
+
+
+[21 <./figs/HQO_20240727_sde_count_rate_thesis.png>])
+(Latex_Contentfiles/Conclusion_and_Outlook.tex
+
+[22 <./figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png> <./figs/HQO_20240727
+_sde_count_rate_log_thesis.png>]
 chapter 5.
 )
 
-[21
+[23
 
 
 ]
@@ -2739,7 +2747,7 @@ chapter 5.
 chapter A.
 
 
-[22
+[24
 
 
 
@@ -2817,9 +2825,9 @@ Overfull \hbox (381.77339pt too wide) in paragraph at lines 3--28
 
 )
 
-[23])
+[25])
 
-[24]
+[26]
 chapter without number
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 193.
@@ -2834,14 +2842,14 @@ l.193 \printbibliography[heading=bibintoc]
 ? 
 
 
-[25
+[27
 
 
 
 
 ]
 
-[26] (dirname.aux
+[28] (dirname.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 12.
 Package cleveref Info: loaded `ngerman' language definitions on input line 16.
  (Latex_Contentfiles/thesis_acknowledge.aux)
@@ -2868,11 +2876,11 @@ Package logreq Info: Writing requests to 'dirname.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43045 strings out of 475854
- 884759 string characters out of 5776366
- 1974905 words of memory out of 5000000
- 64725 multiletter control sequences out of 15000+600000
- 748421 words of font info for 404 fonts, out of 8000000 for 9000
+ 43073 strings out of 475854
+ 885446 string characters out of 5776366
+ 1973905 words of memory out of 5000000
+ 64736 multiletter control sequences out of 15000+600000
+ 749201 words of font info for 408 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
  108i,20n,147p,10904b,4066s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/
@@ -2902,9 +2910,9 @@ re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/z
 tmb.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/font
 s/type1/public/newtx/ztmr.pfb></Users/maxim.re/Library/Application Support/MiKT
 eX/texmfs/install/fonts/type1/public/newtx/ztmri.pfb>
-Output written on dirname.pdf (30 pages, 6887616 bytes).
+Output written on dirname.pdf (32 pages, 6983843 bytes).
 PDF statistics:
- 571 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 500000)
+ 595 PDF objects out of 1000 (max. 8388607)
+ 118 named destinations out of 1000 (max. 500000)
  68879 words of extra memory for PDF output out of 74296 (max. 10000000)
 
