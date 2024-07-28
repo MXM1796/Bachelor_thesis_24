@@ -680,8 +680,31 @@
       \verb https://doi.org/10.1364/oe.25.006796
       \endverb
     \endentry
+    \entry{Thorlabs-power-metre}{online}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Thorlabs - Your Source for Fiber Optics, Laser Diodes, Optical Instrumentation and Polarization Measurement & Control.}
+      \verb{urlraw}
+      \verb https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=3328%20Thorlabs%20-%20Powermeter%20specs
+      \endverb
+      \verb{url}
+      \verb https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=3328%20Thorlabs%20-%20Powermeter%20specs
+      \endverb
+    \endentry
+    \entry{Thorlabs-OD}{online}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{ND Filters: Mounted, AR Coated for 650 - 1050 nm}
+      \verb{urlraw}
+      \verb https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=6274
+      \endverb
+      \verb{url}
+      \verb https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=6274
+      \endverb
+    \endentry
   \enddatalist
-  \missing{manual_single_quantum_snspd}
 \endrefsection
 \endinput
 

@@ -597,6 +597,12 @@ INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
 INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
 INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
 INPUT Latex_Contentfiles/Working_principle_of_SNSPD.tex
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxsy.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txsys.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaX.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
 INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
 INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
 INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
@@ -642,12 +648,6 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxsy.vf
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txsys.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaX.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
 INPUT ./figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png
 INPUT ./figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png
 INPUT ./figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png
@@ -869,10 +869,22 @@ OUTPUT Latex_Contentfiles/thesis_appendix.aux
 INPUT ./Latex_Contentfiles/thesis_appendix.tex
 INPUT ./Latex_Contentfiles/thesis_appendix.tex
 INPUT Latex_Contentfiles/thesis_appendix.tex
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
+INPUT ./tables/HQO_270724_Tranmission_values_statistical_errors.tex
+INPUT ./tables/HQO_270724_Tranmission_values_statistical_errors.tex
+INPUT ./tables/HQO_270724_Tranmission_values_statistical_errors.tex
+INPUT ./tables/HQO_270724_Tranmission_values_statistical_errors.tex
+INPUT tables/HQO_270724_Tranmission_values_statistical_errors.tex
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Bold-tlf-t1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Bold-tlf-t1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxexx.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txexs.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmia.vf
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxbmi.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXBMI.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxbmia.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txbmiaX.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txbmiaSTbb.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Bold-tlf-ot1.tfm
@@ -909,12 +921,11 @@ INPUT ./tables/HQO_250724_angle sde dependency_results.tex
 INPUT ./tables/HQO_250724_angle sde dependency_results.tex
 INPUT ./tables/HQO_250724_angle sde dependency_results.tex
 INPUT tables/HQO_250724_angle sde dependency_results.tex
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmia.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxbmi.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXBMI.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaX.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-sc-t1.tfm
 INPUT dirname.aux
 INPUT ./Latex_Contentfiles/thesis_acknowledge.aux
@@ -949,6 +960,8 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/ty
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/tex-gyre/qhvb.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/txfonts/t1xtt.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/txfonts/t1xtt.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txbmiaX.pfb
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txbmiaX.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txexs.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txexs.pfb
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txmiaX.pfb

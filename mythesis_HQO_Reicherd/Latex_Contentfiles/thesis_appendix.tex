@@ -5,49 +5,61 @@
 
 \section{ND filter calibration}\label{sec:ND_filter_calibration_appendix}
 
-To calculate the OD value of the ND Filters, we first calculate the Transmission value:
+To calculate the OD value of the ND Filters, we have to consider the statistical error from the
+transmission value and the systematic error, we get from measuring the OD with two methods, as explained in \ref{sec:experimental_setup}.
 
-$T=\frac{P_{detected}}{P_{input}}$
-
-For the Error calculation we have to consider two error sources.
-Once the measurement uncertainty of the photodiode and the measurement uncertainty from reading the value from the Powermeter.
-Since the uncertainty from the photodiode is always 3$\%$ of the measured value, it does not contribute to the error,
-since the transmission is a division and this does not affect the overall relation.
-However, reading of the value from the powermeter provides always a different error because the last displayed order of
-magnitude of the displayed result on the powermeter fluctuates.
-
-Its also important to mention that after each adjustment for the fiber coupling, it was not possible to get to the same
-initial value.
-Therefore, we always have different power values we compare, though the filtering process was done always with the same
-amount of light power.
-So we have to consider an error from the fiber coupling and optimization.
-For this our $P_{input}$ value for the Transmission is in reality not the measured value we coupled in but
-the averaged value with an standard deviation as error.
-Also, this only applies for the first measurement method because we adjust there our fiber coupling.
-In the second measurement we have a stable $P_{input}$
-
-So for the transmission error we got:
+We first consider the statistical error from the transmission value.
+The transmission value is defined as:
 
 \begin{align}
-    \Delta T= \sqrt{\left(\frac{\Delta P_{detected}}{P_{input}}\right)^2 + \left(\frac{\Delta P_{input} P_{detected}}{ P_{input}^2}\right)^2}
-\end{align}.
-
-Where.
-
-\begin{align}
-    \Delta P_{Input} = \sqrt{(P^{Pow.meter read off}_{detected})^2 + (P^{STD, coupling}_{detected})^2}
+    \text{T}=\frac{P_{\text{ND}}}{P}
 \end{align}
 
-And with the relation: $\text{OD}= \log(\frac{1}{T})$ we can calculate the error for the OD:
-$\Delta OD = \frac{\Delta T}{\ln(10) \cdot T}$ 
+Where $P$ is the power detected by the power metre without the ND filter and $P_{\text{ND}}$
+is the power we measured with applied ND filter.
 
-Regarding the errors it is important to mention that the error of the photodiode is not relevant if we look at the error
-of the transmission rate because its the same for the measurement before and after the ND Filters.
+For the Error calculation the following considerations are done: 
 
-In general the measurement error of the photodiode is about 3$\%$ of the measured value \href{https://www.thorlabs.com/newgrouppage9.cfm?objectgroup_id=3328 Thorlabs - Powermeter specs}{Powermeter specs}.
-This error I considered only in the calculation for the output power error:
+First, for both $P$ and $P_{\text{ND}}$ the measurement uncertainty of the photodiode from the photodiode is always 3$\%$
+of the measured value \cite{Thorlabs-power-metre}.
+Since this uncertainty does not affect the overall relation between the two measurements it does not
+contribute to the error calculation.
+However, the measurement uncertainty from reading the value from the Powermeter contributes to both,
+$P$ and $P_{\text{ND}}$, since reading the value from the powermeter provides always a different error because
+the last displayed order of magnitude of the displayed result on the powermeter fluctuates.
 
-Table with measurement values and results for Transmission value and OD Value
+Further, regarding  $\Delta P$ it is also important to mention that after each ND filter change,
+the coupling was readjusted to the maximal vale.
+However, after the ND filter was removed it was not possible to get to the same initial value.
+Therefore, we always have different power values we compare, though the filtering process was done always with the same
+fixed laser power setting.
+Based on this, $P$ is the mean value of all initial values was taken and for the error the standard
+deviation was calculated.
+Due to this we have also to consider an $\textit{additional error source} $ $\Delta P^{\text{STD}}$ from the fiber
+coupling and optimization in $\Delta P$ .
+
+\textit{Important}: This only applies for the first measurement method because we adjust there our fiber coupling.
+In the second measurement we have a stable $P$ because there, the fiber coupling was not adjusted, once the maximum was
+reached.
+
+So, $\Delta P$ for the first measurement method is calculated as follows:
+
+\begin{align}
+    \Delta P = \sqrt{(\Delta P_{\text{Read off}})^2 + (\Delta P_{\text{STD}})^2}
+\end{align}
+
+For $P_{\text{ND}}$ applies $\Delta P_{\text{ND}} = \Delta P_{\text{Read off}}$
+
+As result we get the following error for the transmission rate:
+
+\begin{align}
+    \Delta T_{\text{stat}}= \sqrt{\left(\frac{\Delta P_{\text{ND}}}{P}\right)^2 + \left(\frac{\Delta P P_{\text{ND}}}{ P^2}\right)^2}
+\end{align}.
+
+In the following the table with the measurement values and results for the Transmission value and its corresponding statistical
+error is shown:
+
+\input{tables/HQO_270724_Tranmission_values_statistical_errors}
 
 \begin{table}[!ht]
     \centering
@@ -55,7 +67,7 @@ Table with measurement values and results for Transmission value and OD Value
     \label{tab:ND_filter_calibration}
     \begin{tabular}{|l|l|l|l|l|l|l|l|}
     \hline
-        \textbf{ID} & \textbf{Expectetd OD Value} & \textbf{Measured T Value} & \textbf{T\_Value Error Systematic} & \textbf{T Value Error stat} & \textbf{T Value Error} & \textbf{Mean OD Value} & \textbf{OD Value Error} \\ \hline
+        \textbf{ID} & \textbf{$\text{OD}_{\text{expected}}$} & \textbf{$T_{\text{measured}}$} & \textbf{T\_Value Error Systematic} & \textbf{T Value Error stat} & \textbf{T Value Error} & \textbf{Mean OD Value} & \textbf{OD Value Error} \\ \hline
         TP03337667 & 1,00 & 1,43E-01 & 67,697E-4 & 3,223E-03 & 7,50E-03 & 0,844 & 0,023 \\ \hline
         TP03337667 (2) & 1,00 & 1,47E-01 & 50,474E-04 & 3,073E-03 & 5,91E-03 & 0,832 & 0,017 \\ \hline
         TP03366490 & 3,00 & 8,26E-03 & 32,418E-05 & 1,882E-04 & 3,75E-04 & 2,083 & 0,020 \\ \hline
@@ -72,20 +84,48 @@ Table with measurement values and results for Transmission value and OD Value
     }
 \end{table}
 
-
-Calculating the error for stacked ND filters. 
-The Error from
+Further for calculating the total transmission value and its error, we have to include the measurements and errors for the second method.
+Here, we have a stable $P$ because the fiber coupling was not adjusted, once the maximum was reached.
+The transmission error for the second method is calculated as follows:
 
 \begin{align}
-    P_{input} = P^{initial}_{Input} \cdot 10^{-OD}
-\end{align}
-constructed out of the uncertainty of the Photodiode  $\Delta P^{initial}_{Input} = 0.03 \cdot P^{initial}_{Input} $ and the error of the ND Filters
-\begin{align}
-    \Leftarrow \Delta P_{input} = \sqrt{(\Delta P^{initial}_{Input} \cdot 10^{-OD})^2 + (P^{initial}_{Input} \cdot \log(10) \cdot \Delta OD)^2}
+    \Delta T= \sqrt{\left(\frac{\Delta P_{\text{ND}}}{P}\right)^2 + \left(\frac{\Delta P P_{\text{ND}}}{ P^2}\right)^2}
 \end{align}.
 
-The Error  $\Delta P_{detected} $ is reformed to a rate only in the order of a few hundred Herz and
-is neglectable compared to the  $\Delta P_{input}$.
+Both $\Delta P_{\text{ND}}$ and $\Delta P$ are estimated by the read off error of the powermeter.
+
+%The values for this method are shown in table \ref{tab:}:
+% Table has to be included!
+
+With booth transmission values, the total transmission value and its error can be calculated as follows:
+
+\begin{align}
+    T_{\text{total}} = \frac{T_{\text{stat}} + T_{\text{systematic}}}{2}\\
+    \Delta T_{\text{total}} = \sqrt{\Delta T_{\text{stat}}^2 + \Delta T_{\text{systematic}}^2}
+\end{align}
+
+
+Continuing with the calculation of the OD value, we have according to \cite{Thorlabs-OD} the relation:
+ $\text{OD}= \log(\frac{1}{T})$.
+From this, we can calculate the error for the OD: $\Delta OD = \frac{\Delta T}{\ln(10) \cdot T}$
+
+%# the final errors for the OD value are presented in table:
+% Table has to be included!
+
+The resulting power after stacked ND filters are calculated as follows:
+
+\begin{align}
+    P_{\text{ND}} = P \cdot 10^{-OD}
+\end{align}
+
+The corresponding error is  $\Delta P = 0.03 \cdot P $ and hence the total error for the power after the ND filter is calculated as follows:
+\begin{align}
+    \Leftarrow \Delta P_{\text{ND}} = \sqrt{(\Delta P \cdot 10^{-\text{OD}})^2 + (P \cdot \log(10) \cdot \Delta \text{OD})^2}
+\end{align}.
+
+An additional error from reading off the count rate (hence, the corresponding Power) from the computer screen was also considered,
+since measurement with the power metre was not able.
+However, because the fluctuating rate of the count rate was in the order of a few Hz, it was neglected for the final error calculation.
 
 
 \section{Angle dependent countrate and $\eta_{\text{sde}}$}\label{sec:countrate_sde_results_appendix}
@@ -168,14 +208,7 @@ is neglectable compared to the  $\Delta P_{input}$.
 %| 12 || TP03348187 || 5,13E-04 || 9,06E-08 || 0,0002 || 7,92E-07 || 5,00 || 3,7529 || 0,0019 || 124,71
 %|}
 
-\textbf{Method 1 and 2 combined:} In both tables above one can see that the second method has slightly higher values.
-This indicates a systematic error we dont know.
-Till now, we only considered statistical errors.
-Now if we want to calculate the true value we have to consider the systematic error as well.
-Here we determine the systematic error as half of the difference between the values from method one and
-method two $\Delta T_{syst} = \frac{T_{meth_2} - T_{meth_1}}{2}$  .
-So the final transmission error of the combined measurements is:
-$\Delta T = \sqrt{\Delta T_{stat}^2 + \Delta T_{syst}^2}$  
+
 
 %{| class="wikitable"
 %! ID !! Expectetd OD Value !! Measured T Value !! T_Value Error Systematic !! T Value Error stat !! T Value Error !! Mean OD Value !! OD Value Error
