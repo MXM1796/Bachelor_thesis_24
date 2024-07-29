@@ -17,11 +17,10 @@
 \contentsline {chapter}{\numberline {5}Summary and Outlook}{23}{chapter.5}%
 \contentsline {chapter}{\numberline {A}Appendix}{25}{appendix.A}%
 \contentsline {section}{\numberline {A.1}ND filter calibration}{25}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Angle dependent countrate and $\eta _{\text {sde}}$}{29}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Recovery time measurements}{29}{section.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}Recovery time measurements - Oscillating bias current}{29}{subsection.A.3.1}%
-\contentsline {subsection}{\numberline {A.3.2}Polarization alignment for system detection efficiency measurements}{29}{subsection.A.3.2}%
-\contentsline {section}{\numberline {A.4}Recorings of analog pulses}{29}{section.A.4}%
-\contentsline {section}{\numberline {A.5}Bias sweeping for different count rates}{29}{section.A.5}%
-\contentsline {chapter}{\nonumberline Bibliography}{30}{chapter*.32}%
+\contentsline {section}{\numberline {A.2}Angle dependent countrate}{28}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Count rate dependent $\eta _{\text {sde}}$}{29}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Bias sweeping for different count rates}{29}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Recovery time measurements}{29}{section.A.5}%
+\contentsline {subsection}{\numberline {A.5.1}Recovery time measurements - Oscillating bias current}{29}{subsection.A.5.1}%
+\contentsline {section}{\numberline {A.6}Recorings of analog pulses}{29}{section.A.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  29 JUL 2024 19:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2024.6.27)  30 JUL 2024 00:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1833,11 +1833,11 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `dirname.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'dirname.bbl' found.
- (dirname.bbl)
+Package biblatex Info: ... file 'dirname.bbl' not found.
+
+No file dirname.bbl.
 Package biblatex Info: Reference section=0 on input line 155.
 Package biblatex Info: Reference segment=0 on input line 155.
-
 ubonn-thesis: thesis dedication not defined
 Document dirname, Info: Bachelor thesis
 (cover/Bachelor_Title.tex)
@@ -2161,9 +2161,9 @@ LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
 LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
 (Font)              scaled to size 6.1pt on input line 8.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 20.
+(Font)              scaled to size 8.0pt on input line 21.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 20.
+(Font)              scaled to size 6.1pt on input line 21.
 )
 \tf@toc=\write4
 \openout4 = `dirname.toc'.
@@ -2181,13 +2181,26 @@ LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 13.53603pt on input line 4.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 23.38725pt on input line 4.
-<figs/HQO_full_experiment.png, id=69, 1790.94093pt x 746.03719pt>
+
+LaTeX Warning: Citation 'firstenberg-2016' on page 1 undefined on input line 11
+.
+
+
+LaTeX Warning: Citation 'gao-2011' on page 1 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'oconnell-2010' on page 1 undefined on input line 15.
+
+<figs/HQO_full_experiment.png, id=64, 1790.94093pt x 746.03719pt>
 File: figs/HQO_full_experiment.png Graphic file (type png)
 <use figs/HQO_full_experiment.png>
 Package pdftex.def Info: figs/HQO_full_experiment.png  used on input line 23.
 (pdftex.def)             Requested size: 437.46118pt x 182.22859pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 27.
+
+LaTeX Warning: Citation 'lukin-2001' on page 1 undefined on input line 33.
+
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 35.
@@ -2198,91 +2211,132 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 
+LaTeX Warning: Citation 'urban-2009' on page 1 undefined on input line 35.
+
+
+
 [1
 
 
 
  <./figs/HQO_full_experiment.png>]
+
+LaTeX Warning: Citation 'firstenberg-2016' on page 2 undefined on input line 42
+.
+
+
 Overfull \hbox (4.28955pt too wide) in paragraph at lines 40--43
 []\T1/ntxtlf/m/n/10.95 (-20) The experimentation and the handling of Rydberg at
 oms and the corresponding quantum nonlinearities,
  []
 
+
+LaTeX Warning: Citation 'tech_sheet_single_quantum' on page 2 undefined on inpu
+t line 50.
+
 ) (Latex_Contentfiles/Working_principle_of_SNSPD.tex
 
 [2]
 chapter 2.
+
+LaTeX Warning: Citation 'goltsman-2001' on page 3 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'natarajan-2012' on page 3 undefined on input line 13.
+
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 18.
-<figs/HQO_20240721_SNSPD_elementary_setup.png, id=101, 776.6616pt x 481.3182pt>
 
+LaTeX Warning: Citation 'bardeen-1957' on page 3 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'single-quantum-2022' on page 3 undefined on input line
+ 25.
+
+<figs/HQO_20240721_SNSPD_elementary_setup.png, id=82, 776.6616pt x 481.3182pt>
 File: figs/HQO_20240721_SNSPD_elementary_setup.png Graphic file (type png)
 <use figs/HQO_20240721_SNSPD_elementary_setup.png>
 Package pdftex.def Info: figs/HQO_20240721_SNSPD_elementary_setup.png  used on 
 input line 34.
 (pdftex.def)             Requested size: 262.47937pt x 162.66188pt.
 
+LaTeX Warning: Citation 'steudle-2012' on page 3 undefined on input line 38.
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 38.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 10.0pt on input line 38.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 7.3pt on input line 38.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 5.5pt on input line 38.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 10.0pt on input line 38.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 7.3pt on input line 38.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 5.5pt on input line 38.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 10.0pt on input line 38.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 7.3pt on input line 38.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 5.5pt on input line 38.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 10.0pt on input line 38.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 7.3pt on input line 38.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 5.5pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 10.0pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 7.3pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 5.5pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 10.0pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 7.3pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 5.5pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 10.0pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 7.3pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 5.5pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 10.0pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 7.3pt on input line 38.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 5.5pt on input line 38.
+
+LaTeX Warning: Citation 'steudle-2012' on page 3 undefined on input line 38.
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figs/HQO_20240725_detection_process_circle.png, id=107, 2352.6294pt x 1724.603
-1pt>
+<figs/HQO_20240725_detection_process_circle.png, id=86, 2352.6294pt x 1724.6031
+pt>
 File: figs/HQO_20240725_detection_process_circle.png Graphic file (type png)
 <use figs/HQO_20240725_detection_process_circle.png>
 Package pdftex.def Info: figs/HQO_20240725_detection_process_circle.png  used o
 n input line 45.
 (pdftex.def)             Requested size: 349.97028pt x 256.54776pt.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 49.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 49.
-LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 49.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.0pt on input line 49.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 7.3pt on input line 49.
-LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 5.5pt on input line 49.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.0pt on input line 49.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 7.3pt on input line 49.
-LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 5.5pt on input line 49.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.0pt on input line 49.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 7.3pt on input line 49.
-LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 5.5pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.0pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 7.3pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 5.5pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.0pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 7.3pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 5.5pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 7.3pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 5.5pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.0pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 7.3pt on input line 49.
-LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 5.5pt on input line 49.
+
+LaTeX Warning: Citation 'singlequantum_snsd_nodate' on page 3 undefined on inpu
+t line 49.
+
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 7.3pt on input line 49.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 49.
+
+LaTeX Warning: Citation 'singlequantum_snsd_nodate' on page 3 undefined on inpu
+t line 49.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2291,8 +2345,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--66
 
  []
 
-<figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png, id=111, 613.13869pt x 325
-.07047pt>
+<figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png, id=88, 613.13869pt x 325.
+07047pt>
 File: figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png Graphic file (type pn
 g)
 <use figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png>
@@ -2305,9 +2359,16 @@ sed on input line 69.
 
 
 ]
+
+LaTeX Warning: Citation 'single-quantum-2022' on page 4 undefined on input line
+ 78.
+
+
+LaTeX Warning: Citation 'zheng-2016' on page 4 undefined on input line 81.
+
 </Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Ph
-oton Detection/SNSPD_Meander_fiber_coupling.png, id=128, 1802.735pt x 949.5475p
-t>
+oton Detection/SNSPD_Meander_fiber_coupling.png, id=99, 1802.735pt x 949.5475pt
+>
 File: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Sing
 le Photon Detection/SNSPD_Meander_fiber_coupling.png Graphic file (type png)
 <use /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/Proseminar/Figs Singl
@@ -2316,6 +2377,14 @@ Package pdftex.def Info: /Users/maxim.re/Studium/Physik B.Sc./Semester_8_SS24/P
 roseminar/Figs Single Photon Detection/SNSPD_Meander_fiber_coupling.png  used o
 n input line 85.
 (pdftex.def)             Requested size: 349.97028pt x 184.3279pt.
+
+LaTeX Warning: Citation 'singlequantum_snsd' on page 4 undefined on input line 
+87.
+
+
+LaTeX Warning: Citation 'singlequantum_snsd' on page 4 undefined on input line 
+87.
+
 
 
 [4 <./figs/HQO_20240721_SNSPD_elementary_setup.png> <./figs/HQO_20240725_analog
@@ -2327,19 +2396,38 @@ Physik B.Sc./Semester_8_SS24/Proseminar/Figs Single Photon Detection/SNSPD_Mean
 der_fiber_coupling.png>]
 chapter 3.
 
+LaTeX Warning: Citation 'hadfield-2009' on page 6 undefined on input line 38.
+
+
 
 [6
 
 
 ]
+
+LaTeX Warning: Citation 'single-quantum-2022' on page 7 undefined on input line
+ 58.
+
+
+LaTeX Warning: Citation 'hadfield-2009' on page 7 undefined on input line 61.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 61--75
 
  []
 
 
+LaTeX Warning: Citation 'single-quantum-2022' on page 7 undefined on input line
+ 105.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
  []
+
+
+LaTeX Warning: Citation 'Alu_reflectionsgrad' on page 7 undefined on input line
+ 109.
 
 
 LaTeX Warning: Reference `' on page 7 undefined on input line 110.
@@ -2352,7 +2440,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--115
 
 
 [7]
-<figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png, id=176, 594.3003p
+<figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png, id=134, 594.3003p
 t x 253.4268pt>
 File: figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png Graphic file 
 (type png)
@@ -2367,6 +2455,16 @@ s.png  used on input line 118.
 
 [9]
 chapter 4.
+
+LaTeX Warning: Citation 'natarajan-2012' on page 10 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'hadfield-2009' on page 10 undefined on input line 9.
+
+
+LaTeX Warning: Citation 'wikipedia-contributors-2024' on page 10 undefined on i
+nput line 19.
+
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
 (Font)              scaled to size 11.28003pt on input line 27.
 LaTeX Info: Symbol \textmu not provided by
@@ -2424,7 +2522,11 @@ LaTeX Info: Symbol \textmu not provided by
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 64.
-<figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png, id=206, 419.166pt x 313.
+
+LaTeX Warning: Citation 'tech_sheet_single_quantum' on page 11 undefined on inp
+ut line 67.
+
+<figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png, id=159, 419.166pt x 313.
 94089pt>
 File: figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png Graphic file (type p
 ng)
@@ -2435,7 +2537,7 @@ used on input line 71.
 
 
 [11]
-<figs/HQO_20240712_recoverytime_visualized_engl.png, id=217, 464.937pt x 175.61
+<figs/HQO_20240712_recoverytime_visualized_engl.png, id=170, 464.937pt x 175.61
 61pt>
 File: figs/HQO_20240712_recoverytime_visualized_engl.png Graphic file (type png
 )
@@ -2445,8 +2547,24 @@ ed on input line 98.
 (pdftex.def)             Requested size: 349.97028pt x 132.19678pt.
 
 
+LaTeX Warning: Citation 'shalm_single-photon_2013' on page 12 undefined on inpu
+t line 101.
+
+
+LaTeX Warning: Citation 'shalm_single-photon_2013' on page 12 undefined on inpu
+t line 101.
+
+
+
 [12 <./figs/HQO_20240708_DCR_cap_on_Channel_1_Ba_thesis.png>]
-<figs/HQO_20240712_recoverytime_setup.png, id=229, 476.0184pt x 132.7359pt>
+
+LaTeX Warning: Citation 'autebert-2020' on page 13 undefined on input line 110.
+
+
+
+LaTeX Warning: Citation 'miki-2017' on page 13 undefined on input line 110.
+
+<figs/HQO_20240712_recoverytime_setup.png, id=178, 476.0184pt x 132.7359pt>
 File: figs/HQO_20240712_recoverytime_setup.png Graphic file (type png)
 <use figs/HQO_20240712_recoverytime_setup.png>
 Package pdftex.def Info: figs/HQO_20240712_recoverytime_setup.png  used on inpu
@@ -2471,7 +2589,6 @@ LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 133.
 
-
 LaTeX Warning: Reference `sec: Recovery time measurements' on page 13 undefined
  on input line 134.
 
@@ -2481,7 +2598,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--135
  []
 
 <figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-900mV_thesis.p
-ng, id=234, 421.18956pt x 313.94089pt>
+ng, id=183, 421.18956pt x 313.94089pt>
 File: figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-900mV_the
 sis.png Graphic file (type png)
 <use figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-900mV_thes
@@ -2492,7 +2609,7 @@ trigg_300-900mV_thesis.png  used on input line 138.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 9.0pt on input line 139.
 <figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis.png
-, id=235, 421.18956pt x 313.94089pt>
+, id=184, 421.18956pt x 313.94089pt>
 File: figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesi
 s.png Graphic file (type png)
 <use figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis
@@ -2515,7 +2632,7 @@ LaTeX Info: Symbol \textmu not provided by
 
 [13 <./figs/HQO_20240712_recoverytime_visualized_engl.png> <./figs/HQO_20240712
 _recoverytime_setup.png>]
-<figs/HQO_20240725_analog_signal_double_pulse_31.2uA_tv_600mV.png, id=250, 622.
+<figs/HQO_20240725_analog_signal_double_pulse_31.2uA_tv_600mV.png, id=196, 622.
 82286pt x 325.07047pt>
 File: figs/HQO_20240725_analog_signal_double_pulse_31.2uA_tv_600mV.png Graphic 
 file (type png)
@@ -2552,7 +2669,7 @@ ng>]
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 186.
-<~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png, id=263, 462.
+<~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png, id=209, 462.
 2871pt x 178.266pt>
 File: ~/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current.png Graphic 
 file (type png)
@@ -2572,7 +2689,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--222
 
 [15 </Users/maxim.re/sciebo/Bilder_BA_MaxR/HQO_20240710_oscilating_bias_current
 .png>]
-<figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png, id=274
+<figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png, id=220
 , 421.18956pt x 313.94089pt>
 File: figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png Gr
 aphic file (type png)
@@ -2586,7 +2703,12 @@ LaTeX Info: Symbol \textmu not provided by
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 233.
-<figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png, id=277, 41
+
+
+LaTeX Warning: Citation 'hadfield-2009' on page 16 undefined on input line 250.
+
+
+<figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png, id=222, 41
 0.0118pt x 148.1535pt>
 File: figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png Graphi
 c file (type png)
@@ -2595,6 +2717,14 @@ Package pdftex.def Info: figs/HQO_20240712_systemd_detection_efficiency_visuali
 zed_engl.png  used on input line 257.
 (pdftex.def)             Requested size: 349.97028pt x 126.46005pt.
 
+LaTeX Warning: Citation 'natarajan-2012' on page 16 undefined on input line 265
+.
+
+
+LaTeX Warning: Citation 'hadfield-2009' on page 16 undefined on input line 265.
+
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 263--273
 
  []
@@ -2602,30 +2732,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--273
 
 
 [16 <./figs/HQO_20240710_Deadtime_Channel_1_Bias_31_2uA_trig_600mV_thesis.png>]
+
+LaTeX Warning: Citation 'single-quantum-2022' on page 17 undefined on input lin
+e 279.
+
+
+LaTeX Warning: Citation 'single-quantum-2022' on page 17 undefined on input lin
+e 281.
+
+
+LaTeX Warning: Citation 'single-quantum-2022' on page 17 undefined on input lin
+e 297.
+
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 305.
 
 
 [17 <./figs/HQO_20240712_systemd_detection_efficiency_visualized_engl.png>]
-<figs/HQO_2024011_countrate_angle_thesis.png, id=305, 418.00967pt x 313.94089pt
->
+<figs/HQO_2024011_countrate_angle_thesis.png, id=245, 418.00967pt x 314.3745pt>
+
 File: figs/HQO_2024011_countrate_angle_thesis.png Graphic file (type png)
 <use figs/HQO_2024011_countrate_angle_thesis.png>
 Package pdftex.def Info: figs/HQO_2024011_countrate_angle_thesis.png  used on i
 nput line 339.
-(pdftex.def)             Requested size: 349.97028pt x 262.84148pt.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 341.
-
-
-LaTeX Warning: Reference `sec: ND_filter_calibration' on page 18 undefined on i
-nput line 341.
-
-
-LaTeX Warning: Reference `sec: ND_filter_calibration' on page 18 undefined on i
-nput line 341.
-
+(pdftex.def)             Requested size: 349.97028pt x 263.20451pt.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 373.
@@ -2635,7 +2766,7 @@ LaTeX Info: Symbol \textmu not provided by
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 377.
-<figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_8_92.png, id=308, 411.5
+<figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_8_92.png, id=250, 411.5
 0539pt x 313.94089pt>
 File: figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_8_92.png Graphic f
 ile (type png)
@@ -2643,7 +2774,7 @@ ile (type png)
 Package pdftex.def Info: figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis
 _8_92.png  used on input line 381.
 (pdftex.def)             Requested size: 218.73059pt x 166.87169pt.
-<figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png, id=309, 418.0
+<figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png, id=251, 418.0
 0967pt x 313.94089pt>
 File: figs/HQO_20240726_countrate_bias_sweep_tv_3_6_9_thesis_9_72.png Graphic f
 ile (type png)
@@ -2662,7 +2793,7 @@ LaTeX Info: Symbol \textmu not provided by
 
 
 [18 <./figs/HQO_2024011_countrate_angle_thesis.png>]
-<figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png, id=325, 421.18956
+<figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png, id=267, 421.18956
 pt x 313.94089pt>
 File: figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png Graphic file 
 (type png)
@@ -2670,7 +2801,7 @@ File: figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600mV.png Graphic file
 Package pdftex.def Info: figs/HQO_20240726_analog_signal_OD_9.57_31.2uA_tv_600m
 V.png  used on input line 421.
 (pdftex.def)             Requested size: 218.73059pt x 163.03462pt.
-<figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png, id=326, 421.1895
+<figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png, id=268, 421.1895
 6pt x 313.94089pt>
 File: figs/HQO_20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png Graphic file
  (type png)
@@ -2699,23 +2830,14 @@ LaTeX Warning: Reference `fig: ' on page 19 undefined on input line 441.
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
             Default family used instead on input line 463.
-<figs/HQO_20240727_sde_count_rate_thesis.png, id=340, 414.8298pt x 313.94089pt>
-
+<figs/HQO_20240727_sde_count_rate_thesis.png, id=282, 415.40796pt x 313.94089pt
+>
 File: figs/HQO_20240727_sde_count_rate_thesis.png Graphic file (type png)
 <use figs/HQO_20240727_sde_count_rate_thesis.png>
 Package pdftex.def Info: figs/HQO_20240727_sde_count_rate_thesis.png  used on i
 nput line 478.
-(pdftex.def)             Requested size: 349.97028pt x 264.863pt.
-
-
-LaTeX Warning: Reference `tab:sde_count_rate_table' on page 20 undefined on inp
-ut line 482.
-
-
-LaTeX Warning: Reference `tab:sde_count_rate_table' on page 20 undefined on inp
-ut line 482.
-
-<figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png, id=346, 421.18956pt x 317.
+(pdftex.def)             Requested size: 349.97028pt x 264.48457pt.
+<figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png, id=290, 421.18956pt x 317.
 69891pt>
 File: figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png Graphic file (type png
 )
@@ -2723,15 +2845,15 @@ File: figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png Graphic file (type png
 Package pdftex.def Info: figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png  us
 ed on input line 498.
 (pdftex.def)             Requested size: 218.73059pt x 164.98622pt.
-<figs/HQO_20240727_sde_count_rate_log_thesis.png, id=347, 419.166pt x 314.08542
-pt>
+<figs/HQO_20240727_sde_count_rate_log_thesis.png, id=291, 418.58784pt x 314.085
+42pt>
 File: figs/HQO_20240727_sde_count_rate_log_thesis.png Graphic file (type png)
 <use figs/HQO_20240727_sde_count_rate_log_thesis.png>
 Package pdftex.def Info: figs/HQO_20240727_sde_count_rate_log_thesis.png  used 
 on input line 505.
-(pdftex.def)             Requested size: 218.73059pt x 163.90047pt.
+(pdftex.def)             Requested size: 218.73059pt x 164.12572pt.
 
-Overfull \hbox (1.64243pt too wide) in paragraph at lines 496--513
+Overfull \hbox (1.64243pt too wide) in paragraph at lines 496--514
 [][]  [] 
  []
 
@@ -2744,48 +2866,73 @@ _20240726_analog_signal_31.2uA_tv_600mV_OD_12_06.png>]
 as_sweep_tv_600_thesis.png> <./figs/HQO_20240727_sde_count_rate_log_thesis.png>
 ]
 
-LaTeX Warning: Reference `tab:sde_count_rate_table' on page 22 undefined on inp
-ut line 531.
+LaTeX Warning: Citation 'tech_sheet_single_quantum' on page 22 undefined on inp
+ut line 537.
+
+
+LaTeX Warning: Citation 'tech_sheet_single_quantum' on page 22 undefined on inp
+ut line 539.
+
+
+LaTeX Warning: Citation 'natarajan-2012' on page 22 undefined on input line 540
+.
 
 ) (Latex_Contentfiles/Conclusion_and_Outlook.tex
 
 [22]
 chapter 5.
 
-LaTeX Warning: Reference `tab:final_characterization_results' on page 23 undefi
-ned on input line 11.
+LaTeX Warning: Citation 'singlequantum_eos' on page 23 undefined on input line 
+13.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--22
+Underfull \hbox (badness 10000) in paragraph at lines 16--25
 
  []
 
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 27.
+            Default family used instead on input line 30.
+
+LaTeX Warning: Citation 'autebert-2020' on page 23 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'miki-2017' on page 23 undefined on input line 33.
+
 LaTeX Info: Symbol \textmu not provided by
             font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 32.
+            Default family used instead on input line 35.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 36.
+e 39.
 
 (/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/ne
 wtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 36.
-LaTeX Info: Symbol \textmu not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 47.
-LaTeX Info: Symbol \textmu not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 48.
-LaTeX Info: Symbol \textmu not provided by
-            font family ntxtlf in TS1 encoding.
-            Default family used instead on input line 49.
+(Font)              scaled to size 10.95pt on input line 39.
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--62
+
+LaTeX Warning: Citation 'tech_sheet_single_quantum' on page 23 undefined on inp
+ut line 44.
+
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 50.
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 51.
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 52.
+
+Overfull \hbox (24.25777pt too wide) in paragraph at lines 44--65
+[]\T1/ntxtlf/m/n/10.95 (-20) The results are in the range of the values of the 
+companies specification data [[]]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--65
 
  []
 
@@ -2794,13 +2941,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--62
 [23
 
 
-])
+]
+
+LaTeX Warning: Citation 'glauber-1963' on page 24 undefined on input line 70.
+
+(tables/HQO_290724_final_results.tex
+
+LaTeX Warning: Citation 'tech_sheet_single_quantum' on page 24 undefined on inp
+ut line 8.
+
+
+LaTeX Warning: Citation 'tech_sheet_single_quantum' on page 24 undefined on inp
+ut line 9.
+
+
+Overfull \hbox (180.04205pt too wide) in paragraph at lines 5--14
+ [][] 
+ []
+
+))
 
 [24]
 \openout2 = `Latex_Contentfiles/thesis_appendix.aux'.
 
  (Latex_Contentfiles/thesis_appendix.tex
 chapter A.
+
+LaTeX Warning: Citation 'Thorlabs-power-metre' on page 25 undefined on input li
+ne 24.
+
 
 
 [25
@@ -2813,117 +2982,116 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 6.1pt on input line 9.
 )
+(tables/OD_calibration_method_1.tex
+! Missing $ inserted.
+<inserted text> 
+                $
+l.8 ...r(P_{\text{before}}) \times 10^{-4}   [W] &
+                                                   Std $P_{\text{before}} \t...
 
-[26]
-LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 14.4pt on input line 131.
-LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 10.5pt on input line 131.
-LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
-(Font)              scaled to size 7.9pt on input line 131.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 14.4pt on input line 131.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 10.5pt on input line 131.
-LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
-(Font)              scaled to size 7.9pt on input line 131.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 14.4pt on input line 131.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 10.5pt on input line 131.
-LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
-(Font)              scaled to size 7.9pt on input line 131.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 14.4pt on input line 131.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 10.5pt on input line 131.
-LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
-(Font)              scaled to size 7.9pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
-(Font)              scaled to size 14.4pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
-(Font)              scaled to size 10.5pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
-(Font)              scaled to size 7.9pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
-(Font)              scaled to size 14.4pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
-(Font)              scaled to size 10.5pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
-(Font)              scaled to size 7.9pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
-(Font)              scaled to size 14.4pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
-(Font)              scaled to size 10.5pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
-(Font)              scaled to size 7.9pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
-(Font)              scaled to size 14.4pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
-(Font)              scaled to size 10.5pt on input line 131.
-LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
-(Font)              scaled to size 7.9pt on input line 131.
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 9.87003pt on input line 131.
-LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 7.42601pt on input line 131.
+? 
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 131.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 131.
-
-(tables/HQO_250724_angle countrate dependency_results.tex)
-(tables/HQO_250724_angle sde dependency_results.tex
-Overfull \hbox (381.77339pt too wide) in paragraph at lines 3--28
+Overfull \hbox (523.5665pt too wide) in paragraph at lines 6--22
  [][] 
  []
 
-))
+)
 
-[27]
+[26]
+
+LaTeX Warning: Citation 'Thorlabs-OD' on page 27 undefined on input line 109.
+
+
+
+[27] (tables/HQO_250724_angle countrate dependency_results.tex
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 28.
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 28.
+)
+LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
+(Font)              scaled to size 14.4pt on input line 136.
+LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
+(Font)              scaled to size 10.5pt on input line 136.
+LaTeX Font Info:    Font shape `OT1/minntx/b/n' will be
+(Font)              scaled to size 7.9pt on input line 136.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 14.4pt on input line 136.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 10.5pt on input line 136.
+LaTeX Font Info:    Font shape `OML/ntxmi/b/it' will be
+(Font)              scaled to size 7.9pt on input line 136.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 14.4pt on input line 136.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 10.5pt on input line 136.
+LaTeX Font Info:    Font shape `LMS/ntxsy/b/n' will be
+(Font)              scaled to size 7.9pt on input line 136.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 14.4pt on input line 136.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 10.5pt on input line 136.
+LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
+(Font)              scaled to size 7.9pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
+(Font)              scaled to size 14.4pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
+(Font)              scaled to size 10.5pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxmia/b/it' will be
+(Font)              scaled to size 7.9pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
+(Font)              scaled to size 14.4pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
+(Font)              scaled to size 10.5pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxsym/b/n' will be
+(Font)              scaled to size 7.9pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
+(Font)              scaled to size 14.4pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
+(Font)              scaled to size 10.5pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxsyc/b/n' will be
+(Font)              scaled to size 7.9pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
+(Font)              scaled to size 14.4pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
+(Font)              scaled to size 10.5pt on input line 136.
+LaTeX Font Info:    Font shape `U/ntxexa/b/n' will be
+(Font)              scaled to size 7.9pt on input line 136.
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 9.87003pt on input line 136.
+LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
+(Font)              scaled to size 7.42601pt on input line 136.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 136.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 136.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 136.
+
+(tables/HQO_290724_countrate_vs_sde.tex
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 20.
+LaTeX Info: Symbol \textmu not provided by
+            font family ntxtlf in TS1 encoding.
+            Default family used instead on input line 20.
+))
 
 [28]
 
 [29]
-chapter without number
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 196.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/ntxtlf/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-! Misplaced alignment tab character &.
-<argument> ... technology/Superconductor science &
-                                                   technology
-l.196 \printbibliography[heading=bibintoc]
-                                          
-? 
 
+LaTeX Warning: Empty bibliography on input line 196.
 
-[30
-
-
-
-
-]
-! Misplaced alignment tab character &.
-<argument> ...ation and Polarization Measurement &
-                                                   Control.
-l.196 \printbibliography[heading=bibintoc]
-                                          
-? 
-
-
-[31]
-
-[32] (dirname.aux
+(dirname.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 12.
 Package cleveref Info: loaded `ngerman' language definitions on input line 16.
  (Latex_Contentfiles/thesis_acknowledge.aux)
@@ -2941,9 +3109,6 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                dirname
 (biblatex)                and rerun LaTeX afterwards.
@@ -2953,44 +3118,43 @@ Package logreq Info: Writing requests to 'dirname.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43239 strings out of 475854
- 890754 string characters out of 5776366
- 1963905 words of memory out of 5000000
- 64840 multiletter control sequences out of 15000+600000
- 749967 words of font info for 403 fonts, out of 8000000 for 9000
+ 43092 strings out of 475854
+ 885782 string characters out of 5776366
+ 1968905 words of memory out of 5000000
+ 64721 multiletter control sequences out of 15000+600000
+ 746558 words of font info for 399 fonts, out of 8000000 for 9000
  2 hyphenation exceptions out of 8191
  108i,20n,147p,10904b,4066s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/
-dvips/newtx/ntx-ec-tlf-pc.enc}{/Users/maxim.re/Library/Application Support/MiKT
-eX/texmfs/install/fonts/enc/dvips/tex-gyre/q-ts1.enc} </Users/maxim.re/Library/
-Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1
-000.pk> </Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/p
-k/ljfour/jknappen/ec/dpi600/tcrm0800.pk>{/Users/maxim.re/Library/Application Su
-pport/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/Users/maxim.
-re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-
-ot1-tlf.enc} </Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fo
-nts/pk/ljfour/jknappen/ec/dpi600/tcrm1095.pk>{/Users/maxim.re/Library/Applicati
-on Support/MiKTeX/texmfs/install/fonts/enc/dvips/tex-gyre/q-ec.enc}</Users/maxi
-m.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx
-/NewTXBMI.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/instal
-l/fonts/type1/public/newtx/NewTXMI.pfb></Users/maxim.re/Library/Application Sup
-port/MiKTeX/texmfs/install/fonts/type1/public/newtx/NewTXMI7.pfb></Users/maxim.
-re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/tex-gyr
-e/qhvb.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/f
-onts/type1/public/tex-gyre/qtmr.pfb></Users/maxim.re/Library/Application Suppor
-t/MiKTeX/texmfs/install/fonts/type1/public/txfonts/t1xtt.pfb></Users/maxim.re/L
-ibrary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txbmi
-aX.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts
-/type1/public/newtx/txexs.pfb></Users/maxim.re/Library/Application Support/MiKT
-eX/texmfs/install/fonts/type1/public/newtx/txmiaX.pfb></Users/maxim.re/Library/
-Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txsys.pfb></
-Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/pu
-blic/newtx/ztmb.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/
-install/fonts/type1/public/newtx/ztmr.pfb></Users/maxim.re/Library/Application 
-Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztmri.pfb>
-Output written on dirname.pdf (36 pages, 7239369 bytes).
+dvips/tex-gyre/q-ts1.enc} </Users/maxim.re/Library/Application Support/MiKTeX/t
+exmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk> </Users/maxim.re/Lib
+rary/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/
+tcrm0800.pk>{/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/
+fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/Users/maxim.re/Library/Application Suppo
+rt/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} </Users/maxim.r
+e/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dp
+i600/tcrm1095.pk>{/Users/maxim.re/Library/Application Support/MiKTeX/texmfs/ins
+tall/fonts/enc/dvips/tex-gyre/q-ec.enc}</Users/maxim.re/Library/Application Sup
+port/MiKTeX/texmfs/install/fonts/type1/public/newtx/NewTXBMI.pfb></Users/maxim.
+re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/N
+ewTXMI.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/f
+onts/type1/public/newtx/NewTXMI7.pfb></Users/maxim.re/Library/Application Suppo
+rt/MiKTeX/texmfs/install/fonts/type1/public/tex-gyre/qhvb.pfb></Users/maxim.re/
+Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/tex-gyre/q
+tmr.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/font
+s/type1/public/txfonts/t1xtt.pfb></Users/maxim.re/Library/Application Support/M
+iKTeX/texmfs/install/fonts/type1/public/newtx/txbmiaX.pfb></Users/maxim.re/Libr
+ary/Application Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/txexs.pf
+b></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type
+1/public/newtx/txmiaX.pfb></Users/maxim.re/Library/Application Support/MiKTeX/t
+exmfs/install/fonts/type1/public/newtx/txsys.pfb></Users/maxim.re/Library/Appli
+cation Support/MiKTeX/texmfs/install/fonts/type1/public/newtx/ztmb.pfb></Users/
+maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/n
+ewtx/ztmr.pfb></Users/maxim.re/Library/Application Support/MiKTeX/texmfs/instal
+l/fonts/type1/public/newtx/ztmri.pfb>
+Output written on dirname.pdf (33 pages, 7217652 bytes).
 PDF statistics:
- 687 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
- 77580 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 523 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 75524 words of extra memory for PDF output out of 89155 (max. 10000000)
 
