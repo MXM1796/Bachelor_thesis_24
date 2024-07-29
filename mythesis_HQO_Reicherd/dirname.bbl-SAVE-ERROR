@@ -511,56 +511,6 @@
       \verb https://doi.org/10.1088/0953-2048/25/6/063001
       \endverb
     \endentry
-    \entry{bardeen-1957}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=616cd76a955b1fcb011fefbf1af91880}{%
-           family={Bardeen},
-           familyi={B\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=818261d37b65922f250ddf289897eb6c}{%
-           family={Cooper},
-           familyi={C\bibinitperiod},
-           given={L.\bibnamedelimi N.},
-           giveni={L\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
-        {{hash=c2af9bb5b241e45f3afcb0f87b9e1540}{%
-           family={Schrieffer},
-           familyi={S\bibinitperiod},
-           given={J.\bibnamedelimi R.},
-           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-      }
-      \strng{namehash}{c30a83010c772bf453b99545802834fb}
-      \strng{fullhash}{c30a83010c772bf453b99545802834fb}
-      \strng{fullhashraw}{c30a83010c772bf453b99545802834fb}
-      \strng{bibnamehash}{c30a83010c772bf453b99545802834fb}
-      \strng{authorbibnamehash}{c30a83010c772bf453b99545802834fb}
-      \strng{authornamehash}{c30a83010c772bf453b99545802834fb}
-      \strng{authorfullhash}{c30a83010c772bf453b99545802834fb}
-      \strng{authorfullhashraw}{c30a83010c772bf453b99545802834fb}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{journaltitle}{Physical Review}
-      \field{month}{12}
-      \field{number}{5}
-      \field{title}{Theory of Superconductivity}
-      \field{volume}{108}
-      \field{year}{1957}
-      \field{dateera}{ce}
-      \field{pages}{1175\bibrangedash 1204}
-      \range{pages}{30}
-      \verb{doi}
-      \verb 10.1103/physrev.108.1175
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1103/physrev.108.1175
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1103/physrev.108.1175
-      \endverb
-    \endentry
     \entry{single-quantum-2022}{book}{}{}
       \name{author}{1}{}{%
         {{hash=fdca4210a2fc09b64febc761a499c182}{%
@@ -576,8 +526,8 @@
       \strng{authorfullhash}{fdca4210a2fc09b64febc761a499c182}
       \strng{authorfullhashraw}{fdca4210a2fc09b64febc761a499c182}
       \field{extraname}{2}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{2}

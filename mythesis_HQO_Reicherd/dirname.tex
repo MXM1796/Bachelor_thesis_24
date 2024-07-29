@@ -39,7 +39,10 @@
 \usepackage{import}
 \usepackage{float}
 \usepackage{placeins}
-\usepackage{siunitx}
+\usepackage{environ}
+
+%\RenewEnviron{figure}{}% Gobble figure environment
+%\RenewEnviron{table}{}% Gobble table environment
 
 
 %------------------------------------------------------------------------------
@@ -191,7 +194,6 @@
 % Add bibliography to Table of Contents
 % Comment out this command if your references are printed for each chapter.
 \printbibliography[heading=bibintoc]
-
 %------------------------------------------------------------------------------
 % Include the following lines and comment out \printbibliography if
 % you use BiBTeX for the bibliography.

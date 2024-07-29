@@ -6,21 +6,56 @@
 %==============================================================================
 
 Single photon detection is an essential part in nonlinear quantum optics with Rydberg atoms. 
-Nonlinear quantum optics with Rydberg atoms is used for the study of fundamental light matter interactions in 
+It is used for the study of fundamental light matter interactions in
 the HQO (Hybrid Quantum Optics) experiment at the University of Bonn and might result in innovations for promising
 applications like optical quantum computing \cite{firstenberg-2016, gao-2011}.
-
-In the HQO experiment properties of Rydberg atoms will be used to interact with an electromechanical acoustic oscillator \cite{}.
-For this study of those interactions, it is required to place the Rydberg atoms with the electromechanical acoustic oscillator
-in a 4K environment inside a cryostat (science chamber).
-Inside the science chamber Rydberg atoms will be trapped over atom chip.
+Figure \ref{fig: HQO_full_experiment} shows the setup of the HQO experiment.
+In the HQO experiment Rydberg atoms will be used to interact with an electromechanical acoustic oscillator.
+For the study of those interactions, it is required to place the Rydberg atoms with the electromechanical acoustic oscillator
+in a 4K environment inside a cryostat (here: science chamber) \cite{oconnell-2010}.
+Inside the science chamber Rydberg atoms will be magnetically trapped over a superconducting atom chip, where the electromechanical
+acoustic oscillator is placed on.
 The goal is to excite Rydberg atoms and cool down the electromechanical acoustic oscillator to its ground state through the interaction with
 the Rydberg atoms.
 
+\begin{figure}[hbt!]
+ \centering
+ \includegraphics[width=\textwidth]{figs/HQO_full_experiment}
+ \caption{Experimental setup of the HQO experiment. Rydberg atoms will be cooled and trapped in
+ a Magneto optical trap (MOT).
+ The atoms will then be transferred to the science chamber and trapped and exited over an atom chip where the
+ electromechanical acoustic oscillator is placed on. Courtesy of Cedric Wind}.
+ \label{fig: HQO_full_experiment}
+\end{figure}
 
+In genereal, strong nonlinearities of Rydberg atoms appear in a Rydberg blockage at an interaction level of a few photons.
+The Rydberg blockade describes the creation process of a Rydberg polariton (with a significantly large energy shift) by a photon and a
+resulting shift of Rydberg states of nearby atoms \cite{lukin-2001}.
+Then an excitation from a further photon of another Rydberg atom in this blockade is not possible due to the induced shift of the Rydberg states.
+This excitation supression appears in a radius of 10$\si{\micro \m}$ around the exited Rydberg atom \cite{urban-2009}.
+This will be used to construct an effectively one dimensional chain of Rydberg atoms above the electromechanical acoustic oscillator.
+With the magnetic trap, the distance between the Rydberg atom and the oscillator on the atom chip can be adjusted and hence, the coupling
+strength between them can be controlled.
 
-The challenge of detecting single photons is to translate the low energies (input variable - e.g.
-for the optical/infrared range: $\text{E} \approx 0.5 - 3.3 \si{\eV}$) into measurable electrical signals (output variable).
-Four central requirements have been established in the literature to quantitatively describe the quality of
-EPD \cite{hadfield-2009, shalm_single-photon_2013}.
+The experimentation and the handling of Rydberg atoms and the corresponding quantum nonlinearities, like dissipative (single
+photons are transmitted better than photon pairs) and dispersive (single photons and photon pairs are equally transmitted)
+interactions are investigated by measurements of single photons \cite{firstenberg-2016}.
+
+The challenge of detecting single photons is to translate the low energies (i.e. for the optical/infrared
+range: $\text{E} \approx 0.5 - 3.3 \si{\eV}$) into measurable electrical signals.
+The most precise way, up till today is the detection of single photons with a superconducting nanowire single photon detector (SNSPD).
+
+In this thesis, a SNSPD for single photon detection by the company Single Quantum is characterized.
+This characterization is done in the context of the HQO experiment and has two main goals.
+First, to check if the characterization by the vendor is correct and can be confirmed by our own measurements \cite{tech_sheet_single_quantum}.
+Second, to investigate the multivariable dependencies of the SNSPD.
+
+In the second chapter \ref{sec:SNSPD_working_principle}, working principles of the SNSPD are introduced.
+The phenomenological background, of how the single photon detection  with superconducting
+nanowires works is introduced.
+
+In the third chapter \ref{sec:SNSPD_setup}, a short overview of relevant physical relation for the properties evaluation is given.
+Further, the experimental setup of a faint laser source is described.
+In the fourth chapter \ref{sec:SNSPD_Characterization}, an investigation of the Dark count rate, the recovery time and the system detection efficiency of the SNSPD is done.
+For this a variety of measurements were done and evaluated in terms of various dependencies.
 
