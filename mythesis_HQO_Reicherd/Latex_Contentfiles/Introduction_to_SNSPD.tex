@@ -56,57 +56,63 @@
 %The chapter begins with an introduction to the phenomenological background of how single photon detection with superconducting nanowires works.
 %Afterwards, the reason for sending photons with the polarization aligned to the slow axis of the optical fibre is explained.
 %
-%In the third chapter \ref{sec:SNSPD_setup}, a short overview of relevant physical relations for the properties evaluation is given.
+%In the third chapter \ref{sec:SNSPD_setup}, a short%overview of relevant physical relations for the properties evaluation is given.
 %Further, the experimental setup of a faint laser source is described.
 %In chapter \ref{sec:SNSPD_Characterization}, an investigation of the Dark count rate, the recovery time and the system detection efficiency of the SNSPD is done.
 %For this a variety of measurements were done and evaluated in terms of various dependencies.
 %The chapter ends with a summary and discussion of the results.
 
 Single photon detectors enable the study of optical interaction on the single photon level which makes them a powerful
-tool for many quantum experiments \cite{charaev-2023}.
-%\cite{unknown-author-2023}
-%Many different technologies can be used to detect single photons, ranging from photomultiplier tubes to
-%superconducting detectors such as the Transition Edge Sensor or the Superconducting Nanowire Single Photon Detector (SNSPD)
-%\cite{eisaman-2011}.
-%Recent developments in SNSPDs have made them the first choice detector for the detection of single photons
-%in the visible to infrared range at high repetition rates of ~10MHz with extremely high quantum efficiency of over 90$\%$,
-%low timing jitter and extremely low dark count rates \cite{you-2020}.
-%
-%For that reason a state-of-the-art SNSPD from the company Single Quantum \footnote{\href{https://www.singlequantum.com/technology/snspd/}{Single Quantum homepage}}
-%was acquired for the new Hybrid Quantum Optics (HQO) experiment in the Nonlinear Quantum Optics group of Sebastian Hofferberth.
-%
-%The goal of the HQO experiment (set up shown in \ref{fig:HQO_full_experiment}) is to couple an ultra-cold ensemble of rubidium atoms excited to the Rydberg state to
-%an electromechanical oscillator in a cryogenic environment (Charged oscillator quantum state generation with Rydberg atoms)
-%\cite{gao-2011}.
-%
-%\begin{figure}[hbt!]
-% \centering
-% \includegraphics[width=\textwidth]{figs/HQO_full_experiment}
-% \caption{Experimental setup of the HQO experiment. Rydberg atoms will be cooled and trapped in
-% a Magneto optical trap (MOT).
-% The atoms will then be transferred to the science chamber and trapped and exited over an atom chip where the
-% electromechanical acoustic oscillator is placed on. Courtesy of Cedric Wind.}
-% \label{fig:HQO_full_experiment}
-%\end{figure}
-%Such electromechanical oscillators are a promising candidate for quantum memory when coupled to superconducting
-%transmon qubits due to their long coherence times at microwave frequencies \cite{chu-2017}
-%and have also been used for fundamental studies of large quantum systems \cite{bild-2023}.
-%proposed hybrid system is of particular interest in this context because it would allow the optical control of the
-%mechanical motion of the oscillator mediated by the strong microwave transitions of the Rydberg atoms.
-%The first experimental goal is to use the interaction with the Rydberg atoms to cool the mechanical oscillator to its
-%mechanical ground state.
-%For the Rydberg excitation, a two-photon process consisting of a 780 nm probe and a 480 nm control will be used.
-%A typical tool for the detection of Rydberg atoms is field ionisation \cite{low-2012} but further information about the
-%Rydberg excitation and in particular the interaction with the electromechanical oscillator can be obtained by
-%measuring the probe photons transmitted through the atomic ensemble at the single photon level \cite{peyronel-2012, firstenberg-2013}.
-%
-%In this thesis, the SNSPD has been characterised for later use in the HQO experiment with two main objectives.
-%First, to provide a precise characterisation of the detector in order to have a reliable knowledge of the system
-%parameters for a proper evaluation of the measurement results in the experiment.
-%Second, to find the optimal operating parameters for the SNSPD, because unlike avalanche photo diodes, the bias current
-%of a SNSPD has to be adjusted and optimized for different photon rates.
-%
-%The thesis is structured as follows:
+tool for many quantum experiments \cite{charaev-2023, unknown-author-2023}.
+Many different technologies can be used to detect single photons, ranging from photomultiplier tubes to
+superconducting detectors such as the Transition Edge Sensor or the Superconducting Nanowire Single Photon Detector (SNSPD)
+\cite{eisaman-2011}.
+Recent developments in SNSPDs have made them the first choice detector for the detection of single photons
+in the visible to infrared range at high repetition rates of ~10MHz with extremely high quantum efficiency of over 90$\%$,
+low timing jitter and extremely low dark count rates \cite{you-2020}.
+
+For that reason a state-of-the-art SNSPD from the company Single Quantum \footnote{\href{https://www.singlequantum.com/technology/snspd/}{Single Quantum homepage}}
+was acquired for the new Hybrid Quantum Optics (HQO) experiment in the Nonlinear Quantum Optics group of Sebastian Hofferberth.
+
+The goal of the HQO experiment (set up shown in \ref{fig:HQO_full_experiment}) is to couple an ultra-cold ensemble of rubidium atoms excited to the Rydberg state to
+an electromechanical oscillator in a cryogenic environment \cite{stevenson-2016, gao-2011}.
+
+\begin{figure}[hbt!]
+ \centering
+ \includegraphics[width=\textwidth]{figs/HQO_full_experiment}
+ \caption{Experimental setup of the HQO experiment. Rydberg atoms will be cooled and trapped in
+ a Magneto optical trap (MOT).
+ The atoms will then be transferred to the science chamber and trapped and exited over an atom chip where the
+ electromechanical acoustic oscillator is placed on. Courtesy of Cedric Wind.}
+ \label{fig:HQO_full_experiment}
+\end{figure}
+
+Such electromechanical oscillators are a promising candidate for quantum memory when coupled to superconducting
+transmon qubits due to their long coherence times at microwave frequencies \cite{chu-2017}
+and have also been used for fundamental studies of large quantum systems \cite{bild-2023}.
+The proposed hybrid system is of particular interest in this context because it would allow the optical control of the
+mechanical motion of the oscillator mediated by the strong microwave transitions of the Rydberg atoms.
+The first experimental goal is to use the interaction with the Rydberg atoms to cool the mechanical oscillator to its
+mechanical ground state.
+For the Rydberg excitation, a two-photon process consisting of a 780 nm probe and a 480 nm control will be used.
+A typical tool for the detection of Rydberg atoms is field ionisation \cite{low-2012} but further information about the
+Rydberg excitation and in particular the interaction with the electromechanical oscillator can be obtained by
+measuring the probe photons transmitted through the atomic ensemble at the single photon level \cite{peyronel-2012, firstenberg-2013}.
+
+In this thesis, the SNSPD has been characterised for later use in the HQO experiment with two main objectives.
+First, to provide a precise characterisation of the detector in order to have a reliable knowledge of the system
+parameters for a proper evaluation of the measurement results in the experiment.
+Second, to find the optimal operating parameters for the SNSPD, because unlike avalanche photo diodes, the bias current
+of a SNSPD has to be adjusted and optimized for different photon rates.
+
+The thesis is structured as follows:
+Chapter \ref{sec:SNSPD_working_principle}, introduces the working principle of a SNSPD.
+The third chapter \ref{sec:SNSPD_setup} gives a short overview of relevant physical relations for the evaluation of the upcoming characteristica in chapter \ref{sec:SNSPD_Characterization}.
+Furthermore, in this chapter the experimental setup of a faint laser source is described.
+In chapter \ref{sec:SNSPD_Characterization}, an investigation of the dark count rate, the recovery time and the system detection efficiency of the SNSPD is done.
+For this a variety of measurements were done and evaluated in terms of various dependencies.
+The chapter ends with a summary of the results.
+
 %Chapter 2 of this thesis introduces the working principle of SNSPDs.
 %Chapter 3 introduces and explains the relevant characteristics of single photon detectors.
 %Furthermore, the experimental setup of a faint laser source used for the detector characterisation performed for this thesis is described.

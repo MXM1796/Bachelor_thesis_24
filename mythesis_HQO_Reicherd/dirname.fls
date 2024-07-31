@@ -408,11 +408,6 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/late
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/german.lbx
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/biblatex/lbx/german.lbx
 OUTPUT dirname.bcf
-INPUT dirname.bbl
-INPUT ./dirname.bbl
-INPUT ./dirname.bbl
-INPUT ./dirname.bbl
-INPUT dirname.bbl
 INPUT ./cover/Bachelor_Title.tex
 INPUT ./cover/Bachelor_Title.tex
 INPUT ./cover/Bachelor_Title.tex
@@ -592,34 +587,7 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/tex-gyre/ec-qhvb.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/tex-gyre/ec-qhvb.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/tex-gyre/ec-qhvb.tfm
-INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
-INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
-INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
-INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
-INPUT Latex_Contentfiles/Working_principle_of_SNSPD.tex
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
-INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
-INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
-INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
-INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
-INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
-INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxsy.vf
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txsys.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaX.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi7.vf
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI7.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
-INPUT ./figs/HQO_20240725_detection_process_circle.png
-INPUT ./figs/HQO_20240725_detection_process_circle.png
-INPUT ./figs/HQO_20240725_detection_process_circle.png
-INPUT ./figs/HQO_20240725_detection_process_circle.png
-INPUT ./figs/HQO_20240725_detection_process_circle.png
-INPUT ./figs/HQO_20240725_detection_process_circle.png
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
@@ -651,6 +619,51 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT ./figs/HQO_full_experiment.png
+INPUT ./figs/HQO_full_experiment.png
+INPUT ./figs/HQO_full_experiment.png
+INPUT ./figs/HQO_full_experiment.png
+INPUT ./figs/HQO_full_experiment.png
+INPUT ./figs/HQO_full_experiment.png
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaX.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
+INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
+INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
+INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
+INPUT ./Latex_Contentfiles/Working_principle_of_SNSPD.tex
+INPUT Latex_Contentfiles/Working_principle_of_SNSPD.tex
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Italic-tlf-t1.tfm
+INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
+INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
+INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
+INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
+INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
+INPUT ./figs/HQO_20240721_SNSPD_elementary_setup.png
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Bold-tlf-t1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmi.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsy.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexx.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmia.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsym.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsyc.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxsy.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txsys.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxmi7.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/NewTXMI7.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
+INPUT ./figs/HQO_20240725_detection_process_circle.png
+INPUT ./figs/HQO_20240725_detection_process_circle.png
+INPUT ./figs/HQO_20240725_detection_process_circle.png
+INPUT ./figs/HQO_20240725_detection_process_circle.png
+INPUT ./figs/HQO_20240725_detection_process_circle.png
+INPUT ./figs/HQO_20240725_detection_process_circle.png
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT ./figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png
 INPUT ./figs/HQO_20240725_analog_signal_31.2uA_tv_600mV.png
@@ -677,11 +690,11 @@ INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxsy7.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txsys.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxexx.vf
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txexs.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaX.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxexx.vf
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txexs.tfm
 INPUT ./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png
 INPUT ./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png
 INPUT ./figs/HQO_20240712_faint_laser_source_full_set_up_thesis.png
@@ -727,7 +740,6 @@ INPUT ./figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-900mV_th
 INPUT ./figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-900mV_thesis.png
 INPUT ./figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-900mV_thesis.png
 INPUT ./figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-900mV_thesis.png
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-t1.tfm
 INPUT ./figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis.png
 INPUT ./figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis.png
 INPUT ./figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis.png
@@ -799,18 +811,18 @@ INPUT ./figs/HQO_20240726_analog_signal_OD_9_57_and_12_06_31_2uA_tv_600mV.png
 INPUT ./figs/HQO_20240726_analog_signal_OD_9_57_and_12_06_31_2uA_tv_600mV.png
 INPUT ./figs/HQO_20240726_analog_signal_OD_9_57_and_12_06_31_2uA_tv_600mV.png
 INPUT ./figs/HQO_20240726_analog_signal_OD_9_57_and_12_06_31_2uA_tv_600mV.png
-INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
-INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
-INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
-INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
-INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
-INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxsy.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txsys.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntxsy5.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txsys.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txex-bar.tfm
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
+INPUT ./figs/HQO_20240727_sde_count_rate_thesis.png
 INPUT ./figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png
 INPUT ./figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png
 INPUT ./figs/HQO_20240727_sde_bias_sweep_tv_600_thesis.png
@@ -838,11 +850,11 @@ INPUT ./figs/HQO_20240730_count_vs_photon_rate_log_thesis.png
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtt.fd
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtt.fd
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/tex/latex/newtx/t1ntxtt.fd
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/txfonts/t1xtt.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/txfonts/t1xtt.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/txmiaX.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm
+INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/txfonts/t1xtt.tfm
 INPUT ./figs/HQO_20240730_sde_fit_corrected_thesis.png
 INPUT ./figs/HQO_20240730_sde_fit_corrected_thesis.png
 INPUT ./figs/HQO_20240730_sde_fit_corrected_thesis.png
@@ -912,6 +924,12 @@ INPUT ./tables/OD_calibration_methods_combined.tex
 INPUT ./tables/OD_calibration_methods_combined.tex
 INPUT ./tables/OD_calibration_methods_combined.tex
 INPUT tables/OD_calibration_methods_combined.tex
+INPUT ./figs/HQO_20240730_OD_calibrtion_method_2.png
+INPUT ./figs/HQO_20240730_OD_calibrtion_method_2.png
+INPUT ./figs/HQO_20240730_OD_calibrtion_method_2.png
+INPUT ./figs/HQO_20240730_OD_calibrtion_method_2.png
+INPUT ./figs/HQO_20240730_OD_calibrtion_method_2.png
+INPUT ./figs/HQO_20240730_OD_calibrtion_method_2.png
 INPUT ./tables/HQO_250724_angle countrate dependency_results.tex
 INPUT ./tables/HQO_250724_angle countrate dependency_results.tex
 INPUT ./tables/HQO_250724_angle countrate dependency_results.tex
@@ -1002,16 +1020,6 @@ INPUT ./figs/HQO_20240729_OD 12_06_countrate_bias_sweep_tv_300_900_thesis.png
 INPUT ./figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis.png
 INPUT ./figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis.png
 INPUT ./figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis.png
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmi.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsy.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexx.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxmia.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsym.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxsyc.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntxexa.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecrm0900.tfm
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm0900.tfm
 INPUT ./figs/HQO_20240723_recovery_time_Channel_1_Bias_27uA_trigg_300-1000mV_thesis.png
@@ -1071,7 +1079,6 @@ INPUT ./figs/HQO_20240730_analog_signal_35uA_tv_600mV_single.png
 INPUT ./figs/HQO_20240730_analog_signal_35uA_tv_600mV_single.png
 INPUT ./figs/HQO_20240730_analog_signal_35uA_tv_600mV_single.png
 INPUT ./figs/HQO_20240730_analog_signal_35uA_tv_600mV_single.png
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/newtx/ntx-Regular-tlf-sc-t1.tfm
 INPUT dirname.aux
 INPUT ./Latex_Contentfiles/thesis_acknowledge.aux
 INPUT ./Latex_Contentfiles/thesis_acknowledge.aux
@@ -1081,7 +1088,6 @@ INPUT ./Latex_Contentfiles/thesis_appendix.aux
 INPUT Latex_Contentfiles/thesis_appendix.aux
 INPUT dirname.run.xml
 OUTPUT dirname.run.xml
-INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk
 INPUT /Users/maxim.re/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/tex-gyre/q-ts1.enc

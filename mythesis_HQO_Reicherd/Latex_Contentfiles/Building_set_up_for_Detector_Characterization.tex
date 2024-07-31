@@ -12,22 +12,21 @@ characterization.
 A brief overview of the characteristics of a coherent laser light source and the conditions it gives
 for detector characterization will be provided.
 Furthermore, the setup of the faint laser source that has been constructed for characterizing the SNSPD will be introduced.
-At the end the calibration of the neutral density filters will be discussed.
+At the end the calibration of the used neutral density filters will be discussed.
 
 \section{Characteristics of faint laser sources}\label{sec:characteristics_faint laser sources}
 
 %Question: How monochromatic is the laser light?
 
-The emitting light from a laser is considered as monochromatic beam with frequency f
+The emitting light from a laser is considered as monochromatic beam with frequency $f$
 and constant intensity I. The average rate $\Phi$ of a laser is given by:
 
 \begin{align}
     \Phi = \frac{P}{h f}
 \end{align}
 
-where \textit{P} the laser power. $h$ plancks constant and $f = \frac{c}{\lambda}$ the frequency which
-depends on the wavelength.
-$c$ is the speed of light.
+where \textit{P} is the laser power, $h = 6.62607015 \times 10^{-34} \si{\J \Hz^{-1}}$ plancks constant and $f = \frac{c}{\lambda}$ is the frequency of the laser which
+depends on the wavelength, where $c = 299792458 \si{\m \s^{-1}}$ is the speed of light.
 The average number of registered counts N(T) for a given detection time T by a detector is given by:
 
 \begin{align}
@@ -57,8 +56,8 @@ Therefore, the true count rate $\mathcal{R}'$ is given by:
 
 where $\tau_{\text{d}}$ is the dead time of the detector and DCR is the dark count rate of the detector.
 
-Furthermore, the maximal count rate of the detector is restricted by the dead time $\tau_{\text{d}}$.
-In addition sending too many photons at once to the detector causes latching and prevents counting \cite{single-quantum-2022}.
+Furthermore, the theoretical maximal count rate $\mathcal{R}_{max} = \frac{1}{\tau_{\text{d}}}$ of the detector is restricted by the dead time $\tau_{\text{d}}$.
+In addition, sending too many photons at once to the detector causes latching and prevents counting \cite{single-quantum-2022}.
 
 \section{Experimental setup}\label{sec:experimental_setup}
 As mentioned above, we are interested in detecting single photons, corresponding to $\text{N(T)} \cdot \eta \ll 1$ \cite{hadfield-2009}.
@@ -81,16 +80,16 @@ by neutral density filters.\\
 
 In order to realize the laser attenuation the setup shown in figure \ref{fig: faint_laser_source_full_set_up} and section
 \ref{sec:Set_up_and_Elements_appendix} was build.
-The starting point is the upper stage (left) and the optical axis runs parallel to the table.
+The starting point in this illustration is the upper stage (left) and the optical axis runs parallel to the table.
 Laser light is emitted from a 780nm laser source from the Russian company Vitawave and
 is coupled into a single mode polarization maintaining fibre.
 The quarter-wave plate $\lambda_4$ and half-wave plate $\lambda_2$ were used to set the polarization of the light vertical
 to the optical axis.
 The laser beam was coupled at the upper stage, such that it could be used at the lower stage.
 
-Afterwards, on the lower stage the beam passes a half-wave plate $\lambda_2$ and polarization beam splitter (pbs) to filter the horizontal
+Afterwards, on the lower stage (right) the beam passes a half-wave plate $\lambda_2$ and polarization beam splitter (pbs) to filter the horizontal
 polarized E-field out.
-Further, a Galilean telescope was built with one focal ($l_1$) and one diffusing lens ($l_2$)a to reduce the beam width.
+Further, a Galilean telescope was built with one focal ($l_1$) and one diffusing lens ($l_2$) to reduce the beam width.
 This reduction was done to not exceed the surface of the crystal of the Acousto-optic modulator (AOM).
 After the AOM, a cover was used to select the first order of the AOM.
 The first order of the AOM was used for flexible intensity modulation of the laser.
@@ -114,12 +113,12 @@ where the optical setup was placed in.
 
 It has the function to avoid environmental light coupling into the fibre.
 Additionally, the optical fibre going from the optical setup to the detector was covered with aluminium foil to avoid
-absorption of stray light through the cladding.\\
+absorption of stray light through the cladding (seen in figure \ref{fig: fibre_connection_real_life}).\\
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{figs/HQO_20240712_faint_laser_source_full_set_up_thesis}
-    \caption{Set up for attenuation of a 780nm laser source from the Russian company Vitawave.}
+    \caption{Illstrated set up of the faint laser source with a 780nm laser from the Russian company Vitawave.}
     \label{fig: faint_laser_source_full_set_up}
 \end{figure}
 
@@ -139,10 +138,10 @@ Since no time was left to characterize the AOM, the ND filter were the sole fact
 The challenge relying on ND filters is that the fabric values of their OD are not precise.
 Thus, the filters need to be calibrated to get accurate OD values for the ND filters.
 The OD value of each filter is measured with two methods to account for systematic errors.
-In the first method (method 1) the ND filters are set in the flip mount as shown in graph \ref{fig: faint_laser_source_full_set_up}.
-In the second method (method 2), measurements with and without filters were done directly in front of the powermeter
+In the first method (method 1) the ND filters are set in the flip mount as shown in graph \ref{fig: faint_laser_source_full_set_up} and
+\ref{fig: faint_laser_source_full_set_up_real_life}.
+In the second method (method 2) (set up seen in figure \ref{fig: OD_calibration_method_2}), measurements with and without filters were done directly in front of the powermeter
 outside the black box to avoid straying light inside the black box.
-See figure \ref{fig:} for pictures of how this was realized.
 
 The attenuation of ND filters is quantized by the OD value and is connected to the transmission value $ \text{T}_{\text{ND}} = 10^{\text{-OD}}$ of the outgoing light.
 Due to the logarithmic definition of the OD value ($\text{OD} = \log_{10}(\frac{1}{\text{T}_{\text{ND}}})$), the OD values of the
@@ -153,16 +152,16 @@ Moreover, only measurements for one single ND filter were done.
 The reason is the measurable range of the power metre.
 The power meter was unable to accurately measure the power of the attenuated laser light through more than one ND filter.
 
-The transmission then corresponds to:
+The transmission for the OD values then corresponds to:
 \begin{align}
-    \text{T} = \frac{\text{P}_{\text{ND}}}{\text{P}}
+    \text{T}_{\text{ND}} = \frac{\text{P}_{\text{ND}}}{\text{P}}
 \end{align}
 
 where, $\text{P}_{\text{ND}}$ is the power of the laser light with the applied ND filters.
 $\text{P}$ is the power of the laser light without the ND filters.
 
 The final OD values of each method were combined and the corresponding systematic and statistical errors are
-considered in order to get accurate OD values for the ND filters.
+considered in order to get OD values for the ND filters.
 Results of the measurements and error calculations can be found in section \ref{sec:ND_filter_calibration_appendix}.
 Based one these OD values the photon rate was determined.
 

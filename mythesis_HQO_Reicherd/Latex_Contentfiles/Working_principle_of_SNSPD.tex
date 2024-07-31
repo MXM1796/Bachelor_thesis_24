@@ -6,23 +6,24 @@
 \label{sec:SNSPD_working_principle}
 %==============================================================================
 This chapter will introduce the working principle of superconducting nanowire single photon detectors (SNSPD).
-This chapter is structured in three parts.
+This chapter has three parts.
 The first part describes the essential detector elements and their functions.
 The second part explains the detection process and provides its principles in terms of their phenomenological aspects.
-For further details regarding the physics and mathematics behind superconducting nanowires, the reader is directed
+For further details regarding the physics and mathematics behind SNSPDs, the reader is directed
 to the work of Gol’tsman et al. \cite{goltsman-2001} and Hadfield et al. \cite{natarajan-2012}.
-The third part will explain the reason why the detected photons need to be aligned to the slow axis of the optical fibre.
+The third part will explain the reason why the detected photons need to be aligned to the slow axis of the optical fibre.\\
 
 In general a SNSPD consists of four parts, as shown in figure \ref{fig:SNSPD_rough_structure}.
-The most important part is detection area and consists of a superconducting nanowire ($\approx 100nm$ wide) on a sapphire base.
+The most important part is the detection area and consists of a superconducting nanowire ($\approx 100nm$ wide) on a sapphire base.
 In general, superconductors have the property of abruptly losing all internal resistance once the temperature
-$T_{\text{krit}}$ falls \textit{below} a critical temperature.
+falls \textit{below} a critical temperature $T_{\text{krit}}$.
 If the critical temperature is \textit{exceeded} (e.g. due to the environment or excessive current),
 the resistance suddenly increases again.
-Theoretically, this behaviour is described using Cooper pairs in the BCS theory \cite{bardeen-1957}.
+Theoretically, this behaviour is described by Cooper pairs in the BCS theory \cite{bardeen-1957}.
 A more detailed description of superconductors is omitted in this chapter.
+
 To collect the entire output of the optical fibre, a pattern of a
-thin superconducting film (such as niobium nitride) is shaped into a meandering nanowire by nanofabrication \cite{single-quantum-2022}.
+thin superconducting film (such as niobium nitride (NbN)) is shaped into a meandering nanowire by nanofabrication \cite{single-quantum-2022}.
 Another element is the sapphire layer, which is used to dissipate the heat when the wire heats up.
 Further, a gold contact supplies a bias current through the superconducting nanowire, and an optical fibre is coupled to the detection area.
 To operate the system, this setup is cooled below the critical temperature of the superconductor to
@@ -51,7 +52,7 @@ In response, the current flows around this hotspot (iv), whereby the local curre
 hotspot again exceeds the critical current, due to a higher current density.
 If the critical current is exceeded, the superconductivity also breaks down in these areas.
 The excess also causes a resistance in the side channels of the nanowire (v).
-This rapid increase in resistance can ultimately be measured in form of a voltage pulse, which can be seen in figure \ref{fig:SNSPD_single_voltage_pulse}.
+This whole rapid increase in resistance can ultimately be measured in form of a voltage pulse, which can be seen in figure \ref{fig:SNSPD_single_voltage_pulse}.
 The local non-superconducting area is then cooled down by the cryogenic environment and returns to the superconducting state
 (iv—i).
 
@@ -59,7 +60,7 @@ The local non-superconducting area is then cooled down by the cryogenic environm
     \centering
     \includegraphics[width=0.8\linewidth]{figs/HQO_20240725_detection_process_circle}
     \caption{Schematic detection process cycle of a superconducting nanowire single photon detector based on \cite{singlequantum_snsd_nodate}.
-    The dotted innercircle shows the parts of the dead time $\tau_{\text{dead}}$ and the reset time $\tau_{\text{reset}}$
+    The dotted innercircle shows the parts of the dead time $\tau_{\text{dead}}$ and the reset time $\tau_{\text{reset}}$.
     The outer circle shows the parts of the detection process.
     In the upper left side the whole detector area is shown, the grey bars show the current flow in the zoomed superconducting nanowire.}
     \label{fig: SNSPD_process}
@@ -84,7 +85,7 @@ Other geometries are being investigated and might enable a high absorption effic
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{SNSPD_Meander_fiber_coupling}
-    \caption{Fibre coupling set up to the superconducting nanowire detector area of the characterized detector from the Single Quantum \cite{singlequantum_snsd}.
+    \caption{Fibre coupling set up to the superconducting nanowire detector area of the characterized detector from the company Single Quantum \cite{singlequantum_snsd}.
     Fibre coupling is made in-house and is ajusted to maximize efficiency. It cannot be adjusted manually.}
     \label{fig:SNSPD_fiber_coupling}
 \end{figure}
