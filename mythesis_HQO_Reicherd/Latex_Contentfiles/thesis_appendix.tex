@@ -3,13 +3,46 @@
 \label{sec:app}
 %------------------------------------------------------------------------------
 
-\section{ND filter calibration}\label{sec:ND_filter_calibration_appendix}
+\section{Set up and elements}\label{sec:Set_up_and_Elements_appendix}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figs/HQO_20240730_set_in_black_box}
+    \caption{Set up for attenuation of a 780nm laser source from the Russian company Vitawave}
+    \label{fig: faint_laser_source_full_set_up_real_life}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figs/HQO_20240730_fibre_connecton_to_detector}
+    \caption{Fibre connection to the detector from the black box. The optical fibre is going through a whole in the black box and is connected to the
+    outcoupler of the faint laser source.}
+    \label{fig: fibre_connection_real_life}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figs/HQO_20240703_self_build_black_box}
+    \caption{Picture of the self build optical enclosure (black box) from the outside.}
+    \label{fig: black_box_outside}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figs/HQO_20240703_self_build_black_box_inside}
+    \caption{Picture of the self build optical enclosure (black box) from the inside}
+    \label{fig:black_box_inside}
+\end{figure}
+
+\FloatBarrier
+
+\section{Neutral density filter calibration - Error calculation}\label{sec:ND_filter_calibration_appendix}
 
 To calculate the OD value of the ND Filters, we have to consider the statistical error from the
 transmission value and the systematic error, we get from measuring the OD with two methods, as explained in \ref{sec:experimental_setup}.
 
 We first consider the statistical error from the transmission value.
-The transmission value is defined as:
+The transmission is given by:
 
 \begin{align}
     \text{T}=\frac{P_{\text{ND}}}{P}
@@ -21,7 +54,7 @@ is the power we measured with applied ND filter.
 For the Error calculation the following considerations are done: 
 
 First, for both $P$ and $P_{\text{ND}}$ the measurement uncertainty of the photodiode from the photodiode is always 3$\%$
-of the measured value \cite{Thorlabs-power-metre}.
+of the measured value \cite{unknown-author-no-date}.
 Since this uncertainty does not affect the overall relation between the two measurements it does not
 contribute to the error calculation.
 However, the measurement uncertainty from reading the value from the Powermeter contributes to both,
@@ -48,78 +81,13 @@ So, $\Delta P$ for the first measurement method is calculated as follows:
     \Delta P = \sqrt{(\Delta P_{\text{Read off}})^2 + (\Delta P_{\text{STD}})^2}
 \end{align}
 
-For $P_{\text{ND}}$ applies $\Delta P_{\text{ND}} = \Delta P_{\text{Read off}}$
-
-As result we get the following error for the transmission rate:
-
-\begin{align}
-    \Delta T_{\text{stat}}= \sqrt{\left(\frac{\Delta P_{\text{ND}}}{P}\right)^2 + \left(\frac{\Delta P P_{\text{ND}}}{ P^2}\right)^2}
-\end{align}.
-
-In the following the table with the measurement values and results for the Transmission value and its corresponding statistical
-error is shown:
-
-\input{tables/HQO_270724_Tranmission_values_statistical_errors}
-\input{tables/OD_calibration_method_1}
-
-\begin{table}[!ht]
-    \centering
-    \resizebox{\columnwidth}{!}{%
-    \label{tab:ND_filter_calibration}
-    \begin{tabular}{|l|l|l|l|l|l|l|l|}
-    \hline
-        \textbf{ID} & \textbf{$\text{OD}_{\text{expected}}$} & \textbf{$T_{\text{measured}}$} & \textbf{T\_Value Error Systematic} & \textbf{T Value Error stat} & \textbf{T Value Error} & \textbf{Mean OD Value} & \textbf{OD Value Error} \\ \hline
-        TP03337667 & 1,00 & 1,43E-01 & 67,697E-4 & 3,223E-03 & 7,50E-03 & 0,844 & 0,023 \\ \hline
-        TP03337667 (2) & 1,00 & 1,47E-01 & 50,474E-04 & 3,073E-03 & 5,91E-03 & 0,832 & 0,017 \\ \hline
-        TP03366490 & 3,00 & 8,26E-03 & 32,418E-05 & 1,882E-04 & 3,75E-04 & 2,083 & 0,020 \\ \hline
-        TP03366490 (2) & 3,00 & 7,93E-03 & 52,291E-05 & 1,744E-04 & 5,51E-04 & 2,101 & 0,030 \\ \hline
-        TP03275234 & 4,00 & 1,00E-03 & 5,318E-05 & 4,381E-05 & 6,89E-05 & 2,999 & 0,030 \\ \hline
-        TP03312353 & 4,00 & 1,04E-03 & 7,142E-05 & 4,312E-05 & 8,34E-05 & 2,983 & 0,035 \\ \hline
-        TP03271009 & 4,00 & 1,02E-03 & 4,842E-05 & 4,432E-05 & 6,56E-05 & 2,991 & 0,028 \\ \hline
-        TP03275234 (2) & 4,00 & 1,03E-03 & 6,566E-05 & 4,303E-05 & 7,85E-05 & 2,986 & 0,033 \\ \hline
-        TP03324728 & 5,00 & 1,80E-04 & 9,945E-06 & 3,843E-05 & 3,96E-05 & 3,744 & 0,095 \\ \hline
-        TP03287742 & 5,00 & 1,78E-04 & 4,196E-06 & 3,731E-05 & 3,75E-05 & 3,749 & 0,092 \\ \hline
-        TP03348187 (2) & 5,00 & 1,82E-04 & 4,506E-06 & 3,921E-05 & 3,95E-05 & 3,739 & 0,094 \\ \hline
-        TP03348187 & 5,00 & 1,82E-04 & 5,792E-06 & 3,862E-05 & 3,91E-05 & 3,739 & 0,093 \\ \hline
-    \end{tabular}%
-    }
-\end{table}
-
-Further for calculating the total transmission value and its error, we have to include the measurements and errors for the second method.
-Here, we have a stable $P$ because the fiber coupling was not adjusted, once the maximum was reached.
-The transmission error for the second method is calculated as follows:
-
-\begin{align}
-    \Delta T= \sqrt{\left(\frac{\Delta P_{\text{ND}}}{P}\right)^2 + \left(\frac{\Delta P P_{\text{ND}}}{ P^2}\right)^2}
-\end{align}.
-
-Both $\Delta P_{\text{ND}}$ and $\Delta P$ are estimated by the read off error of the powermeter.
-
-%The values for this method are shown in table \ref{tab:}:
-% Table has to be included!
-
-With booth transmission values, the total transmission value and its error can be calculated as follows:
-
-\begin{align}
-    T_{\text{total}} = \frac{T_{\text{stat}} + T_{\text{systematic}}}{2}\\
-    \Delta T_{\text{total}} = \sqrt{\Delta T_{\text{stat}}^2 + \Delta T_{\text{systematic}}^2}
-\end{align}
-
-
-Continuing with the calculation of the OD value, we have according to \cite{Thorlabs-OD} the relation:
- $\text{OD}= \log(\frac{1}{T})$.
-From this, we can calculate the error for the OD: $\Delta OD = \frac{\Delta T}{\ln(10) \cdot T}$
-
-%# the final errors for the OD value are presented in table:
-% Table has to be included!
-
-The resulting power after stacked ND filters are calculated as follows:
+For $P_{\text{ND}}$ applies:
 
 \begin{align}
     P_{\text{ND}} = P \cdot 10^{-OD}
 \end{align}
 
-The corresponding error is  $\Delta P = 0.03 \cdot P $ and hence the total error for the power after the ND filter is calculated as follows:
+The corresponding error is  $\Delta P = 0.03 \cdot P$ (uncertainty of the photodiode) and hence the total error for the power after the ND filter is calculated as follows:
 \begin{align}
     \Leftarrow \Delta P_{\text{ND}} = \sqrt{(\Delta P \cdot 10^{-\text{OD}})^2 + (P \cdot \log(10) \cdot \Delta \text{OD})^2}
 \end{align}.
@@ -128,121 +96,147 @@ An additional error from reading off the count rate (hence, the corresponding Po
 since measurement with the power metre was not able.
 However, because the fluctuating rate of the count rate was in the order of a few Hz, it was neglected for the final error calculation.
 
+As result, we get the following error for the transmission rate:
 
-\section{Angle dependent countrate}\label{sec:angle_dependent_countrate_results_appendix}
+\begin{align}
+    \Delta T_{\text{stat}}= \sqrt{\left(\frac{\Delta P_{\text{ND}}}{P}\right)^2 + \left(\frac{\Delta P P_{\text{ND}}}{ P^2}\right)^2}
+\end{align}.
+
+Further for calculating the total transmission value and its error, we have to include the measurements and errors for the second method.
+Here, we have stable power $P$ because the fiber coupling was not adjusted, once the maximum was reached.
+The transmission error for the second method is also calculated the same way as above:
+
+\begin{align}
+    \Delta T= \sqrt{\left(\frac{\Delta P_{\text{ND}}}{P}\right)^2 + \left(\frac{\Delta P P_{\text{ND}}}{ P^2}\right)^2}
+\end{align}.
+
+but both values $\Delta P_{\text{ND}}$ and $\Delta P$ are estimated by the read off error of the powermeter.
+
+%The values for this method are shown in table \ref{tab:}:
+% Table has to be included!
+
+With booth transmission values, the total transmission value and its total error (systematic and statistical) can be calculated as follows:
+
+\begin{align}
+    T_{\text{total}} = \frac{T_{\text{stat}} + T_{\text{systematic}}}{2}\\
+    \Delta T_{\text{total}} = \sqrt{\Delta T_{\text{stat}}^2 + \Delta T_{\text{systematic}}^2}
+\end{align}
+
+Since, we do not know from which method the results are closer to the real OD value, we take the mean value of both values.
+
+Continuing with the calculation of the OD value, we have according to \cite{Thorlabs-OD} the relation:
+ $\text{OD}= \log(\frac{1}{T})$.
+From this, we can calculate the error for the OD: $\Delta OD = \frac{\Delta T}{\ln(10) \cdot T}$
+
+%# the final errors for the OD value are presented in table:
+% Table has to be included!
+
+
+Below are the tables with the calculated values and results for the first and second method, as well for the combined results
+which lastly provide the final OD values used for the calculations:
+
+%\input{tables/HQO_270724_Tranmission_values_statistical_errors}
+\input{tables/OD_calibration_method_1}
+\input{tables/OD_calibration_method_2}
+\input{tables/OD_calibration_methods_combined}
+\FloatBarrier
+%
+This final values are in good agreement with the values from the manufacturer Thorlabs as shown on their website \cite{Thorlabs-OD}.
+The self calculated errors even provide a narrower error range than the errors provided by Thorlabs.
+Unfortunately, it can not be proved how close the calculated values are to the real OD values from Thorlabs, because no
+exact values are given.
+Only a rough curve (wavelength vs OD) is provided.
+Here, exact determination of an expectation value can not be done.
+
+\newpage
+\section{Angle dependent count rate measurement data and results}\label{sec:angle_dependent_countrate_results_appendix}
 
 \input{tables/HQO_250724_angle countrate dependency_results}
 
-\section{Count rate dependent $\eta_{\text{sde}}$}\label{sec:countrate_sde_results_appendix}
+\FloatBarrier
+
+\section{Count rate dependent efficiency $\eta_{\text{sde}}$}\label{sec:countrate_sde_results_appendix}
 
 \input{tables/HQO_290724_countrate_vs_sde}
 
+\FloatBarrier
+
 \section{Bias sweeping for different count rates}\label{sec:bias_sweeping_countrate_appendix}
+
+\begin{figure}[!hbt]
+    \centering
+    \begin{tabular}{cc}
+        \subcaptionbox{Input photon rate: 67.363MHz \label{fig:bias_sweep_7_48_appendix}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240729_OD 7_48_countrate_bias_sweep_tv_300_900_thesis}} &
+        \subcaptionbox{Input photon rate: 9.575MHz \label{fig:bias_sweep_8_32_appendix}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240729_OD 8_32_countrate_bias_sweep_tv_300_900_thesis}} \\
+        \subcaptionbox{Input photon rate: 2.446MHz \label{fig:bias_sweep_8_92_appendix}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240729_OD 8_92_countrate_bias_sweep_tv_300_900_thesis}} &
+        \subcaptionbox{Input photon rate: 0.531MHz \label{fig:bias_sweep_9_58_appendix}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240729_OD 9_58_countrate_bias_sweep_tv_300_900_thesis}} \\
+        \subcaptionbox{Input photon rate: 0.388MHz \label{fig:bias_sweep_9_72_appendix}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240729_OD 9_72_countrate_bias_sweep_tv_300_900_thesis}} &
+        \subcaptionbox{Input photon rate: 0.067MHz \label{fig:bias_sweep_10_48_appendix}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240729_OD 10_48_countrate_bias_sweep_tv_300_900_thesis}} \\
+%        \subcaptionbox{Caption 9\label{fig:9}}{\includegraphics[width=0.3\textwidth]{figs/HQO_20240729_OD 7_48_countrate_bias_sweep_tv_300_900_thesis}} \\
+    \end{tabular}
+    \caption{Bias sweep measurement (Bias current vs. Count rate) - Error bars are not shown for better visibility. }
+    \label{fig:grid_bias_sweep_appendix_1}
+\end{figure}
+
+\begin{figure}[!hbt]
+    \centering
+    \begin{tabular}{cc}
+        \subcaptionbox{Input photon rate: 0.012MHz \label{fig:bias_sweep_11_22_appendix}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240729_OD 11_22_countrate_bias_sweep_tv_300_900_thesis}} &
+        \subcaptionbox{Input photon rate: 0.0017MHz \label{fig:bias_sweep_12_06_appendix}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240729_OD 12_06_countrate_bias_sweep_tv_300_900_thesis}} \\
+    \end{tabular}
+    \caption{Bias sweep measurement (Bias current vs. Count rate) - Error bars are not shown for better visibility. }
+    \label{fig:grid_bias_sweep_appendix_2}
+\end{figure}
+
+
+\FloatBarrier
 
 \section{Recovery time measurements}\label{sec:Recovery time measurements_appendix}
 
-\subsection{Recovery time measurements - Oscillating bias current} \label{subsec:recovery-time-measurements---oscillating_bias_current}
+\begin{figure}[!hbt]
+    \centering
+    \begin{tabular}{cc}
+        \subcaptionbox{Bias current: 25$\si{\micro \A}$\label{fig:recovery_25_appendix}}{\includegraphics[width=0.5\textwidth]{figs/HQO_20240723_recovery_time_Channel_1_Bias_25uA_trigg_300-900mV_thesis}} &
+        \subcaptionbox{Bias current: 27$\si{\micro \A}$\label{fig:recovery_27_appendix}}{\includegraphics[width=0.5\textwidth]{figs/HQO_20240723_recovery_time_Channel_1_Bias_27uA_trigg_300-1000mV_thesis}} \\
+    \end{tabular}
+    \caption{Results of autocorrelation evaluation (Input photon rate: 0.531MHz ) - bins are in ns and represent the different time intervals between the incoming pulses.
+        - Error bars are not shown for better visibility.}
+    \label{fig:grid_recovery_time_appendix}
+\end{figure}
 
-\section{Recorings of analog pulses}\label{sec:analog_pulse_recordings_appendix}
+\begin{figure}[!hbt]
+    \centering
+    \begin{tabular}{cc}
+        \subcaptionbox{Bias current: 29$\si{\micro \A}$\label{fig:recovery_29_appendix}}{\includegraphics[width=0.5\textwidth]{figs/HQO_20240723_recovery_time_Channel_1_Bias_29uA_trigg_300-1000mV_thesis}} &
+        \subcaptionbox{Bias current: 31.2$\si{\micro \A}$\label{fig:recovery_31_2_appendix}}{\includegraphics[width=0.5\textwidth]{figs/HQO_20240723_recovery_time_Channel_1_Bias_31_2uA_trigg_300-1000mV_thesis}}
+    \end{tabular}
+    \caption{Results of autocorrelation evaluation (Input photon rate: 0.531MHz ) - bins are in ns and represent the different time intervals between the incoming pulses.
+        - Error bars are not shown for better visibility.}
+    \label{fig:grid_recovery_time_appendix_2}
+\end{figure}
+\FloatBarrier
 
-%{| class="wikitable"
-%! Input Laser Power (W)  !! Wavelenght (nm)
-%|-
-%| 5,39E-04 || 780
-%|}
-%
-%{| class="wikitable"
-%! nr. !! ID !! Laser Power before (W) !! Laser Power before Mean (W) !! Laser Power before Std (W) !! Laser Power before Error (W) !! Measured Laser Power after (W) !! Measured T Value !! T Value Error !! Expectetd OD Value !! Measured OD Value !! OD Value Error !! Deviation in %
-%|-
-%| 1 || TP03337667 || 5,1170E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 7,8840E-05 || 1,50E-01 || 3,18E-03 || 1,00 || 0,8248 || 0,0092 || 17,52
-%|-
-%| 2 || TP03337667 (2) || 5,3000E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 8,0240E-05 || 1,52E-01 || 3,01E-03 || 1,00 || 0,8172 || 0,0086 || 18,28
-%|-
-%| 3 || TP03366490 || 5,1300E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 4,5210E-06 || 8,58E-03 || 1,85E-04 || 3,00 || 2,0663 || 0,0094 || 93,37
-%|-
-%| 4 || TP03366490 (2) || 5,3000E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 4,4500E-06 || 8,45E-03 || 1,71E-04 || 3,00 || 2,0732 || 0,0088 || 92,68
-%|-
-%| 5 || TP03275234 || 5,2600E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 5,5500E-07 || 1,05E-03 || 4,35E-05 || 4,00 || 2,9773 || 0,0179 || 102,27
-%|-
-%| 6 || TP03312353 || 5,3900E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 5,8500E-07 || 1,11E-03 || 4,28E-05 || 4,00 || 2,9544 || 0,0167 || 104,56
-%|-
-%| 7 || TP03271009 || 5,2300E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 5,6220E-07 || 1,07E-03 || 4,40E-05 || 4,00 || 2,9717 || 0,0179 || 102,83
-%|-
-%| 8 || TP03275234 (2) || 5,3900E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 5,7800E-07 || 1,10E-03 || 4,26E-05 || 4,00 || 2,9596 || 0,0169 || 104,04
-%|-
-%| 9 || TP03324728 || 5,2400E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 1,0030E-07 || 1,90E-04 || 3,84E-05 || 5,00 || 3,7203 || 0,0875 || 127,97
-%|-
-%| 10 || TP03287742 || 5,3900E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 9,6000E-08 || 1,82E-04 || 3,73E-05 || 5,00 || 3,7393 || 0,0888 || 126,07
-%|-
-%| 11 || TP03348187 (2) || 5,1300E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 9,8370E-08 || 1,87E-04 || 3,92E-05 || 5,00 || 3,7287 || 0,0911 || 127,13
-%|-
-%| 12 || TP03348187 || 5,2040E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 9,9150E-08 || 1,88E-04 || 3,86E-05 || 5,00 || 3,7253 || 0,0891 || 127,47
-%|-
-%| 13 || TP03312353 + TP03275234 (2) || 5,3900E-04 || 5,2670E-04 || 1,03621E-05 || 1,05534E-05 || 1,1170E-09 || 2,12E-06 || 3,71E-05 || 8,00 || 5,6735 || 0,0238 || 232,65
-%|}
+\section{Recordings of analog pulses}\label{sec:analog_pulse_recordings_appendix}
+\begin{figure}[!hbt]
+    \centering
+    \begin{tabular}{cc}
+        \subcaptionbox{Bias current: 25$\si{\micro \A}$\label{fig:analog_pulse_appendix_25uA}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240730_analog_signal_25uA_tv_600mV}} &
+        \subcaptionbox{Bias current: 31.2$\si{\micro \A}$ \label{fig:analog_pulse_appendix_31_2uA}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240730_analog_signal_31_2uA_tv_600mV}} \\
+    \end{tabular}
+    \caption{Recordings of analog pulses for different bias currents. Recordings are done with oscilloscope with time resolution of 500MHz.}
+    \label{fig:grid_analog_pulse_appendix_1}
+\end{figure}
 
+\begin{figure}[!hbt]
+    \centering
+    \begin{tabular}{cc}
+        \subcaptionbox{Bias current: 31.2$\si{\micro \A}$\label{fig:analog_pulse_appendix_31_2uA_OD_9_57}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240730_analog_signal_31_2uA_tv_600mV_OD_9_57}} &
+        \subcaptionbox{Bias current: 33$\si{\micro \A}$\label{fig:analog_pulse_appendix_33uA}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240730_analog_signal_33uA_tv_600mV}} \\
+         \subcaptionbox{Bias current: 35$\si{\micro \A}$ with latching\label{fig:analog_pulse_appendix_35uA}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240730_analog_signal_35uA_tv_600mV}} &
+        \subcaptionbox{Bias current: 35$\si{\micro \A}$ \label{fig:analog_pulse_appendix_35uA_OD_9_57_single}}{\includegraphics[width=0.45\textwidth]{figs/HQO_20240730_analog_signal_35uA_tv_600mV_single}} \\
+    \end{tabular}
+    \caption{Recordings of analog pulses for different bias currents. Recordings are done with oscilloscope with time resolution of 500MHz.}
+    \label{fig:grid_analog_pulse_appendix_2}
+\end{figure}
 
-%{| class="wikitable"
-%! nr. !! ID !! Laser Power before (W) !! Measured Laser Power after (W) !! Measured T Value !! T Value Error !! Expectetd OD Value !! Measured OD Value !! OD Value Error !! Deviation in %
-%|-
-%| 1 || TP03337667 || 5,13E-04 || 6,98E-05 || 0,1361 || 5,32E-04 || 1,00 || 0,8660 || 0,0017 || 13,40
-%|-
-%| 2 || TP03337667 (2) || 5,13E-04 || 7,30E-05 || 0,1422 || 5,56E-04 || 1,00 || 0,8469 || 0,0017 || 15,31
-%|-
-%| 3 || TP03366490 || 5,13E-04 || 4,07E-06 || 0,0079 || 3,12E-05 || 3,00 || 2,1004 || 0,0017 || 89,96
-%|-
-%| 4 || TP03366490 (2) || 5,13E-04 || 3,80E-06 || 0,0074 || 2,91E-05 || 3,00 || 2,1306 || 0,0017 || 86,94
-%|-
-%| 5 || TP03275234 || 5,13E-04 || 4,86E-07 || 0,0009 || 5,37E-06 || 4,00 || 3,0235 || 0,0025 || 97,65
-%|-
-%| 6 || TP03312353 || 5,13E-04 || 4,96E-07 || 0,0010 || 5,43E-06 || 4,00 || 3,0142 || 0,0024 || 98,58
-%|-
-%| 7 || TP03271009 || 5,13E-04 || 4,98E-07 || 0,0010 || 5,43E-06 || 4,00 || 3,0130 || 0,0024 || 98,70
-%|-
-%| 8 || TP03275234 (2) || 5,13E-04 || 4,96E-07 || 0,0010 || 5,42E-06 || 4,00 || 3,0150 || 0,0024 || 98,50
-%|-
-%| 9 || TP03324728 || 5,13E-04 || 8,75E-08 || 0,0002 || 7,71E-07 || 5,00 || 3,7682 || 0,0020 || 123,18
-%|-
-%| 10 || TP03287742 || 5,13E-04 || 8,92E-08 || 0,0002 || 7,82E-07 || 5,00 || 3,7598 || 0,0020 || 124,02
-%|-
-%| 11 || TP03348187 (2) || 5,13E-04 || 9,12E-08 || 0,0002 || 7,95E-07 || 5,00 || 3,7502 || 0,0019 || 124,98
-%|-
-%| 12 || TP03348187 || 5,13E-04 || 9,06E-08 || 0,0002 || 7,92E-07 || 5,00 || 3,7529 || 0,0019 || 124,71
-%|}
-
-
-
-%{| class="wikitable"
-%! ID !! Expectetd OD Value !! Measured T Value !! T_Value Error Systematic !! T Value Error stat !! T Value Error !! Mean OD Value !! OD Value Error
-%|-
-%| TP03337667 || 1,00 || 1,43E-01 || 0,006769666 || 3,22E-03 || 7,50E-03 || 0,8449 || 0,0228
-%|-
-%| TP03337667 (2) || 1,00 || 1,47E-01 || 0,005047419 || 3,07E-03 || 5,91E-03 || 0,8318 || 0,0174
-%|-
-%| TP03366490 || 3,00 || 8,26E-03 || 0,000324182 || 1,88E-04 || 3,75E-04 || 2,0830 || 0,0197
-%|-
-%| TP03366490 (2) || 3,00 || 7,93E-03 || 0,000522915 || 1,74E-04 || 5,51E-04 || 2,1010 || 0,0302
-%|-
-%| TP03275234 || 4,00 || 1,00E-03 || 5,31863E-05 || 4,38E-05 || 6,89E-05 || 2,9998 || 0,0299
-%|-
-%| TP03312353 || 4,00 || 1,04E-03 || 7,14296E-05 || 4,31E-05 || 8,34E-05 || 2,9833 || 0,0349
-%|-
-%| TP03271009 || 4,00 || 1,02E-03 || 4,84206E-05 || 4,43E-05 || 6,56E-05 || 2,9918 || 0,0280
-%|-
-%| TP03275234 (2) || 4,00 || 1,03E-03 || 6,56618E-05 || 4,30E-05 || 7,85E-05 || 2,9864 || 0,0330
-%|-
-%| TP03324728 || 5,00 || 1,80E-04 || 9,94546E-06 || 3,84E-05 || 3,96E-05 || 3,7436 || 0,0954
-%|-
-%| TP03287742 || 5,00 || 1,78E-04 || 4,19645E-06 || 3,73E-05 || 3,75E-05 || 3,7494 || 0,0915
-%|-
-%| TP03348187 (2) || 5,00 || 1,82E-04 || 4,50636E-06 || 3,92E-05 || 3,95E-05 || 3,7393 || 0,0940
-%|-
-%| TP03348187 || 5,00 || 1,82E-04 || 5,79273E-06 || 3,86E-05 || 3,91E-05 || 3,7388 || 0,0930
-%|}
-
-%This values kind of closely match with the values from thorlabs. 
-%[[Image:HQO_20240625_Photodiode_literature_Thorlabs.png|400px]] [[Image:HQO_20240624_ND_Filter_literature_Thorlabs.png|400px]]  
-
-In the appendix you usually include extra information that should be
-documented in your thesis, but not interrupt the flow.
 

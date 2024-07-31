@@ -8,26 +8,23 @@
 In this thesis, both the quantitative verification of the company's specification data for one channel of the SNSPD
 and the analysis of the dependencies on the bias current, trigger voltage, polarization and count rate of the SNSPD
 were successfully completed.
-The results of the system detection efficiency, dark count rate, recovery time,  dead time and maximum count rate are summarized in table \ref{tab:final_results_SNSPD_channel1}.
-For the recovery time, dead time and maximum count rate no specification was available, however the measurement were reasonably close to other specification data of the company
-for detectors in similar wavelength range \cite{singlequantum_eos}.
+The results of the system detection efficiency, dark count rate, recovery time,  dead time and maximum count rate are summarized in table \ref{tab:final_results_SNSPD_channel1}
+and compared with the specification available \cite{tech_sheet_single_quantum}.
 
-
-The basis for the characterization was the build up of a faint laser source setup.
+The basis for the characterization was a faint laser source setup.
 This served as a source for measuring single photons and made measurements of SNSPD
 characteristics possible.
 For realizing a faint laser source set up a laser with a wavelength of $\lambda = 780\si{\nano \m}$ was used and
 attenuated by ar ND filters.
-For the precise measurement of the OD values of the filters, a calibration of the filters was done in two ways.
-The reason is to consider statistical and systematic errors.
-Moreover, the faint laser source set up was operated in a self build optical enclosure (black box) to avoid
+For the precise measurement of the OD values of the filters, a calibration of the filters was done in two ways to consider statistical and systematic errors.
+Moreover, the faint laser source set up was operated in a self-build optical enclosure (black box) to avoid
 environmental light coupling into the fibre.\\
 
-After the setup was built, first Dark count measurements were performe.
+After the setup was built, first Dark count measurements were performed.
 Different settings were investigated \ref{fig: DCR_black_box_to_exp} to find the optimal settings for the lowest Dark count rate.
-With the faint laser source in the black box, an aluminium foile coated optical fibre connection between experiment and detector
-,the lowest dark count rate was achieved.
-A Dark count rate of $DCR_{31.2\si{\micro \A}} = (1.40 \pm 1.36) \si{\Hz}$ was achieved and yields the same low values as for
+The lowest dark count rate was achieved by operating the faint laser source in the black box and coating an aluminium
+foil around the optical fibre connecting it to the SNSPD.
+A dark count rate of $DCR_{31.2\si{\micro \A}} = (1.40 \pm 1.36) \si{\Hz}$ was achieved and yields the same low values as for
 the case, where the detector has no connection to the experiment.
 Afterwards the recovery, dead and reset time was determined with a time tagger unit (Time Tagger 20) by Swabian instruments.
 With a common used autocorrelation evaluation \cite{autebert-2020,miki-2017} of the time distances between detected photons,
@@ -50,24 +47,25 @@ For higher voltages the dead time stays constant.
 Second, for lower bias current (26$\si{\micro \A}$), the rising curves for each trigger voltage converge earlier in comparison
 to the bias current of 31.2$\si{\micro \A}$.
 Moreover, the curve back to full efficiency is steeper for the higher bias current 31.2$\si{\micro \A}$.
-The third interesting feature is the additional "counts per bin" peak at 24-27 $\si{\nano \s}$ for all trigger voltages and
+The third interesting feature is the additional "counts per bin" peak at (24-27 $\si{\nano \s}$) for all trigger voltages and
 bias currents (seen in figures \ref{fig: recovery_time_measurement_25uA}, \ref{fig: recovery_time_measurement_31_2uA} and \ref{fig:Recovery_time}).
-This peak might be explained by a brief overshooting of the bias current and therefore a resulting rise in Dark counts
+This peak might be explained by a brief overshooting of the bias current and therefore a resulting rise in dark counts
 (as seen in figure \ref{fig: DCR_black_box_to_exp}) due to short time excess of the critical current.
+
 Finally, the system detection efficiency was measured.
-First the polarization dependency of the setup was analyzed and the optimal settings was set, in order to achieve the highest efficiency (shown in figure \ref{fig: angle_dependend_countrate}).
-After this, the trigger voltage and bias current dependency was evaluated.
-It was found, that the efficiency is stable and independent of the trigger voltage, for an input count rate up to
+First the polarization dependency of the setup was analyzed and the optimal settings were set in order to achieve the highest efficiency (shown in figure \ref{fig: angle_dependend_countrate}).
+After this, the trigger voltage and bias current dependency were evaluated.
+It was found that the efficiency is stable and independent of the trigger voltage, for an input count rate up to
 2.446$\si{\mega \Hz}$ (shown in figure \ref{fig:countrate_bias_current_tv_300_600_900_8_92} and \ref{fig:countrate_bias_current_tv_300_600_900_9_72}).
 At the end, the relation to the count rate was investigated and a expected downward trend for higher count rates was observed and
-a constant system detection efficiency in the range between $(87.242 \pm 4.955) \%$ and $(91.834 \pm 9.550) \%$ for count rates up to
+a constant system detection efficiency in the range between $(89.833 \pm 9.447) \%$ and $(92.292 \pm 9.550) \%$ for count rates up to
 9.575 $\si{\mega \Hz}$ was found \ref{fig:sde_count_rate_log_thesis}. \\
 
 Next steps would be the investigations and characterizations of the other seven available channels.
 Further, a standard procedure can be developed for accelerating the characterization process.
-Moreover, when the characterization of all channels is finished, the SNSPD can be used to measure with a Hanbury Brown and
-Twiss setup the second order correlation function $g^{(2)}(\tau)$ of the faint laser source and confirm
+Moreover, when the characterization of all channels is finished, the SNSPD can be used to measure in a Hanbury Brown and
+Twiss set up.
+This set up can measure the second order correlation function $g^{(2)}(\tau)$ of the faint laser source and confirm
 the characteristic constant curve for coherent light sources \cite{glauber-1963}.
 Finally, the SNSPD can be used in the HQO experiment for measurements of strong nonlinearities in Rydberg physics.
 
-\input{tables/HQO_290724_final_results}

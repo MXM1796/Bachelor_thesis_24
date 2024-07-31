@@ -6,21 +6,24 @@
 \babel@toc {ngerman}{}\relax 
 \babel@toc {UKenglish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Working principle of SNSPDs}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Working principle of a SNSPD}{2}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Faint laser source for detector characterization}{6}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Characteristics of faint laser sources}{6}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Experimental setup}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Neutral density filter calibration}{8}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Characterization of a SNSPD by Single Quantum}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Dark Count Rate}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Dark count rate}{10}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Recovery time}{12}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Efficiency}{16}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Summary and Outlook}{23}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Appendix}{25}{appendix.A}%
-\contentsline {section}{\numberline {A.1}ND filter calibration}{25}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Angle dependent countrate}{28}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Count rate dependent $\eta _{\text {sde}}$}{29}{section.A.3}%
-\contentsline {section}{\numberline {A.4}Bias sweeping for different count rates}{29}{section.A.4}%
-\contentsline {section}{\numberline {A.5}Recovery time measurements}{29}{section.A.5}%
-\contentsline {subsection}{\numberline {A.5.1}Recovery time measurements - Oscillating bias current}{29}{subsection.A.5.1}%
-\contentsline {section}{\numberline {A.6}Recorings of analog pulses}{29}{section.A.6}%
+\contentsline {section}{\numberline {4.3}Efficiency}{17}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Summary of the results}{25}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Summary and Outlook}{26}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Appendix}{28}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Set up and elements}{28}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Neutral density filter calibration - Error calculation}{30}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Angle dependent count rate measurement data and results}{34}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Count rate dependent efficiency $\eta _{\text {sde}}$}{34}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Bias sweeping for different count rates}{35}{section.A.5}%
+\contentsline {section}{\numberline {A.6}Recovery time measurements}{36}{section.A.6}%
+\contentsline {section}{\numberline {A.7}Recordings of analog pulses}{37}{section.A.7}%
+\contentsline {chapter}{\nonumberline Bibliography}{39}{chapter*.45}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
